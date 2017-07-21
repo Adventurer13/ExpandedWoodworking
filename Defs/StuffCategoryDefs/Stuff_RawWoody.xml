@@ -1,0 +1,10 @@
+<Defs>
+
+<!-- Raw Wood -->
+
+	<StuffCategoryDef>
+		<defName>RawWoody</defName>
+		<label>Log</label>
+	</StuffCategoryDef>
+  
+</Defs>

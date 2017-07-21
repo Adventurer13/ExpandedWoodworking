@@ -1,0 +1,20 @@
+﻿<WorkGivers>
+
+<!-- Woodworking -->	
+
+    <WorkGiverDef>
+        <defName>DoBillsWoodworking</defName>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>111</priorityInType>
+        <fixedBillGiverDefs>
+            <li>TableWoodworking</li>
+        </fixedBillGiverDefs>
+        <verb>woodwork</verb>
+        <gerund>woodworking</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+</WorkGivers>

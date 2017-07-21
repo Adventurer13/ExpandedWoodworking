@@ -1,0 +1,23 @@
+﻿<ThingCategoryDefs>
+
+<!-- Woodtypes -->	
+
+    <ThingCategoryDef>
+        <defName>WoodTypes</defName>
+        <label>wood types</label>
+        <parent>ResourcesRaw</parent>
+        <resourceReadoutRoot>false</resourceReadoutRoot>
+        <iconPath>Resources/BasicWoodLog</iconPath>
+    </ThingCategoryDef>
+	
+<!-- Lumber -->		
+	
+    <ThingCategoryDef>
+		<defName>WoodLumber</defName>
+		<label>Lumber</label>
+		<parent>ResourcesRaw</parent>
+		<iconPath>Resources/BasicWoodLumber</iconPath>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>	
+
+</ThingCategoryDefs>
