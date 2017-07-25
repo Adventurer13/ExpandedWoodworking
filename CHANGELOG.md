@@ -1,6 +1,10 @@
 # Change Log
 
-**Current:** [v0.17.0.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.2)
+**Current:** [v0.17.0.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.3)
+
+## [0.17.0.3] - 2017-07-24
+### Fixed
+- Duplication exploit which resulted in more lumber than was used when bundling various lumber.
 
 ## [0.17.0.2] - 2017-07-20
 ### New
