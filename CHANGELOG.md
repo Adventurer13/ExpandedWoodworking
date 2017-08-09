@@ -1,6 +1,13 @@
 # Change Log
 
-**Current:** [v0.17.0.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.3)
+**Current:** [v0.17.0.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.4)
+
+## [0.17.0.4] - 2017-08-09
+### New
+- Base building def to fix 'null thingClass' errors which would occur with Edb Prepare Carefully's starting point system.
+- Updates to C sharp code to iron out any issues that may be caused by old.
+- Source is actually now available (Only on Github). Respect attached license!
+- Including Changelog & Readme in Steam releases.
 
 ## [0.17.0.3] - 2017-07-24
 ### Fixed
