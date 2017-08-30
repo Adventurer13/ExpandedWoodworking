@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<!-- Cherry Wood -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/label</xpath>
+				<value>
+					<label>cherrywood logs (zen)</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/stuffAdjective</xpath>
+				<value>
+					<stuffAdjective>zen cherrywood</stuffAdjective>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/categories/li</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/stuffProps</xpath>
+				<value>
+					<commonality>0.55</commonality>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/thingCategories/li</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]</xpath>
+				<value>
+					<butcherProducts>
+						<ZEN_LumberCherry>30</ZEN_LumberCherry>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Ebony Wood -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/label</xpath>
+				<value>
+					<label>ebony logs (zen)</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/statBases/Mass</xpath>
+				<value>
+					<Mass>0.9</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/stuffAdjective</xpath>
+				<value>
+					<stuffAdjective>zen ebony</stuffAdjective>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/categories/li</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/stuffProps</xpath>
+				<value>
+					<commonality>0.25</commonality>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/thingCategories/li</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]</xpath>
+				<value>
+					<butcherProducts>
+						<ZEN_LumberEbony>30</ZEN_LumberEbony>
+					</butcherProducts>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success></success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<!-- Cherry Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<Order>Prepend</Order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>ZEN_LumberCherry</defName>
+						<label>cherrywood lumber (zen)</label>
+						<description>Processed (zen) cherrywood lumber. Mostly useful for building long-lasting, simple structures and furniture. Cherrywood is a moderate to nondurable hardwood.</description>
+						<graphicData>
+							<color>(211,110,84)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.4</Mass>
+							<MarketValue>3.2</MarketValue>
+							<DeteriorationRate>1.9</DeteriorationRate>
+							<Flammability>0.95</Flammability>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>zen cherrywood</stuffAdjective>
+							<commonality>0.55</commonality>
+							<color>(211,110,84)</color>
+							<statFactors>
+								<MaxHitPoints>0.6</MaxHitPoints>
+								<Beauty>1.4</Beauty>
+								<Flammability>0.95</Flammability>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+								<MeleeWeapon_Cooldown>0.85</MeleeWeapon_Cooldown>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Ebony Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<Order>Prepend</Order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>ZEN_LumberEbony</defName>
+						<label>ebony lumber (zen)</label>
+						<description>Processed (zen) ebony lumber. Mostly useful for building long-lasting sculptures and furniture. Ebony is a dense and prized hardwood.</description>
+						<graphicData>
+							<color>(45,42,40)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.9</Mass>
+							<MarketValue>4.4</MarketValue>
+							<MaxHitPoints>175</MaxHitPoints>
+							<Flammability>0.85</Flammability>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>zen ebony</stuffAdjective>
+							<commonality>0.25</commonality>
+							<color>(45,42,40)</color>
+							<statFactors>
+								<MaxHitPoints>0.75</MaxHitPoints>
+								<Beauty>1.8</Beauty>
+								<Flammability>0.95</Flammability>
+								<WorkToMake>1.05</WorkToMake>
+								<WorkToBuild>1.1</WorkToBuild>
+								<DoorOpenSpeed>1.15</DoorOpenSpeed>
+								<MeleeWeapon_Cooldown>0.85</MeleeWeapon_Cooldown>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+			
+	<!-- Fuel -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+			
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>	
+			<li Class="PatchOperationAdd">
+				<xpath>/Buildings/ThingDef[defName = "FueledGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+			
+			
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>				
+			<li Class="PatchOperationAdd">
+				<xpath>/Buildings/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>			
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>				
+			<li Class="PatchOperationAdd">
+				<xpath>/ThingDefs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/ThingDefs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Zen Garden</li>
+					<li>Expanded Woodworking for Vegetable Garden A17</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/ThingDefs/ThingDef[DefName = "Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/ThingDefs/ThingDef[DefName = "HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/ThingDefs/ThingDef[DefName = "FueledCandyTable"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+</Patch>

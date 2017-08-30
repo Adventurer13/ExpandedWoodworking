@@ -1,6 +1,11 @@
 # Change Log
 
-**Current:** [v0.17.0.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.4)
+**Current:** [v0.17.0.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.5)
+
+## [0.17.0.5] - 2017-08-29
+### New
+- Patching capability for compatibility with other mods.
+- Zen Garden patch (Steam release has Ebony commented out since it does not exist in Zen Garden on Steam).
 
 ## [0.17.0.4] - 2017-08-09
 ### New
