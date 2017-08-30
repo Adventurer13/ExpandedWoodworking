@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PatchOperationModCompat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeWorkerCounter_MakeWoodLumber.cs" />
     <Compile Include="ThingCategoryDefOf.cs" />
