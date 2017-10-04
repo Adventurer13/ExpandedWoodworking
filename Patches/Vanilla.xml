@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodTypes</categoryDef>
+						<thingDefCountRange>
+							<min>2</min>
+							<max>3</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>150</min>
+							<max>450</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodLumber</categoryDef>
+						<thingDefCountRange>
+							<min>0</min>
+							<max>0</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>0</min>
+							<max>0</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+
+</Patch>

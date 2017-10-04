@@ -96,7 +96,7 @@
 	
 	
 	<Operation Class="PatchOperationSequence">
-		<success></success>
+		<success>Always</success>
 		<Operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>Zen Garden</modName>
@@ -171,7 +171,7 @@
 						</stuffProps>
 					</ThingDef>
 				</value>
-			</li>
+			</li> 
 		</Operations>
 	</Operation>
 	
@@ -277,4 +277,25 @@
 		</Operations>
 	</Operation>
 	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>				
+			<li Class="PatchOperationRemove">
+				<xpath>/ThingDefs/ThingDef[defName = "ZEN_Hedge"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/ThingDefs/ThingDef[defName = "ZEN_Hedge"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
 </Patch>
