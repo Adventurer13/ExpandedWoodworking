@@ -15,6 +15,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Lumber is used in both construction and in crafting.
 - Raw logs are used as fuel!
 - Realistic wood colours!
+- Compatibility with Zen Garden mod.
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:

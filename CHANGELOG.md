@@ -1,6 +1,11 @@
 # Change Log
 
-**Current:** [v0.17.0.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.5)
+**Current:** [v0.17.0.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.6)
+
+## [0.17.0.6] - 2017-10-3
+### New
+- Neolithic Bulk Goods traders will now buy and sell any logs as well as buy any lumber instead of them only buy/sell mixed lumber!
+- The 'Artificial Hedge' in Zen Garden will now properly use any logs instead of only mixed lumber.  
 
 ## [0.17.0.5] - 2017-08-29
 ### New
