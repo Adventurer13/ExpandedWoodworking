@@ -46,7 +46,7 @@
 					</butcherProducts>
 				</value>
 			</li>
-			<!-- Ebony Wood -->
+			<!-- Ebony Wood 
 			<li Class="PatchOperationReplace">
 				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/label</xpath>
 				<value>
@@ -72,7 +72,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]/stuffProps</xpath>
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps</xpath>
 				<value>
 					<commonality>0.25</commonality>
 				</value>
@@ -84,13 +84,13 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Resources/ThingDef[defName = "ZEN_CherryWood"]</xpath>
+				<xpath>/Resources/ThingDef[defName = "ZEN_EbonyWood"]</xpath>
 				<value>
 					<butcherProducts>
 						<ZEN_LumberEbony>30</ZEN_LumberEbony>
 					</butcherProducts>
 				</value>
-			</li>
+			</li> -->
 		</Operations>
 	</Operation>
 	
@@ -136,7 +136,7 @@
 					</ThingDef>
 				</value>
 			</li>
-			<!-- Ebony Lumber -->
+			<!-- Ebony Lumber 
 			<li Class="PatchOperationInsert">
 				<xpath>/Defs/ThingDef[defName = "LumberBirch"]</xpath>
 				<Order>Prepend</Order>
@@ -171,7 +171,7 @@
 						</stuffProps>
 					</ThingDef>
 				</value>
-			</li> 
+			</li> -->
 		</Operations>
 	</Operation>
 	
