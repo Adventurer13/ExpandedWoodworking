@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>M-13's Fuel Generators [A17]</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Buildings/ThingDef[defName = "Tweaked_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Tweaked_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Upgraded_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Upgraded_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Advanced_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Advanced_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Ultimate_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li	|
+					   /Buildings/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li</xpath>
+				<value>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Teak</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>M-13's Fuel Generators [A17]</li>
+					<li>Expanded Woodworking for Vegetable Garden A17</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Buildings/ThingDef[defName = "Tweaked_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Tweaked_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Upgraded_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Upgraded_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Advanced_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Advanced_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Ultimate_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Camellia</li>
+					<li>WoodLog_CherryBlossom</li>
+					<li>WoodLog_JapaneseMaple</li>
+					<li>WoodLog_RedMaple</li>
+					<li>WoodLog_WeepingWillow</li>
+					<li>WoodLog_Apple</li>
+					<li>WoodLog_Cherry</li>
+					<li>WoodLog_DatePalm</li>
+					<li>WoodLog_Fig</li>
+					<li>WoodLog_Olive</li>
+					<li>WoodLog_Orange</li>
+					<li>WoodLog_Peach</li>
+					<li>WoodLog_Coconut</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>M-13's Fuel Generators [A17]</li>
+					<li>Zen Garden</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Buildings/ThingDef[defName = "Tweaked_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Tweaked_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Upgraded_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Upgraded_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Advanced_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Advanced_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Ultimate_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Buildings/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_CherryWood</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+	
+</Patch>
+	
