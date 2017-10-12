@@ -1,6 +1,10 @@
 # Change Log
 
-**Current:** [v0.17.0.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.6)
+**Current:** [v0.17.0.7](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.7 )
+
+## [0.17.0.7] - 2017-10-11
+### New
+- Patch for M-13's Fuel Generators. Includes compatibilty with Zen Garden too!
 
 ## [0.17.0.6] - 2017-10-3
 ### New
