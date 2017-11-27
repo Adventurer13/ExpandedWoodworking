@@ -1,12 +1,13 @@
 ﻿<ModMetaData>
 
-	<name>Expanded Woodworking A17</name>
+	<name>Expanded Woodworking B18</name>
 	<author>ItchyFlea -> Qwynn -> Adventurer</author>
 	<url></url>
-	<targetVersion>0.17.1546</targetVersion>
-	<description>An A17 update of Qwynn's Expanded Woodworking which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other items which are designated as 'Woody' in the stuff category.
+	<targetVersion>0.18.1722</targetVersion>
+	<description>An A18 upgrade of Qwynn's Expanded Woodworking which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other objects which are designated as 'Woody' in their stuff category.
 	
-	Current Version: 0.17.0.7 (2017-10-11)
+	Current Version: 0.18.0.1 (2017-11-27)
+	Previous versions can be found on GitHub.
 	</description>
 		
 </ModMetaData>
