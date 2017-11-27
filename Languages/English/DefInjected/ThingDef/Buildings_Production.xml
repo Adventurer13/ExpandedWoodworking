@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<TableWoodworking.label>woodworking table</TableWoodworking.label>
+	<TableWoodworking.description>A foot powered woodworking table. Works at 70% of the speed of an electric woodworking table.</TableWoodworking.description>
+	<TableWoodworking_Blueprint.label>woodworking table (blueprint)</TableWoodworking_Blueprint.label>
+	<TableWoodworking_Frame.label>woodworking table (building)</TableWoodworking_Frame.label>
+	<TableWoodworking_Frame.description>A foot powered woodworking table. Works at 70% of the speed of an electric woodworking table.</TableWoodworking_Frame.description>
+	
+	<ElectricTableWoodworking.label>electric woodworking table</ElectricTableWoodworking.label>
+	<ElectricTableWoodworking.description>An electric woodworking table. Can work without electricity at 70% of normal speed.</ElectricTableWoodworking.description>
+	<ElectricTableWoodworking_Blueprint.label>electric woodworking table (blueprint)</ElectricTableWoodworking_Blueprint.label>
+	<ElectricTableWoodworking_Frame.label>electric woodworking table (building)</ElectricTableWoodworking_Frame.label>
+	<ElectricTableWoodworking_Frame.description>An electric woodworking table. Can work without electricity at 70% of normal speed.</ElectricTableWoodworking_Frame.description>
+
+</LanguageData>

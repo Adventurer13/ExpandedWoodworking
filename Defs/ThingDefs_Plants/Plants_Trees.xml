@@ -11,24 +11,21 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.15, 0.3, 0.1)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
 			</shadowData>
 		</graphicData>
 		<statBases>
-			<Beauty>3</Beauty>
+			<Beauty>2</Beauty>
 		</statBases>
 		<ingestible>
-			<nutrition>1</nutrition>
+			<nutrition>1.25</nutrition>
 		</ingestible>
 		<plant>
-			<leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
 			<growDays>20</growDays>
 			<harvestWork>700</harvestWork>
-			<harvestYield>30</harvestYield>
-			<leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+			<harvestYield>27</harvestYield>
+			<leaflessGraphicPath>Things/Plant/TreeBirch_Leafless</leaflessGraphicPath>
 		</plant>
 	</ThingDef>
 	
@@ -39,19 +36,27 @@
 		<graphicData>
 			<texPath>Things/Plant/TreeCecropia</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+			</shadowData>
 		</graphicData>
 		<statBases>
-			<Beauty>2</Beauty>
+			<Beauty>1</Beauty>
 		</statBases>
 		<plant>
-			<growDays>10</growDays>
+			<growDays>14</growDays>
 			<harvestWork>550</harvestWork>
-			<harvestYield>20</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<wildClusterSizeRange>
+				<min>8</min>
+				<max>14</max>
+			</wildClusterSizeRange>
+			<wildClusterRadius>10</wildClusterRadius>
 		</plant>
+		<ingestible>
+			<nutrition>1.20</nutrition>
+		</ingestible>
 	</ThingDef>
 
 	<ThingDef ParentName="TreeBase">
@@ -61,19 +66,20 @@
 		<graphicData>
 			<texPath>Things/Plant/TreeOak</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
 		</graphicData>
 		<statBases>
-			<Beauty>5</Beauty>
+			<Beauty>2</Beauty>
 		</statBases>
 		<plant>
-			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
 			<growDays>30</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
 			<harvestWork>1000</harvestWork>
-			<harvestYield>50</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+			<harvestYield>45</harvestYield>
 		</plant>
 	</ThingDef>
 	
@@ -84,58 +90,53 @@
 		<graphicData>
 			<texPath>Things/Plant/TreePine</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-				<shadowData>
-					<volume>(0.2, 0.3, 0.2)</volume>
-				</shadowData>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
 		</graphicData>
 		<statBases>
-			<Beauty>5</Beauty>
+			<Beauty>2</Beauty>
 		</statBases>
 		<ingestible>
-			<nutrition>1</nutrition>
+			<nutrition>1.25</nutrition>
 		</ingestible>
 		<plant>
-			<visualSizeRange>
-				<min>1.3</min>
-				<max>3.0</max>
-			</visualSizeRange>
 			<growDays>20</growDays>
+			<visualSizeRange>
+			<min>1.3</min>
+			<max>3.0</max>
+			</visualSizeRange>
 			<harvestWork>700</harvestWork>
-			<harvestYield>30</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+			<harvestYield>27</harvestYield>
 		</plant>
-	</ThingDef>	
+	</ThingDef>
 	
 	<ThingDef ParentName="TreeBase">
 		<defName>PlantTreePoplar</defName>
 		<label>poplar tree</label>
-		<description>A softwood tree. Grows fast, but yield little useful wood.</description>
+		<description>A softwood tree. Grows fast, but yields little useful wood.</description>
 		<graphicData>
 			<texPath>Things/Plant/TreePoplar</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Beauty>3</Beauty>
+			<Beauty>1</Beauty>
 		</statBases>
 		<ingestible>
-			<nutrition>0.75</nutrition>
+			<nutrition>1.0</nutrition>
 		</ingestible>
 		<plant>
-			<leaflessGraphicPath>Things/Plant/TreePoplar_Leafless</leaflessGraphicPath>
 			<growDays>15.05</growDays>
+			<leaflessGraphicPath>Things/Plant/TreePoplar_Leafless</leaflessGraphicPath>
 			<harvestWork>650</harvestWork>
-			<harvestYield>30</harvestYield>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
 			<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+			<harvestYield>27</harvestYield>
 		</plant>
 	</ThingDef>
 	
-	<ThingDef ParentName="PlantBase">
+	 <ThingDef ParentName="PlantBase">
 		<defName>PlantSaguaroCactus</defName>
 		<label>saguaro cactus</label>
 		<description>A large cactus native to arid Earth environments.</description>
@@ -146,7 +147,8 @@
 			<texPath>Things/Plant/SaguaroCactus</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
-				<volume>(0.3, 0.3, 0.3)</volume>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
@@ -156,7 +158,9 @@
 		<pathCost>130</pathCost>
 		<blockWind>true</blockWind>
 		<ingestible>
-			<nutrition>0.30</nutrition>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+			<nutrition>0.70</nutrition>
 		</ingestible>
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
@@ -178,7 +182,7 @@
 			</visualSizeRange>
 			<topWindExposure>0.08</topWindExposure>
 		</plant>
-	</ThingDef>	
+	  </ThingDef>
 	
 	<ThingDef ParentName="TreeBase">
 		<defName>PlantTreeTeak</defName>
@@ -189,22 +193,195 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<statBases>
-			<Beauty>5</Beauty>
+			<Beauty>2</Beauty>
 		</statBases>
 		<plant>
-			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
 			<growDays>32.5</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
 			<harvestWork>1200</harvestWork>
-			<harvestYield>60</harvestYield>
+			<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+			<harvestYield>54</harvestYield>
 			<visualSizeRange>
 				<min>1.3</min>
 				<max>2.4</max>
 			</visualSizeRange>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
-			<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
 		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantTreeDrago</defName>
+		<label>drago tree</label>
+		<description>A hardy desert tree topped with thick, pointed leaves.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeDrago</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+        		<volume>(0.24, 0.35, 0.13)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+		</statBases>
+		<ingestible>
+			<nutrition>1.0</nutrition>
+		</ingestible>
+		<plant>
+			<growDays>15</growDays>
+			<harvestWork>650</harvestWork>
+			<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<wildClusterSizeRange>
+				<min>1</min>
+				<max>4</max>
+			</wildClusterSizeRange>
+			<wildClusterRadius>6</wildClusterRadius>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantTreeWillow</defName>
+		<label>willow tree</label>
+		<description>One of the fastest growing shade trees providing a beautiful, thick, leafy canopy. Doesn't yield much usable wood.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeWillow</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(0,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<growDays>13</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeWillow_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+			<harvestYield>17</harvestYield>
+			<wildClusterSizeRange><min>115</min><max>150</max></wildClusterSizeRange>
+			<wildClusterRadius>17</wildClusterRadius>
+			<visualSizeRange>
+				<min>1.1</min>
+				<max>1.95</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantTreeCypress</defName>
+		<label>cypress tree</label>
+		<description>A tall, slow-growing tree. Typically found in swamps. Despite its slow growth, planting these trees can be profitable because they yield much usable wood.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeCypress</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.4, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+		</statBases>
+		<plant>
+			<growDays>35</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeCypress_Leafless</leaflessGraphicPath>
+			<harvestWork>2200</harvestWork>
+			<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+			<harvestYield>43</harvestYield>
+			<wildClusterSizeRange><min>115</min><max>150</max></wildClusterSizeRange>
+			<wildClusterRadius>17</wildClusterRadius>
+			<visualSizeRange>
+				<min>1.5</min>
+				<max>2.3</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantTreeMaple</defName>
+		<label>maple tree</label>
+		<description>A common, medium-sized tree. It's often found in swamps and on moist terrain.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeMaple</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.14, 0.32, 0.12)</volume>
+				<offset>(0,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<growDays>25</growDays>
+			<leaflessGraphicPath>Things/Plant/TreeMaple_Leafless</leaflessGraphicPath>
+			<harvestWork>700</harvestWork>
+			<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<wildClusterSizeRange><min>115</min><max>150</max></wildClusterSizeRange>
+			<wildClusterRadius>17</wildClusterRadius>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantTreePalm</defName>
+		<label>palm tree</label>
+		<description>A tropical tree with a long, naked trunk topped by a cluster of leaves.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreePalm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+        		<offset>(0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+		</statBases>
+		<plant>
+			<growDays>14</growDays>
+			<harvestWork>550</harvestWork>
+			<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+			<harvestYield>18</harvestYield>
+			<wildClusterSizeRange>
+				<min>8</min>
+				<max>14</max>
+			</wildClusterSizeRange>
+			<wildClusterRadius>10</wildClusterRadius>
+		</plant>
+		<ingestible>
+			<nutrition>1.20</nutrition>
+		</ingestible>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantTreeBamboo</defName>
+		<label>bamboo tree</label>
+		<description>A fast-growing tree-like species that grows in cluster. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</description>
+		<graphicData>
+			<texPath>Things/Plant/TreeBamboo</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.38, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.47)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<growDays>12</growDays>
+			<harvestWork>500</harvestWork>
+			<harvestedThingDef>Bamboo</harvestedThingDef>
+			<harvestYield>13</harvestYield>
+			<wildClusterSizeRange>
+				<min>15</min>
+				<max>30</max>
+			</wildClusterSizeRange>
+			<wildClusterRadius>5</wildClusterRadius>
+		</plant>
+		<ingestible>
+			<nutrition>1.20</nutrition>
+		</ingestible>
 	</ThingDef>
 	
 </Defs>

@@ -1,6 +1,33 @@
 # Change Log
 
-**Current:** [v0.17.0.7](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.17.0.7 )
+**Current:** [v0.18.0.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.1 )
+
+## [0.18.0.1] - 2017-11-27
+### New (savegame needed for B18)
+- Very slightly brighter color for Birch.
+- Wood and lumber for Cypress, Drago (based off dragon tree), Maple, Palm (black palm from VG patch), and Willow.
+- Bamboo and respective lumber (from VG and dismar).
+- Moved Art, Joy, Lighting, Power, Production, Security, Temperature, and Weapons (both melee and ranged neolithic) into patching
+  system for better compatibility with other mods as well as Rimworld updates editing such as well.
+- Support for:
+   - Hoopstone ring (uses logs)
+   - Wood fired generator (fuel: logs)
+   - Brewery and fermenting barrel
+   - Weapons: ikwa, spear, and recurve bow (all use logs)
+- Individual lumber recipies! (looking for feedback on)
+- An electric woodworking table! (looking for feedback on and a better graphic for both woodworking tables)
+- Assembly updated.
+- Languages folder added. (Who wants to translate?)
+- Update to M-13's Fuel Generators patch.
+   
+### Fixed
+- Balancing for stats (door open speed, beauty, mass, market value, etc.). Looking for feedback regarding these!
+- Something I likely forgot, so updates across the defs.
+ 
+### Removed
+- Original generator.
+- Long sword and gladius using logs instead of lumber. (looking for feedback on these changes)
+- Zen Garden patch (until cuproPanda updates it to B18).
 
 ## [0.17.0.7] - 2017-10-11
 ### New

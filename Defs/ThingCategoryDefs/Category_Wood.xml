@@ -1,4 +1,4 @@
-﻿<ThingCategoryDefs>
+﻿<Defs>
 
 <!-- Woodtypes -->	
 
@@ -20,4 +20,4 @@
 		<resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>	
 
-</ThingCategoryDefs>
+</Defs>

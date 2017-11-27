@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Traders -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodTypes</categoryDef>
+						<thingDefCountRange>
+							<min>2</min>
+							<max>3</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>150</min>
+							<max>450</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodLumber</categoryDef>
+						<thingDefCountRange>
+							<min>0</min>
+							<max>0</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>0</min>
+							<max>0</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Art -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "SculptureSmall"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "SculptureLarge"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "SculptureGrand"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Joy -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "HorseshoesPin"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "HoopstoneRing"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Lighting -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "TorchLamp"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<value>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Cypress</li>
+					<li>WoodLog_Drago</li>
+					<li>WoodLog_Maple</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Saguaro</li>
+					<li>WoodLog_Teak</li>
+					<li>WoodLog_Willow</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Power -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<value>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Cypress</li>
+					<li>WoodLog_Drago</li>
+					<li>WoodLog_Maple</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Saguaro</li>
+					<li>WoodLog_Teak</li>
+					<li>WoodLog_Willow</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Production -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]/constructEffect	|
+						/Defs/ThingDef[defName = "FermentingBarrel"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "TableButcher"]/costList	|
+						/Defs/ThingDef[defName = "Brewery"]/costList/WoodLog	|
+						/Defs/ThingDef[defName = "FermentingBarrel"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>95</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>120</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
+						/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<value>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Cypress</li>
+					<li>WoodLog_Drago</li>
+					<li>WoodLog_Maple</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Saguaro</li>
+					<li>WoodLog_Teak</li>
+					<li>WoodLog_Willow</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Security -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "TrapDeadfall"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Temperature -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Campfire"]/constructEffect	|
+						/Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Campfire"]/costList	|
+						/Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Campfire"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<value>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Cypress</li>
+					<li>WoodLog_Drago</li>
+					<li>WoodLog_Maple</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Saguaro</li>
+					<li>WoodLog_Teak</li>
+					<li>WoodLog_Willow</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapon(Melee) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/exceptedThingDefs/li[.="WoodLog"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter</xpath>
+				<value>
+					<exceptedCategories>
+						<li>WoodTypes</li>
+						<li>WoodLumber</li>
+					</exceptedCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Shiv"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/stuffCategories/li[.="Woody"]	|
+						/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapon(Ranged Neolithic) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Bow_Short"]/costList	|
+						/Defs/ThingDef[defName = "Pila"]/costList	|
+						/Defs/ThingDef[defName = "Bow_Recurve"]/costList	|
+						/Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Bow_Short"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Pila"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>70</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Bow_Recurve"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Bow_Great"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+</Patch>
