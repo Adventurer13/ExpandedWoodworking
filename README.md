@@ -1,9 +1,9 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![RimWorld Alpha 18](https://img.shields.io/badge/RimWorld-Alpha_18-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld Beta 18](https://img.shields.io/badge/RimWorld-Beta_18-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
-An A18 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
+An B18 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
 
 ## Installation
 Drop the latest release into your `RimWorld/Mods` folder.
