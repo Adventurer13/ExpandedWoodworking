@@ -34,8 +34,9 @@ Patches edit the following vanilla definitions:
 - Campfire
 - Passive cooler
 - Deadfall trap
-- Joy objects
+- Joy and art objects
 - Any weapon made of wood
+- Peg leg
 
 **Currently incompatible as far as I know with [Minerals and Materials](https://steamcommunity.com/sharedfiles/filedetails/?id=728233992).**
 
@@ -43,5 +44,5 @@ Patches edit the following vanilla definitions:
 When making a bug report, please make sure you have developer mode enabled in your Rimworld settings. You may then create your report [here](https://github.com/Adventurer13/ExpandedWoodworking/issues). A link to your exported HugsLib log would be greatly appreciated as well.
 
 ## Older Versions
-All current and past A17/B18 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
+All current and past B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
 All past A16 versions of this mod can be downloaded from [GitHub](https://github.com/Qwynn/ExpandedWoodworking/releases).

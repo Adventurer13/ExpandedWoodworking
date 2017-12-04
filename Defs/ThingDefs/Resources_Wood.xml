@@ -5,7 +5,7 @@
 	<ThingDef Name="WoodLogBase" ParentName="ResourceVerbBase" Abstract="True">
 		<description>Raw wood from a tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics.</description>
 		<graphicData>
-			<texPath>Resources/WoodLog</texPath>
+			<texPath>Things/Resources/WoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>75</stackLimit>
@@ -413,7 +413,7 @@
 		<label>raw bamboo</label>
 		<description>Raw bamboo. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Bamboo is a perishable, fast growing grass.</description>
 		<graphicData>
-			<texPath>Resources/Bamboo/bamboo</texPath>
+			<texPath>Things/Resources/Bamboo/bamboo</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

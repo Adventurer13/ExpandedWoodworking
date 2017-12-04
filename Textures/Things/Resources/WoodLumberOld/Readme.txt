@@ -1,0 +1,1 @@
+Change the file name appropiately and copy over into the file where the current lumber png files are.

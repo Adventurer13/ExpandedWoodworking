@@ -24,7 +24,7 @@
         <thingClass>Building_WorkTable_HeatPush</thingClass>
         <description>A foot powered woodworking table. Works at 70% of the speed of an electric woodworking table.</description>
         <graphicData>
-            <texPath>sawmill</texPath>
+            <texPath>Things/Building/WoodWorkingTable/sawmill</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,1)</drawSize>
         </graphicData>
@@ -80,7 +80,7 @@
         <thingClass>Building_WorkTable_HeatPush</thingClass>
         <description>An electric woodworking table. Can work without electricity at 70% of normal speed.</description>
         <graphicData>
-            <texPath>sawmill</texPath>
+            <texPath>Things/Building/WoodWorkingTable/sawmill</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,1)</drawSize>
         </graphicData>

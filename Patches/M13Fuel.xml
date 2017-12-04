@@ -34,14 +34,14 @@
 		</operations>
 	</Operation>
 	
-	<!--
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modList>
-					<li>M-13's Fuel Generators [A17]</li>
-					<li>Expanded Woodworking for Vegetable Garden A17</li>
+					<li>M-13's Fuel Generators [A18]</li>
+					<li>VGP Vegetable Garden</li>
+					<li>Expanded Woodworking for Vegetable Garden Project B18</li>
 				</modList>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -54,33 +54,56 @@
 					   /Defs/ThingDef[defName = "Ultimate_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
 					   /Defs/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
-					<li>WoodLog_Acacia</li>
-					<li>WoodLog_Palm</li>
-					<li>WoodLog_Camellia</li>
-					<li>WoodLog_CherryBlossom</li>
-					<li>WoodLog_JapaneseMaple</li>
-					<li>WoodLog_RedMaple</li>
-					<li>WoodLog_WeepingWillow</li>
 					<li>WoodLog_Apple</li>
 					<li>WoodLog_Cherry</li>
+					<li>WoodLog_Coconut</li>
 					<li>WoodLog_DatePalm</li>
 					<li>WoodLog_Fig</li>
-					<li>WoodLog_Olive</li>
 					<li>WoodLog_Orange</li>
 					<li>WoodLog_Peach</li>
-					<li>WoodLog_Coconut</li>
 				</value>
 			</li>
 		</operations>
 	</Operation>
-	
 	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modList>
-					<li>M-13's Fuel Generators [A17]</li>
+					<li>M-13's Fuel Generators [A18]</li>
+					<li>VGP Vegetable Garden</li>
+					<li>VGP Xtra Trees and Flowers</li>
+					<li>Expanded Woodworking for Vegetable Garden Project B18</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Tweaked_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Tweaked_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Upgraded_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Upgraded_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Advanced_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Advanced_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Ultimate_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+					<li>WoodLog_Camellia</li>
+					<li>WoodLog_CherryBlossom</li>
+					<li>WoodLog_JapaneseMaple</li>
+					<li>WoodLog_RedMaple</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>M-13's Fuel Generators [A18]</li>
 					<li>Zen Garden</li>
 				</modList>
 			</li>
@@ -100,4 +123,5 @@
 		</operations>
 	</Operation>
 	-->
+	
 </Patch>

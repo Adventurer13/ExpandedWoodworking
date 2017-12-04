@@ -5,7 +5,7 @@
 	<ThingDef Name="WoodLumberBase" ParentName="ResourceBase" Abstract="True">
 		<description>Processed lumber. Mostly useful for building long-lasting, simple structures and furniture.</description>
 		<graphicData>
-			<texPath>Resources/WoodLumber</texPath>
+			<texPath>Things/Resources/WoodLumber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>75</stackLimit>
@@ -214,7 +214,7 @@
 		<label>mixed lumber</label>
 		<description>Various kinds of processed lumber all bundled together. Mostly useful for building long-lasting, simple structures and furniture. For when you care more about function than form.</description>
 		<graphicData>
-			<color>(211,186,159)</color>
+			<color>(133,97,67)</color>
 		</graphicData>
 		<statBases>
 			<Mass>0.2</Mass>

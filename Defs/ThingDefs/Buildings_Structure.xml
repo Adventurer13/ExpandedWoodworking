@@ -9,7 +9,7 @@
 		<category>Building</category>
 		<description>A wall made of logs stacked together. Strong and very fast to build, but flammable and does not transmit power.</description>
 		<graphicData>
-			<texPath>Wall/Wall_Atlas_Planks</texPath>
+			<texPath>Things/Building/LogWall/Wall_Atlas_Planks</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -30,7 +30,7 @@
 		<blueprintGraphicData>
 			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 		</blueprintGraphicData>
-		<uiIconPath>Wall/Wall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/LogWall/Wall_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>225</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>

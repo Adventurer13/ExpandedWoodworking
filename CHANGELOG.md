@@ -1,9 +1,17 @@
 # Change Log
 
-**Current:** [v0.18.0.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.1 )
+**Current:** [v0.18.0.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.2 )
+
+## [0.18.0.2] - 2017-12-04
+### New
+- Fermenting barrel (credit to CuproPanda I believe) and brewery (credit to dismar I believe) textures.
+- Texture folder restructure.
+- Patch and definition updates to reflect above.
+- Peg leg uses a log instead of lumber.
+- Updated M13's Fuel Generators patch to include VGP woods.
 
 ## [0.18.0.1] - 2017-11-27
-### New (savegame needed for B18)
+### New (savegame needed for B18 if switching from A17)
 - Very slightly brighter color for Birch.
 - Wood and lumber for Cypress, Drago (based off dragon tree), Maple, Palm (black palm from VG patch), and Willow.
 - Bamboo and respective lumber (from VG and dismar).

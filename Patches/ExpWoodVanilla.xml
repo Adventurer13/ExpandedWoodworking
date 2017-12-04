@@ -40,6 +40,30 @@
 		</operations>
 	</Operation>
 	
+	<!-- RecipeDef - Peg Leg -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
 	<!-- Art -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -76,11 +100,8 @@
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/constructEffect</xpath>
 			</li>
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/costList</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TorchLamp"]</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -131,7 +152,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Production -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -144,12 +165,42 @@
 				<xpath>/Defs/ThingDef[defName = "TableButcher"]/costList	|
 						/Defs/ThingDef[defName = "Brewery"]/costList/WoodLog	|
 						/Defs/ThingDef[defName = "FermentingBarrel"]/costList/WoodLog</xpath>
-			</li>
+			</li>		
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>95</costStuffCount>
 				</value>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData/shaderType[.="CutoutComplex"]</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData/shaderType</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+			
+	<Operation Class="PatchOperationSequence">
+		<operations>		
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]/stuffCategories</xpath>
+				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "Brewery"]</xpath>
@@ -160,6 +211,15 @@
 					<costStuffCount>120</costStuffCount>
 				</value>
 			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
+				<success>Invert</success>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
 				<value>
@@ -169,6 +229,12 @@
 					<costStuffCount>30</costStuffCount>
 				</value>
 			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>		
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
 						/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
@@ -188,6 +254,20 @@
 				</value>
 			</li>
 		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/TableBrewery/TableBrewery</texPath>
+				</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/FermentingBarrel/FermentingBarrel</texPath>
+				</value>
 	</Operation>
 	
 	<!-- Security -->
@@ -211,12 +291,8 @@
 				<xpath>/Defs/ThingDef[defName = "Campfire"]/constructEffect	|
 						/Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
 			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]/costList	|
-						/Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Campfire"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -224,8 +300,8 @@
 					<costStuffCount>20</costStuffCount>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -286,14 +362,8 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "Bow_Short"]/costList	|
-						/Defs/ThingDef[defName = "Pila"]/costList	|
-						/Defs/ThingDef[defName = "Bow_Recurve"]/costList	|
-						/Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Bow_Short"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Bow_Short"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -301,8 +371,8 @@
 					<costStuffCount>30</costStuffCount>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Pila"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Pila"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -310,8 +380,8 @@
 					<costStuffCount>70</costStuffCount>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Bow_Recurve"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Bow_Recurve"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -319,8 +389,8 @@
 					<costStuffCount>40</costStuffCount>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Bow_Great"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
