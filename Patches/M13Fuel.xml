@@ -97,7 +97,6 @@
 		</operations>
 	</Operation>
 	
-	<!--
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -118,10 +117,37 @@
 					   /Defs/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
+					<li>ZEN_WoodLog_CrabApple</li>
+					<li>ZEN_EbonyWood</li>
 				</value>
 			</li>
 		</operations>
 	</Operation>
-	-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>M-13's Fuel Generators [A18]</li>
+					<li>Nature's Pretty Sweet</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Tweaked_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Tweaked_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Upgraded_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Upgraded_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Advanced_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Advanced_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Ultimate_Generator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+					   /Defs/ThingDef[defName = "Ultimate_Generator_NG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>TKKN_WoodLog_Hazelnut</li>
+					<li>RedWoodLog</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	
 </Patch>

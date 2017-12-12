@@ -1,6 +1,12 @@
 # Change Log
 
-**Current:** [v0.18.0.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.2 )
+**Current:** [v0.18.0.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.3 )
+
+## [0.18.0.3] - 2017-12-12
+### New
+- Better textures for the powered and unpowered woodworking tables.
+- Updates to Zen Garden and M-13's Fuel Generators patches.
+- Nature's Pretty Sweet patch.
 
 ## [0.18.0.2] - 2017-12-04
 ### New
@@ -11,7 +17,7 @@
 - Updated M13's Fuel Generators patch to include VGP woods.
 
 ## [0.18.0.1] - 2017-11-27
-### New (savegame needed for B18 if switching from A17)
+### New (savegame needed for B18 if coming from A17)
 - Very slightly brighter color for Birch.
 - Wood and lumber for Cypress, Drago (based off dragon tree), Maple, Palm (black palm from VG patch), and Willow.
 - Bamboo and respective lumber (from VG and dismar).
@@ -23,7 +29,7 @@
    - Brewery and fermenting barrel
    - Weapons: ikwa, spear, and recurve bow (all use logs)
 - Individual lumber recipies! (looking for feedback on)
-- An electric woodworking table! (looking for feedback on and a better graphic for both woodworking tables)
+- An electric woodworking table! (looking for feedback on)
 - Assembly updated.
 - Languages folder added. (Who wants to translate?)
 - Update to M-13's Fuel Generators patch.
