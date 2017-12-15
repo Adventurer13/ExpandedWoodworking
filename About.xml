@@ -1,12 +1,13 @@
 ﻿<ModMetaData>
 
-	<name>Expanded Woodworking for Vegetable Garden Project</name>
+	<name>Expanded Woodworking B18</name>
 	<author>ItchyFlea -> Qwynn -> Adventurer</author>
 	<url></url>
 	<targetVersion>0.18.1722</targetVersion>
-	<description>An B18 upgrade of Qwynn's Expanded Woodworking for Vegetable Garden which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other items which are designated as 'Woody' in the stuff category. Requires Expanded Woodworking and VGP Vegetable Garden.
+	<description>An B18 upgrade of Qwynn's Expanded Woodworking which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other objects which are designated as 'Woody' in their stuff category.
+
 	
-Current Version: 0.18.0.2 (2017-12-15)
+Current Version: 0.18.0.3 (2017-12-12)
 Previous versions can be found on GitHub.
 	</description>
 		
