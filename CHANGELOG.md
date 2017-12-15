@@ -2,7 +2,7 @@
 
 **Current:** [v0.18.0.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.2 )
 
-## [0.18.0.3] - Unreleased
+## Unreleased
 ### New
 - Better textures for the powered and unpowered woodworking tables.
 - Updates to Zen Garden and M-13's Fuel Generators patches.
