@@ -1,6 +1,6 @@
 # Change Log
 
-**Current:** [v0.18.0.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.3 )
+**Current:** [v0.18.0.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.2 )
 
 ## [0.18.0.3] - Unreleased
 ### New
