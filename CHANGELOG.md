@@ -7,6 +7,7 @@
 - Better textures for the powered and unpowered woodworking tables.
 - Updates to Zen Garden and M-13's Fuel Generators patches.
 - Nature's Pretty Sweet patch.
+- ModSync Ninja support.
 
 ## [0.18.0.2] - 2017-12-04
 ### New
