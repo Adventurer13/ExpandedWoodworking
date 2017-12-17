@@ -15,6 +15,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Lumber is used in both construction and in crafting.
 - Raw logs are used as fuel!
 - Realistic wood colours!
+- ModSync Ninja support!
 - Compatibility patches for M-13's Fuel Generators, Nature's Pretty Sweet, and Zen Garden.
 
 ## Compatibility
