@@ -1,6 +1,10 @@
 # Change Log
 
-**Current:** [v0.18.0.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.3 )
+**Current:** [v0.18.0.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.4 )
+
+## [0.18.0.4] - 2017-12-19
+### Fixed
+- Updated Zen Garden patch to reflect updates made in Zen Garden and prevent errors.
 
 ## [0.18.0.3] - 2017-12-17
 ### New
