@@ -3,6 +3,10 @@
 **Current:** [v0.18.0.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.4 )
 
 ## Unreleased
+## Fixed
+- Bundling lumber no longer includes mixed lumber as a usable ingredient by default.
+- Fuel patch system rewritten to apply to any mod using vanilla wood in the fuel filter.
+- Patches no longer repeat what Zen Garden already does to fuel filters.
 
 ## [0.18.0.4] - 2017-12-19
 ### Fixed
