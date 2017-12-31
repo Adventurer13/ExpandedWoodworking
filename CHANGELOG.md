@@ -10,7 +10,7 @@
 - Bamboo is now a fuel source.
 - Compatibility with Vegetable Garden Project; errors no longer result when using mods from VGP.
 - Compatibility with Stuffed Workbenches and DeCore should no longer result in errors.
-- Billiards and poker tables no longer require mixed lumber when using a different material.
+- Billiard and poker tables no longer require mixed lumber when using a different material.
 
 ## [0.18.0.4] - 2017-12-19
 ### Fixed
