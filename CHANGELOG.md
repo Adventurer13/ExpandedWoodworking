@@ -3,7 +3,7 @@
 **Current:** [v0.18.0.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.4 )
 
 ## Unreleased
-## Fixed
+### Fixed
 - Bundling lumber no longer includes mixed lumber as a usable ingredient.
 - Fuel patch system rewritten to apply to any mod using vanilla wood in the fuel filter.
 - Patches no longer repeat what Zen Garden already does to fuel filters.
@@ -12,7 +12,7 @@
 - Compatibility with Stuffed Workbenches and DeCore should no longer result in errors.
 - Billiard and poker tables no longer require mixed lumber when using a different material.
 
-## Removed
+### Removed
 - A few patch files which only editted the fuelFilter; they are no longer needed with the new fuelFilter patch.
 
 ## [0.18.0.4] - 2017-12-19
