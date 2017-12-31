@@ -12,6 +12,9 @@
 - Compatibility with Stuffed Workbenches and DeCore should no longer result in errors.
 - Billiard and poker tables no longer require mixed lumber when using a different material.
 
+## Removed
+- A few patch files which only editted the fuelFilter; they are no longer needed with the new fuelFilter patch.
+
 ## [0.18.0.4] - 2017-12-19
 ### Fixed
 - Updated Zen Garden patch to reflect updates made in Zen Garden and prevent errors.
