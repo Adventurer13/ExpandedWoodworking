@@ -8,7 +8,7 @@
 - Fuel patch system rewritten to apply to any mod using vanilla wood in the fuel filter.
 - Patches no longer repeat what Zen Garden already does to fuel filters.
 - Bamboo is now a fuel source.
-- Compatibility with Vegetable Garden Project, so no errors anymore when using mods from VGP.
+- Compatibility with Vegetable Garden Project; errors no longer result when using mods from VGP.
 - Compatibility with Stuffed Workbenches and DeCore should no longer result in errors.
 - Billiards and poker tables no longer require mixed lumber when using a different material.
 
