@@ -13,7 +13,7 @@
 - Billiard and poker tables no longer require mixed lumber when using a different material.
 
 ### Removed
-- A few patch files which only editted the fuelFilter; they are no longer needed with the new fuelFilter patch.
+- A few patch files which only editted the fuelFilter; they are no longer needed with the new patch to fuelFilters.
 
 ## [0.18.0.4] - 2017-12-19
 ### Fixed
