@@ -4,7 +4,7 @@
 
 ## Unreleased
 ## Fixed
-- Bundling lumber no longer includes mixed lumber as a usable ingredient by default.
+- Bundling lumber no longer includes mixed lumber as a usable ingredient.
 - Fuel patch system rewritten to apply to any mod using vanilla wood in the fuel filter.
 - Patches no longer repeat what Zen Garden already does to fuel filters.
 - Bamboo is now a fuel source.
