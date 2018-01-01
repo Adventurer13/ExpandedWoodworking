@@ -9,6 +9,7 @@
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
 		<targetCountAdjustment>15</targetCountAdjustment>
 		<recipeUsers>
 			<li>TableWoodworking</li>
@@ -62,6 +63,9 @@
 			<categories>
 				<li>WoodLumber</li>
 			</categories>
+			<exceptedThingDefs>
+				<li>WoodLog</li>
+			</exceptedThingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<WoodLog>15</WoodLog>
@@ -403,6 +407,7 @@
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
 		<targetCountAdjustment>15</targetCountAdjustment>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>

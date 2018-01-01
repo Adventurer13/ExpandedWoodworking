@@ -1,8 +1,10 @@
 # Change Log
 
-**Current:** [v0.18.0.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.4 )
+**Current:** [v0.18.0.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.5 )
 
 ## Unreleased
+
+## [0.18.0.5] - 2017-12-31
 ### Fixed
 - Bundling lumber no longer includes mixed lumber as a usable ingredient.
 - Fuel patch system rewritten to apply to any mod using vanilla wood in the fuel filter.
@@ -13,7 +15,7 @@
 - Billiard and poker tables no longer require mixed lumber when using a different material.
 
 ### Removed
-- A few patch files which only edited the fuelFilter; they are no longer needed with the new patch to fuelFilters.
+- The M-13's Fuel Generators patch file which only edited the fuelFilter; it is no longer needed with the new patch to fuelFilters.
 
 ## [0.18.0.4] - 2017-12-19
 ### Fixed

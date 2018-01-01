@@ -301,7 +301,7 @@
 		</operations>
 	</Operation>
 	
-	<!-- Zen Garden Lumber Recipies -->
+	<!-- Zen Garden Lumber Recipes -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -401,7 +401,7 @@
 		</operations>
 	</Operation>	
 	
-	<!-- Fuel -->
+	<!-- Fuel (older manual way of patching fuelFilter)
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -516,7 +516,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation> -->
 	
 	<!-- Other Stuff -->
 	<Operation Class="PatchOperationSequence">

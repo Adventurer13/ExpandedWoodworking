@@ -3,7 +3,7 @@
 [![RimWorld Beta 18](https://img.shields.io/badge/RimWorld-Beta_18-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
-An B18 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
+A B18 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
 
 ## Installation
 Drop the latest release into your `RimWorld/Mods` folder.
@@ -16,7 +16,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync Ninja support!
-- Compatibility patches for M-13's Fuel Generators, Nature's Pretty Sweet, and Zen Garden.
+- Compatibility patches for Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
@@ -26,12 +26,12 @@ Expanded Woodworking overwrites the following vanilla definitions:
 
 Patches edit the following vanilla definitions:
 
-- Fueled stove
-- Fueled smithy
+- Fuelled stove & smithy
 - Brewery & barrels
 - Butcher table
 - Torch lamp
 - Campfire
+- Any other wood-fuelled items (incl. from other mods)
 - Passive cooler
 - Deadfall trap
 - Joy and art objects
@@ -43,4 +43,4 @@ When making a bug report, please make sure you have developer mode enabled in yo
 
 ## Older Versions
 All current and past B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
-All past A16 versions of this mod can be downloaded from [GitHub](https://github.com/Qwynn/ExpandedWoodworking/releases).
+All past A16 versions of this mod can be downloaded from [Qwynn's GitHub](https://github.com/Qwynn/ExpandedWoodworking/releases).
