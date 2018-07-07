@@ -5,12 +5,13 @@
 	<RecipeDef Name="MakeWoodLumberBase" Abstract="True">
 		<jobString>Processing lumber from wood.</jobString>
 		<workAmount>500</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
-		<targetCountAdjustment>15</targetCountAdjustment>
+		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
 			<li>TableWoodworking</li>
 			<li>ElectricTableWoodworking</li>
@@ -56,7 +57,7 @@
 						<li>WoodLumber</li>
 					</categories>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -68,7 +69,7 @@
 			</exceptedThingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<WoodLog>15</WoodLog>
+			<WoodLog>20</WoodLog>
 		</products>
 	</RecipeDef>	
 	
@@ -84,7 +85,7 @@
 						<li>WoodTypes</li>
 					</categories>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -109,7 +110,7 @@
 						<li>WoodLog_Birch</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -134,7 +135,7 @@
 						<li>WoodLog_Palm</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -159,7 +160,7 @@
 						<li>WoodLog_Cecropia</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -184,7 +185,7 @@
 						<li>WoodLog_Cypress</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -209,7 +210,7 @@
 						<li>WoodLog_Drago</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -234,7 +235,7 @@
 						<li>WoodLog_Maple</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -259,7 +260,7 @@
 						<li>WoodLog_Oak</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -284,7 +285,7 @@
 						<li>WoodLog_Pine</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -309,7 +310,7 @@
 						<li>WoodLog_Poplar</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -334,7 +335,7 @@
 						<li>WoodLog_Teak</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -359,7 +360,7 @@
 						<li>WoodLog_Willow</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -384,7 +385,7 @@
 						<li>Bamboo</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -403,12 +404,13 @@
 		<description>Process any random or spare raw logs into lumber for construction by hand. It's a tedious job.</description>
 		<jobString>Processing lumber from wood.</jobString>
 		<workAmount>750</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
-		<targetCountAdjustment>15</targetCountAdjustment>
+		<targetCountAdjustment>20</targetCountAdjustment>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -417,7 +419,7 @@
 						<li>WoodTypes</li>
 					</categories>
 				</filter>
-				<count>15</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -433,7 +435,7 @@
 		</recipeUsers>
 	</RecipeDef>
 	
-<!-- Chemfuel -->
+<!-- Chemfuel
 
 	<RecipeDef>
 		<defName>MakeChemfuelFromWood</defName>
@@ -463,5 +465,6 @@
 			<Chemfuel>35</Chemfuel>
 		</products>
 	</RecipeDef>	
-
+-->
+	
 </Defs>

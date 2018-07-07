@@ -3,7 +3,7 @@
 <!-- Walls -->
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>WallLog</defName>
+		<defName>EW_LogWall</defName>
 		<label>log wall</label>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
@@ -27,9 +27,6 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<blueprintGraphicData>
-			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-		</blueprintGraphicData>
 		<uiIconPath>Things/Building/LogWall/Wall_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>225</MaxHitPoints>
@@ -61,6 +58,9 @@
 		<building>
 			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 			<isInert>true</isInert>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
 		</building>
 		<damageMultipliers>
 			<li>
@@ -68,7 +68,6 @@
 				<multiplier>2</multiplier>
 			</li>
 		</damageMultipliers>
-		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
   
  </Defs> 
