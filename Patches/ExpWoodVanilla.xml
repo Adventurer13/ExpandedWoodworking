@@ -1,6 +1,149 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	
+	<!-- Arid Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeDrago"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Swamp Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeWillow"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCypress"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Temperate Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePine"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 
+	<!-- Tropical Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeTeak"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePalm"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>Bamboo</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Cultivated Tree 
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cocoa</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	-->
+	
+	<!-- Recipe -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
 	<!-- Traders -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>

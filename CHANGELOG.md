@@ -2,7 +2,16 @@
 
 **Current:** [v0.18.0.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.5 )
 
-## Unreleased
+## Unreleased [Rimworld 1.0]
+### New
+- Edited vanilla definitions are now through a patch versus being written over.
+
+### Fixed
+- Increased cost of making lumber due to increases in vanilla harvest yield.
+- Further balancing of production tables.
+
+### Removed
+- ThingDefs_Plants folder and file within.
 
 ## [0.18.0.5] - 2017-12-31
 ### Fixed
