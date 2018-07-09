@@ -7,7 +7,6 @@
 - Edited vanilla definitions are now through a patch versus being written over.
 
 ### Fixed
-- Increased cost of making lumber due to increases in vanilla harvest yield.
 - Further balancing of production tables.
 - Errors caused by any relevant changes made by Ludeon with 1.0 update.
 
