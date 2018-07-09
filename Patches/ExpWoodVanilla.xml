@@ -183,9 +183,8 @@
 		</operations>
 	</Operation>
 	
-	<!-- RecipeDef - Peg Leg and Foot 
+	<!-- RecipeDef - Peg Leg and Foot -->
 	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
@@ -195,7 +194,7 @@
 					</categories>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationRemove">
 				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -212,7 +211,7 @@
 					</categories>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationRemove">
 				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -222,7 +221,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation> -->
+	</Operation>
 	
 	<!-- Art -->
 	<Operation Class="PatchOperationSequence">
