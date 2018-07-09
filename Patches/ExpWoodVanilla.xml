@@ -185,6 +185,7 @@
 	
 	<!-- RecipeDef - Peg Leg and Foot -->
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
@@ -563,26 +564,44 @@
 		</operations>
 	</Operation>
 	
-	<!-- Weapon(Melee) 
+	<!-- Base Weapons -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/exceptedThingDefs/li[.="WoodLog"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/disallowedThingDefs/li[.="WoodLog"]</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter</xpath>
 				<value>
-					<exceptedCategories>
+					<disallowedCategories>
 						<li>WoodTypes</li>
 						<li>WoodLumber</li>
-					</exceptedCategories>
+					</disallowedCategories>
 				</value>
 			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapon (Melee Medieval) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Shiv"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]	|
+				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapons (Melee Neolithic) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
 						/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/stuffCategories/li[.="Woody"]	|
 						/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
@@ -590,9 +609,9 @@
 				</value>
 			</li>
 		</operations>
-	</Operation> -->
-	
-	<!-- Weapon(Ranged Neolithic) 
+	</Operation>
+		
+	<!-- Weapon(Ranged Neolithic) -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -633,7 +652,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation> -->
+	</Operation>
 	
 	
 </Patch>
