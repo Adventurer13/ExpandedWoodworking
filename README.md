@@ -36,7 +36,7 @@ Patches edit the following vanilla definitions:
 - Deadfall trap
 - Joy and art objects
 - Any weapon made of wood
-- Peg leg
+- Peg leg and wood foot
 
 ## Found a Bug?
 When making a bug report, please make sure you have developer mode enabled in your Rimworld settings. You may then create your report [here](https://github.com/Adventurer13/ExpandedWoodworking/issues). A link to your exported HugsLib log would be greatly appreciated as well.
