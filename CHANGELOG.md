@@ -13,7 +13,7 @@
 
 ### Removed
 - ThingDefs_Plants folder and file within.
-- Weapon and prothestic using different woods. (Temporary)
+- Weapons using different woods. (Temporary)
 - Other mod's patch(es) (until those mods are updated).
 
 ## [0.18.0.5] - 2017-12-31
