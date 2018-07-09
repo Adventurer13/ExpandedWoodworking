@@ -11,7 +11,7 @@
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
-		<targetCountAdjustment>20</targetCountAdjustment>
+		<targetCountAdjustment>15</targetCountAdjustment>
 		<recipeUsers>
 			<li>TableWoodworking</li>
 			<li>ElectricTableWoodworking</li>
@@ -45,7 +45,6 @@
 		</specialProducts>
 	</RecipeDef>
 
-<!--	
 	<RecipeDef ParentName="MakeWoodLumberBase">
 		<defName>MakeWoodLumberMixedBundle</defName>
 		<label>bundle lumber together</label>
@@ -58,22 +57,21 @@
 						<li>WoodLumber</li>
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
 				<li>WoodLumber</li>
 			</categories>
-			<exceptedThingDefs>
+			<disallowedThingDefs>
 				<li>WoodLog</li>
-			</exceptedThingDefs>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<WoodLog>20</WoodLog>
 		</products>
-	</RecipeDef> 
--->	
+	</RecipeDef>
 	
 	<RecipeDef ParentName="MakeWoodLumberBase">
 		<defName>MakeWoodLumberMixed</defName>
@@ -87,7 +85,7 @@
 						<li>WoodTypes</li>
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -112,7 +110,7 @@
 						<li>WoodLog_Birch</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -137,7 +135,7 @@
 						<li>WoodLog_Palm</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -162,7 +160,7 @@
 						<li>WoodLog_Cecropia</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -187,7 +185,7 @@
 						<li>WoodLog_Cypress</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -212,7 +210,7 @@
 						<li>WoodLog_Drago</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -237,7 +235,7 @@
 						<li>WoodLog_Maple</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -262,7 +260,7 @@
 						<li>WoodLog_Oak</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -287,7 +285,7 @@
 						<li>WoodLog_Pine</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -312,7 +310,7 @@
 						<li>WoodLog_Poplar</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -337,7 +335,7 @@
 						<li>WoodLog_Teak</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -362,7 +360,7 @@
 						<li>WoodLog_Willow</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -387,7 +385,7 @@
 						<li>Bamboo</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -412,7 +410,7 @@
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
-		<targetCountAdjustment>20</targetCountAdjustment>
+		<targetCountAdjustment>15</targetCountAdjustment>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>
 			<li>
@@ -421,7 +419,7 @@
 						<li>WoodTypes</li>
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
