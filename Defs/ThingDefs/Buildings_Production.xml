@@ -42,7 +42,9 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
         </graphicData>
-		  <costList>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<costList>
             <Steel>30</Steel>
         </costList>
 		<stuffCategories>
@@ -105,9 +107,11 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
         </graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		  <costList>
             <Steel>50</Steel>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
         </costList>
 		<stuffCategories>
 			<li>Stony</li>

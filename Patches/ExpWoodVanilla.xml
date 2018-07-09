@@ -11,8 +11,8 @@
 					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeDrago"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeDrago"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
 				</value>
@@ -24,20 +24,20 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeWillow"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeWillow"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeCypress"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCypress"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
 				</value>
@@ -49,26 +49,26 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePine"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePine"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
 				</value>
@@ -80,26 +80,26 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeTeak"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeTeak"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePalm"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePalm"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
 				<value>
 					<harvestedThingDef>Bamboo</harvestedThingDef>
 				</value>
@@ -183,7 +183,7 @@
 		</operations>
 	</Operation>
 	
-	<!-- RecipeDef - Peg Leg -->
+	<!-- RecipeDef - Peg Leg and Foot 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -195,7 +195,7 @@
 					</categories>
 				</value>
 			</li>
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationReplace">
 				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -204,8 +204,25 @@
 					<li>WoodTypes</li>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLumber</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>WoodLumber</li>
+				</value>
+			</li>
 		</operations>
-	</Operation>
+	</Operation> -->
 	
 	<!-- Art -->
 	<Operation Class="PatchOperationSequence">
@@ -547,7 +564,7 @@
 		</operations>
 	</Operation>
 	
-	<!-- Weapon(Melee) -->
+	<!-- Weapon(Melee) 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -574,9 +591,9 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation> -->
 	
-	<!-- Weapon(Ranged Neolithic) -->
+	<!-- Weapon(Ranged Neolithic) 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -617,7 +634,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>
+	</Operation> -->
 	
 	
 </Patch>

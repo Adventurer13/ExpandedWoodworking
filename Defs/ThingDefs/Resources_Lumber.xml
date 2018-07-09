@@ -37,7 +37,7 @@
 			</categories>
 			<appearance>Planks</appearance>
 			<constructEffect>ConstructWood</constructEffect>
-			<soundImpactStuff>BulletImpactWood</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statOffsets>
@@ -53,10 +53,10 @@
 			</statFactors>
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
-		<isBodyPartOrImplant>true</isBodyPartOrImplant>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
+		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
 	</ThingDef>
 
 <!-- Wood Trees -->

@@ -45,6 +45,7 @@
 		</specialProducts>
 	</RecipeDef>
 
+<!--	
 	<RecipeDef ParentName="MakeWoodLumberBase">
 		<defName>MakeWoodLumberMixedBundle</defName>
 		<label>bundle lumber together</label>
@@ -71,7 +72,8 @@
 		<products>
 			<WoodLog>20</WoodLog>
 		</products>
-	</RecipeDef>	
+	</RecipeDef> 
+-->	
 	
 	<RecipeDef ParentName="MakeWoodLumberBase">
 		<defName>MakeWoodLumberMixed</defName>

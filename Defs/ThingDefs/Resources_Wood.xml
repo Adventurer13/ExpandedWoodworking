@@ -39,7 +39,7 @@
 			<color>(133,97,67)</color>
 			<appearance>Planks</appearance>
 			<constructEffect>ConstructWood</constructEffect>
-			<soundImpactStuff>BulletImpactWood</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statFactors>
@@ -53,10 +53,10 @@
 			</statFactors>
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
-		<isBodyPartOrImplant>true</isBodyPartOrImplant>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
+		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
 		<tools>
 			<li>
 				<capacities>

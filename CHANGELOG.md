@@ -9,9 +9,12 @@
 ### Fixed
 - Increased cost of making lumber due to increases in vanilla harvest yield.
 - Further balancing of production tables.
+- Errors caused by any relevant changes made by Ludeon with 1.0 update.
 
 ### Removed
 - ThingDefs_Plants folder and file within.
+- Weapon and prothestic using different woods. (Temporary)
+- Other mod's patch(es) (until those mods are updated).
 
 ## [0.18.0.5] - 2017-12-31
 ### Fixed
