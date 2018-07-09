@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModSyncNinjaData>
-	<ID>d20c9f00-dd3f-45c1-bf51-e3c3d824039d</ID>
-	<ModName>Expanded Woodworking</ModName>
-	<Version>v0.18.0.5</Version>
-	<SaveBreaking>false</SaveBreaking>
+  <ID>d20c9f00-dd3f-45c1-bf51-e3c3d824039d</ID>
+  <ModName>Expanded Woodworking</ModName>
+  <Version>v0.18.0.5</Version>
+  <SaveBreaking>False</SaveBreaking>
 </ModSyncNinjaData>

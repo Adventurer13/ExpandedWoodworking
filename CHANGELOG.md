@@ -2,7 +2,17 @@
 
 **Current:** [v0.18.0.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.5 )
 
-## Unreleased
+## Unreleased [Rimworld 1.0]
+### New
+- Edited vanilla definitions are now through a patch versus being written over.
+
+### Fixed
+- Further balancing of production tables.
+- Errors caused by any relevant changes made by Ludeon with 1.0 update.
+
+### Removed
+- ThingDefs_Plants folder and file within.
+- Other mod's patch(es) (until those mods are updated).
 
 ## [0.18.0.5] - 2017-12-31
 ### Fixed

@@ -1,9 +1,9 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![RimWorld Beta 18](https://img.shields.io/badge/RimWorld-Beta_18-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld 1.0](https://img.shields.io/badge/RimWorld-1.0-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
-A B18 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
+An upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
 
 ## Installation
 Drop the latest release into your `RimWorld/Mods` folder.
@@ -21,11 +21,11 @@ Drop the latest release into your `RimWorld/Mods` folder.
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
 
-- Trees
-- Wood
+- Wood Log
 
 Patches edit the following vanilla definitions:
 
+- Trees
 - Fuelled stove & smithy
 - Brewery & barrels
 - Butcher table

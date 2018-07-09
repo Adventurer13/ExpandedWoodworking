@@ -1,6 +1,149 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	
+	<!-- Arid Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeDrago"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Swamp Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeWillow"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCypress"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Temperate Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePine"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 
+	<!-- Tropical Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeTeak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePalm"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
+				<value>
+					<harvestedThingDef>Bamboo</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Cultivated Tree 
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cocoa</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	-->
+	
+	<!-- Recipe -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
 	<!-- Traders -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -40,7 +183,7 @@
 		</operations>
 	</Operation>
 	
-	<!-- RecipeDef - Peg Leg -->
+	<!-- RecipeDef - Peg Leg and Foot -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -59,6 +202,23 @@
 				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
 				<value>
 					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodLumber</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<li>WoodLumber</li>
 				</value>
 			</li>
 		</operations>
@@ -404,26 +564,44 @@
 		</operations>
 	</Operation>
 	
-	<!-- Weapon(Melee) -->
+	<!-- Base Weapons -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/exceptedThingDefs/li[.="WoodLog"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/disallowedThingDefs/li[.="WoodLog"]</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter</xpath>
 				<value>
-					<exceptedCategories>
+					<disallowedCategories>
 						<li>WoodTypes</li>
 						<li>WoodLumber</li>
-					</exceptedCategories>
+					</disallowedCategories>
 				</value>
 			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapon (Melee Medieval) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Shiv"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]	|
+				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapons (Melee Neolithic) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
 						/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/stuffCategories/li[.="Woody"]	|
 						/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
@@ -432,7 +610,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+		
 	<!-- Weapon(Ranged Neolithic) -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
