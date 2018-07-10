@@ -24,7 +24,7 @@
 			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
