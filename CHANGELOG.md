@@ -1,8 +1,16 @@
 # Change Log
 
-**Current:** [v0.18.0.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.5 )
+**Current:** [v0.18.0.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.6 )
 
 ## Unreleased
+- CE compatibility
+
+## [0.18.0.6] - Soon
+### Fixed
+- Tree defintions overwriting the tree changes made by plant density mods and the vanilla tree defintions.
+
+### Removed
+- ThingDefs_Plants file and folder as it is no longer needed.
 
 ## [0.18.0.5] - 2017-12-31
 ### Fixed

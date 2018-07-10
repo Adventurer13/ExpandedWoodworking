@@ -21,11 +21,11 @@ Drop the latest release into your `RimWorld/Mods` folder.
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
 
-- Trees
 - Wood
 
 Patches edit the following vanilla definitions:
 
+- Trees
 - Fuelled stove & smithy
 - Brewery & barrels
 - Butcher table
