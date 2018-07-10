@@ -1,6 +1,112 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- Arid Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PlantSaguaroCactus"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeDrago"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Swamp Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeWillow"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeCypress"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeMaple"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Temperate Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeOak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreePoplar"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreePine"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeBirch"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Tropical Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeTeak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeCecropia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreePalm"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "PlantTreeBamboo"]/plant</xpath>
+				<value>
+					<harvestedThingDef>Bamboo</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
 	<!-- Traders -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
