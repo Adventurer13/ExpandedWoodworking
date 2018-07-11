@@ -15,7 +15,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Lumber is used in both construction and in crafting.
 - Raw logs are used as fuel!
 - Realistic wood colours!
-- ModSync Ninja support!
+- ModSync RW support!
 - Compatibility patches for Combat Extended, Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
 - Language localisation: English, Russian (lex1975)
 

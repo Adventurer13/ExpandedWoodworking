@@ -8,6 +8,7 @@
 ### New
 - Combat Extended Patch. (Load CE before Expanded Woodworking)
 - Russian localisation by lex1975 (GitHub)
+- ModSync RW support
 
 ### Fixed
 - Tree defintions overwriting the tree changes made by plant density mods and the vanilla tree defintions.
