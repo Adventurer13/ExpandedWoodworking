@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<WallLog.label>бревенчатая стена</WallLog.label>
+<WallLog.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</WallLog.description>
+<WallLog_Blueprint.label>бревенчатая стена (проект)</WallLog_Blueprint.label>
+<WallLog_Frame.label>бревенчатая стена (постройка)</WallLog_Frame.label>
+<WallLog_Frame.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</WallLog_Frame.description>
+
+</LanguageData>
