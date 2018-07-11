@@ -16,12 +16,12 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync Ninja support!
-- Compatibility patches for Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
+- Compatibility patches for Combat Extended, Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
 
-- Wood
+- Wood Log
 
 Patches edit the following vanilla definitions:
 

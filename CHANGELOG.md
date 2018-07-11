@@ -3,9 +3,11 @@
 **Current:** [v0.18.0.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.6 )
 
 ## Unreleased
-- CE compatibility
 
-## [0.18.0.6] - Soon
+## [0.18.0.6] - 2018-07-10
+### New
+- Combat Extended Patch. (Load CE before Expanded Woodworking)
+
 ### Fixed
 - Tree defintions overwriting the tree changes made by plant density mods and the vanilla tree defintions.
 
