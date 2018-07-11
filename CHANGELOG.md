@@ -7,6 +7,7 @@
 ## [0.18.0.6] - 2018-07-10
 ### New
 - Combat Extended Patch. (Load CE before Expanded Woodworking)
+- Russian Localisation by lex1975 (GitHub)
 
 ### Fixed
 - Tree defintions overwriting the tree changes made by plant density mods and the vanilla tree defintions.
