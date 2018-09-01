@@ -69,7 +69,7 @@
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<WoodLog>20</WoodLog>
+			<WoodLog>15</WoodLog>
 		</products>
 	</RecipeDef>
 	
