@@ -1,6 +1,6 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![RimWorld B19](https://img.shields.io/badge/RimWorld-B19-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld Beta 19](https://img.shields.io/badge/RimWorld-Beta-19-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
 A B19 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
@@ -15,8 +15,9 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Lumber is used in both construction and in crafting.
 - Raw logs are used as fuel!
 - Realistic wood colours!
-- ModSync Ninja support!
-- Compatibility patches for Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
+- ModSync RW support!
+- Compatibility patches for Combat Extended, Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
+- Language localisation: English, Russian (lex1975)
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
