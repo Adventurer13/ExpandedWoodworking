@@ -1,6 +1,6 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![RimWorld Beta 19](https://img.shields.io/badge/RimWorld-Beta-19-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld Beta 19](https://img.shields.io/badge/RimWorld-Beta_19-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
 A B19 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
