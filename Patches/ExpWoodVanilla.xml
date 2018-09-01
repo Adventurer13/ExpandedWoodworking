@@ -437,7 +437,7 @@
 			</li>
 			<!-- (older manual way of patching fuelFilter)
 			<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>WoodLog_Birch</li>
 					<li>WoodLog_Cecropia</li>
