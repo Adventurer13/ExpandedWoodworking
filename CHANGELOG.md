@@ -1,8 +1,21 @@
 # Change Log
 
-**Current:** [v0.18.0.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.18.0.6 )
+**Current:** [v0.19.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.0 )
 
-## Unreleased
+## Unreleased [Rimworld B19]
+### New (savegame needed for B19 if coming from B18 and before)
+- Many edited vanilla definitions are now through a patch versus being written over.
+- Bases and Orbital bulk goods trader may trade lumber/logs.
+
+### Fixed
+- Further balancing of production tables.
+- Errors caused by any relevant changes made by Ludeon with B19 update.
+- Log wall no longer conflicts with log walls added by other mods.
+- Wooden foot, spike trap, and watermill generator can be made out of multiple types of wood.
+- Adjustments made in-line with weapon changes in B19.
+
+### Removed
+- Other mod's patch(es) (until those mods are updated).
 
 ## [0.18.0.6] - 2018-07-10
 ### New

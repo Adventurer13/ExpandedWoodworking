@@ -1,9 +1,9 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![RimWorld Beta 18](https://img.shields.io/badge/RimWorld-Beta_18-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld B19](https://img.shields.io/badge/RimWorld-B19-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
-A B18 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
+An upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
 
 ## Installation
 Drop the latest release into your `RimWorld/Mods` folder.
@@ -15,9 +15,8 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Lumber is used in both construction and in crafting.
 - Raw logs are used as fuel!
 - Realistic wood colours!
-- ModSync RW support!
-- Compatibility patches for Combat Extended, Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
-- Language localisation: English, Russian (lex1975)
+- ModSync Ninja support!
+- Compatibility patches for Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
@@ -37,7 +36,7 @@ Patches edit the following vanilla definitions:
 - Deadfall trap
 - Joy and art objects
 - Any weapon made of wood
-- Peg leg
+- Peg leg and wood foot
 
 ## Found a Bug?
 When making a bug report, please make sure you have developer mode enabled in your Rimworld settings. You may then create your report [here](https://github.com/Adventurer13/ExpandedWoodworking/issues). A link to your exported HugsLib log would be greatly appreciated as well.

@@ -4,7 +4,7 @@
 
 	<StuffCategoryDef>
 		<defName>RawWoody</defName>
-		<label>Log</label>
+		<label>log</label>
 	</StuffCategoryDef>
   
 </Defs>

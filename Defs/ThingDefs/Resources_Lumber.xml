@@ -3,6 +3,7 @@
 <!-- Abstracts -->
 
 	<ThingDef Name="WoodLumberBase" ParentName="ResourceBase" Abstract="True">
+		<defName>WoodLumberBase</defName>
 		<description>Processed lumber. Mostly useful for building long-lasting, simple structures and furniture.</description>
 		<graphicData>
 			<texPath>Things/Resources/WoodLumber</texPath>
@@ -18,19 +19,25 @@
 			<Mass>0.4</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>1</DeteriorationRate>
-			<SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
 			<li>WoodLumber</li>
 		</thingCategories>
 		<stuffProps>
+			<stuffAdjective>wooden</stuffAdjective>
 			<categories>
 				<li>Woody</li>
 			</categories>
 			<appearance>Planks</appearance>
 			<constructEffect>ConstructWood</constructEffect>
-			<soundImpactStuff>BulletImpactWood</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statOffsets>
@@ -42,13 +49,14 @@
 				<Flammability>1</Flammability>
 				<WorkToMake>0.7</WorkToMake>
 				<WorkToBuild>0.7</WorkToBuild>
-				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+				<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
-		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<isTechHediff>true</isTechHediff>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
+		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
 	</ThingDef>
 
 <!-- Wood Trees -->
@@ -67,7 +75,7 @@
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>birch</stuffAdjective>
-			<commonality>1.0</commonality>
+			<commonality>0.90</commonality>
 			<color>(251,217,172)</color>
 			<statFactors>
 				<MaxHitPoints>0.45</MaxHitPoints>
@@ -223,7 +231,7 @@
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>wooden</stuffAdjective>
-			<commonality>1.00</commonality>
+			<commonality>0.99</commonality>
 			<color>(133,97,67)</color>
 			<statFactors>
 				<MaxHitPoints>0.4</MaxHitPoints>

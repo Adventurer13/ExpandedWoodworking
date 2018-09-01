@@ -1,13 +1,20 @@
 ﻿<Defs>
 	
-	<ThingDef Name="BenchBase" ParentName="BuildingBase" Abstract="True">
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+	 <ThingDef Name="BenchBase" ParentName="BuildingBase" Abstract="True">
     <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <Mass>20</Mass>
+    </statBases>
 		<building>
 			<workSpeedPenaltyOutdoors>true</workSpeedPenaltyOutdoors>
 			<workSpeedPenaltyTemperature>true</workSpeedPenaltyTemperature>
 		</building>
+    <interactionCellIcon>DiningChair</interactionCellIcon>
 		<comps>
 			<li>
 				<compClass>CompReportWorkSpeed</compClass>
@@ -16,7 +23,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
-	</ThingDef>
+  </ThingDef>
 
     <ThingDef ParentName="BenchBase">
         <defName>TableWoodworking</defName>
@@ -35,7 +42,9 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
         </graphicData>
-		  <costList>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<costList>
             <Steel>30</Steel>
         </costList>
 		<stuffCategories>
@@ -43,12 +52,12 @@
 			<li>Woody</li>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>75</costStuffCount>
         <altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
         <statBases>
-            <WorkToBuild>1500</WorkToBuild>
+            <WorkToBuild>1800</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
 			<Cleanliness>-5</Cleanliness>
@@ -61,7 +70,7 @@
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
-        <inspectorTabs>
+		<inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
 		<building>
@@ -98,24 +107,26 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
         </graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		  <costList>
             <Steel>50</Steel>
-			<Component>2</Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
         </costList>
 		<stuffCategories>
 			<li>Stony</li>
 			<li>Woody</li>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>75</costStuffCount>
         <altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
         <statBases>
-            <WorkToBuild>2000</WorkToBuild>
+            <WorkToBuild>2300</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
-			<Cleanliness>-1</Cleanliness>
+			<Cleanliness>-3</Cleanliness>
 		</statBases>
         <size>(3,1)</size>
         <designationCategory>Production</designationCategory>
@@ -124,6 +135,7 @@
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
@@ -131,12 +143,12 @@
 			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
 			<unpoweredWorkTableWorkSpeedFactor>0.7</unpoweredWorkTableWorkSpeedFactor>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<heatPerTickWhileWorking>0.05</heatPerTickWhileWorking>
+			<heatPerTickWhileWorking>0.08</heatPerTickWhileWorking>
 		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
+				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>200</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
