@@ -3,8 +3,8 @@
 
 <EW_LogWall.label>бревенчатая стена</EW_LogWall.label>
 <EW_LogWall.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</EW_LogWall.description>
-<EW_LogWall_Blueprint.label>бревенчатая стена (проект)</EW_LogWall_Blueprint.label>
-<EW_LogWall_Frame.label>бревенчатая стена (постройка)</EW_LogWall_Frame.label>
-<EW_LogWall_Frame.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</EW_LogWall_Frame.description>
+<Blueprint_EW_LogWall.label>бревенчатая стена (проект)</Blueprint_EW_LogWall.label>
+<Frame_EW_LogWall.label>бревенчатая стена (постройка)</Frame_EW_LogWall.label>
+<Frame_EW_LogWall.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</Frame_EW_LogWall.description>
 
 </LanguageData>
