@@ -2,7 +2,7 @@
 
 **Current:** [v0.19.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.0 )
 
-## Unreleased [Rimworld B19]
+## [0.19.1.0] - 2018-09-05
 ### New (savegame needed for B19 if coming from B18 and before)
 - Many edited vanilla definitions are now through a patch versus being written over.
 - Bases and Orbital bulk goods trader may trade lumber/logs.
