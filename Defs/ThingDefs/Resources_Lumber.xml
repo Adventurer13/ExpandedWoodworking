@@ -138,6 +138,7 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
+	
 	<!--
 	<ThingDef ParentName="WoodLumberBase">
 		<defName>LumberCocoa</defName>
@@ -165,6 +166,7 @@
 		</stuffProps>
 	</ThingDef>	
 	-->
+	
 	<ThingDef ParentName="WoodLumberBase">
 		<defName>LumberCypress</defName>
 		<label>cypress lumber</label>
