@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<WallLog.label>log wall</WallLog.label>
-	<WallLog.description>A wall made of logs stacked together. Strong and very fast to build, but flammable and does not transmit power.</WallLog.description>
-	<WallLog_Blueprint.label>log wall</WallLog_Blueprint.label>
-	<WallLog_Frame.label>log wall</WallLog_Frame.label>
-	<WallLog_Frame.description>A wall made of logs stacked together. Strong and very fast to build, but flammable and does not transmit power.</WallLog_Frame.description>
+	<EW_LogWall.label>log wall</EW_LogWall.label>
+	<EW_LogWall.description>A wall made of logs stacked together. Strong and very fast to build, but flammable and does not transmit power.</EW_LogWall.description>
+	<Blueprint_EW_LogWall.label>log wall</Blueprint_EW_LogWall.label>
+	<Frame_EW_LogWall.label>log wall</Frame_EW_LogWall.label>
+	<Frame_EW_LogWall.description>A wall made of logs stacked together. Strong and very fast to build, but flammable and does not transmit power.</Frame_EW_LogWall.description>
 	
 </LanguageData>

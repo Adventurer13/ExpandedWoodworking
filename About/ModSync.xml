@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModSyncNinjaData>
   <ID>976825fd-8dd7-4bbd-bc51-84afbe9b02a2</ID>
-  <ModName>Expanded Woodworking B18</ModName>
-  <Version>v0.18.0.6</Version>
-  <SaveBreaking>False</SaveBreaking>
+  <ModName>Expanded Woodworking B19</ModName>
+  <Version>v0.19.1.0</Version>
+  <SaveBreaking>True</SaveBreaking>
   <Host name="Github">
     <Owner>Adventurer13</Owner>
     <Project>ExpandedWoodworking</Project>

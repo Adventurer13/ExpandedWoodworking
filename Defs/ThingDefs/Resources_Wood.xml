@@ -3,6 +3,7 @@
  <!-- Abstracts -->
 
 	<ThingDef Name="WoodLogBase" ParentName="ResourceVerbBase" Abstract="True">
+		<defName>WoodLogBase</defName>
 		<description>Raw wood from a tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics.</description>
 		<graphicData>
 			<texPath>Things/Resources/WoodLog</texPath>
@@ -18,8 +19,13 @@
 			<Mass>0.4</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>1</DeteriorationRate>
-			<SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
 			<li>WoodTypes</li>
@@ -33,11 +39,11 @@
 			<color>(133,97,67)</color>
 			<appearance>Planks</appearance>
 			<constructEffect>ConstructWood</constructEffect>
-			<soundImpactStuff>BulletImpactWood</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statFactors>
-				<MaxHitPoints>0.4</MaxHitPoints>
+				<MaxHitPoints>0.65</MaxHitPoints>
 				<Beauty>1</Beauty>
 				<Flammability>1</Flammability>
 				<WorkToMake>0.7</WorkToMake>
@@ -46,17 +52,18 @@
 				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
-		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<isTechHediff>true</isTechHediff>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
+		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
 		<tools>
 			<li>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8</power>
-				<cooldownTime>2.2</cooldownTime>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
@@ -149,6 +156,37 @@
 			<LumberCecropia>30</LumberCecropia>
 		</butcherProducts>		
 	</ThingDef>
+
+	<!--
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Cocoa</defName> Color isn't true to life, but chosen for variety. If you have a better color choice, let me know!
+		<label>cocoawood logs</label>
+		<description>Raw wood from a cocoa tree. When processed it becomes useful for building structures, weapons, and simple prosthetics. Cocoawood is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(86,42,34)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>2.1</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cocoawood</stuffAdjective>
+			<commonality>0.2</commonality>
+			<color>(86,42,34)</color>
+			<statFactors>
+				<MaxHitPoints>0.45</MaxHitPoints>
+				<Beauty>1.0</Beauty>
+				<WorkToMake>0.35</WorkToMake>
+				<WorkToBuild>0.35</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberCocoa>30</LumberCocoa>
+		</butcherProducts>		
+	</ThingDef>	
+	-->
 	
 	<ThingDef ParentName="WoodLogBase">
 		<defName>WoodLog_Cypress</defName> <!-- SG: 0.51   W: 515  H: 510 -->

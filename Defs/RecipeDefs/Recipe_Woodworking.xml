@@ -5,6 +5,7 @@
 	<RecipeDef Name="MakeWoodLumberBase" Abstract="True">
 		<jobString>Processing lumber from wood.</jobString>
 		<workAmount>500</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
@@ -63,14 +64,14 @@
 			<categories>
 				<li>WoodLumber</li>
 			</categories>
-			<exceptedThingDefs>
+			<disallowedThingDefs>
 				<li>WoodLog</li>
-			</exceptedThingDefs>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<WoodLog>15</WoodLog>
 		</products>
-	</RecipeDef>	
+	</RecipeDef>
 	
 	<RecipeDef ParentName="MakeWoodLumberBase">
 		<defName>MakeWoodLumberMixed</defName>
@@ -403,6 +404,7 @@
 		<description>Process any random or spare raw logs into lumber for construction by hand. It's a tedious job.</description>
 		<jobString>Processing lumber from wood.</jobString>
 		<workAmount>750</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
@@ -433,7 +435,7 @@
 		</recipeUsers>
 	</RecipeDef>
 	
-<!-- Chemfuel -->
+<!-- Chemfuel
 
 	<RecipeDef>
 		<defName>MakeChemfuelFromWood</defName>
@@ -463,5 +465,6 @@
 			<Chemfuel>35</Chemfuel>
 		</products>
 	</RecipeDef>	
-
+-->
+	
 </Defs>
