@@ -156,9 +156,10 @@
 			<LumberCecropia>30</LumberCecropia>
 		</butcherProducts>		
 	</ThingDef>
+
 	<!--
 	<ThingDef ParentName="WoodLogBase">
-		<defName>WoodLog_Cocoa</defName> <!-- SG: ?  W: ?  H: ? --> <!-- Color isn't true to life, but chosen for variety. If you have a better color choice, let me know! --
+		<defName>WoodLog_Cocoa</defName> Color isn't true to life, but chosen for variety. If you have a better color choice, let me know!
 		<label>cocoawood logs</label>
 		<description>Raw wood from a cocoa tree. When processed it becomes useful for building structures, weapons, and simple prosthetics. Cocoawood is a nondurable hardwood.</description>
 		<graphicData>
@@ -171,7 +172,7 @@
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>cocoawood</stuffAdjective>
-			<commonality>0.0</commonality>
+			<commonality>0.2</commonality>
 			<color>(86,42,34)</color>
 			<statFactors>
 				<MaxHitPoints>0.45</MaxHitPoints>
@@ -186,6 +187,7 @@
 		</butcherProducts>		
 	</ThingDef>	
 	-->
+	
 	<ThingDef ParentName="WoodLogBase">
 		<defName>WoodLog_Cypress</defName> <!-- SG: 0.51   W: 515  H: 510 -->
 		<label>cypress logs</label>
