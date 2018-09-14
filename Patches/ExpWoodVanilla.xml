@@ -5,8 +5,8 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant/harvestedThingDef</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
 				</value>
