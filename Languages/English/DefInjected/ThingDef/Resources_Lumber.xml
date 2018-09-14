@@ -13,6 +13,10 @@
 	<LumberCecropia.description>Processed cecropia lumber. Mostly useful for building simple structures, tools, and simple prosthetics. Cecropia is a nondurable to perishable hardwood.</LumberCecropia.description>
 	<LumberCecropia.stuffProps.stuffAdjective>cecropia</LumberCecropia.stuffProps.stuffAdjective>
 	
+	<LumberCocoa.label>cocoawood lumber</LumberCocoa.label>
+	<LumberCocoa.description>Processed cocoawood lumber. Mostly useful for building simple structures and furniture. Cocoawood is a nondurable hardwood.</LumberCocoa.description>
+	<LumberCocoa.stuffProps.stuffAdjective>cocoawood</LumberCocoa.stuffProps.stuffAdjective>
+	
 	<LumberCypress.label>cypress lumber</LumberCypress.label>
 	<LumberCypress.description>Processed cypress lumber. Mostly useful for building long-lasting, simple structures and furniture. Cypress is a durable softwood.</LumberCypress.description>
 	<LumberCypress.stuffProps.stuffAdjective>cypress</LumberCypress.stuffProps.stuffAdjective>

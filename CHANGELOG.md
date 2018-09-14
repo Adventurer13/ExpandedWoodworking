@@ -1,6 +1,14 @@
 # Change Log
 
-**Current:** [v0.19.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.0 )
+**Current:** [v0.19.1.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.1 )
+
+## [0.19.1.1] - Unreleased
+### New
+- Cocoa tree producing wood and assembly update.
+- Nature's Pretty Sweet patch re-added.
+
+### Fixed
+- Drago and Saguaro cactus produce their respective wood types.
 
 ## [0.19.1.0] - 2018-09-05
 ### New (savegame needed for B19 if coming from B18 and before)

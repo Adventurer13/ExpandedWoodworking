@@ -13,6 +13,10 @@
 	<WoodLog_Cecropia.description>Raw wood from a cecropia tree. When processed it becomes useful in weapons, tools, handicrafts, small structures, and even simple prosthetics. Cecropia is a nondurable to perishable hardwood.</WoodLog_Cecropia.description>
 	<WoodLog_Cecropia.stuffProps.stuffAdjective>cecropia</WoodLog_Cecropia.stuffProps.stuffAdjective>
 	
+	<WoodLog_Cocoa.label>cocoawood logs</WoodLog_Cocoa.label>
+	<WoodLog_Cocoa.description>Raw wood from a cocoa tree. When processed it becomes useful for building structures, weapons, and simple prosthetics. Cocoawood is a nondurable hardwood.</WoodLog_Cocoa.description>
+	<WoodLog_Cocoa.stuffProps.stuffAdjective>cocoawood</WoodLog_Cocoa.stuffProps.stuffAdjective>
+	
 	<WoodLog_Cypress.label>cypress logs</WoodLog_Cypress.label>
 	<WoodLog_Cypress.description>Raw wood from a cypress tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Cypress is a durable softwood.</WoodLog_Cypress.description>
 	<WoodLog_Cypress.stuffProps.stuffAdjective>cypress</WoodLog_Cypress.stuffProps.stuffAdjective>

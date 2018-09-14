@@ -107,7 +107,7 @@
 		</operations>
 	</Operation>
 	
-	<!-- Cultivated Tree
+	<!-- Cultivated Tree -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -116,18 +116,9 @@
 				<value>
 					<thingClass>ExpandedWoodworking.Cocoa</thingClass>
 				</value>
-			</li> 
-			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]/plant/harvestedThingDef</xpath>
-				<value>
-					<harvestedThingDef>WoodLog_Cocoa</harvestedThingDef>
-				</value>
 			</li>
-			
 		</operations>
 	</Operation>
-	-->
 	
 	<!-- Recipe -->
 	<Operation Class="PatchOperationSequence">

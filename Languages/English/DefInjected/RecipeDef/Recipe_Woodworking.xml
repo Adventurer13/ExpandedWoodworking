@@ -25,6 +25,10 @@
 	<MakeWoodLumberCecropia.description>Process raw cecropia logs into lumber for construction.</MakeWoodLumberCecropia.description>
 	<MakeWoodLumberCecropia.jobString>Processing lumber from wood.</MakeWoodLumberCecropia.jobString>
 	
+	<MakeWoodLumberCocoa.label>make cocoawood lumber</MakeWoodLumberCocoa.label>
+	<MakeWoodLumberCocoa.description>Process raw cocoawood logs into lumber for construction.</MakeWoodLumberCocoa.description>
+	<MakeWoodLumberCocoa.jobString>Processing lumber from wood.</MakeWoodLumberCocoa.jobString>
+	
 	<MakeWoodLumberCypress.label>make cypress lumber</MakeWoodLumberCypress.label>
 	<MakeWoodLumberCypress.description>Process raw cypress logs into lumber for construction.</MakeWoodLumberCypress.description>
 	<MakeWoodLumberCypress.jobString>Processing lumber from wood.</MakeWoodLumberCypress.jobString>

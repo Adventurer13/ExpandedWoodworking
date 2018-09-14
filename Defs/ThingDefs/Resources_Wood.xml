@@ -157,9 +157,8 @@
 		</butcherProducts>		
 	</ThingDef>
 
-	<!--
 	<ThingDef ParentName="WoodLogBase">
-		<defName>WoodLog_Cocoa</defName> Color isn't true to life, but chosen for variety. If you have a better color choice, let me know!
+		<defName>WoodLog_Cocoa</defName> <!-- Color isn't true to life, but chosen for variety. If you have a better color choice, let me know! -->
 		<label>cocoawood logs</label>
 		<description>Raw wood from a cocoa tree. When processed it becomes useful for building structures, weapons, and simple prosthetics. Cocoawood is a nondurable hardwood.</description>
 		<graphicData>
@@ -186,7 +185,6 @@
 			<LumberCocoa>30</LumberCocoa>
 		</butcherProducts>		
 	</ThingDef>	
-	-->
 	
 	<ThingDef ParentName="WoodLogBase">
 		<defName>WoodLog_Cypress</defName> <!-- SG: 0.51   W: 515  H: 510 -->
