@@ -98,6 +98,17 @@
 					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
 				</value>
 			</li>
+		</operations>
+	</Operation>	
+			
+	<!-- Tropical Trees Continued -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>		
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Vegetable Garden</modName>
+				<success>Invert</success>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
 				<value>
@@ -544,7 +555,12 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Garden Drinks</modName>
+				<success>Invert</success>
+			</li>
 			<li Class="PatchOperationTest">
 				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
 				<success>Invert</success>
