@@ -2,7 +2,7 @@
 
 **Current:** [v0.19.1.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.1 )
 
-## [0.19.1.1] - Unreleased
+## [0.19.1.1] - 2018-09-16
 ### New
 - Cocoa tree producing wood and assembly update.
 - Nature's Pretty Sweet patch re-added.

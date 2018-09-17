@@ -16,7 +16,7 @@ Drop the latest release into your `RimWorld/Mods` folder.
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync RW support!
-- Compatibility patches for Combat Extended, Nature's Pretty Sweet, Zen Garden, and any mod which uses wood as a fuel item.
+- Compatibility patches for Combat Extended (Awaiting Update), Nature's Pretty Sweet, and any mod which uses wood as a fuel item.
 - Language localisation: English, Russian (lex1975)
 
 ## Compatibility
@@ -43,5 +43,5 @@ Patches edit the following vanilla definitions:
 When making a bug report, please make sure you have developer mode enabled in your Rimworld settings. You may then create your report [here](https://github.com/Adventurer13/ExpandedWoodworking/issues). A link to your exported HugsLib log would be greatly appreciated as well.
 
 ## Older Versions
-All current and past B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
+All current and past B19/B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
 All past A16 versions of this mod can be downloaded from [Qwynn's GitHub](https://github.com/Qwynn/ExpandedWoodworking/releases).
