@@ -32,7 +32,7 @@
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modList>
 					<li>VGP Vegetable Garden</li>
-					<li>Expanded Woodworking for Vegetable Garden Project B18</li>
+					<li>Expanded Woodworking for Vegetable Garden Project B19</li>
 				</modList>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -57,7 +57,7 @@
 				<modList>
 					<li>VGP Vegetable Garden</li>
 					<li>VGP Xtra Trees and Flowers</li>
-					<li>Expanded Woodworking for Vegetable Garden Project B18</li>
+					<li>Expanded Woodworking for Vegetable Garden Project B19</li>
 				</modList>	
 			</li>
 			<li Class="PatchOperationAdd">
@@ -73,6 +73,7 @@
 		</operations>
 	</Operation>
 	
+	<!--
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -87,6 +88,7 @@
 			</li>
 		</operations>
 	</Operation>
+	-->
 	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>

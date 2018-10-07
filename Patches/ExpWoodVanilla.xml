@@ -670,7 +670,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>DeCore B18</modName>
+				<modName>DeCore B19</modName>
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationRemove">
@@ -692,7 +692,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>DeCore B18</modName>
+				<modName>DeCore B19</modName>
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
