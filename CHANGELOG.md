@@ -1,6 +1,10 @@
 # Change Log
 
-**Current:** [v0.19.1.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.1 )
+**Current:** [v0.19.1.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.2 )
+
+## [0.19.1.2] - 2018-10-06
+### Fixed
+- Patches not working as a result of using B18 in the name for mods.
 
 ## [0.19.1.1] - 2018-09-16
 ### New
