@@ -6,7 +6,7 @@
 An upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
 
 ## Installation
-Drop the latest release into your `RimWorld/Mods` folder.
+Remove the previous and drop the latest release into your `RimWorld/Mods` folder.
 
 ## Features
 - Trees, saguaro cacti, and bamboo have their own unique wood.
