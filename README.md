@@ -1,18 +1,19 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[![RimWorld Beta 19](https://img.shields.io/badge/RimWorld-Beta_19-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld](https://img.shields.io/badge/RimWorld-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
-A B19 upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
+An upgrade to Qwynn's Expanded Woodworking which is an A16 updated fork of ItchyFlea's Extended Woodworking.
 
 ## Installation
 Drop the latest release into your `RimWorld/Mods` folder.
 
 ## Features
-- Trees and Saguaro have their own unique wood.
+- Trees, saguaro cacti, and bamboo have their own unique wood.
 - Every wood type (except Saguaro) has a corresponding lumber!
 - Process logs into lumber at the woodworking table!
 - Lumber is used in both construction and in crafting.
+- Supports any starting scenario through using the crafting spot to make lumber.
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync RW support!

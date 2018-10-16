@@ -1,6 +1,14 @@
 # Change Log
 
-**Current:** [v0.19.1.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v0.19.1.2 )
+**Current:** [v1.0.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.0 )
+
+## [1.0.1.0] - 2018-10-17
+### New
+- Updated version to 1.0 release of Rimworld.
+- Updated readme to contain helpful information on bare starting scenarios.
+
+### Removed
+- Rimworld alpha/beta version in the name.
 
 ## [0.19.1.2] - 2018-10-06
 ### Fixed
