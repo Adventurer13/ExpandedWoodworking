@@ -379,7 +379,7 @@ Rights include other Copyright and Similar Rights.
           License.
 
 
-### **Section 7 -- Other Terms and Conditions.**
+### **Section 7 - Other Terms and Conditions.**
 
        a. The Licensor shall not be bound by any additional or different
           terms or conditions communicated by You unless expressly agreed.
@@ -389,7 +389,7 @@ Rights include other Copyright and Similar Rights.
           independent of the terms and conditions of this Public License.
 
 
-### **Section 8 -- Interpretation.**
+### **Section 8 - Interpretation.**
 
        a. For the avoidance of doubt, this Public License does not, and
           shall not be interpreted to, reduce, limit, restrict, or impose
