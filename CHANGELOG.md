@@ -6,6 +6,7 @@
 ### New
 - Updated version to 1.0 release of Rimworld.
 - Updated readme to contain helpful information on bare starting scenarios.
+- Added separate license file.
 
 ### Removed
 - Rimworld alpha/beta version in the name.
