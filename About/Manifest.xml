@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<Manifest>
+    <identifier>ExpandedWoodworking</identifier>
+    <version>1.0.1.0</version>
+    <dependencies>
+		<li>Core</li>
+    </dependencies>
+    <incompatibleWith>
+		<li>ExtendedWoodworking</li>
+		<li>QualitySurgeon</li>
+    </incompatibleWith>
+    <loadBefore>
+		<li>VGPVegetableGarden</li>
+		<li>VGPGardenDrinks</li>
+		<li>VGPGardenTools</li>
+		<li>VGPXtraTreesandFlowers</li>
+    </loadBefore>
+	<loadAfter>
+		<li>StuffedWorkbenches</li>
+	</loadAfter>
+    <manifestUri>https://raw.githubusercontent.com/Adventurer13/ExpandedWoodworking/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Adventurer13/ExpandedWoodworking/releases/latest</downloadUri>
+</Manifest>
