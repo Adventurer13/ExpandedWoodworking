@@ -7,6 +7,7 @@
 - Updated version to 1.0 release of Rimworld.
 - Updated readme to contain helpful information on bare starting scenarios.
 - Added separate license file.
+- Fluffy's Mod Manager support.
 
 ### Removed
 - Rimworld alpha/beta version in the name.
