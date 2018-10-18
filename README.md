@@ -17,7 +17,7 @@ Remove the previous and drop the latest release into your `RimWorld/Mods` folder
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync RW and Fluffy's Mod Manager support!
-- Compatibility patches for Combat Extended (Awaiting Update), Nature's Pretty Sweet, and any mod which uses wood as a fuel item.
+- Compatibility patches for Combat Extended (Awaiting Update), Nature's Pretty Sweet (Awaiting Update), and any mod which uses wood as a fuel item.
 - Language localisation: English, Russian (lex1975)
 
 ## Compatibility
