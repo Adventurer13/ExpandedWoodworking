@@ -11,6 +11,7 @@
 
 ### Removed
 - Rimworld alpha/beta version in the name.
+- Nature's Pretty Sweet patch.
 
 ## [0.19.1.2] - 2018-10-06
 ### Fixed
