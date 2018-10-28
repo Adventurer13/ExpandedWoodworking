@@ -2,7 +2,7 @@
 
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
-    <version>1.0.1.0</version>
+    <version>1.0.1.1</version>
     <dependencies>
 		<li>Core</li>
     </dependencies>

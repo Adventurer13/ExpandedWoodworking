@@ -1,6 +1,10 @@
 # Change Log
 
-**Current:** [v1.0.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.0 )
+**Current:** [v1.0.1.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.1 )
+
+## [1.0.1.1] - 2018-10-28
+### New
+- Readded Nature's Pretty Sweet patch.
 
 ## [1.0.1.0] - 2018-10-17
 ### New
