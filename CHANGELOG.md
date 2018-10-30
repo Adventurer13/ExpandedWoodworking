@@ -2,9 +2,10 @@
 
 **Current:** [v1.0.1.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.1 )
 
-## [1.0.1.1] - 2018-10-28
+## [1.0.1.1] - 2018-10-29
 ### New
 - Readded Nature's Pretty Sweet patch.
+- Basic UN-colony support. (Decided to not remove drop-down menus for doors/walls, so they have no extra support.)
 
 ## [1.0.1.0] - 2018-10-17
 ### New
