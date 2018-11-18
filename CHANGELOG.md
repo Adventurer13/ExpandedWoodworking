@@ -1,6 +1,10 @@
 # Change Log
 
-**Current:** [v1.0.1.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.1 )
+**Current:** [v1.0.1.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.2 )
+
+## [1.0.1.2] - 2018-11-17
+### New
+- Readded Zen Garden patch.
 
 ## [1.0.1.1] - 2018-10-29
 ### New

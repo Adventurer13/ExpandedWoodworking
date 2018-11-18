@@ -73,7 +73,6 @@
 		</operations>
 	</Operation>
 	
-	<!--
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -88,8 +87,7 @@
 			</li>
 		</operations>
 	</Operation>
-	-->
-	
+		
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
