@@ -142,19 +142,6 @@
                             </value>
                         </li>
 
-                        <li Class="PatchOperationReplace">
-                            <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/harvestYield</xpath>
-                            <value>
-                                <harvestYield>12</harvestYield>
-                            </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                            <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/growDays</xpath>
-                            <value>
-                                <growDays>15</growDays>
-                            </value>
-                        </li>
-
                         <li Class="PatchOperationAdd">
                             <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant</xpath>
                             <value>
@@ -265,19 +252,6 @@
                                     <LumberAcacia>30</LumberAcacia>
                                 </products>
                             </RecipeDef>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/harvestYield</xpath>
-                        <value>
-                            <harvestYield>12</harvestYield>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/growDays</xpath>
-                        <value>
-                            <growDays>15</growDays>
                         </value>
                     </li>
 
