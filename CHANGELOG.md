@@ -2,9 +2,10 @@
 
 **Current:** [v1.0.1.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.2 )
 
-## [1.0.1.2] - 2018-11-17
+## [1.0.1.2] - Unreleased
 ### New
 - Readded Zen Garden patch.
+- Merged DrZhivago1's DocWorld Various Expanded Woodworking patches for Smoked Meat, RT's Weapon Pack Reloaded, and Dead Goat's Weapon Pack.
 
 ## [1.0.1.1] - 2018-10-29
 ### New
