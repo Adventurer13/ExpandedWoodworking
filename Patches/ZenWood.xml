@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<Operation Class="PatchOperationSequence">
@@ -8,7 +8,7 @@
 				<modName>Zen Garden</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ZEN_PlantTreeCrabapple"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_PlantTreeCrabapple"]/plant</xpath>
 				<value>
 					<harvestedThingDef>ZEN_WoodLog_CrabApple</harvestedThingDef>
 				</value>
@@ -24,43 +24,43 @@
 			</li>
 			<!-- Cherry Wood -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]/label</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/label</xpath>
 				<value>
 					<label>cherrywood logs (zen)</label>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]/statBases/Mass</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/statBases/Mass</xpath>
 				<value>
 					<Mass>0.6</Mass>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/stuffAdjective</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/stuffAdjective</xpath>
 				<value>
 					<stuffAdjective>cherrywood (zen)</stuffAdjective>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/categories/li</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/categories/li</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/statFactors/WorkToBuild</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/statFactors/WorkToBuild</xpath>
 				<value>			
 					<WorkToBuild>0.75</WorkToBuild>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]/thingCategories/li</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/thingCategories/li</xpath>
 				<value>
 					<li>WoodTypes</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ZEN_CherryWood"]</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]</xpath>
 				<value>
 					<butcherProducts>
 						<ZEN_LumberCherry>30</ZEN_LumberCherry>
@@ -69,73 +69,73 @@
 			</li>
 			<!-- Ebony Wood -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/label</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/label</xpath>
 				<value>
 					<label>ebony logs (zen)</label>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/statBases/Mass</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/statBases/Mass</xpath>
 				<value>
 					<Mass>1.1</Mass>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/stuffAdjective</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/stuffAdjective</xpath>
 				<value>
 					<stuffAdjective>ebony (zen)</stuffAdjective>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/categories/li</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/categories/li</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/commonality</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/commonality</xpath>
 				<value>
 					<commonality>0.10</commonality>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/MaxHitPoints</xpath>
 				<value>			
 					<MaxHitPoints>0.85</MaxHitPoints>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors</xpath>
 				<value>			
 					<WorkToBuild>1.6</WorkToBuild>
 				</value>
 			</li>	
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/WorkToMake</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/WorkToMake</xpath>
 				<value>			
 					<WorkToMake>1.6</WorkToMake>
 				</value>
 			</li>	
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/Beauty</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/Beauty</xpath>
 				<value>			
 					<Beauty>1.6</Beauty>
 				</value>
 			</li>	
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
 				<value>			
 					<DoorOpenSpeed>0.7</DoorOpenSpeed>
 				</value>
 			</li>	
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]/thingCategories/li</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/thingCategories/li</xpath>
 				<value>
 					<li>WoodTypes</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "ZEN_EbonyWood"]</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]</xpath>
 				<value>
 					<butcherProducts>
 						<ZEN_LumberEbony>30</ZEN_LumberEbony>
@@ -153,7 +153,7 @@
 			</li>
 			<!-- Crab Apple Wood -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "WoodLog_Cypress"]</xpath>
+				<xpath>Defs/ThingDef[defName = "WoodLog_Cypress"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLogBase">
@@ -197,7 +197,7 @@
 			</li>
 			<!-- Cherry Lumber -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "LumberCypress"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LumberCypress"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLumberBase">
@@ -232,7 +232,7 @@
 			</li>
 			<!-- Ebony Lumber -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLumberBase">
@@ -268,7 +268,7 @@
 			</li>
 			<!-- Crab Apple Lumber -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "LumberCypress"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LumberCypress"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLumberBase">
@@ -309,7 +309,7 @@
 					<modName>Zen Garden</modName>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/RecipeDef[defName = "MakeWoodLumberCypress"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberCypress"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<RecipeDef ParentName="MakeWoodLumberBase">
@@ -339,7 +339,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<RecipeDef ParentName="MakeWoodLumberBase">
@@ -369,7 +369,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/RecipeDef[defName = "MakeWoodLumberCypress"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberCypress"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<RecipeDef ParentName="MakeWoodLumberBase">
@@ -409,7 +409,7 @@
 				<modName>Zen Garden</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
 					<li>ZEN_WoodLog_CrabApple</li>
@@ -427,7 +427,7 @@
 				<modName>Zen Garden</modName>
 			</li>	
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
 					<li>ZEN_WoodLog_CrabApple</li>
@@ -445,7 +445,7 @@
 				<modName>Zen Garden</modName>
 			</li>				
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
 					<li>ZEN_WoodLog_CrabApple</li>
@@ -463,8 +463,8 @@
 				<modName>Zen Garden</modName>
 			</li>				
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
-						/Defs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+						Defs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
 					<li>ZEN_WoodLog_CrabApple</li>
@@ -485,7 +485,7 @@
 				</modList>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "VG_Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "VG_Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
 					<li>ZEN_WoodLog_CrabApple</li>
@@ -506,9 +506,9 @@
 				</modList>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						/Defs/ThingDef[defName = "HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						/Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
+						Defs/ThingDef[defName = "HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
+						Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>ZEN_CherryWood</li>
 					<li>ZEN_WoodLog_CrabApple</li>
@@ -526,7 +526,7 @@
 				<modName>Zen Garden</modName>
 			</li>				
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "ZEN_Hedge"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "ZEN_Hedge"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 <!-- Author: Dr_Zhivago Editor: Adventurer13 -->
@@ -11,9 +11,9 @@
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>RT's Weapon Pack Reloaded (1.0)</modName>
 			</li>
-			<!-- Make Slingshot craftable with logs and leathers/Textiles, instead of lumber and steel. -->
+			<!-- =====Make Slingshot craftable with logs and leathers/Textiles, instead of lumber and steel.====== -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "SlingshotCraft"]/ingredients</xpath>
+				<xpath>Defs/RecipeDef[defName = "SlingshotCraft"]/ingredients</xpath>
 				<value>
 					<ingredients>
 						<li>
@@ -37,7 +37,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "SlingshotCraft"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "SlingshotCraft"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<categories>
 						<li>Textiles</li>
@@ -47,14 +47,14 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "SlingshotCraft"]/recipeUsers</xpath>
+				<xpath>Defs/RecipeDef[defName = "SlingshotCraft"]/recipeUsers</xpath>
 				<value>
 					<li>ElectricSmithy</li>
 				</value>
 			</li>
-			<!-- TomahawkThrowingAxe -->
+			<!-- ==============Make TomahawkThrowingAxe use lumber=============-->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "TomahawkThrowingAxeCraft"]/ingredients/li/filter/thingDefs[li = "WoodLog"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "TomahawkThrowingAxeCraft"]/ingredients/li/filter/thingDefs[li = "WoodLog"]</xpath>
 				<value>
 					<categories>
 						<li>WoodLumber</li>
@@ -62,10 +62,10 @@
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/RecipeDef[defName = "TomahawkThrowingAxeCraft"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "TomahawkThrowingAxeCraft"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "TomahawkThrowingAxeCraft"]/fixedIngredientFilter</xpath>
+				<xpath>Defs/RecipeDef[defName = "TomahawkThrowingAxeCraft"]/fixedIngredientFilter</xpath>
 				<value>
 					<categories>
 						<li>WoodLumber</li>
@@ -85,9 +85,7 @@
 				<modName>Dead Goat's Weapon Pack</modName>
 			</li>
 		    <li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "dgBlowgun"]/stuffCategories/li[.="Woody"] |
-						/Defs/ThingDef[defName = "dgBlowgunSolanine"]/stuffCategories/li[.="Woody"] |
-						/Defs/ThingDef[defName = "3dg_blowgun_neurotoxin"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "dgBlowgun" or "dgBlowgunSolanine" or "3dg_blowgun_neurotoxin"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -103,11 +101,7 @@
 				<modName>Dead Goat's Weapon Pack</modName>
 			</li>
 		    <li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "3dg_MeleeWeapon_Knuckles"]/stuffCategories/li[.="Woody"] |
-						/Defs/ThingDef[defName = "3dg_MeleeWeapon_Warhammer"]/stuffCategories/li[.="Woody"] |
-						/Defs/ThingDef[defName = "3dg_MeleeWeapon_Scepter"]/stuffCategories/li[.="Woody"] |
-						/Defs/ThingDef[defName = "3dg_MeleeWeapon_Staff"]/stuffCategories/li[.="Woody"] |
-						/Defs/ThingDef[defName = "3dg_MeleeWeapon_Skullclub"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "3dg_MeleeWeapon_Knuckles" or "3dg_MeleeWeapon_Warhammer" or "3dg_MeleeWeapon_Scepter" or "3dg_MeleeWeapon_Staff" or "3dg_MeleeWeapon_Skullclub"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -123,11 +117,27 @@
 				<modName>Dead Goat's Weapon Pack</modName>
 			</li>
 		    <li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "3DG_StaffSling"]/stuffCategories/li[.="Woody"]</xpath>
-				<value>
-					<li>RawWoody</li>
+				  <xpath>Defs/ThingDef[defName = "3DG_StaffSling"]/stuffCategories</xpath>
+				  <value>
+				    <stuffCategories>
+				      <li>RawWoody</li>
+				    </stuffCategories>
 			    </value>
-		    </li> 
+		    </li>
+		    <li Class="PatchOperationReplace">
+		    <xpath>Defs/ThingDef[defName = "3DG_StaffSling"]/costStuffCount</xpath>
+		    <value>
+		      <costStuffCount>60</costStuffCount>
+		    </value>
+		    </li>
+		    <li Class="PatchOperationReplace">
+		    <xpath>Defs/ThingDef[defName = "3DG_StaffSling"]/costList</xpath>
+		    <value>
+		      <costList>
+		        <Cloth>20</Cloth>
+		      </costList>
+		    </value>
+		    </li>
 		</operations>
 	</Operation>
 	

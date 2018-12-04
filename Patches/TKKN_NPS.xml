@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<Operation Class="PatchOperationSequence">
@@ -8,14 +8,14 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeHazelnut"]/plant	|
-						/Defs/ThingDef[defName = "TKKN_PlantTreeHazelnut"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeHazelnut"]/plant	|
+						Defs/ThingDef[defName = "TKKN_PlantTreeHazelnut"]/plant</xpath>
 				<value>
 					<harvestedThingDef>TKKN_WoodLog_Hazelnut</harvestedThingDef>
 				</value>
@@ -31,73 +31,73 @@
 			</li>
 			<!-- Redwood -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/label</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/label</xpath>
 				<value>
 					<label>redwood logs (nps)</label>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/statBases/Flammability</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/statBases/Flammability</xpath>
 				<value>
 					<Flammability>0.75</Flammability>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/stuffAdjective</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/stuffAdjective</xpath>
 				<value>
 					<stuffAdjective>nps redwood</stuffAdjective>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/categories/li</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/categories/li</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/MaxHitPoints</xpath>
 				<value>			
 					<MaxHitPoints>0.75</MaxHitPoints>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Beauty</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Beauty</xpath>
 				<value>			
 					<Beauty>1.6</Beauty>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Flammability</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Flammability</xpath>
 				<value>			
 					<Flammability>0.75</Flammability>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/WorkToBuild</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/WorkToBuild</xpath>
 				<value>			
 					<WorkToBuild>0.25</WorkToBuild>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/WorkToMake</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/WorkToMake</xpath>
 				<value>			
 					<WorkToMake>0.25</WorkToMake>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
 				<value>			
 					<DoorOpenSpeed>1.4</DoorOpenSpeed>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]/thingCategories/li</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/thingCategories/li</xpath>
 				<value>
 					<li>WoodTypes</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "RedWoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]</xpath>
 				<value>
 					<butcherProducts>
 						<TKKN_LumberRedwood>30</TKKN_LumberRedwood>
@@ -115,7 +115,7 @@
 			</li>
 			<!-- Hazelnut Wood -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLogBase">
@@ -159,7 +159,7 @@
 			</li>
 			<!-- Hazelnut Lumber -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLumberBase">
@@ -191,7 +191,7 @@
 			</li>
 			<!-- Redwood Lumber -->
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "LumberTeak"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LumberTeak"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<ThingDef ParentName="WoodLumberBase">
@@ -235,7 +235,7 @@
 					<modName>Nature's Pretty Sweet</modName>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<RecipeDef ParentName="MakeWoodLumberBase">
@@ -265,7 +265,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/RecipeDef[defName = "MakeWoodLumberTeak"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberTeak"]</xpath>
 				<order>Prepend</order>
 				<value>
 					<RecipeDef ParentName="MakeWoodLumberBase">
@@ -305,7 +305,7 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>TKKN_WoodLog_Hazelnut</li>
 					<li>RedWoodLog</li>
@@ -322,7 +322,7 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>	
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>TKKN_WoodLog_Hazelnut</li>
 					<li>RedWoodLog</li>
@@ -339,7 +339,7 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>				
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>TKKN_WoodLog_Hazelnut</li>
 					<li>RedWoodLog</li>
@@ -356,8 +356,8 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>				
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
-						/Defs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
+						Defs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>TKKN_WoodLog_Hazelnut</li>
 					<li>RedWoodLog</li>
@@ -377,7 +377,7 @@
 				</modList>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "VG_Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "VG_Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>TKKN_WoodLog_Hazelnut</li>
 					<li>RedWoodLog</li>
@@ -397,9 +397,9 @@
 				</modList>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						/Defs/ThingDef[defName = "HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						/Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
+						Defs/ThingDef[defName = "HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
+						Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>TKKN_WoodLog_Hazelnut</li>
 					<li>RedWoodLog</li>
@@ -416,7 +416,7 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>				
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TerrainDef[defName = "TKKN_FloorRedWood"]/costList/RedWoodLog</xpath>
+				<xpath>Defs/TerrainDef[defName = "TKKN_FloorRedWood"]/costList/RedWoodLog</xpath>
 				<value>
 					<TKKN_LumberRedwood>4</TKKN_LumberRedwood>
 				</value>
