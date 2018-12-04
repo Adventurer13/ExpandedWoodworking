@@ -92,8 +92,8 @@
 					<li>RawWoody</li>
 				</value>
 		    </li>
-		<operations>
-	<Operation>
+		</operations>
+	</Operation>
 	
 	<!-- dg_Weapons_Melee -->
 	<Operation Class="PatchOperationSequence">
@@ -128,7 +128,7 @@
 					<li>RawWoody</li>
 			    </value>
 		    </li> 
-		<operations>
+		</operations>
 	</Operation>
 	
 
