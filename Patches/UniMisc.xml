@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- UN-Colony -->
 	<!-- Recipes -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -67,6 +68,7 @@
 	
 	<!-- Buildings -->
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>1- UN-Colony [1.0]</modName>
@@ -182,6 +184,34 @@
 						<li>Woody</li>
 					</stuffCategories>
 					<costStuffCount>4</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+	<!-- Below | Author: Dr_Zhivago Editor: Adventurer13 -->
+	
+	<!-- Smoked meat -->
+	<!-- Buildings -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Smoked meat</modName>
+			</li>
+		<!-- Cook_Smokepit -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Smokepit"]/constructEffect</xpath>
+			</li>
+			<!-- Smoked meat Smokepit made of logs-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Smokepit"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
 				</value>
 			</li>
 		</operations>
