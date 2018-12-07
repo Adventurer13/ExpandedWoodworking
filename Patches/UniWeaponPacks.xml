@@ -85,7 +85,7 @@
 				<modName>Dead Goat's Weapon Pack</modName>
 			</li>
 		    <li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "dgBlowgun" or "dgBlowgunSolanine" or "3dg_blowgun_neurotoxin"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "dgBlowgun" or defName = "dgBlowgunSolanine" or defName = "3dg_blowgun_neurotoxin"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -101,7 +101,7 @@
 				<modName>Dead Goat's Weapon Pack</modName>
 			</li>
 		    <li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "3dg_MeleeWeapon_Knuckles" or "3dg_MeleeWeapon_Warhammer" or "3dg_MeleeWeapon_Scepter" or "3dg_MeleeWeapon_Staff" or "3dg_MeleeWeapon_Skullclub"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "3dg_MeleeWeapon_Knuckles" or defName = "3dg_MeleeWeapon_Warhammer" or defName = "3dg_MeleeWeapon_Scepter" or defName = "3dg_MeleeWeapon_Staff" or defName = "3dg_MeleeWeapon_Skullclub"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
