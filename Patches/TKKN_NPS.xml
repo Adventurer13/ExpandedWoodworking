@@ -1,6 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-
+	
+	<!-- Plants Arid Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TKKN_TreeOcotillo"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Savanna/Grasslands Biomes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_PlantTreeBaobab"]/plant</xpath>
+				<value>
+					<harvestedThingDef>TKKN_WoodLog_Baobab</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_PlantTreeAcacia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_PlantTreeGum"]/plant</xpath>
+				<value>
+					<harvestedThingDef>TKKN_WoodLog_Gum</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Redwood Biome -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -10,7 +55,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
 				<value>
-					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+					<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -22,7 +67,7 @@
 			</li>
 		</operations>
 	</Operation>
-		
+	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -113,6 +158,128 @@
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>Nature's Pretty Sweet</modName>
 			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Acacia Wood (only if not already present by the above mods) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Acacia</defName> <!-- SG: 1.19  W: 1185  H: 3680 -->
+						<label>acacia logs (nps)</label>
+						<description>Raw wood from an (nps) acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood.</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>1.2</Mass>
+							<MarketValue>2.3</MarketValue>
+							<DeteriorationRate>0.5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps acacia</stuffAdjective>
+							<commonality>0.25</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>0.95</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberAcacia>30</LumberAcacia>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<!-- Baobab Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>TKKN_WoodLog_Baobab</defName> 
+						<label>baobab logs (nps)</label>
+						<description>Raw wood from a (nps) baobab tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Baobab is a durable wood.</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.7</Mass> 
+							<MarketValue>1.6</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps baobab</stuffAdjective>
+							<commonality>0.45</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<TKKN_LumberBaobab>30</TKKN_LumberBaobab>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Ghost Gum Woood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]</xpath>
+				<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>TKKN_WoodLog_Gum</defName> 
+						<label>ghost gum logs (nps)</label>
+						<description>Raw wood from a (nps) gum tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Ghost gum is a moderate to durable hardwood.</description>
+						<graphicData>
+							<color>(108,103,97)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.8</Mass> 
+							<MarketValue>1.7</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps gum</stuffAdjective>
+							<commonality>0.5</commonality>
+							<color>(108,103,97)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<TKKN_LumberGum>30</TKKN_LumberGum>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
 			<!-- Hazelnut Wood -->
 			<li Class="PatchOperationInsert">
 				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
@@ -144,10 +311,28 @@
 						</stuffProps>
 						<butcherProducts>
 							<TKKN_LumberHazelnut>30</TKKN_LumberHazelnut>
-						</butcherProducts>		
+						</butcherProducts>	
 					</ThingDef>
 				</value>
 			</li>
+			<!-- <li Class="PatchOperationReplace"> May decide to change name of Saguaro to Succulent in the future for better compatibility with other mods. Currently this won't work because of the langauge folder overwriting any changes.
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/label</xpath>
+				<value>
+					<label>succulent ribs</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/description</xpath>
+				<value>
+					<description>Ribs from a saguaro cactus or an (nps) ocotillo. Succulent rib is soft and excellent for making tools, handicrafts, fences, and other small structures.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/stuffProps/stuffAdjective</xpath>
+				<value>
+					<stuffAdjective>succulent rib</stuffAdjective>
+				</value>
+			</li> -->
 		</operations>
 	</Operation>
 	
@@ -156,6 +341,119 @@
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Acacia Lumber (only if not already present by the above mods) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberAcacia</defName>
+						<label>acacia lumber (nps)</label>
+						<description>Processed (nps) acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood.</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.6</Mass>
+							<MarketValue>4.8</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps acacia</stuffAdjective>
+							<commonality>0.2</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>0.95</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<!-- Baobab Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>TKKN_LumberBaobab</defName> 
+						<label>baobab lumber (nps)</label>
+						<description>Processed (nps) baobab lumber. Mostly useful for building long-lasting, simple structures and furniture. Baobab is a durable wood.</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.35</Mass> 
+							<MarketValue>3.3</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps baobab</stuffAdjective>
+							<commonality>0.4</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Ghost Gum Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberDrago"]</xpath>
+				<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>TKKN_LumberGum</defName> 
+						<label>ghost gum lumber (nps)</label>
+						<description>Processed (nps) gum lumber. Mostly useful for building long-lasting, simple structures and furniture. Ghost gum is a moderate to durable hardwood.</description>
+						<graphicData>
+							<color>(108,103,97)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.4</Mass> 
+							<MarketValue>3.6</MarketValue>
+							<DeteriorationRate>3</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps gum</stuffAdjective>
+							<commonality>0.45</commonality>
+							<color>(108,103,97)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
 			</li>
 			<!-- Hazelnut Lumber -->
 			<li Class="PatchOperationInsert">
@@ -232,7 +530,114 @@
 		<success>Always</success>
 		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberAcacia</defName>
+						<label>make acacia lumber (nps)</label>
+						<description>Process raw (nps) acacia logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Acacia</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Acacia</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberAcacia>30</LumberAcacia>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 					<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberBaobab</defName>
+						<label>make baobab lumber (nps)</label>
+						<description>Process raw (nps) baobab logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Baobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Baobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<TKKN_LumberBaobab>30</TKKN_LumberBaobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberDrago"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberGum</defName>
+						<label>make ghost gum lumber (nps)</label>
+						<description>Process raw (nps) ghost gum logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Gum</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Gum</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<TKKN_LumberGum>30</TKKN_LumberGum>
+						</products>
+					</RecipeDef>
+				</value>
 			</li>
 			<li Class="PatchOperationInsert">
 				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
@@ -295,118 +700,7 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>	
-	
-	<!-- Fuel (older manual way of patching fuelFilter)
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>Nature's Pretty Sweet</modName>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>TKKN_WoodLog_Hazelnut</li>
-					<li>RedWoodLog</li>
-				</value>
-			</li>
-		</operations>
 	</Operation>
-			
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>Nature's Pretty Sweet</modName>
-			</li>	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>TKKN_WoodLog_Hazelnut</li>
-					<li>RedWoodLog</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-			
-			
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>Nature's Pretty Sweet</modName>
-			</li>				
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>TKKN_WoodLog_Hazelnut</li>
-					<li>RedWoodLog</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>			
-	
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>Nature's Pretty Sweet</modName>
-			</li>				
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs	|
-						Defs/ThingDef[DefName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>TKKN_WoodLog_Hazelnut</li>
-					<li>RedWoodLog</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modList>
-					<li>Nature's Pretty Sweet</li>
-					<li>Expanded Woodworking for Vegetable Garden Project B18</li>
-					<li>VGP Vegetable Garden</li>
-				</modList>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "VG_Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>TKKN_WoodLog_Hazelnut</li>
-					<li>RedWoodLog</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modList>
-					<li>Nature's Pretty Sweet</li>
-					<li>Expanded Woodworking for Vegetable Garden Project B18</li>
-					<li>VGP Garden Gourmet</li>
-				</modList>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						Defs/ThingDef[defName = "HandCanningstove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
-				<value>
-					<li>TKKN_WoodLog_Hazelnut</li>
-					<li>RedWoodLog</li>
-				</value>
-			</li>
-		</operations>
-	</Operation> -->
 	
 	<!-- Other Stuff -->
 	<Operation Class="PatchOperationSequence">
@@ -423,4 +717,5 @@
 			</li>
 		</operations>
 	</Operation>
+	
 </Patch>
