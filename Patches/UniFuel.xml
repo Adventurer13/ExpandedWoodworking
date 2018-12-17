@@ -36,7 +36,7 @@
 				</modList>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>WoodLog_Apple</li>
 					<li>WoodLog_Cherry</li>
@@ -61,7 +61,7 @@
 				</modList>	
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>WoodLog_Acacia</li>
 					<li>WoodLog_Camellia</li>
@@ -80,7 +80,7 @@
 				<modName>Zen Garden</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>ZEN_WoodLog_CrabApple</li>
 				</value>
@@ -95,7 +95,7 @@
 				<modName>Nature's Pretty Sweet</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>TKKN_WoodLog_Gum</li>
 					<li>TKKN_WoodLog_Baobab</li>
@@ -121,7 +121,7 @@
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>WoodLog_Acacia</li>
 				</value>
