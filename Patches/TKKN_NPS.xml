@@ -55,7 +55,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
 				<value>
-					<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
