@@ -109,7 +109,7 @@
 	   </operations>
 	</Operation>
 	
-	<!-- dg_Weapons_Ranged -->
+	<!-- dg_Weapons_Ranged
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
@@ -139,7 +139,7 @@
 		    </value>
 		    </li>
 		</operations>
-	</Operation>
+	</Operation> -->
 	
 
 </Patch>
