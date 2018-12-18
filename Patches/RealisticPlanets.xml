@@ -1,5 +1,6 @@
 <Patch>
-
+    <!-- Author: XeoNovaDan -->
+    
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>[RF] Realistic Planets [1.0]</li>
