@@ -3,9 +3,6 @@
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
     <version>1.0.1.2</version>
-    <dependencies>
-		<li>Core</li>
-    </dependencies>
     <incompatibleWith>
 		<li>ExtendedWoodworking</li>
 		<li>QualitySurgeon</li>
