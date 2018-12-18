@@ -406,25 +406,6 @@
 					<costStuffCount>20</costStuffCount>
 				</value>
 			</li>
-			<!-- (older manual way of patching fuelFilter)
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
-				<value>
-					<li>WoodLog_Birch</li>
-					<li>WoodLog_Cecropia</li>
-					<li>WoodLog_Cypress</li>
-					<li>WoodLog_Drago</li>
-					<li>WoodLog_Maple</li>
-					<li>WoodLog_Oak</li>
-					<li>WoodLog_Pine</li>
-					<li>WoodLog_Palm</li>
-					<li>WoodLog_Poplar</li>
-					<li>WoodLog_Saguaro</li>
-					<li>WoodLog_Teak</li>
-					<li>WoodLog_Willow</li>
-				</value>
-			</li>
-			-->
 		</operations>
 	</Operation>
 	
@@ -445,25 +426,6 @@
 					<costStuffCount>280</costStuffCount>
 				</value>
 			</li>
-			<!-- (older manual way of patching fuelFilter)
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
-				<value>
-					<li>WoodLog_Birch</li>
-					<li>WoodLog_Cecropia</li>
-					<li>WoodLog_Cypress</li>
-					<li>WoodLog_Drago</li>
-					<li>WoodLog_Maple</li>
-					<li>WoodLog_Oak</li>
-					<li>WoodLog_Pine</li>
-					<li>WoodLog_Palm</li>
-					<li>WoodLog_Poplar</li>
-					<li>WoodLog_Saguaro</li>
-					<li>WoodLog_Teak</li>
-					<li>WoodLog_Willow</li>
-				</value>
-			</li>
-			-->
 		</operations>
 	</Operation>
 	
@@ -576,31 +538,7 @@
 			</li>
 		</operations>
 	</Operation>
-	<!-- (older manual way of patching fuelFilter)
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>		
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
-				<value>
-					<li>WoodLog_Birch</li>
-					<li>WoodLog_Cecropia</li>
-					<li>WoodLog_Cypress</li>
-					<li>WoodLog_Drago</li>
-					<li>WoodLog_Maple</li>
-					<li>WoodLog_Oak</li>
-					<li>WoodLog_Pine</li>
-					<li>WoodLog_Palm</li>
-					<li>WoodLog_Poplar</li>
-					<li>WoodLog_Saguaro</li>
-					<li>WoodLog_Teak</li>
-					<li>WoodLog_Willow</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	-->
+
 	<Operation Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
 				<value>
@@ -644,25 +582,6 @@
 					<costStuffCount>20</costStuffCount>
 				</value>
 			</li>
-			<!-- (older manual way of patching fuelFilter)
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
-				<value>
-					<li>WoodLog_Birch</li>
-					<li>WoodLog_Cecropia</li>
-					<li>WoodLog_Cypress</li>
-					<li>WoodLog_Drago</li>
-					<li>WoodLog_Maple</li>
-					<li>WoodLog_Oak</li>
-					<li>WoodLog_Pine</li>
-					<li>WoodLog_Palm</li>
-					<li>WoodLog_Poplar</li>
-					<li>WoodLog_Saguaro</li>
-					<li>WoodLog_Teak</li>
-					<li>WoodLog_Willow</li>
-				</value>
-			</li>
-			-->
 		</operations>
 	</Operation>
 	
