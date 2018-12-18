@@ -5,7 +5,11 @@
 ## [1.0.1.2] - Unreleased
 ### New
 - Readded Zen Garden patch.
-- Merged DrZhivago1's DocWorld Various Expanded Woodworking patches for Smoked Meat, RT's Weapon Pack Reloaded, and Dead Goat's Weapon Pack.
+- Merged DrZhivago1's DocWorld Various Expanded Woodworking patches for Smoked Meat, RT's Weapon Pack Reloaded, Dead Goat's Weapon Pack, and Rim of Madness - Bones.
+- Added new baobab and gum wood types to NPS and Fuel patches.
+
+### Removed
+- Old fuel patching.
 
 ## [1.0.1.1] - 2018-10-29
 ### New
