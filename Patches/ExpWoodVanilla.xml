@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
 	<!-- Arid Trees -->
@@ -6,13 +6,13 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeDrago"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeDrago"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
 				</value>
@@ -25,19 +25,19 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeWillow"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeWillow"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeCypress"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeCypress"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeMaple"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
 				</value>
@@ -50,25 +50,25 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeOak"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreePoplar"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePine"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreePine"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeBirch"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
 				</value>
@@ -81,19 +81,19 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeTeak"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeTeak"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePalm"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreePalm"]/plant</xpath>
 				<value>
 					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
 				</value>
@@ -110,7 +110,7 @@
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
 				<value>
 					<harvestedThingDef>Bamboo</harvestedThingDef>
 				</value>
@@ -123,7 +123,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_TreeCocoa"]</xpath>
 				<value>
 					<thingClass>ExpandedWoodworking.Cocoa</thingClass>
 				</value>
@@ -136,7 +136,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/ingredients/li/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/ingredients/li/filter/thingDefs</xpath>
 				<value>
 					<categories>
 						<li>WoodTypes</li>
@@ -144,7 +144,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<categories>
 						<li>WoodTypes</li>
@@ -161,7 +161,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
@@ -177,7 +177,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodLumber</categoryDef>
@@ -199,7 +199,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
@@ -215,7 +215,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodLumber</categoryDef>
@@ -237,7 +237,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
@@ -253,7 +253,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodLumber</categoryDef>
@@ -275,7 +275,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
@@ -291,7 +291,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodLumber</categoryDef>
@@ -314,7 +314,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
 				<value>
 					<categories>
 						<li>WoodTypes</li>
@@ -322,16 +322,16 @@
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
+				<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
 				<value>
 					<li>WoodTypes</li>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
 				<value>
 					<categories>
 						<li>WoodLumber</li>
@@ -339,10 +339,10 @@
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+				<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
 				<value>
 					<li>WoodLumber</li>
 				</value>
@@ -355,9 +355,9 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "SculptureSmall"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "SculptureLarge"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "SculptureGrand"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "SculptureSmall"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "SculptureLarge"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "SculptureGrand"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -370,19 +370,19 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "HorseshoesPin"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "HoopstoneRing"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "HorseshoesPin"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "HoopstoneRing"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "BilliardsTable"]/costList/WoodLog	|
-						/Defs/ThingDef[defName = "PokerTable"]/costList/WoodLog</xpath>
+				<xpath>Defs/ThingDef[defName = "BilliardsTable"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "PokerTable"]/costList/WoodLog</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "BilliardsTable"]/costStuffCount	|
-						/Defs/ThingDef[defName = "PokerTable"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "BilliardsTable"]/costStuffCount	|
+						Defs/ThingDef[defName = "PokerTable"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>110</costStuffCount>
 				</value>
@@ -395,10 +395,10 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/constructEffect</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -408,7 +408,7 @@
 			</li>
 			<!-- (older manual way of patching fuelFilter)
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>WoodLog_Birch</li>
 					<li>WoodLog_Cecropia</li>
@@ -433,11 +433,11 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "WatermillGenerator"]/costList/WoodLog	|
-						/Defs/ThingDef[defName = "WatermillGenerator"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "WatermillGenerator"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "WatermillGenerator"]/constructEffect</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WatermillGenerator"]</xpath>
+				<xpath>Defs/ThingDef[defName = "WatermillGenerator"]</xpath>
 				<value>
 					<stuffCategories>
 						<li>Woody</li>
@@ -447,7 +447,7 @@
 			</li>
 			<!-- (older manual way of patching fuelFilter)
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>WoodLog_Birch</li>
 					<li>WoodLog_Cecropia</li>
@@ -478,7 +478,7 @@
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -487,14 +487,14 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/constructEffect</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]/costList/WoodLog	|
-						/Defs/ThingDef[defName = "FermentingBarrel"]/costList/WoodLog</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "FermentingBarrel"]/costList/WoodLog</xpath>
 			</li>		
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>95</costStuffCount>
 				</value>
@@ -510,10 +510,10 @@
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]</xpath>
 				<value>
 					<stuffCategories>
 						<li>Woody</li>
@@ -531,7 +531,7 @@
 				<modName>Stuffed Workbenches</modName>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>120</costStuffCount>
 				</value>
@@ -543,10 +543,10 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData/shaderType</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/shaderType</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
 				<value>
 					<shaderType>CutoutComplex</shaderType>
 				</value>
@@ -562,11 +562,11 @@
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
 				<value>
 					<stuffCategories>
 						<li>Woody</li>
@@ -581,8 +581,8 @@
 		<success>Always</success>
 		<operations>		
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
-						/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]	|
+						Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>WoodLog_Birch</li>
 					<li>WoodLog_Cecropia</li>
@@ -602,14 +602,14 @@
 	</Operation>
 	-->
 	<Operation Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/TableBrewery/TableBrewery</texPath>
 				</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Building/FermentingBarrel/FermentingBarrel</texPath>
 				</value>
@@ -620,7 +620,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "TrapSpike"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "TrapSpike"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -633,10 +633,10 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "Campfire"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -646,7 +646,7 @@
 			</li>
 			<!-- (older manual way of patching fuelFilter)
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
 					<li>WoodLog_Birch</li>
 					<li>WoodLog_Cecropia</li>
@@ -674,10 +674,10 @@
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -695,16 +695,16 @@
 				<modName>DeCore B19</modName>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "PassiveCooler"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>30</costStuffCount>
 				</value>
@@ -717,10 +717,10 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/disallowedThingDefs/li[.="WoodLog"]</xpath>
+				<xpath>Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/disallowedThingDefs/li[.="WoodLog"]</xpath>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter</xpath>
+				<xpath>Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter</xpath>
 				<value>
 					<disallowedCategories>
 						<li>WoodTypes</li>
@@ -736,7 +736,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -749,9 +749,9 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/stuffCategories/li[.="Woody"]	|
-						/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/stuffCategories/li[.="Woody"]</xpath>
+				<xpath>Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "MeleeWeapon_Spear"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
 					<li>RawWoody</li>
 				</value>
@@ -764,7 +764,7 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Bow_Short"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "Bow_Short"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -773,7 +773,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Pila"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "Pila"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -782,7 +782,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Bow_Recurve"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "Bow_Recurve"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
@@ -791,7 +791,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>RawWoody</li>
