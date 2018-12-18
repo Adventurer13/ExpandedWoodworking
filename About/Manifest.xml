@@ -17,6 +17,7 @@
 		<li>StuffedWorkbenches</li>
 		<li>ZenGarden</li>
 	</loadAfter>
+	<showCrossPromotions>true</showCrossPromotions>
     <manifestUri>https://raw.githubusercontent.com/Adventurer13/ExpandedWoodworking/master/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/Adventurer13/ExpandedWoodworking/releases/latest</downloadUri>
 </Manifest>
