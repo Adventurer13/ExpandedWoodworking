@@ -6,6 +6,7 @@
 ### New
 - Readded Zen Garden patch.
 - Merged DrZhivago1's DocWorld Various Expanded Woodworking patches for Smoked Meat, RT's Weapon Pack Reloaded, Dead Goat's Weapon Pack, and Rim of Madness - Bones.
+- Merged Realistic Planets patch by XeoNovaDan.
 - Added new baobab and gum wood types to NPS and Fuel patches.
 
 ### Removed
