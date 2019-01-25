@@ -2,7 +2,7 @@
 
 <Patch>
 
-	<!-- Wood Logs Combat Stats Fixes -->
+	<!-- Wood Logs Stat Fixes -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -10,7 +10,7 @@
 				<modName>Combat Extended</modName>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="WoodLogBase"]/tools</xpath>
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/tools</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">
@@ -25,7 +25,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[@Name="WoodLogBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]</xpath>
 				<value>
 					<equippedStatOffsets>
 						<MeleeCritChance>0.1</MeleeCritChance>
@@ -34,26 +34,38 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[@Name="WoodLogBase"]/statBases</xpath>
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases</xpath>
 				<value>
 					<Bulk>0.07</Bulk>
 					<MeleeCounterParryBonus>1.25</MeleeCounterParryBonus>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="WoodLogBase"]/statBases/SharpDamageMultiplier</xpath>
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Sharp</xpath>
+				<value>
+					<StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Blunt</xpath>
+				<value>
+					<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/SharpDamageMultiplier</xpath>
 				<value>
 					<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="WoodLogBase"]/statBases/BluntDamageMultiplier</xpath>
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/BluntDamageMultiplier</xpath>
 				<value>
 					<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[@Name="WoodLogBase"]/stuffProps/statFactors</xpath>
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/stuffProps/statFactors</xpath>
 				<value>
 					<Mass>0.3</Mass>
 					<MeleePenetrationFactor>0.3</MeleePenetrationFactor>
@@ -70,16 +82,31 @@
 				<modName>Combat Extended</modName>
 			</li>
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName = "WallLog"]</xpath>
+				<xpath>Defs/ThingDef[defName = "EW_LogWall"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>BuildingNaturalBase</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "WallLog"]/damageMultipliers</xpath>
+				<xpath>Defs/ThingDef[defName = "EW_LogWall"]/damageMultipliers</xpath>
 			</li>
 		</operations>
 	</Operation>
 	
+	<!-- Tribal Warrior Weapon Money Fix (for being possibly too poor to have a weapon) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Tribal_Warrior"]/weaponMoney/min</xpath>
+				<value>
+					<min>120</min>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	
 	<!-- Weapon(Ranged Neolithic) Costs Fixes -->
 	<Operation Class="PatchOperationSequence">
@@ -88,20 +115,43 @@
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>Combat Extended</modName>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Pila"]</xpath>
+				<value>
+					<costList>
+						<Steel>1</Steel>
+					</costList>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Bow_Short"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "Pila"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>1</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Short"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>10</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Bow_Recurve"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "Bow_Recurve"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>15</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "Bow_Great"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "Bow_Great"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>20</costStuffCount>
 				</value>
