@@ -5,6 +5,7 @@
 ## [1.0.1.3] - Unreleased
 ### New
 - Combat Extended compatibility patch re-added.
+- Realistic Planets use Acacia wood log as fuel.
 
 ### Fixed
 - Multi-version changes.
