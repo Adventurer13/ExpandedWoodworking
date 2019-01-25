@@ -2,6 +2,13 @@
 
 **Current:** [v1.0.1.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.2 )
 
+## [1.0.1.3] - Unreleased
+### New
+- Combat Extended compatibility patch re-added.
+
+### Fixed
+- Multi-version changes.
+
 ## [1.0.1.2] - 2018-12-17
 ### New
 - Readded Zen Garden patch.
