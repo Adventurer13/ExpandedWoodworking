@@ -154,7 +154,7 @@
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>cocoawood</stuffAdjective>
-			<commonality>0.0</commonality>
+			<commonality>0.1</commonality>
 			<color>(86,42,34)</color>
 			<statFactors>
 				<MaxHitPoints>0.45</MaxHitPoints>
