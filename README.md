@@ -43,6 +43,7 @@ Mods given extended functionality with included patches:
 
 - Combat Extended (Awaiting Update)
 - Dead Goat's Weapon Pack (by DrZhivago)
+- Lord of the Rims 
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)
 - RT's Weapon Pack Reloaded (by DrZhivago)

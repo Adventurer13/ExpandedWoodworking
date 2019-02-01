@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Lord of the Rims - Moria Goblins -->
+	<!-- Moria Standard -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Moria Goblins</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LOTRMoriaHive" or defName = "LOTRMoriaHut" or defName = "LOTRMoriaDrum"]/killedLeavings/WoodLog</xpath>
+				<value>
+					<WoodLog_Pine>1</WoodLog_Pine>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<!-- Orc Wall -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Moria Goblins</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotROG_WallOrc"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Lord of the Rims - Misty Mountain Goblins -->
+	<!-- Orc wall -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Misty Mountain Goblins</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotROG_WallOrc"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Lord of the Rims - Orcs and Goblins -->
+	<!-- Orc Wall -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Orcs and Goblins 1.0</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotROG_WallOrc"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Lord of the Rims - Dwarves -->
+	<!-- Dwarven Game Table -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Dwarves</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotRD_GameTable"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_GameTable"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>110</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Fermenting Barrel (mead) Stuffed -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Dwarves</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotRD_FermentingBarrel"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "LotRD_FermentingBarrel"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRD_FermentingBarrel"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_FermentingBarrel"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/FermentingBarrel/FermentingBarrel</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRD_FermentingBarrel"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Puzzle Box & Marble Labyrinth -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Dwarves</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_DwarfPuzzleBox"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_DwarfMarbleLabyrinth"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>80</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Dwarf Spear -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Dwarves</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_MeleeWeapon_DwarfSpear"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Dwarves/LotRD_edmundWulfgarthDwarvenSpearGray</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRD_MeleeWeapon_DwarfSpear"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Dwarf Horn Bow & Crossbow -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Dwarves</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_Bow_Dwarven"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotRD_Bow_DwarvenCross"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRD_Bow_DwarvenCross"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRD_Bow_Dwarven"]/graphicData	|
+						Defs/ThingDef[defName = "LotRD_Bow_DwarvenCross"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_Bow_Dwarven"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Dwarves/LotRD_sheidulaDwarvenHornBow</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRD_Bow_DwarvenCross"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Dwarves/LotRD_edmundWulfgarthPumpCrossbowIronHill</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Lord of the Rims - Elves -->
+	<!-- Golden Birch Tree -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>		
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_PlantTreeBirchGolden"]/plant</xpath>
+				<value>
+					<harvestedThingDef>LotRE_WoodLog_GoldenBirch</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Mallorn Wood -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/label</xpath>
+				<value>
+					<label>mallorn logs (lotr)</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/statBases</xpath>
+				<value>
+					<statBases>
+						<MarketValue>2.4</MarketValue>
+						<MaxHitPoints>170</MaxHitPoints>
+						<Mass>0.4</Mass> 
+						<Flammability>1.2</Flammability>
+						<DeteriorationRate>1</DeteriorationRate>
+						<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+						<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+						<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+						<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+						<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+						<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+						<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+					</statBases>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/stuffAdjective</xpath>
+				<value>
+					<stuffAdjective>mallorn (lotr)</stuffAdjective>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/categories/li</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/commonality</xpath>
+				<value>
+					<commonality>0.10</commonality>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<value>			
+					<MaxHitPoints>0.65</MaxHitPoints>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/statFactors/Beauty</xpath>
+				<value>			
+					<Beauty>1.7</Beauty>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
+				<value>			
+					<DoorOpenSpeed>1.4</DoorOpenSpeed>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/thingCategories/li</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]</xpath>
+				<value>
+					<butcherProducts>
+						<LotRE_LumberMallorn>30</LotRE_LumberMallorn>
+					</butcherProducts>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Golden Birch Wood -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>LotRE_WoodLog_GoldenBirch</defName> 
+						<label>golden birch logs (lotr)</label>
+						<description>Raw wood from a (lotr) golden birch tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. In comparison to birch, golden birch is a lighter and stronger hardwood.</description>
+						<graphicData>
+							<texPath>Things/Resources/LotRLog/BirchLog</texPath>
+						</graphicData>
+						<statBases>
+							<Mass>0.5</Mass>
+							<MarketValue>2.0</MarketValue>
+							<DeteriorationRate>3</DeteriorationRate>
+							<Flammability>1.2</Flammability>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>golden birch (lotr)</stuffAdjective>
+							<commonality>0.15</commonality>
+							<color>(237,220,149)</color>
+							<statFactors>
+								<MaxHitPoints>0.55</MaxHitPoints>
+								<Beauty>1.5</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LotRE_LumberGoldenBirch>30</LotRE_LumberGoldenBirch>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<!-- Golden Birch Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LotRE_LumberGoldenBirch</defName>
+						<label>golden birch lumber (lotr)</label>
+						<description>Processed (lotr) golden birch lumber. Mostly useful for building long-lasting, simple structures and furniture. In comparison to birch, golden birch is a lighter and stronger hardwood.</description>
+						<graphicData>
+							<color>(237,220,149)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.25</Mass>
+							<MarketValue>3.1</MarketValue>
+							<DeteriorationRate>4</DeteriorationRate>
+							<Flammability>1.2</Flammability>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>golden birch (lotr)</stuffAdjective>
+							<commonality>0.1</commonality>
+							<color>(237,220,149)</color>
+							<statFactors>
+								<MaxHitPoints>0.55</MaxHitPoints>
+								<Beauty>1.5</Beauty>
+								<Flammability>1.2</Flammability>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Mallorn Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LotRE_LumberMallorn</defName>
+						<label>mallorn lumber (lotr)</label>
+						<description>Processed (lotr) mallorn lumber. Mostly useful for building long-lasting sculptures and furniture. Mallorn is a light and durable hardwood.</description>
+						<graphicData>
+							<color>(240,218,165)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.2</Mass>
+							<MarketValue>4.0</MarketValue>
+							<MaxHitPoints>170</MaxHitPoints>
+							<Flammability>1.2</Flammability>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>mallorn (lotr)</stuffAdjective>
+							<commonality>0.05</commonality>
+							<color>(240,218,165)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.7</Beauty>
+								<Flammability>1.2</Flammability>
+								<WorkToMake>0.8</WorkToMake>
+								<WorkToBuild>0.8</WorkToBuild>
+								<DoorOpenSpeed>1.4</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Lumber Recipes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>LotRE_MakeWoodLumberGoldenBirch</defName>
+						<label>make golden birch lumber (lotr)</label>
+						<description>Process raw (lotr) golden birch logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>LotRE_WoodLog_GoldenBirch</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>LotRE_WoodLog_GoldenBirch</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LotRE_LumberGoldenBirch>30</LotRE_LumberGoldenBirch>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>ZEN_MakeWoodLumberMallorn</defName>
+						<label>make mallorn lumber (lotr)</label>
+						<description>Process raw (lotr) mallorn logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>LotRE_WoodLogMallorn</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>LotRE_WoodLogMallorn</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LotRE_LumberMallorn>30</LotRE_LumberMallorn>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Elf Factions -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[defName = "LotRE_ElfFactionWood" or defName = "LotRE_ElfFactionSea" or defName = "LotRE_ElfFactionHigh"]/apparelStuffFilter/thingDefs</xpath>
+				<value>
+					<li>LotRE_WoodLog_GoldenBirch</li>
+					<li>LotRE_LumberMallorn</li>
+					<li>LotRE_LumberGoldenBirch</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Elves - A New Territory -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName = "LotRE_ANewTerritory"]/scenario/parts/li[@Class="ScenPart_ScatterThingsNearPlayerStart" and thingDef[.="WoodLog"]]</xpath>
+				<value>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>LotRE_LumberMallorn</thingDef>
+						<count>200</count>
+					</li> 
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ScenarioDef[defName = "LotRE_ANewTerritory"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>LotRE_LumberGoldenBirch</thingDef>
+						<count>100</count>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Other Stuff -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>				
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName = "LotRE_MallornPlankFloor"]/costList/LotRE_WoodLogMallorn</xpath>
+				<value>
+					<LotRE_LumberMallorn>3</LotRE_LumberMallorn>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Mirkwood & Galadhrim Bows -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_Bow_Mirkwood"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotRE_Bow_Galadhrim"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_Bow_Galadhrim"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>75</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_Bow_Galadhrim" or defName = "LotRE_Bow_Mirkwood"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_Bow_Mirkwood"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Elves/LotRE_MirkwoodBow</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_Bow_Galadhrim"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Elves/LotRE_GaladhrimBow</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+		
+	<!--Elf White Kives & Saber & Lhang (changed my mind on including these changes because they don't look right when metal | hasn't been tested)
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives" or defName = "LotRE_MeleeWeapon_Saber" or defName = "LotRE_MeleeWeapon_Lhang"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives" or defName = "LotRE_MeleeWeapon_Saber" or defName = "LotRE_MeleeWeapon_Lhang"]/stuffCategories</xpath>
+				<value>
+					<li>Woody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>143</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_Saber"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>166</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_Lhang"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>190</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives" or defName = "LotRE_MeleeWeapon_Saber" or defName = "LotRE_MeleeWeapon_Lhang"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives"]/comps/li[@Class="CompOversizedWeapon.CompProperties_OversizedWeapon"]/groundGraphic</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Elves/ElvenKnife</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_WhiteKnives"]/comps/li[@Class="CompOversizedWeapon.CompProperties_OversizedWeapon"]/groundGraphic/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Elves/ElvenKnifeGround</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_Saber"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Elves/ElvenLhangGray</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRE_MeleeWeapon_Lhang"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/Elves/ElvenSaberGray</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation> -->
+	
+<!-- Lord of the Rims - Men and Beasts -->
+	<!-- Gondor Beacons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Men and Beasts</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotRM_GBeaconLit" or defName = "LotRM_GBeacon"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRM_GBeaconLit" or defName = "LotRM_GBeacon"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>300</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Gondorian Spear -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Men and Beasts</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRM_MeleeWeapon_GondorSpear"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Equipment/Weapons/LotR/MaB/averouisGondorSpear</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRM_MeleeWeapon_GondorSpear"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Ithilien Bow -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Men and Beasts</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LotRM_Bow_Ithilien"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Lord of the Rims - The Third Age -->
+	<!-- Wall Sconce -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - The Third Age</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotR_WallSconce"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "LotR_WallSconce"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotR_WallSconce"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Lord of the Rims - Third Age Fellowship (if using Elves) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Lord of the Rims - Third Age Fellowship</li>
+					<li>Lord of the Rims - Elves</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName = "LotR_SimpleFellowship"]/scenario/parts/li[@Class="ScenPart_ScatterThingsNearPlayerStart" and thingDef[.="WoodLog"]]/count[.="300"]</xpath>
+				<value>
+					<count>200</count>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ScenarioDef[defName = "LotR_SimpleFellowship"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>LotRE_LumberMallorn</thingDef>
+						<count>100</count>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- Lord of the Rims - Unlimited -->
+	<!-- Wall Sconce -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Unlimited</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "LotR_WallSconce"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "LotR_WallSconce"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotR_WallSconce"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Lord of the Rims - Third Age Fellowship (if using Elves) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Lord of the Rims - Unlimited</li>
+					<li>Lord of the Rims - Elves</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName = "LotR_SimpleFellowship"]/scenario/parts/li[@Class="ScenPart_ScatterThingsNearPlayerStart" and thingDef[.="WoodLog"]]/count[.="300"]</xpath>
+				<value>
+					<count>200</count>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ScenarioDef[defName = "LotR_SimpleFellowship"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_ScatterThingsNearPlayerStart">
+						<def>ScatterThingsNearPlayerStart</def>
+						<thingDef>LotRE_LumberMallorn</thingDef>
+						<count>100</count>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

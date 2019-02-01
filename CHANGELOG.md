@@ -1,14 +1,16 @@
 # Change Log
 
-**Current:** [v1.0.1.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.2 )
+**Current:** [v1.0.1.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.3 )
 
-## [1.0.1.3] - Unreleased
+## [1.0.1.3] - 2019-02-01
 ### New
 - Combat Extended compatibility patch re-added.
 - Realistic Planets use Acacia wood log as fuel.
+- Compatibility patch for the mods from Lord of the Rims.
 
 ### Fixed
 - Multi-version changes.
+- Disabled using Saguaro in the general recipe since it doesn't have a lumber counterpart.
 
 ## [1.0.1.2] - 2018-12-17
 ### New

@@ -39,6 +39,9 @@
 			<categories>
 				<li>WoodTypes</li>
 			</categories>
+			<disallowedThingDefs>
+				<li>WoodLog_Saguaro</li>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>
 			<li>Butchery</li>

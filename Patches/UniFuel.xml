@@ -148,4 +148,20 @@
 		</operations>
 	</Operation>
 	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>LotRE_WoodLog_GoldenBirch</li>
+					<li>LotRE_WoodLogMallorn</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
 </Patch>
