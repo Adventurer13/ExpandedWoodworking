@@ -2,10 +2,9 @@
 
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
-    <version>1.0.1.2</version>
+    <version>1.0.1.3</version>
     <incompatibleWith>
 		<li>ExtendedWoodworking</li>
-		<li>QualitySurgeon</li>
     </incompatibleWith>
     <loadBefore>
 		<li>VGPVegetableGarden</li>
