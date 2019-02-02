@@ -5,7 +5,7 @@
 ## [1.0.1.3] - 2019-02-01
 ### New
 - Combat Extended compatibility patch re-added.
-- Realistic Planets use Acacia wood log as fuel.
+- Realistic Planets Acacia wood log can be used as fuel.
 - Compatibility patch for the mods from Lord of the Rims.
 
 ### Fixed
