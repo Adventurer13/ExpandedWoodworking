@@ -159,4 +159,183 @@
 		</operations>
 	</Operation>
 	
+    
+    
+    <!-- mass statFactor for all woods -->
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WoodLog"]/stuffProps/statFactors/Mass</xpath>
+				<value>
+					<Mass>0.2</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Birch"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberBirch"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Palm"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.9</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberPalm"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.45</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Cecropia"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[Name="LumberCecropia"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.15</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Cocoa"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.25</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberCocoa"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Cypress"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.25</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberCypress"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Drago"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberDrago"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.25</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Maple"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberMaple"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Oak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.7</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberOak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.35</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Pine"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberPine"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.25</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Poplar"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberPoplar"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.15</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Saguaro"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Teak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberTeak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog_Willow"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberWillow"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.2</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Bamboo"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LumberBamboo"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 </Patch>
