@@ -172,6 +172,7 @@
 				<xpath>Defs/ThingDef[@Name = "WoodLumberBase"]/stuffProps/statFactors</xpath>
 				<value>
 					<Mass>0.3</Mass>
+                  <Bulk>0.03</Bulk>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -334,6 +335,35 @@
 				<xpath>Defs/ThingDef[defName = "LumberBamboo"]/stuffProps/statFactors</xpath>
 				<value>
 					<Mass>0.2625</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Expanded Woodworking for Vegetable Garden Project</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Acacia"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.78375</Mass>
+				</value>
+			</li>
+           <li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberAcacia"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.78375</Mass>
 				</value>
 			</li>
 		</operations>
