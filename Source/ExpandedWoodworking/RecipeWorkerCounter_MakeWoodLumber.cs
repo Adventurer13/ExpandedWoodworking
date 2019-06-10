@@ -39,5 +39,21 @@ namespace ExpandedWoodworking
 		{
 			return ThingCategoryDefOf.WoodLumber.label;
 		}
-	}
+
+        public override bool CanPossiblyStoreInStockpile(Bill_Production bill, Zone_Stockpile stockpile)
+        {
+            foreach (ThingDef current in bill.ingredientFilter.AllowedThingDefs)
+            {
+                if (!current.butcherProducts.NullOrEmpty<ThingDefCountClass>())
+                {
+                    ThingDef thingDef = current.butcherProducts[0].thingDef;
+                    if (!stockpile.GetStoreSettings().AllowedToAccept(thingDef))
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    }
 }
