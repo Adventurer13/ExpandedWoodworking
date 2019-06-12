@@ -2,7 +2,7 @@
 
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
-    <version>1.0.1.3</version>
+    <version>1.0.1.4</version>
     <incompatibleWith>
 		<li>ExtendedWoodworking</li>
     </incompatibleWith>

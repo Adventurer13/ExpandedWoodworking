@@ -1,6 +1,14 @@
 # Change Log
 
-**Current:** [v1.0.1.3](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.3 )
+**Current:** [v1.0.1.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.4 )
+
+## [1.0.1.4] - 2019-06-11
+### New
+- Added mass statFactor for logs and lumbers for Combat Extended compatibility. (Thanks to Jinlan)
+- Separated out Rim of Madness - Bones alterations into its own patch, so it can be easily deleted if unwanted.
+
+### Fixed
+- Make any lumber stockpile error.
 
 ## [1.0.1.3] - 2019-02-01
 ### New

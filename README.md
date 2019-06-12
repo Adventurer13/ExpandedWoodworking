@@ -41,7 +41,7 @@ Patches edit the following vanilla definitions:
 
 Mods given extended functionality with included patches:
 
-- Combat Extended (Awaiting Update)
+- Combat Extended
 - Dead Goat's Weapon Pack (by DrZhivago)
 - Lord of the Rims 
 - Nature's Pretty Sweet

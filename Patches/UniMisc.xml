@@ -214,22 +214,4 @@
     </operations>
   </Operation>
   
-  <!-- Rim of Madness - Bones -->
-  <!--Items-->
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="ExpandedWoodworking.PatchOperationModCompat">
-        <modName>Rim of Madness - Bones</modName>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BoneItem"]/stuffProps/categories</xpath>
-        <value>
-        <categories>
-          <li>RawWoody</li>
-        </categories>
-        </value>
-      </li>
-      </operations>
-  </Operation>
 </Patch>
