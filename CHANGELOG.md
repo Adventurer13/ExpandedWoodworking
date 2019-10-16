@@ -2,6 +2,10 @@
 
 **Current:** [v1.0.1.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.4 )
 
+## [1.0.1.5] - Unreleased
+### Fixed
+ - Russian localisation (by DiamondGrace)
+
 ## [1.0.1.4] - 2019-06-11
 ### New
 - Added mass statFactor for logs and lumbers for Combat Extended compatibility. (Thanks to Jinlan)

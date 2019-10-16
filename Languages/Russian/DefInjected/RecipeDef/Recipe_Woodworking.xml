@@ -61,6 +61,10 @@
 <MakeWoodLumberBamboo.description>Распилить сырые брёвна бамбука на доски для строительства.</MakeWoodLumberBamboo.description>
 <MakeWoodLumberBamboo.jobString>Производство досок из древесины.</MakeWoodLumberBamboo.jobString>
 
+<MakeWoodLumberCocoa.label>сделать доски какао</MakeWoodLumberCocoa.label>
+<MakeWoodLumberCocoa.description>Распилить сырые брёвна какао на доски для строительства.</MakeWoodLumberCocoa.description>
+<MakeWoodLumberCocoa.jobString>Производство досок из древесины.</MakeWoodLumberCocoa.jobString>
+
 <MakeWoodLumberMixedHand.label>сделать доски вручную</MakeWoodLumberMixedHand.label>
 <MakeWoodLumberMixedHand.description>Переработать вручную любые случайные или лишние брёвна в доски для строительства. Это утомительная работа.</MakeWoodLumberMixedHand.description>
 <MakeWoodLumberMixedHand.jobString>Производство досок из древесины.</MakeWoodLumberMixedHand.jobString>
