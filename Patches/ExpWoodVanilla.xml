@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
+
 	<!-- Arid Trees -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -19,7 +19,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Swamp Trees -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -44,7 +44,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Temperate Trees -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -99,12 +99,12 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>	
-			
+	</Operation>
+
 	<!-- Tropical Trees Continued -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
-		<operations>		
+		<operations>
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>VGP Vegetable Garden</modName>
 				<success>Invert</success>
@@ -117,7 +117,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Cultivated Tree -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -130,7 +130,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Recipe -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -153,9 +153,9 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Apparel -->
-	
+
 	<!-- Traders -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -194,7 +194,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -232,7 +232,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -270,7 +270,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -308,48 +308,54 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- RecipeDef - Peg Leg and Foot -->
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<categories>
+	<!--Let MSE change recipe if mod is loaded-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medical System Expansion</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodTypes</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
+					<value>
 						<li>WoodTypes</li>
-					</categories>
-				</value>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
-				<value>
-					<li>WoodTypes</li>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodLumber</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+					<value>
 						<li>WoodLumber</li>
-					</categories>
-				</value>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
-				<value>
-					<li>WoodLumber</li>
-				</value>
-			</li>
-		</operations>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
-	
+
 	<!-- Art -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -364,7 +370,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Joy/Recreation -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -408,7 +414,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Power -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -428,8 +434,8 @@
 			</li>
 		</operations>
 	</Operation>
-	
-	
+
+
 
 	<!-- Production -->
 	<Operation Class="PatchOperationSequence">
@@ -444,7 +450,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -454,7 +460,7 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName = "Brewery"]/costList/WoodLog	|
 						Defs/ThingDef[defName = "FermentingBarrel"]/costList/WoodLog</xpath>
-			</li>		
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
 				<value>
@@ -462,8 +468,8 @@
 				</value>
 			</li>
 		</operations>
-	</Operation>	
-	
+	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -485,7 +491,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -500,7 +506,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -515,7 +521,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -540,19 +546,19 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Building/TableBrewery/TableBrewery</texPath>
-				</value>
+		<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/TableBrewery/TableBrewery</texPath>
+		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Building/FermentingBarrel/FermentingBarrel</texPath>
-				</value>
+		<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/FermentingBarrel/FermentingBarrel</texPath>
+		</value>
 	</Operation>
-	
+
 	<!-- Security -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -565,7 +571,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Temperature -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -584,7 +590,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -606,7 +612,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -630,7 +636,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Base Weapons -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -649,7 +655,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Weapon (Melee Medieval) -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -662,7 +668,7 @@
 			</li>
 		</operations>
 	</Operation>
-	
+
 	<!-- Weapons (Melee Neolithic) -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -677,7 +683,7 @@
 			</li>
 		</operations>
 	</Operation>
-		
+
 	<!-- Weapon(Ranged Neolithic) -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -720,6 +726,6 @@
 			</li>
 		</operations>
 	</Operation>
-	
-	
+
+
 </Patch>
