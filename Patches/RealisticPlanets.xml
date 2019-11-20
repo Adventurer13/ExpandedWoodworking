@@ -53,7 +53,7 @@
                                     <defName>WoodLog_Acacia</defName>
                                     <!-- SG: 1.19  W: 1185  H: 3680 -->
                                     <label>acacia logs</label>
-                                    <description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood. (RP)</description>
+                                    <description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood.</description>
                                     <graphicData>
                                         <color>(81,56,49)</color>
                                     </graphicData>
@@ -88,7 +88,7 @@
                                 <ThingDef ParentName="WoodLumberBase">
                                     <defName>LumberAcacia</defName>
                                     <label>acacia lumber</label>
-                                    <description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood. (RP)</description>
+                                    <description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood.</description>
                                     <graphicData>
                                         <color>(81,56,49)</color>
                                     </graphicData>
@@ -119,7 +119,7 @@
                                 <RecipeDef ParentName="MakeWoodLumberBase">
                                     <defName>MakeWoodLumberAcacia</defName>
                                     <label>make acacia lumber</label>
-                                    <description>Process raw acacia logs into lumber for construction. (RP)</description>
+                                    <description>Process raw acacia logs into lumber for construction.</description>
                                     <allowMixingIngredients>false</allowMixingIngredients>
                                     <ingredients>
                                         <li>
@@ -167,7 +167,7 @@
                                 <defName>WoodLog_Acacia</defName>
                                 <!-- SG: 1.19  W: 1185  H: 3680 -->
                                 <label>acacia logs</label>
-                                <description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood. (RP)</description>
+                                <description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood.</description>
                                 <graphicData>
                                     <color>(81,56,49)</color>
                                 </graphicData>
@@ -201,7 +201,7 @@
                             <ThingDef ParentName="WoodLumberBase">
                                 <defName>LumberAcacia</defName>
                                 <label>acacia lumber</label>
-                                <description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood. (RP)</description>
+                                <description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood.</description>
                                 <graphicData>
                                     <color>(81,56,49)</color>
                                 </graphicData>
@@ -232,7 +232,7 @@
                             <RecipeDef ParentName="MakeWoodLumberBase">
                                 <defName>MakeWoodLumberAcacia</defName>
                                 <label>make acacia lumber</label>
-                                <description>Process raw acacia logs into lumber for construction. (RP)</description>
+                                <description>Process raw acacia logs into lumber for construction.</description>
                                 <allowMixingIngredients>false</allowMixingIngredients>
                                 <ingredients>
                                     <li>
