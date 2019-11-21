@@ -357,17 +357,6 @@
 			<mods>
 				<li>VGP Xtra Trees and Flowers</li>
 			</mods>
-			<match Class="PatchOperationFindMod">
-				<mods>
-					<li>Expanded Woodworking for Vegetable Garden Project</li>
-				</mods>
-				<match Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "WoodLog_Acacia"]/stuffProps/statFactors</xpath>
-					<value>
-						<Mass>0.78375</Mass>
-					</value>
-				</match>
-			</match>
 			<nomatch Class="PatchOperationFindMod">
 				<mods>
 					<li>[RF] Realistic Planets [1.0]</li>
@@ -392,17 +381,6 @@
 			<mods>
 				<li>VGP Xtra Trees and Flowers</li>
 			</mods>
-			<match Class="PatchOperationFindMod">
-				<mods>
-					<li>Expanded Woodworking for Vegetable Garden Project</li>
-				</mods>
-				<match Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "LumberAcacia"]/stuffProps/statFactors</xpath>
-					<value>
-						<Mass>0.78375</Mass>
-					</value>
-				</match>
-			</match>
 			<nomatch Class="PatchOperationFindMod">
 				<mods>
 					<li>[RF] Realistic Planets [1.0]</li>

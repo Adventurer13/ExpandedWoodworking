@@ -889,6 +889,68 @@
 					</RecipeDef>
 				</value>
 			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBaobab"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_ConvertDeprecatedBaobabLogs</defName>
+						<label>convert deprecated baobab logs into new logs (temporary)</label>
+						<description>NOTE: Will be removed in a future update! This one converts older logs into the new logs. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Baobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Baobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<WoodLog_Baobab>15</WoodLog_Baobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBaobab"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberBaobab</defName>
+						<label>convert deprecated baobab lumber into new lumber (temporary)</label>
+						<description>Please use the other baobab lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberBaobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberBaobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberBaobab>15</LumberBaobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
 		</operations>
 	</Operation>		
 			
@@ -931,6 +993,68 @@
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberGum"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_ConvertDeprecatedGumLogs</defName>
+						<label>convert deprecated ghost gum logs into new logs (temporary)</label>
+						<description>NOTE: Will be removed in a future update! This one converts older logs into the new logs. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Gum</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Gum</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<WoodLog_Gum>15</WoodLog_Gum>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberGum"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberGum</defName>
+						<label>convert deprecated ghost gum lumber into new lumber (temporary)</label>
+						<description>Please use the other ghost gum lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberGum</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberGum</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberGum>15</LumberGum>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
 				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
 				<order>Prepend</order>
 				<value>
@@ -963,6 +1087,68 @@
 				</value>
 			</li>
 			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberHazelnut"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_ConvertDeprecatedHazelnutLogs</defName>
+						<label>convert deprecated hazelnut logs into new logs (temporary)</label>
+						<description>NOTE: Will be removed in a future update! This one converts older logs into the new logs. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Hazelnut</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Hazelnut</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<WoodLog_Hazelnut>15</WoodLog_Hazelnut>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberHazelnut"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberHazelnut</defName>
+						<label>convert deprecated hazelnut lumber into new lumber (temporary)</label>
+						<description>Please use the other hazelnut lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberHazelnut</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberHazelnut</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberHazelnut>15</LumberHazelnut>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
 				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberTeak"]</xpath>
 				<order>Prepend</order>
 				<value>
@@ -988,6 +1174,37 @@
 						</fixedIngredientFilter>
 						<products>
 							<LumberRedwood>30</LumberRedwood>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberRedwood"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberRedwood</defName>
+						<label>convert deprecated redwood lumber into new lumber (temporary)</label>
+						<description>Please use the other redwood lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberRedwood</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberRedwood</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberRedwood>15</LumberRedwood>
 						</products>
 					</RecipeDef>
 				</value>
