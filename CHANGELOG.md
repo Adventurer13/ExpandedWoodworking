@@ -3,8 +3,16 @@
 **Current:** [v1.0.1.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.4 )
 
 ## [1.0.1.5] - Unreleased
+### New
+- Advanced Biomes patch.
+- Nature's Pretty Sweet revamp for the name of defs for logs, lumber, and recipes.
+- Patch (UniMedical) for prosthetics from EPOE, MSE, and eventually other mods that also need to be modified.
+- Cleanned-up a few patch operations in follwing patches: TKKN_NPS, Z_CE, and UniFuel.
+ 
 ### Fixed
  - Russian localisation (by DiamondGrace)
+ - Acacia mass statFactor not applying when using VGP and CE.
+ - CE patch operations not applying because CE patch was loaded before other mod patches were loaded.
 
 ## [1.0.1.4] - 2019-06-11
 ### New
