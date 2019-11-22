@@ -314,6 +314,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Medical System Expansion</li>
+			<li>Expanded Prosthetics and Organ Engineering</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
 			<success>Always</success>
