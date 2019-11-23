@@ -122,6 +122,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Advanced Biomes</li>
+			<li>Nature's Pretty Sweet</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
@@ -129,17 +130,6 @@
 				<li>WoodLog_Baobab</li>
 			</value>
 		</match>
-		<nomatch Class="PatchOperationFindMod">
-			<mods>
-				<li>Nature's Pretty Sweet</li>
-			</mods>
-			<match Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>WoodLog_Baobab</li>
-				</value>
-			</match>
-		</nomatch>
 	</Operation>
 	
 	<Operation Class="PatchOperationSequence">

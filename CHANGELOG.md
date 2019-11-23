@@ -7,7 +7,8 @@
 - Advanced Biomes patch.
 - Nature's Pretty Sweet revamp for the name of defs for logs, lumber, and recipes.
 - Patch (UniMedical) for prosthetics from EPOE, MSE, and eventually other mods that also need to be modified.
-- Cleanned-up a few patch operations in follwing patches: TKKN_NPS, Z_CE, and UniFuel.
+- Extended correct mass statFactor when using CE to logs and lumber added by my patches for other mods.
+- Cleanned-up a few patch operations in the following patches: TKKN_NPS, Z_CE, and UniFuel.
  
 ### Fixed
  - Russian localisation (by DiamondGrace)
