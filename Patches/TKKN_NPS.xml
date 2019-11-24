@@ -68,6 +68,127 @@
 		</operations>
 	</Operation>
 	
+	<!-- Temp Trader Fix for deprecated items -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -272,7 +393,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps baobab</stuffAdjective>
-							<commonality>0.45</commonality>
+							<commonality>0.0</commonality>
 							<color>(183,132,101)</color>
 							<statFactors>
 								<MaxHitPoints>0.5</MaxHitPoints>
@@ -351,7 +472,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps gum</stuffAdjective>
-							<commonality>0.5</commonality>
+							<commonality>0.0</commonality>
 							<color>(108,103,97)</color>
 							<statFactors>
 								<MaxHitPoints>0.65</MaxHitPoints>
@@ -421,7 +542,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps hazelnut</stuffAdjective>
-							<commonality>0.75</commonality>
+							<commonality>0.0</commonality>
 							<color>(222,192,140)</color>
 							<statFactors>
 								<MaxHitPoints>0.5</MaxHitPoints>
@@ -572,7 +693,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps baobab</stuffAdjective>
-							<commonality>0.4</commonality>
+							<commonality>0.0</commonality>
 							<color>(183,132,101)</color>
 							<statFactors>
 								<MaxHitPoints>0.5</MaxHitPoints>
@@ -645,7 +766,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps gum</stuffAdjective>
-							<commonality>0.45</commonality>
+							<commonality>0.0</commonality>
 							<color>(108,103,97)</color>
 							<statFactors>
 								<MaxHitPoints>0.65</MaxHitPoints>
@@ -709,7 +830,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps hazelnut</stuffAdjective>
-							<commonality>0.7</commonality>
+							<commonality>0.0</commonality>
 							<color>(222,192,140)</color>
 							<statFactors>
 								<MaxHitPoints>0.5</MaxHitPoints>
@@ -777,7 +898,7 @@
 						</statBases>
 						<stuffProps>
 							<stuffAdjective>nps redwood</stuffAdjective>
-							<commonality>0.3</commonality>
+							<commonality>0.0</commonality>
 							<color>(102,41,20)</color>
 							<statFactors>
 								<MaxHitPoints>0.75</MaxHitPoints>
