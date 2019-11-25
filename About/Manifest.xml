@@ -2,7 +2,7 @@
 
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
-    <version>1.0.1.4</version>
+    <version>1.0.1.5</version>
     <incompatibleWith>
 		<li>ExtendedWoodworking</li>
     </incompatibleWith>
@@ -13,8 +13,8 @@
 		<li>VGPXtraTreesandFlowers</li>
     </loadBefore>
 	<loadAfter>
+		<li>CombatExtended</li>
 		<li>StuffedWorkbenches</li>
-		<li>ZenGarden</li>
 	</loadAfter>
 	<showCrossPromotions>true</showCrossPromotions>
     <manifestUri>https://raw.githubusercontent.com/Adventurer13/ExpandedWoodworking/master/About/Manifest.xml</manifestUri>

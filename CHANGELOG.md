@@ -1,8 +1,8 @@
 # Change Log
 
-**Current:** [v1.0.1.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.4 )
+**Current:** [v1.0.1.4](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.5 )
 
-## [1.0.1.5] - Unreleased
+## [1.0.1.5] - 2019-11-24
 ### New
 - Advanced Biomes patch.
 - Nature's Pretty Sweet revamp for the name of defs for logs, lumber, and recipes.

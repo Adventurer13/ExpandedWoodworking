@@ -27,8 +27,8 @@ Expanded Woodworking overwrites the following vanilla definitions:
 Patches edit the following vanilla definitions:
 
 - Trees
-- Fuelled stove & smithy
-- Brewery & barrels
+- Fuelled stove and smithy
+- Brewery and barrels
 - Butcher table
 - Torch lamp
 - Campfire
@@ -41,6 +41,7 @@ Patches edit the following vanilla definitions:
 
 Mods given extended functionality with included patches:
 
+- Advanced Biomes
 - Combat Extended
 - Dead Goat's Weapon Pack (by DrZhivago)
 - Lord of the Rims 
