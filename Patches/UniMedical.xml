@@ -5,6 +5,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Expanded Prosthetics and Organ Engineering</li>
+			<li>EPOE Fix + EPOE Replacement Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
