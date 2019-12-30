@@ -1,6 +1,13 @@
 # Change Log
 
-**Current:** [v1.0.1.5](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.5 )
+**Current:** [v1.0.1.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.6 )
+
+## [1.0.1.6] - 2019-12-29
+### New
+- Boats compatibility (spawning boats in via godmode deviates them from the author's intended appearance)
+
+### Removed
+- BuildingBase and BenchBase defs
 
 ## [1.0.1.5] - 2019-11-24
 ### New
@@ -8,7 +15,7 @@
 - Nature's Pretty Sweet revamp for the name of defs for logs, lumber, and recipes.
 - Patch (UniMedical) for prosthetics from EPOE, MSE, and eventually other mods that also need to be modified.
 - Extended correct mass statFactor when using CE to logs and lumber added by my patches for other mods.
-- Cleanned-up a few patch operations in the following patches: TKKN_NPS, Z_CE, and UniFuel.
+- Cleaned-up a few patch operations in the following patches: TKKN_NPS, Z_CE, and UniFuel.
  
 ### Fixed
  - Russian localisation (by DiamondGrace)
