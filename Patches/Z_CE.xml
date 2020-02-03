@@ -17,9 +17,9 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>10</power>
-							<cooldownTime>1.85</cooldownTime>
-							<armorPenetration>0.118</armorPenetration>
+							<power>2</power>
+                          <cooldownTime>0.99</cooldownTime>
+                          <armorPenetrationBlunt>0.288</armorPenetrationBlunt>
 						</li>
 					</tools>
 				</value>
