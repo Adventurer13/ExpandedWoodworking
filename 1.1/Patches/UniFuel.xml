@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<value>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Cocoa</li>
+					<li>WoodLog_Cypress</li>
+					<li>WoodLog_Drago</li>
+					<li>WoodLog_Maple</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Saguaro</li>
+					<li>WoodLog_Teak</li>
+					<li>WoodLog_Willow</li>
+					<li>Bamboo</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>VGP Vegetable Garden</li>
+					<li>Expanded Woodworking for Vegetable Garden Project</li>
+				</modList>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Apple</li>
+					<li>WoodLog_Cherry</li>
+					<li>WoodLog_Coconut</li>
+					<li>WoodLog_DatePalm</li>
+					<li>WoodLog_Fig</li>
+					<li>WoodLog_Orange</li>
+					<li>WoodLog_Peach</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>VGP Vegetable Garden</li>
+					<li>VGP Xtra Trees and Flowers</li>
+					<li>Expanded Woodworking for Vegetable Garden Project</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<!-- <li>WoodLog_Acacia</li> -->
+					<li>WoodLog_Camellia</li>
+					<li>WoodLog_CherryBlossom</li>
+					<li>WoodLog_JapaneseMaple</li>
+					<li>WoodLog_RedMaple</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+				</value>
+			</match>
+		</match>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>[RF] Realistic Planets [1.0]</li>
+				<li>Advanced Biomes</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>ZEN_WoodLog_CrabApple</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes</li>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Baobab</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Cedar</li>
+					<li>WoodLog_Snag</li>
+					<li>WoodLog_Mangrove</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>TKKN_WoodLog_Gum</li>
+					<li>WoodLog_Gum</li>
+					<li>TKKN_WoodLog_Baobab</li>
+					<li>TKKN_WoodLog_Hazelnut</li>
+					<li>WoodLog_Hazelnut</li>
+					<li>RedWoodLog</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+				</value>
+			</li>
+		</operations>
+	</Operation> -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Lord of the Rims - Elves</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Saguaro"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>LotRE_WoodLog_GoldenBirch</li>
+					<li>LotRE_WoodLogMallorn</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

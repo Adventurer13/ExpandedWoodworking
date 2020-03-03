@@ -2,15 +2,33 @@
 
 	<name>Expanded Woodworking</name>
 	<author>ItchyFlea -> Qwynn -> Adventurer</author>
+	<packageId>Adventurer.ExpandWoodwork</packageId>
 	<url>https://ludeon.com/forums/index.php?topic=37650</url>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
-	<description>An upgrade of Qwynn's Expanded Woodworking which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other objects which are designated as 'Woody' in their stuff category.
+	<description>An upgrade of Qwynn's Expanded Woodworking which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other objects which are designated as 'Woody' in their stuff category. Supports any starting scenario through using the crafting spot to make lumber.
 
 	
 Current Version: 1.0.1.6 (2019-12-29)
 Previous versions can be found on GitHub.
 	</description>
-		
+	<incompatibleWith>
+		<li>TeflonJim.ExtendedWoodworking</li>
+    </incompatibleWith>
+    <loadBefore>
+		<li>dismarzero.VGP.VGPVegetableGarden</li>
+		<li>dismarzero.VGP.VGPGardenDrinks</li>
+		<li>dismarzero.VGP.VGPGardenTools</li>
+		<li>dismarzero.VGP.XtraTreesandFlowers</li>
+    </loadBefore>
+    <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+		<li>CombatExtended</li>
+		<li>cucumpear.workbenches</li>
+	</loadAfter>
+	
 </ModMetaData>

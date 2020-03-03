@@ -1,0 +1,477 @@
+﻿<Defs>
+ 
+ <!-- Abstracts -->
+
+	<ThingDef Name="WoodLogBase" ParentName="ResourceVerbBase" Abstract="True">
+		<defName>WoodLogBase</defName>
+		<description>Raw wood from a tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics.</description>
+		<graphicData>
+			<texPath>Things/Resources/WoodLog</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.4</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>WoodTypes</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>raw wooden</stuffAdjective>
+			<categories>
+				<li>RawWoody</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<color>(133,97,67)</color>
+			<appearance>Planks</appearance>
+			<constructEffect>ConstructWood</constructEffect>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>1</Flammability>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<isTechHediff>true</isTechHediff>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
+		<tools>
+			<li>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+ 
+<!-- Wood Trees --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
+ 
+ 	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Birch</defName> <!-- SG: 0.61   W: 610  H: 910 -->
+		<label>birch logs</label>
+		<description>Raw wood from a birch tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Birch is a perishable hardwood.</description>
+		<graphicData>
+			<color>(252,237,196)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.6</Mass>
+			<MarketValue>1.5</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>birch</stuffAdjective>
+			<commonality>0.8</commonality>
+			<color>(251,217,172)</color>
+			<statFactors>
+				<MaxHitPoints>0.45</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>0.4</WorkToMake>
+				<WorkToBuild>0.4</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberBirch>30</LumberBirch>
+		</butcherProducts>		
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Palm</defName> <!-- SG: 0.97  W: 970  H: 2020 -->
+		<label>black palm logs</label>
+		<description>Raw wood from a black palm tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Black palm is a durable wood.</description>
+		<graphicData>
+			<color>(42,40,41)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.9</Mass>
+			<MarketValue>2.0</MarketValue>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>black palm</stuffAdjective>
+			<commonality>0.2</commonality>
+			<color>(42,40,41)</color>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<Beauty>1.0</Beauty>
+				<WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+				<DoorOpenSpeed>0.8</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberPalm>30</LumberPalm>
+		</butcherProducts>		
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Cecropia</defName> <!-- SG: 0.26-0.34  W: light (hollow)  H: 320 --> <!-- Note: After adjusting its inaccuracies, its role has become similar to that of drago wood. I am leaving the color since it is distinct in comparison to the others. If you wish for it to return to how it was before, let me know! -->
+		<label>cecropia logs</label>
+		<description>Raw wood from a cecropia tree. When processed it becomes useful in weapons, tools, handicrafts, small structures, and even simple prosthetics. Cecropia is a nondurable to perishable hardwood.</description>
+		<graphicData>
+			<color>(123,47,24)</color> 
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>1.4</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cecropia</stuffAdjective>
+			<commonality>0.55</commonality>
+			<color>(123,47,24)</color>
+			<statFactors>
+				<MaxHitPoints>0.3</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>0.2</WorkToMake>
+				<WorkToBuild>0.2</WorkToBuild>
+				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberCecropia>30</LumberCecropia>
+		</butcherProducts>		
+	</ThingDef>
+
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Cocoa</defName> <!-- Color isn't true to life, but chosen for variety. If you have a better color choice, let me know! -->
+		<label>cocoawood logs</label>
+		<description>Raw wood from a cocoa tree. When processed it becomes useful for building structures, weapons, and simple prosthetics. Cocoawood is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(86,42,34)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>2.1</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cocoawood</stuffAdjective>
+			<commonality>0.2</commonality>
+			<color>(86,42,34)</color>
+			<statFactors>
+				<MaxHitPoints>0.45</MaxHitPoints>
+				<Beauty>1.0</Beauty>
+				<WorkToMake>0.35</WorkToMake>
+				<WorkToBuild>0.35</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberCocoa>30</LumberCocoa>
+		</butcherProducts>		
+	</ThingDef>	
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Cypress</defName> <!-- SG: 0.51   W: 515  H: 510 -->
+		<label>cypress logs</label>
+		<description>Raw wood from a cypress tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Cypress is a durable softwood.</description>
+		<graphicData>
+			<color>(233,207,175)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>1.3</MarketValue>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cypress</stuffAdjective>
+			<commonality>0.5</commonality>
+			<color>(233,207,175)</color>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberCypress>30</LumberCypress>
+		</butcherProducts>		
+	</ThingDef>	
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Drago</defName> <!-- SG: ?  W: ?  H: ? --> <!-- sort of succulent-like -->
+		<label>drago logs</label>
+		<description>Raw wood from a drago tree. When processed it becomes useful for making tools, handicrafts, and other makeshift structures. Drago is a low durability hardwood valued more for its resin.</description>
+		<graphicData>
+			<color>(245,175,125)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<MarketValue>1.7</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>drago</stuffAdjective>
+			<commonality>0.3</commonality>
+			<color>(245,175,125)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberDrago>30</LumberDrago>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Maple</defName> <!-- SG: 0.61  W: 610  H: 950 -->
+		<label>maple logs</label>
+		<description>Raw wood from a maple tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Maple is a nondurable to perishable hardwood.</description>
+		<graphicData>
+			<color>(211,186,159)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.6</Mass>
+			<MarketValue>1.4</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>maple</stuffAdjective>
+			<commonality>0.6</commonality>
+			<color>(211,186,159)</color>
+			<statFactors>
+				<MaxHitPoints>0.55</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.45</WorkToMake>
+				<WorkToBuild>0.45</WorkToBuild>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberMaple>30</LumberMaple>
+		</butcherProducts>		
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Oak</defName> <!-- SG: 0.75  W: 755  H: 1350 -->
+		<label>oak logs</label>
+		<description>Raw wood from an oak tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Oak is a very durable hardwood.</description>
+		<graphicData>
+			<color>(181,137,88)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.7</Mass>
+			<MarketValue>1.6</MarketValue>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>oak</stuffAdjective>	
+			<commonality>0.35</commonality>
+			<color>(181,137,88)</color>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.6</WorkToMake>
+				<WorkToBuild>0.6</WorkToBuild>
+				<DoorOpenSpeed>1.0</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberOak>30</LumberOak>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Pine</defName> <!-- SG: 0.50  W: 500  H: 570 -->
+		<label>pine logs</label>
+		<description>Raw wood from a pine tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Pine is a moderate to low durability softwood.</description>
+		<graphicData>
+			<color>(241,190,133)</color>
+		</graphicData>
+		<statBases>	
+			<Mass>0.5</Mass>
+			<MarketValue>1.1</MarketValue>
+			<DeteriorationRate>3</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>pine</stuffAdjective>
+			<commonality>0.75</commonality>
+			<color>(241,190,133)</color>
+			<statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<Beauty>0.9</Beauty>
+				<WorkToMake>0.25</WorkToMake>
+				<WorkToBuild>0.25</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberPine>30</LumberPine>
+		</butcherProducts>		
+	</ThingDef>
+  
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Poplar</defName> <!-- SG: 0.39  W: 385  H: 460 -->
+		<label>poplar logs</label>
+		<description>Raw wood from a poplar tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Poplar is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(207,174,129)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>0.9</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>poplar</stuffAdjective>
+			<commonality>0.95</commonality>
+			<color>(207,174,129)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>0.75</Beauty>
+				<WorkToMake>0.2</WorkToMake>
+				<WorkToBuild>0.2</WorkToBuild>
+				<DoorOpenSpeed>1.4</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberPoplar>30</LumberPoplar>
+		</butcherProducts>
+	</ThingDef>  
+  
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Saguaro</defName> <!-- SG: 0.43  W: 429  H: soft, so low? --> <!-- Credit to DF wiki for SG and W -->
+		<label>saguaro ribs</label>
+		<description>Ribs from a saguaro cactus. Saguaro is soft and excellent for making tools, handicrafts, fences, and other small structures.</description>
+		<graphicData>
+			<color>(223,191,140)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.4</Mass>
+			<MarketValue>1</MarketValue>
+			<DeteriorationRate>3</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>saguaro rib</stuffAdjective>
+			<commonality>0.40</commonality>
+			<color>(223,191,140)</color>
+			<statFactors>
+				<MaxHitPoints>0.3</MaxHitPoints>
+				<Beauty>0.60</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>  
+  
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Teak</defName> <!-- SG: 0.66  W: 655  H: 1070 -->
+		<label>teak logs</label>
+		<description>Raw wood from a teak tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Teak is the most durable hardwood.</description>
+		<graphicData>
+			<color>(120,86,51)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.6</Mass>
+			<MarketValue>2.3</MarketValue>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>teak</stuffAdjective>
+			<commonality>0.25</commonality>
+			<color>(120,86,51)</color>
+			<statFactors>
+				<MaxHitPoints>0.7</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.5</WorkToMake>
+				<WorkToBuild>0.5</WorkToBuild>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberTeak>30</LumberTeak>
+		</butcherProducts>		
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Willow</defName> <!-- SG: 0.4  W: 400  H: 570 -->
+		<label>willow logs</label>
+		<description>Raw wood from a willow tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Willow is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(239,194,113)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.4</Mass>
+			<MarketValue>1.0</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>willow</stuffAdjective>
+			<commonality>0.8</commonality>
+			<color>(239,194,113)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>0.85</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.4</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberWillow>30</LumberWillow>
+		</butcherProducts>		
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLogBase">
+		<defName>Bamboo</defName> <!-- SG: 0.5-0.85  W: 500-850  H: 1410-1610 -->
+		<label>raw bamboo</label>
+		<description>Raw bamboo. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Bamboo is a perishable, fast growing grass.</description>
+		<graphicData>
+			<texPath>Things/Resources/Bamboo/bamboo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.6</Mass>
+			<MarketValue>1.0</MarketValue>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>bamboo</stuffAdjective>
+			<commonality>0.75</commonality>
+			<color>(248,218,158)</color>
+			<statFactors>
+				<MaxHitPoints>0.35</MaxHitPoints>
+				<Beauty>1.25</Beauty>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<butcherProducts>
+			<LumberBamboo>30</LumberBamboo>
+		</butcherProducts>		
+	</ThingDef>
+	
+</Defs>

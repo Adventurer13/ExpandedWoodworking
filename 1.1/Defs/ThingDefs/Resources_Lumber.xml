@@ -1,0 +1,430 @@
+<Defs> 
+
+<!-- Abstracts -->
+
+	<ThingDef Name="WoodLumberBase" ParentName="ResourceBase" Abstract="True">
+		<defName>WoodLumberBase</defName>
+		<description>Processed lumber. Mostly useful for building long-lasting, simple structures and furniture.</description>
+		<graphicData>
+			<texPath>Things/Resources/WoodLumber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>75</stackLimit>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.4</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>WoodLumber</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>wooden</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<appearance>Planks</appearance>
+			<constructEffect>ConstructWood</constructEffect>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>1</Flammability>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<isTechHediff>true</isTechHediff>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
+	</ThingDef>
+
+<!-- Wood Trees -->
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberBirch</defName>
+		<label>birch lumber</label>
+		<description>Processed birch lumber. Mostly useful for building long-lasting, simple structures and furniture. Birch is a perishable hardwood.</description>
+		<graphicData>
+			<color>(252,237,196)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>1.4</MarketValue>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>birch</stuffAdjective>
+			<commonality>0.90</commonality>
+			<color>(251,217,172)</color>
+			<statFactors>
+				<MaxHitPoints>0.45</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>0.4</WorkToMake>
+				<WorkToBuild>0.4</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberPalm</defName>
+		<label>black palm lumber</label>
+		<description>Processed black palm lumber. Mostly useful for building long-lasting, simple structures and furniture. Black palm is a durable wood.</description>
+		<graphicData>
+			<color>(42,40,41)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.45</Mass>
+			<MarketValue>4.0</MarketValue>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>black palm</stuffAdjective>
+			<commonality>0.25</commonality>
+			<color>(42,40,41)</color>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<Beauty>1.0</Beauty>
+				<WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+				<DoorOpenSpeed>0.8</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+  
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberCecropia</defName>
+		<label>cecropia lumber</label>
+		<description>Processed cecropia lumber. Mostly useful for building simple structures, tools, and simple prosthetics. Cecropia is a nondurable to perishable hardwood.</description>
+		<graphicData>
+			<color>(123,47,24)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<MarketValue>1.6</MarketValue>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cecropia</stuffAdjective>
+			<commonality>0.5</commonality>
+			<color>(123,47,24)</color>
+			<statFactors>
+				<MaxHitPoints>0.3</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>0.2</WorkToMake>
+				<WorkToBuild>0.2</WorkToBuild>
+				<DoorOpenSpeed>1.5</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberCocoa</defName>
+		<label>cocoawood lumber</label>
+		<description>Processed cocoawood lumber. Mostly useful for building simple structures and furniture. Cocoawood is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(86,42,34)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>2.9</MarketValue>
+			<DeteriorationRate>7</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cocoawood</stuffAdjective>
+			<commonality>0.1</commonality>
+			<color>(86,42,34)</color>
+			<statFactors>
+				<MaxHitPoints>0.45</MaxHitPoints>
+				<Beauty>1.0</Beauty>
+				<WorkToMake>0.35</WorkToMake>
+				<WorkToBuild>0.35</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>	
+	
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberCypress</defName>
+		<label>cypress lumber</label>
+		<description>Processed cypress lumber. Mostly useful for building long-lasting, simple structures and furniture. Cypress is a durable softwood.</description>
+		<graphicData>
+			<color>(233,207,175)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>3.0</MarketValue>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>cypress</stuffAdjective>
+			<commonality>0.3</commonality>
+			<color>(233,207,175)</color>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>	
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberDrago</defName>
+		<label>drago lumber</label>
+		<description>Processed drago lumber. Mostly useful for building makeshift structures, handicrafts and furniture. Drago is a low durability hardwood.</description>
+		<graphicData>
+			<color>(245,175,125)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>1.3</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>drago</stuffAdjective>
+			<commonality>0.65</commonality>
+			<color>(245,175,125)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberMaple</defName>
+		<label>maple lumber</label>
+		<description>Processed maple lumber. Mostly useful for building long-lasting, simple structures and furniture. Maple is a nondurable to perishable hardwood.</description>
+		<graphicData>
+			<color>(211,186,159)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>1.5</MarketValue>
+			<DeteriorationRate>7</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>maple</stuffAdjective>
+			<commonality>0.7</commonality>
+			<color>(211,186,159)</color>
+			<statFactors>
+				<MaxHitPoints>0.55</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.45</WorkToMake>
+				<WorkToBuild>0.45</WorkToBuild>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>WoodLog</defName>
+		<label>mixed lumber</label>
+		<description>Various kinds of processed lumber all bundled together. Mostly useful for building long-lasting, simple structures and furniture. For when you care more about function than form.</description>
+		<graphicData>
+			<color>(133,97,67)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>0.8</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>wooden</stuffAdjective>
+			<commonality>0.99</commonality>
+			<color>(133,97,67)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>0.5</Beauty>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.6</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>	
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberOak</defName>
+		<label>oak lumber</label>
+		<description>Processed oak lumber. Mostly useful for building long-lasting, simple structures and furniture. Oak is a very durable hardwood.</description>
+		<graphicData>
+			<color>(181,137,88)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.35</Mass>
+			<MarketValue>3.75</MarketValue>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>oak</stuffAdjective>
+			<commonality>0.35</commonality>
+			<color>(181,137,88)</color>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.6</WorkToMake>
+				<WorkToBuild>0.6</WorkToBuild>
+				<DoorOpenSpeed>1.0</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberPine</defName>
+		<label>pine lumber</label>
+		<description>Processed pine lumber. Mostly useful for building long-lasting, simple structures and furniture. Pine is a moderate to low durability softwood.</description>
+		<graphicData>
+			<color>(241,190,133)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MarketValue>2.8</MarketValue>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>pine</stuffAdjective>
+			<commonality>0.7</commonality>
+			<color>(241,190,133)</color>
+			<statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<Beauty>0.9</Beauty>
+				<WorkToMake>0.25</WorkToMake>
+				<WorkToBuild>0.25</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>	
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberPoplar</defName>
+		<label>poplar lumber</label>
+		<description>Processed poplar lumber. Mostly useful for building long-lasting, simple structures and furniture. Poplar is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(207,174,129)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<MarketValue>2</MarketValue>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>poplar</stuffAdjective>
+			<commonality>0.95</commonality>
+			<color>(207,174,129)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>0.75</Beauty>
+				<WorkToMake>0.2</WorkToMake>
+				<WorkToBuild>0.2</WorkToBuild>
+				<DoorOpenSpeed>1.4</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberTeak</defName>
+		<label>teak lumber</label>
+		<description>Processed teak lumber. Mostly useful for building long-lasting, simple structures and furniture. Teak is the most durable hardwood.</description>
+		<graphicData>
+			<color>(120,86,51)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>3.8</MarketValue>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>teak</stuffAdjective>
+			<commonality>0.25</commonality>
+			<color>(120,86,51)</color>
+			<statFactors>
+				<MaxHitPoints>0.7</MaxHitPoints>
+				<Beauty>1.1</Beauty>
+				<WorkToMake>0.5</WorkToMake>
+				<WorkToBuild>0.5</WorkToBuild>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberWillow</defName>
+		<label>willow lumber</label>
+		<description>Processed willow lumber. Mostly useful for building long-lasting, simple structures and furniture. Willow is a nondurable hardwood.</description>
+		<graphicData>
+			<color>(239,194,113)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.2</Mass>
+			<MarketValue>2.3</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>willow</stuffAdjective>
+			<commonality>0.8</commonality>
+			<color>(239,194,113)</color>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>0.85</Beauty>
+				<WorkToMake>0.3</WorkToMake>
+				<WorkToBuild>0.3</WorkToBuild>
+				<DoorOpenSpeed>1.4</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLumberBase">
+		<defName>LumberBamboo</defName>
+		<label>bamboo lumber</label>
+		<description>Processed bamboo lumber. Mostly useful for building long-lasting, simple structures and furniture. Bamboo is a perishable, fast growing grass.</description>
+		<graphicData>
+			<color>(248,218,158)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<MarketValue>1.4</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>bamboo</stuffAdjective>
+			<commonality>0.75</commonality>
+			<color>(248,218,158)</color>
+			<statFactors>
+				<MaxHitPoints>0.35</MaxHitPoints>
+				<Beauty>1.25</Beauty>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.3</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+  
+ </Defs>
