@@ -19,7 +19,7 @@
 							</capacities>
 							<power>2</power>
 							<cooldownTime>0.99</cooldownTime>
-							<armorPenetration>0.288</armorPenetration>
+							<armorPenetrationBlunt>0.288</armorPenetrationBlunt>
 						</li>
 					</tools>
 				</value>
