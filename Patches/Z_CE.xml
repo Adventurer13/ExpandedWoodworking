@@ -17,9 +17,9 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>10</power>
-							<cooldownTime>1.85</cooldownTime>
-							<armorPenetration>0.118</armorPenetration>
+							<power>2</power>
+                          <cooldownTime>0.99</cooldownTime>
+                          <armorPenetrationBlunt>0.288</armorPenetrationBlunt>
 						</li>
 					</tools>
 				</value>
@@ -28,8 +28,9 @@
 				<xpath>Defs/ThingDef[@Name="WoodLogBase"]</xpath>
 				<value>
 					<equippedStatOffsets>
-						<MeleeCritChance>0.1</MeleeCritChance>
-						<MeleeParryChance>0.175</MeleeParryChance>
+						<MeleeCritChance>0.2</MeleeCritChance>
+				<MeleeParryChance>1</MeleeParryChance>
+				<MeleeDodgeChance>0.13</MeleeDodgeChance>
 					</equippedStatOffsets>
 				</value>
 			</li>
@@ -37,31 +38,37 @@
 				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases</xpath>
 				<value>
 					<Bulk>0.07</Bulk>
-					<MeleeCounterParryBonus>1.25</MeleeCounterParryBonus>
+					<MeleeCounterParryBonus>1.33</MeleeCounterParryBonus>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Sharp</xpath>
 				<value>
-					<StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+					<StuffPower_Armor_Sharp>0.1</StuffPower_Armor_Sharp>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Blunt</xpath>
 				<value>
-					<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+					<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+				</value>
+			</li>
+            <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Heat</xpath>
+				<value>
+					<StuffPower_Armor_Heat>0.025</StuffPower_Armor_Heat>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/SharpDamageMultiplier</xpath>
 				<value>
-					<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+					<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/BluntDamageMultiplier</xpath>
 				<value>
-					<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+					<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
