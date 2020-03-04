@@ -7,9 +7,10 @@
 - Assembly file using .NET Framework 4.7.2 and added UnityEngine.CoreModule as a reference.
 - Folder structure separating versions 1.0 and 1.1 of Rimworld and using LoadFolders.xml for 1.1 and future versions.
 - Add package Id: Adventurer.ExpandWoodwork and updated About.xml to work with the Auto-sort button.
+- Modifications to log and lumber bases, workbenches, and wall to bring in-line with 1.1.
 
 ### Fixed
-- Wood log base to be more similar to newer CE version in 1.0 (courtesy of Jinlan).
+- Wood log base patching for CE to be more similar to newer CE version in 1.0 (courtesy of Jinlan).
 - Errors relating to outdoor penalty change with workbenches in 1.1.
 - Errors relating to change of UnskilledLaborSpeed to GeneralLaborSpeed with recipes in 1.1.
 

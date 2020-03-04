@@ -9,7 +9,6 @@
 			<texPath>Things/Resources/WoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<stackLimit>75</stackLimit>
 		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
@@ -18,15 +17,17 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>0.4</Mass>
 			<Flammability>1.0</Flammability>
-			<DeteriorationRate>1</DeteriorationRate>
+			<DeteriorationRate>0.5</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+			<SharpDamageMultiplier>0.45</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<thingCategories>
 			<li>WoodTypes</li>
 		</thingCategories>
@@ -44,21 +45,20 @@
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statFactors>
 				<MaxHitPoints>0.65</MaxHitPoints>
-				<Beauty>1</Beauty>
+				<Beauty>0.75</Beauty>
 				<Flammability>1</Flammability>
 				<WorkToMake>0.7</WorkToMake>
 				<WorkToBuild>0.7</WorkToBuild>
 				<DoorOpenSpeed>1.2</DoorOpenSpeed>
-				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
 		<tools>
 			<li>
+				<label>log</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -66,6 +66,7 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
  
 <!-- Wood Trees --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->

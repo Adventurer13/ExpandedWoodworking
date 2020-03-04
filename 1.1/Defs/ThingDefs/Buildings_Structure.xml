@@ -55,9 +55,11 @@
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
 		<building>
 			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
 			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>

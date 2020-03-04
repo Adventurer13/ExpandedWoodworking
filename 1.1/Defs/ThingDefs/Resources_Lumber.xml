@@ -9,7 +9,6 @@
 			<texPath>Things/Resources/WoodLumber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<stackLimit>75</stackLimit>
 		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
@@ -21,12 +20,14 @@
 			<DeteriorationRate>1</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
 		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>true</healthAffectsPrice>
 		<thingCategories>
 			<li>WoodLumber</li>
 		</thingCategories>
@@ -36,19 +37,19 @@
 				<li>Woody</li>
 			</categories>
 			<appearance>Planks</appearance>
+			<color>(133,97,67)</color>
+			<commonality>1.00</commonality>
 			<constructEffect>ConstructWood</constructEffect>
 			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-			<statOffsets>
-				<Beauty>2</Beauty>
-			</statOffsets>
 			<statFactors>
 				<MaxHitPoints>0.4</MaxHitPoints>
 				<Beauty>1</Beauty>
 				<Flammability>1</Flammability>
 				<WorkToMake>0.7</WorkToMake>
 				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
@@ -56,7 +57,7 @@
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>
-		<!-- <isBodyPartOrImplant>true</isBodyPartOrImplant> -->
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
 
 <!-- Wood Trees -->
