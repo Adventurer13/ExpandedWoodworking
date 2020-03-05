@@ -10,10 +10,7 @@
 			<success>Always</success>
 			<operations>
 				<li Class= "PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint"]/costList/WoodLog	|
-							Defs/ThingDef[defName = "SPBoats_FishingBoatBlueprint"]/costList/WoodLog	|
-							Defs/ThingDef[defName = "SPBoats_CaravelBlueprint"]/costList/WoodLog	|
-							Defs/ThingDef[defName = "SPBoats_GalleonBlueprint"]/costList/WoodLog</xpath>
+					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint" or defName = "SPBoats_FishingBoatBlueprint" or defName = "SPBoats_CaravelBlueprint" or defName = "SPBoats_GalleonBlueprint"]/costList/WoodLog</xpath>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint"]</xpath>
@@ -54,7 +51,40 @@
 			</operations>
 		</match>
 	</Operation>
-				
+
+	<!--  [RF] Fertile Fields -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Fertile Fields [1.0]</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "CompostBarrel"]/costList/WoodLog	|
+							Defs/ThingDef[defName = "CompostBarrel"]/constructEffect</xpath>
+				</li>
+				<!-- <li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "CompostBin"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>2</costStuffCount>
+					</value>
+				</li> -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "CompostBarrel"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 
   <!-- UN-Colony -->
   <!-- Recipes -->
