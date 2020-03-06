@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<LumberBirch.label>берёзовые доски</LumberBirch.label>
+<LumberBirch.description>Обработанные берёзовые доски. В основном применяются для создания прочных, простых конструкций и мебели. Берёза - скоропортящаяся древесина.</LumberBirch.description>
+<LumberBirch.stuffProps.stuffAdjective>берёзы</LumberBirch.stuffProps.stuffAdjective>
+
+<LumberPalm.label>доски чёрной пальмы</LumberPalm.label>
+<LumberPalm.description>Обработанные доски чёрной пальмы. В основном применяются для создания прочных, простых конструкций и мебели. Чёрная пальма - прочная древесина.</LumberPalm.description>
+<LumberPalm.stuffProps.stuffAdjective>чёрной пальмы</LumberPalm.stuffProps.stuffAdjective>
+
+<LumberCecropia.label>доски цекропии</LumberCecropia.label>
+<LumberCecropia.description>Обработанные доски цекропии. В основном полезно для создания простых построек, инструментов и простого протезирования. Цекропия - недолговечная и скоропортящихся лиственная порода.</LumberCecropia.description>
+<LumberCecropia.stuffProps.stuffAdjective>цекропии</LumberCecropia.stuffProps.stuffAdjective>
+
+<LumberCypress.label>кипарисовые доски</LumberCypress.label>
+<LumberCypress.description>Обработанные кипарисовые доски. В основном применяются для создания прочных, простых конструкций и мебели. Кипарис - прочная хвойная древесина.</LumberCypress.description>
+<LumberCypress.stuffProps.stuffAdjective>кипариса</LumberCypress.stuffProps.stuffAdjective>
+
+<LumberDrago.label>доски драго</LumberDrago.label>
+<LumberDrago.description>Обработанные доски драго. В основном полезно для строительства временных построек, ремесленых столов и мебели. Драго - малопрочная древесина лиственных пород.</LumberDrago.description>
+<LumberDrago.stuffProps.stuffAdjective>драго</LumberDrago.stuffProps.stuffAdjective>
+
+<LumberMaple.label>кленовые доски</LumberMaple.label>
+<LumberMaple.description>Обработанные кленовые доски. В основном применяются для создания прочных, простых конструкций и мебели. Клён - это недолговечная и скоропортящаяся лиственная древесина.</LumberMaple.description>
+<LumberMaple.stuffProps.stuffAdjective>клёна</LumberMaple.stuffProps.stuffAdjective>
+
+<WoodLog.label>сборные доски</WoodLog.label>
+<WoodLog.description>Сборные доски, склеенные из различного пиломатериала. В основном применяются для создания прочных, простых конструкций и мебели. Если вам более важна функция, чем форма.</WoodLog.description>
+<WoodLog.stuffProps.stuffAdjective>сборных досок</WoodLog.stuffProps.stuffAdjective>
+
+<LumberOak.label>дубовые доски</LumberOak.label>
+<LumberOak.description>Обработанные дубовые доски. В основном применяются для создания прочных, простых конструкций и мебели. Дуб - очень прочная лиственная древесина.</LumberOak.description>
+<LumberOak.stuffProps.stuffAdjective>дуба</LumberOak.stuffProps.stuffAdjective>
+
+<LumberPine.label>сосновые доски</LumberPine.label>
+<LumberPine.description>Обработанные сосновые доски. В основном применяются для создания прочных, простых конструкций и мебели. Сосна - мягкая древесина средней и низкой прочности.</LumberPine.description>
+<LumberPine.stuffProps.stuffAdjective>сосны</LumberPine.stuffProps.stuffAdjective>
+
+<LumberPoplar.label>тополёвые доски</LumberPoplar.label>
+<LumberPoplar.description>Обработанные тополёвые доски. В основном применяются для создания прочных, простых конструкций и мебели. Тополь - недолговечная твёрдая древесина.</LumberPoplar.description>
+<LumberPoplar.stuffProps.stuffAdjective>тополя</LumberPoplar.stuffProps.stuffAdjective>
+
+<LumberTeak.label>тиковые доски</LumberTeak.label>
+<LumberTeak.description>Обработанные тиковые доски. В основном применяются для создания прочных, простых конструкций и мебели. Тик - самая прочная лиственная древесина.</LumberTeak.description>
+<LumberTeak.stuffProps.stuffAdjective>тика</LumberTeak.stuffProps.stuffAdjective>
+
+<LumberWillow.label>ивовые доски</LumberWillow.label>
+<LumberWillow.description>Обработанные ивовые доски. В основном применяются для создания прочных, простых конструкций и мебели. Ива - недолговечная твёрдая древесина.</LumberWillow.description>
+<LumberWillow.stuffProps.stuffAdjective>ивы</LumberWillow.stuffProps.stuffAdjective>
+
+<LumberBamboo.label>бамбуковые доски</LumberBamboo.label>
+<LumberBamboo.description>Обработанные бамбуковые доски. В основном применяются для создания прочных, простых конструкций и мебели. Бамбук - скоропортящаяся, быстрорастущая трава.</LumberBamboo.description>
+<LumberBamboo.stuffProps.stuffAdjective>бамбука</LumberBamboo.stuffProps.stuffAdjective>
+
+<LumberCocoa.label>доски какао</LumberCocoa.label>
+<LumberCocoa.description>Обработанные доски дерева какао. В основном применяются для создания прочных, простых конструкций и мебели.</LumberCocoa.description>
+<LumberCocoa.stuffProps.stuffAdjective>какао</LumberCocoa.stuffProps.stuffAdjective>
+
+</LanguageData>

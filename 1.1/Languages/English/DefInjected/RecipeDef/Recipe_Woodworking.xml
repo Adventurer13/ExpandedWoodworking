@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<MakeWoodLumberAny.label>make any lumber</MakeWoodLumberAny.label>
+	<MakeWoodLumberAny.description>Process raw logs into lumber for construction.</MakeWoodLumberAny.description>
+	<MakeWoodLumberAny.jobString>Processing lumber from wood.</MakeWoodLumberAny.jobString>
+	
+	<MakeWoodLumberMixedBundle.label>bundle lumber together</MakeWoodLumberMixedBundle.label>
+	<MakeWoodLumberMixedBundle.description>Bundle together random or spare pieces of lumber.</MakeWoodLumberMixedBundle.description>
+	<MakeWoodLumberMixedBundle.jobString>Processing lumber from wood.</MakeWoodLumberMixedBundle.jobString>
+	
+	<MakeWoodLumberMixed.label>make mixed lumber</MakeWoodLumberMixed.label>
+	<MakeWoodLumberMixed.description>Process any random or spare raw logs into lumber for construction.</MakeWoodLumberMixed.description>
+	<MakeWoodLumberMixed.jobString>Processing lumber from wood.</MakeWoodLumberMixed.jobString>
+	
+	<MakeWoodLumberBirch.label>make birch lumber</MakeWoodLumberBirch.label>
+	<MakeWoodLumberBirch.description>Process raw birch logs into lumber for construction.</MakeWoodLumberBirch.description>
+	<MakeWoodLumberBirch.jobString>Processing lumber from wood.</MakeWoodLumberBirch.jobString>
+	
+	<MakeWoodLumberPalm.label>make black palm lumber</MakeWoodLumberPalm.label>
+	<MakeWoodLumberPalm.description>Process raw black palm logs into lumber for construction.</MakeWoodLumberPalm.description>
+	<MakeWoodLumberPalm.jobString>Processing lumber from wood.</MakeWoodLumberPalm.jobString>
+	
+	<MakeWoodLumberCecropia.label>make cecropia lumber</MakeWoodLumberCecropia.label>
+	<MakeWoodLumberCecropia.description>Process raw cecropia logs into lumber for construction.</MakeWoodLumberCecropia.description>
+	<MakeWoodLumberCecropia.jobString>Processing lumber from wood.</MakeWoodLumberCecropia.jobString>
+	
+	<MakeWoodLumberCocoa.label>make cocoawood lumber</MakeWoodLumberCocoa.label>
+	<MakeWoodLumberCocoa.description>Process raw cocoawood logs into lumber for construction.</MakeWoodLumberCocoa.description>
+	<MakeWoodLumberCocoa.jobString>Processing lumber from wood.</MakeWoodLumberCocoa.jobString>
+	
+	<MakeWoodLumberCypress.label>make cypress lumber</MakeWoodLumberCypress.label>
+	<MakeWoodLumberCypress.description>Process raw cypress logs into lumber for construction.</MakeWoodLumberCypress.description>
+	<MakeWoodLumberCypress.jobString>Processing lumber from wood.</MakeWoodLumberCypress.jobString>
+	
+	<MakeWoodLumberDrago.label>make drago lumber</MakeWoodLumberDrago.label>
+	<MakeWoodLumberDrago.description>Process raw drago logs into lumber for construction.</MakeWoodLumberDrago.description>
+	<MakeWoodLumberDrago.jobString>Processing lumber from wood.</MakeWoodLumberDrago.jobString>
+	
+	<MakeWoodLumberMaple.label>make maple lumber</MakeWoodLumberMaple.label>
+	<MakeWoodLumberMaple.description>Process raw maple logs into lumber for construction.</MakeWoodLumberMaple.description>
+	<MakeWoodLumberMaple.jobString>Processing lumber from wood.</MakeWoodLumberMaple.jobString>
+	
+	<MakeWoodLumberOak.label>make oak lumber</MakeWoodLumberOak.label>
+	<MakeWoodLumberOak.description>Process raw oak logs into lumber for construction.</MakeWoodLumberOak.description>
+	<MakeWoodLumberOak.jobString>Processing lumber from wood.</MakeWoodLumberOak.jobString>
+	
+	<MakeWoodLumberPine.label>make pine lumber</MakeWoodLumberPine.label>
+	<MakeWoodLumberPine.description>Process raw pine logs into lumber for construction.</MakeWoodLumberPine.description>
+	<MakeWoodLumberPine.jobString>Processing lumber from wood.</MakeWoodLumberPine.jobString>
+	
+	<MakeWoodLumberPoplar.label>make poplar lumber</MakeWoodLumberPoplar.label>
+	<MakeWoodLumberPoplar.description>Process raw poplar logs into lumber for construction.</MakeWoodLumberPoplar.description>
+	<MakeWoodLumberPoplar.jobString>Processing lumber from wood.</MakeWoodLumberPoplar.jobString>
+	
+	<MakeWoodLumberTeak.label>make teak lumber</MakeWoodLumberTeak.label>
+	<MakeWoodLumberTeak.description>Process raw teak logs into lumber for construction.</MakeWoodLumberTeak.description>
+	<MakeWoodLumberTeak.jobString>Processing lumber from wood.</MakeWoodLumberTeak.jobString>
+	
+	<MakeWoodLumberWillow.label>make willow lumber</MakeWoodLumberWillow.label>
+	<MakeWoodLumberWillow.description>Process raw willow logs into lumber for construction.</MakeWoodLumberWillow.description>
+	<MakeWoodLumberWillow.jobString>Processing lumber from wood.</MakeWoodLumberWillow.jobString>
+	
+	<MakeWoodLumberBamboo.label>make bamboo lumber</MakeWoodLumberBamboo.label>
+	<MakeWoodLumberBamboo.description>Process raw bamboo into lumber for construction.</MakeWoodLumberBamboo.description>
+	<MakeWoodLumberBamboo.jobString>Processing lumber from wood.</MakeWoodLumberBamboo.jobString>
+	
+	<MakeWoodLumberMixedHand.label>make lumber by hand</MakeWoodLumberMixedHand.label>
+	<MakeWoodLumberMixedHand.description>Process any random or spare raw logs into lumber for construction by hand. It's a tedious job.</MakeWoodLumberMixedHand.description>
+	<MakeWoodLumberMixedHand.jobString>Processing lumber from wood.</MakeWoodLumberMixedHand.jobString>
+	
+</LanguageData>

@@ -40,7 +40,7 @@
 				<li>WoodTypes</li>
 			</categories>
 			<disallowedThingDefs>
-				<li>WoodLog_Saguaro</li>
+				<li>WoodLog_Succulent</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>
@@ -431,7 +431,7 @@
 		<label>make lumber by hand</label>
 		<description>Process any random or spare raw logs into lumber for construction by hand. It's a tedious job.</description>
 		<jobString>Processing lumber from wood.</jobString>
-		<workAmount>750</workAmount>
+		<workAmount>1000</workAmount>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
@@ -462,37 +462,5 @@
 			<li>CraftingSpot</li>
 		</recipeUsers>
 	</RecipeDef>
-	
-<!-- Chemfuel
-
-	<RecipeDef>
-		<defName>MakeChemfuelFromWood</defName>
-		<label>make chemfuel from wood</label>
-		<description>Make a batch of chemfuel by gasifying wood logs.</description>
-		<jobString>Refining chemfuel from wood.</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>2500</workAmount>
-		<workSkill>Intellectual</workSkill>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>WoodTypes</li>
-					</categories>
-				</filter>
-				<count>70</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>WoodTypes</li>
-			</categories>
-		</fixedIngredientFilter>
-		<products>
-			<Chemfuel>35</Chemfuel>
-		</products>
-	</RecipeDef>	
--->
 	
 </Defs>

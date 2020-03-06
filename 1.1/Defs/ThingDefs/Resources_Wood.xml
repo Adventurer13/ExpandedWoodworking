@@ -362,9 +362,9 @@
 	</ThingDef>  
   
 	<ThingDef ParentName="WoodLogBase">
-		<defName>WoodLog_Saguaro</defName> <!-- SG: 0.43  W: 429  H: soft, so low? --> <!-- Credit to DF wiki for SG and W -->
-		<label>saguaro ribs</label>
-		<description>Ribs from a saguaro cactus. Saguaro is soft and excellent for making tools, handicrafts, fences, and other small structures.</description>
+		<defName>WoodLog_Succulent</defName> <!-- (Based off saguaro cacti) SG: 0.43  W: 429  H: soft, so low? --> <!-- Credit to DF wiki for SG and W -->
+		<label>succulent ribs</label>
+		<description>Ribs from a woody succulent like Saguaro cacti or semi-succulent like ocotillo. Succulent ribs are soft and excellent for making tools, handicrafts, fences, and other small structures.</description>
 		<graphicData>
 			<color>(223,191,140)</color>
 		</graphicData>
@@ -374,7 +374,7 @@
 			<DeteriorationRate>3</DeteriorationRate>
 		</statBases>
 		<stuffProps>
-			<stuffAdjective>saguaro rib</stuffAdjective>
+			<stuffAdjective>succulent rib</stuffAdjective>
 			<commonality>0.40</commonality>
 			<color>(223,191,140)</color>
 			<statFactors>

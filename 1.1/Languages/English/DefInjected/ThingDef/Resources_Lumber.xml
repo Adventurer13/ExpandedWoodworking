@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<LumberBirch.label>birch lumber</LumberBirch.label>
+	<LumberBirch.description>Processed birch lumber. Mostly useful for building long-lasting, simple structures and furniture. Birch is a perishable hardwood.</LumberBirch.description>
+	<LumberBirch.stuffProps.stuffAdjective>birch</LumberBirch.stuffProps.stuffAdjective>
+	
+	<LumberPalm.label>black palm lumber</LumberPalm.label>
+	<LumberPalm.description>Processed black palm lumber. Mostly useful for building long-lasting, simple structures and furniture. Black palm is a durable wood.</LumberPalm.description>
+	<LumberPalm.stuffProps.stuffAdjective>black palm</LumberPalm.stuffProps.stuffAdjective>
+	
+	<LumberCecropia.label>cecropia lumber</LumberCecropia.label>
+	<LumberCecropia.description>Processed cecropia lumber. Mostly useful for building simple structures, tools, and simple prosthetics. Cecropia is a nondurable to perishable hardwood.</LumberCecropia.description>
+	<LumberCecropia.stuffProps.stuffAdjective>cecropia</LumberCecropia.stuffProps.stuffAdjective>
+	
+	<LumberCocoa.label>cocoawood lumber</LumberCocoa.label>
+	<LumberCocoa.description>Processed cocoawood lumber. Mostly useful for building simple structures and furniture. Cocoawood is a nondurable hardwood.</LumberCocoa.description>
+	<LumberCocoa.stuffProps.stuffAdjective>cocoawood</LumberCocoa.stuffProps.stuffAdjective>
+	
+	<LumberCypress.label>cypress lumber</LumberCypress.label>
+	<LumberCypress.description>Processed cypress lumber. Mostly useful for building long-lasting, simple structures and furniture. Cypress is a durable softwood.</LumberCypress.description>
+	<LumberCypress.stuffProps.stuffAdjective>cypress</LumberCypress.stuffProps.stuffAdjective>
+	
+	<LumberDrago.label>drago lumber</LumberDrago.label>
+	<LumberDrago.description>Processed drago lumber. Mostly useful for building makeshift structures, handicrafts and furniture. Drago is a low durability hardwood.</LumberDrago.description>
+	<LumberDrago.stuffProps.stuffAdjective>drago</LumberDrago.stuffProps.stuffAdjective>
+	
+	<LumberMaple.label>maple lumber</LumberMaple.label>
+	<LumberMaple.description>Processed maple lumber. Mostly useful for building long-lasting, simple structures and furniture. Maple is a nondurable to perishable hardwood.</LumberMaple.description>
+	<LumberMaple.stuffProps.stuffAdjective>maple</LumberMaple.stuffProps.stuffAdjective>
+	
+	<WoodLog.label>mixed lumber</WoodLog.label>
+	<WoodLog.description>Various kinds of processed lumber all bundled together. Mostly useful for building long-lasting, simple structures and furniture. For when you care more about function than form.</WoodLog.description>
+	<WoodLog.stuffProps.stuffAdjective>wooden</WoodLog.stuffProps.stuffAdjective>
+	
+	<LumberOak.label>oak lumber</LumberOak.label>
+	<LumberOak.description>Processed oak lumber. Mostly useful for building long-lasting, simple structures and furniture. Oak is a very durable hardwood.</LumberOak.description>
+	<LumberOak.stuffProps.stuffAdjective>oak</LumberOak.stuffProps.stuffAdjective>
+	
+	<LumberPine.label>pine lumber</LumberPine.label>
+	<LumberPine.description>Processed pine lumber. Mostly useful for building long-lasting, simple structures and furniture. Pine is a moderate to low durability softwood.</LumberPine.description>
+	<LumberPine.stuffProps.stuffAdjective>pine</LumberPine.stuffProps.stuffAdjective>
+	
+	<LumberPoplar.label>poplar lumber</LumberPoplar.label>
+	<LumberPoplar.description>Processed poplar lumber. Mostly useful for building long-lasting, simple structures and furniture. Poplar is a nondurable hardwood.</LumberPoplar.description>
+	<LumberPoplar.stuffProps.stuffAdjective>poplar</LumberPoplar.stuffProps.stuffAdjective>
+	
+	<LumberTeak.label>teak lumber</LumberTeak.label>
+	<LumberTeak.description>Processed teak lumber. Mostly useful for building long-lasting, simple structures and furniture. Teak is the most durable hardwood.</LumberTeak.description>
+	<LumberTeak.stuffProps.stuffAdjective>teak</LumberTeak.stuffProps.stuffAdjective>
+	
+	<LumberWillow.label>willow lumber</LumberWillow.label>
+	<LumberWillow.description>Processed willow lumber. Mostly useful for building long-lasting, simple structures and furniture. Willow is a nondurable hardwood.</LumberWillow.description>
+	<LumberWillow.stuffProps.stuffAdjective>willow</LumberWillow.stuffProps.stuffAdjective>
+	
+	<LumberBamboo.label>bamboo lumber</LumberBamboo.label>
+	<LumberBamboo.description>Processed bamboo lumber. Mostly useful for building long-lasting, simple structures and furniture. Bamboo is a perishable, fast growing grass.</LumberBamboo.description>
+	<LumberBamboo.stuffProps.stuffAdjective>bamboo</LumberBamboo.stuffProps.stuffAdjective>
+
+</LanguageData>
