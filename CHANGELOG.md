@@ -9,6 +9,7 @@
 - Add package Id: Adventurer.ExpandWoodwork and updated About.xml to work with the Auto-sort button.
 - Modifications to log and lumber bases, workbenches, and wall to bring in-line with 1.1.
 - Support for the compost barrel from Rainbeau's Fertile Fields in 1.0.
+- Changed def WoodLog_Saguaro to WoodLog_Succulent in 1.1.
 
 ### Fixed
 - Wood log base and pila patching for CE to be more similar to newer CE version in 1.0 (Thanks to Jinlan for base edits).
@@ -16,6 +17,7 @@
 - Errors relating to change of UnskilledLaborSpeed to GeneralLaborSpeed with recipes in 1.1.
 - Label for wood types is now 'wood logs' instead of 'wood types'.
 - Language files where labels/descriptions were changed.
+- Vanilla patch within 1.1.
 
 ## [1.0.1.6] - 2019-12-29
 ### New
