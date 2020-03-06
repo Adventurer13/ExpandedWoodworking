@@ -122,18 +122,23 @@
 			<li Class="ExpandedWoodworking.PatchOperationModCompat">
 				<modName>Combat Extended</modName>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Pila"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_Pilum"]/ingredients/li/filter/thingDefs[li = "WoodLog"]</xpath>
 				<value>
-					<costList>
-						<Steel>1</Steel>
-					</costList>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Pila"]/costStuffCount</xpath>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_Pilum"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_Pilum"]/fixedIngredientFilter</xpath>
 				<value>
-					<costStuffCount>1</costStuffCount>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
 				</value>
 			</li>
 		</operations>

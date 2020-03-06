@@ -11,9 +11,11 @@
 - Support for the compost barrel from Rainbeau's Fertile Fields in 1.0.
 
 ### Fixed
-- Wood log base patching for CE to be more similar to newer CE version in 1.0 (courtesy of Jinlan).
+- Wood log base and pila patching for CE to be more similar to newer CE version in 1.0 (Thanks to Jinlan for base edits).
 - Errors relating to outdoor penalty change with workbenches in 1.1.
 - Errors relating to change of UnskilledLaborSpeed to GeneralLaborSpeed with recipes in 1.1.
+- Label for wood types is now 'wood logs' instead of 'wood types'.
+- Language files where labels/descriptions were changed.
 
 ## [1.0.1.6] - 2019-12-29
 ### New

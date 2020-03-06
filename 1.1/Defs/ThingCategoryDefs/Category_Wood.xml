@@ -4,7 +4,7 @@
 
     <ThingCategoryDef>
         <defName>WoodTypes</defName>
-        <label>plant/wood logs</label>
+        <label>wood logs</label>
         <parent>ResourcesRaw</parent>
         <resourceReadoutRoot>false</resourceReadoutRoot>
         <iconPath>Things/Resources/BasicWoodLog</iconPath>
