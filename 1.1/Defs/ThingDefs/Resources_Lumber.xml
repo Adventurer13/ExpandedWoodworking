@@ -43,6 +43,9 @@
 			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
 			<statFactors>
 				<MaxHitPoints>0.4</MaxHitPoints>
 				<Beauty>1</Beauty>

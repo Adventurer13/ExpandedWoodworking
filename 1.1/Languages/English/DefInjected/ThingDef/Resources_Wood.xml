@@ -53,7 +53,7 @@
 	<WoodLog_Willow.description>Raw wood from a willow tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Willow is a nondurable hardwood.</WoodLog_Willow.description>
 	<WoodLog_Willow.stuffProps.stuffAdjective>willow</WoodLog_Willow.stuffProps.stuffAdjective>
 	
-	<Bamboo.label>raw bamboo</Bamboo.label>
+	<Bamboo.label>bamboo</Bamboo.label>
 	<Bamboo.description>Raw bamboo. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Bamboo is a perishable, fast growing grass.</Bamboo.description>
 	<Bamboo.stuffProps.stuffAdjective>bamboo</Bamboo.stuffProps.stuffAdjective>
 

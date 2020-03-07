@@ -16,18 +16,22 @@ Previous versions can be found on GitHub.
 	</description>
 	<incompatibleWith>
 		<li>TeflonJim.ExtendedWoodworking</li>
-    </incompatibleWith>
-    <loadBefore>
+	</incompatibleWith>
+	<loadBefore>
+		<li>fluffy.stuffedfloors</li>
 		<li>dismarzero.VGP.VGPVegetableGarden</li>
 		<li>dismarzero.VGP.VGPGardenDrinks</li>
+		<li>dismarzero.VGP.VGPGardenFabrics</li>
+		<li>dismarzero.VGP.VGPGardenFabricsSimplified</li>
 		<li>dismarzero.VGP.VGPGardenTools</li>
 		<li>dismarzero.VGP.XtraTreesandFlowers</li>
-    </loadBefore>
-    <loadAfter>
+		<li>Adventurer.ExpandWoodworkVGP</li>
+	</loadBefore>
+	<loadAfter>
+		<li>brrainz.harmony</li>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
-		<li>brrainz.harmony</li>
-		<li>CombatExtended</li>
+		<li>CETeam.CombatExtended</li>
 		<li>cucumpear.workbenches</li>
 		<li>Daniledman.DeCore</li>
 	</loadAfter>
