@@ -18,6 +18,7 @@
 - Label for wood types is now 'wood logs' instead of 'wood types'.
 - Language files where labels/descriptions were changed.
 - Vanilla patch within 1.1.
+- Mod patches in 1.1. Included only those in which the respective mod is updated to 1.1. 
 
 ## [1.0.1.6] - 2019-12-29
 ### New

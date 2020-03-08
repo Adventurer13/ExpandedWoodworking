@@ -42,10 +42,10 @@ Patches edit the following vanilla definitions:
 
 Mods given extended functionality with included patches:
 
-- Advanced Biomes
-- Combat Extended
-- Dead Goat's Weapon Pack (by DrZhivago)
-- Lord of the Rims 
+- Advanced Biomes (1.0 only)
+- Combat Extended (1.0 only)
+- Dead Goat's Weapon Pack (by DrZhivago) (1.0 only)
+- Lord of the Rims (1.0 only)
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)
 - RT's Weapon Pack Reloaded (by DrZhivago)
