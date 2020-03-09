@@ -1,0 +1,47 @@
+<Patch>
+    <!-- Author: XeoNovaDan  Edited/Simplified by: Adventurer -->
+    
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Realistic Planets - Fan Update</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>VGP Xtra Trees and Flowers</li>
+			</mods>
+			<!-- Case: VGP Extra Trees and Flowers is active -->
+			<match Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<!-- Change yield and growDays to be identical to VGP's acacia trees (60 -> 12; 32.5 -> 15) - though this is debatable -->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/harvestYield</xpath>
+						<value>
+							<harvestYield>12</harvestYield>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/growDays</xpath>
+						<value>
+							<growDays>15</growDays>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant</xpath>
+						<value>
+							<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+						</value>
+					</li>
+				</operations>
+			</match>
+                <!-- Case: Realistic Planets is active but VGP Extra Trees and Flowers isn't -->
+			<nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant</xpath>
+                        <value>
+					<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+                        </value>
+                  </nomatch>
+            </match>
+    </Operation>
+
+</Patch>

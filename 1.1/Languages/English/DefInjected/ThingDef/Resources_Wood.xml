@@ -40,10 +40,10 @@
 	<WoodLog_Poplar.label>poplar logs</WoodLog_Poplar.label>
 	<WoodLog_Poplar.description>Raw wood from a poplar tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Poplar is a nondurable hardwood.</WoodLog_Poplar.description>
 	<WoodLog_Poplar.stuffProps.stuffAdjective>poplar</WoodLog_Poplar.stuffProps.stuffAdjective>
-	
-	<WoodLog_Saguaro.label>saguaro ribs</WoodLog_Saguaro.label>
-	<WoodLog_Saguaro.description>Ribs from a saguaro cactus. Saguaro is soft and excellent for making tools, handicrafts, fences, and other small structures.</WoodLog_Saguaro.description>
-	<WoodLog_Saguaro.stuffProps.stuffAdjective>saguaro rib</WoodLog_Saguaro.stuffProps.stuffAdjective>
+
+	<WoodLog_Succulent.label>succulent ribs</WoodLog_Succulent.label>
+	<WoodLog_Succulent.description>Ribs from a woody succulent like Saguaro cacti or semi-succulent like ocotillo. Succulent ribs are soft and excellent for making tools, handicrafts, fences, and other small structures.</WoodLog_Succulent.description>
+	<WoodLog_Succulent.stuffProps.stuffAdjective>succulent rib</WoodLog_Succulent.stuffProps.stuffAdjective>
 
 	<WoodLog_Teak.label>teak logs</WoodLog_Teak.label>
 	<WoodLog_Teak.description>Raw wood from a teak tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Teak is the most durable hardwood.</WoodLog_Teak.description>
@@ -53,7 +53,7 @@
 	<WoodLog_Willow.description>Raw wood from a willow tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Willow is a nondurable hardwood.</WoodLog_Willow.description>
 	<WoodLog_Willow.stuffProps.stuffAdjective>willow</WoodLog_Willow.stuffProps.stuffAdjective>
 	
-	<Bamboo.label>raw bamboo</Bamboo.label>
+	<Bamboo.label>bamboo</Bamboo.label>
 	<Bamboo.description>Raw bamboo. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Bamboo is a perishable, fast growing grass.</Bamboo.description>
 	<Bamboo.stuffProps.stuffAdjective>bamboo</Bamboo.stuffProps.stuffAdjective>
 
