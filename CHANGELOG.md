@@ -1,6 +1,24 @@
 # Change Log
 
-**Current:** [v1.0.1.6](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.0.1.6 )
+**Current:** [v1.1.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.1.1.0 )
+
+## [1.1.1.0] - 2019-03-08
+### New
+- Assembly file using .NET Framework 4.7.2 and added UnityEngine.CoreModule as a reference.
+- Folder structure separating versions 1.0 and 1.1 of Rimworld and using LoadFolders.xml for 1.1 and future versions.
+- Add package Id: Adventurer.ExpandWoodwork and updated About.xml to work with the Auto-sort button.
+- Modifications to log and lumber bases, workbenches, and wall to bring in-line with 1.1.
+- Support for the compost barrel from Rainbeau's Fertile Fields in 1.0.
+- Changed def WoodLog_Saguaro to WoodLog_Succulent in 1.1.
+
+### Fixed
+- Wood log base and pila patching for CE to be more similar to newer CE version in 1.0 (Thanks to Jinlan for base edits).
+- Errors relating to outdoor penalty change with workbenches in 1.1.
+- Errors relating to change of UnskilledLaborSpeed to GeneralLaborSpeed with recipes in 1.1.
+- Label for wood types is now 'wood logs' instead of 'wood types'.
+- Language files where labels/descriptions were changed.
+- Vanilla patch within 1.1.
+- Mod patches in 1.1. Included only those in which the respective mod is updated to 1.1. 
 
 ## [1.0.1.6] - 2019-12-29
 ### New
