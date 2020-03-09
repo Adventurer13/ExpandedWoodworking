@@ -2,7 +2,7 @@
 
 **Current:** [v1.1.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.1.1.0 )
 
-## [1.1.1.0] - 2019-03-08
+## [1.1.1.0] - 2020-03-08
 ### New
 - Assembly file using .NET Framework 4.7.2 and added UnityEngine.CoreModule as a reference.
 - Folder structure separating versions 1.0 and 1.1 of Rimworld and using LoadFolders.xml for 1.1 and future versions.
