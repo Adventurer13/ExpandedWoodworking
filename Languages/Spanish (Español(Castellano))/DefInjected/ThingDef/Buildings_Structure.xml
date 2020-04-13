@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<EW_LogWall.label>pared de troncos</EW_LogWall.label>
+	<EW_LogWall.description>Una pared hecha de troncos apilados juntos. Fuerte y muy rápido de construir, pero inflamable y no transmite electricidad.</EW_LogWall.description>
+	<Blueprint_EW_LogWall.label>pared de troncos</Blueprint_EW_LogWall.label>
+	<Frame_EW_LogWall.label>pared de troncos</Frame_EW_LogWall.label>
+	<Frame_EW_LogWall.description>Una pared hecha de troncos apilados juntos. Fuerte y muy rápido de construir, pero inflamable y no transmite electricidad.</Frame_EW_LogWall.description>
+	
+</LanguageData>

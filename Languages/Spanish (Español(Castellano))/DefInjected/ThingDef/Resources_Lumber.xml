@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<LumberBirch.label>madera de abedul</LumberBirch.label>
+	<LumberBirch.description>Madera de abedul procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. El abedul es una madera dura perecedera.</LumberBirch.description>
+	<LumberBirch.stuffProps.stuffAdjective>abedul</LumberBirch.stuffProps.stuffAdjective>
+	
+	<LumberPalm.label>madera de palma negra</LumberPalm.label>
+	<LumberPalm.description>Madera de palma negra procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. La palma negra es una madera duradera.</LumberPalm.description>
+	<LumberPalm.stuffProps.stuffAdjective>palma negra</LumberPalm.stuffProps.stuffAdjective>
+	
+	<LumberCecropia.label>madera de cecropia</LumberCecropia.label>
+	<LumberCecropia.description>Madera de cecropia procesada. Principalmente útil para construir estructuras simples, herramientas y prótesis simples. Cecropia es una madera dura no duradera a perecedera.</LumberCecropia.description>
+	<LumberCecropia.stuffProps.stuffAdjective>cecropia</LumberCecropia.stuffProps.stuffAdjective>
+	
+	<LumberCocoa.label>madera de cacao</LumberCocoa.label>
+	<LumberCocoa.description>Madera de cacao procesada. Principalmente útil para construir estructuras y muebles simples. La madera de cacao es una madera dura no duradera.</LumberCocoa.description>
+	<LumberCocoa.stuffProps.stuffAdjective>cacao</LumberCocoa.stuffProps.stuffAdjective>
+	
+	<LumberCypress.label>madera de ciprés</LumberCypress.label>
+	<LumberCypress.description>Madera de ciprés procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. Cypress es una madera blanda duradera.</LumberCypress.description>
+	<LumberCypress.stuffProps.stuffAdjective>ciprés</LumberCypress.stuffProps.stuffAdjective>
+	
+	<LumberDrago.label>madera drago</LumberDrago.label>
+	<LumberDrago.description>Drago maderas procesadas. Principalmente útil para construir estructuras improvisadas, artesanías y muebles. Drago es una madera dura de baja durabilidad.</LumberDrago.description>
+	<LumberDrago.stuffProps.stuffAdjective>drago</LumberDrago.stuffProps.stuffAdjective>
+	
+	<LumberMaple.label>madera de arce</LumberMaple.label>
+	<LumberMaple.description>Madera de arce procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. El arce es una madera dura no duradera a perecedera.</LumberMaple.description>
+	<LumberMaple.stuffProps.stuffAdjective>arce</LumberMaple.stuffProps.stuffAdjective>
+	
+	<WoodLog.label>madera mixta</WoodLog.label>
+	<WoodLog.description>Varios tipos de madera procesada todos juntos. Principalmente útil para construir estructuras y muebles simples y duraderos. Para cuando te importa más la función que la forma.</WoodLog.description>
+	<WoodLog.stuffProps.stuffAdjective>de madera</WoodLog.stuffProps.stuffAdjective>
+	
+	<LumberOak.label>madera de roble</LumberOak.label>
+	<LumberOak.description>Madera de roble procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. El roble es una madera dura muy duradera.</LumberOak.description>
+	<LumberOak.stuffProps.stuffAdjective>roble</LumberOak.stuffProps.stuffAdjective>
+	
+	<LumberPine.label>madera de pino</LumberPine.label>
+	<LumberPine.description>Madera de pino procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. El pino es una madera blanda de moderada a baja durabilidad.</LumberPine.description>
+	<LumberPine.stuffProps.stuffAdjective>pino</LumberPine.stuffProps.stuffAdjective>
+	
+	<LumberPoplar.label>madera de álamo</LumberPoplar.label>
+	<LumberPoplar.description>Madera de álamo procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. El álamo es una madera dura no duradera.</LumberPoplar.description>
+	<LumberPoplar.stuffProps.stuffAdjective>álamo</LumberPoplar.stuffProps.stuffAdjective>
+	
+	<LumberTeak.label>madera de teca</LumberTeak.label>
+	<LumberTeak.description>Madera de teca procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. La teca es la madera dura más duradera..</LumberTeak.description>
+	<LumberTeak.stuffProps.stuffAdjective>teca</LumberTeak.stuffProps.stuffAdjective>
+	
+	<LumberWillow.label>madera de sauce</LumberWillow.label>
+	<LumberWillow.description>Madera de sauce procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. Willow es una madera dura no duradera.</LumberWillow.description>
+	<LumberWillow.stuffProps.stuffAdjective>sauce</LumberWillow.stuffProps.stuffAdjective>
+	
+	<LumberBamboo.label>madera de bambú</LumberBamboo.label>
+	<LumberBamboo.description>Madera de bambú procesada. Principalmente útil para construir estructuras y muebles simples y duraderos. El bambú es una hierba perecedera y de rápido crecimiento..</LumberBamboo.description>
+	<LumberBamboo.stuffProps.stuffAdjective>bambú</LumberBamboo.stuffProps.stuffAdjective>
+
+</LanguageData>
