@@ -523,6 +523,18 @@
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Campfire"]/stuffCategories</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Campfire"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationRemove">
@@ -544,6 +556,18 @@
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PassiveCooler"]/stuffCategories</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationRemove">
