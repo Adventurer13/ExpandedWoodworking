@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<MakeWoodLumberAny.label>сделать любые доски</MakeWoodLumberAny.label>
+<MakeWoodLumberAny.description>Переработать сырые брёвна в доски для строительства.</MakeWoodLumberAny.description>
+<MakeWoodLumberAny.jobString>Производство досок из древесины.</MakeWoodLumberAny.jobString>
+
+<MakeWoodLumberMixedBundle.label>объединить доски вместе</MakeWoodLumberMixedBundle.label>
+<MakeWoodLumberMixedBundle.description>Склеить вместе случайные или лишние куски досок.</MakeWoodLumberMixedBundle.description>
+<MakeWoodLumberMixedBundle.jobString>Производство досок из древесины.</MakeWoodLumberMixedBundle.jobString>
+
+<MakeWoodLumberMixed.label>сделать смешанные доски</MakeWoodLumberMixed.label>
+<MakeWoodLumberMixed.description>Переработать любые случайные или лишние брёвна в доски для строительства.</MakeWoodLumberMixed.description>
+<MakeWoodLumberMixed.jobString>Производство досок из древесины.</MakeWoodLumberMixed.jobString>
+
+<MakeWoodLumberBirch.label>сделать берёзовые доски</MakeWoodLumberBirch.label>
+<MakeWoodLumberBirch.description>Распилить сырые брёвна берёзы на доски для строительства.</MakeWoodLumberBirch.description>
+<MakeWoodLumberBirch.jobString>Производство досок из древесины.</MakeWoodLumberBirch.jobString>
+
+<MakeWoodLumberPalm.label>сделать доски чёрной пальмы</MakeWoodLumberPalm.label>
+<MakeWoodLumberPalm.description>Распилить сырые брёвна чёрной пальмы на доски для строительства.</MakeWoodLumberPalm.description>
+<MakeWoodLumberPalm.jobString>Производство досок из древесины.</MakeWoodLumberPalm.jobString>
+
+<MakeWoodLumberCecropia.label>сделать доски цекропии</MakeWoodLumberCecropia.label>
+<MakeWoodLumberCecropia.description>Распилить сырые брёвна цекропии на доски для строительства.</MakeWoodLumberCecropia.description>
+<MakeWoodLumberCecropia.jobString>Производство досок из древесины.</MakeWoodLumberCecropia.jobString>
+
+<MakeWoodLumberCypress.label>сделать доски кипариса</MakeWoodLumberCypress.label>
+<MakeWoodLumberCypress.description>Распилить сырые брёвна кипариса на доски для строительства.</MakeWoodLumberCypress.description>
+<MakeWoodLumberCypress.jobString>Производство досок из древесины.</MakeWoodLumberCypress.jobString>
+
+<MakeWoodLumberDrago.label>сделать драго доски</MakeWoodLumberDrago.label>
+<MakeWoodLumberDrago.description>Распилить сырые брёвна драго на доски для строительства.</MakeWoodLumberDrago.description>
+<MakeWoodLumberDrago.jobString>Производство досок из древесины.</MakeWoodLumberDrago.jobString>
+
+<MakeWoodLumberMaple.label>сделать кленовые доски</MakeWoodLumberMaple.label>
+<MakeWoodLumberMaple.description>Распилить сырые брёвна клёна на доски для строительства.</MakeWoodLumberMaple.description>
+<MakeWoodLumberMaple.jobString>Производство досок из древесины.</MakeWoodLumberMaple.jobString>
+
+<MakeWoodLumberOak.label>сделать дубовые доски</MakeWoodLumberOak.label>
+<MakeWoodLumberOak.description>Распилить сырые брёвна дуба на доски для строительства.</MakeWoodLumberOak.description>
+<MakeWoodLumberOak.jobString>Производство досок из древесины.</MakeWoodLumberOak.jobString>
+
+<MakeWoodLumberPine.label>сделать сосновые доски</MakeWoodLumberPine.label>
+<MakeWoodLumberPine.description>Распилить сырые брёвна сосны на доски для строительства.</MakeWoodLumberPine.description>
+<MakeWoodLumberPine.jobString>Производство досок из древесины.</MakeWoodLumberPine.jobString>
+
+<MakeWoodLumberPoplar.label>сделать тополёвые доски</MakeWoodLumberPoplar.label>
+<MakeWoodLumberPoplar.description>Распилить сырые брёвна тополя на доски для строительства.</MakeWoodLumberPoplar.description>
+<MakeWoodLumberPoplar.jobString>Производство досок из древесины.</MakeWoodLumberPoplar.jobString>
+
+<MakeWoodLumberTeak.label>сделать тиковые доски</MakeWoodLumberTeak.label>
+<MakeWoodLumberTeak.description>Распилить сырые брёвна тика на доски для строительства.</MakeWoodLumberTeak.description>
+<MakeWoodLumberTeak.jobString>Производство досок из древесины.</MakeWoodLumberTeak.jobString>
+
+<MakeWoodLumberWillow.label>сделать ивовые доски</MakeWoodLumberWillow.label>
+<MakeWoodLumberWillow.description>Распилить сырые брёвна ивы на доски для строительства.</MakeWoodLumberWillow.description>
+<MakeWoodLumberWillow.jobString>Производство досок из древесины.</MakeWoodLumberWillow.jobString>
+
+<MakeWoodLumberBamboo.label>сделать бамбуковые доски</MakeWoodLumberBamboo.label>
+<MakeWoodLumberBamboo.description>Распилить сырые брёвна бамбука на доски для строительства.</MakeWoodLumberBamboo.description>
+<MakeWoodLumberBamboo.jobString>Производство досок из древесины.</MakeWoodLumberBamboo.jobString>
+
+<MakeWoodLumberCocoa.label>сделать доски какао</MakeWoodLumberCocoa.label>
+<MakeWoodLumberCocoa.description>Распилить сырые брёвна какао на доски для строительства.</MakeWoodLumberCocoa.description>
+<MakeWoodLumberCocoa.jobString>Производство досок из древесины.</MakeWoodLumberCocoa.jobString>
+
+<MakeWoodLumberMixedHand.label>сделать доски вручную</MakeWoodLumberMixedHand.label>
+<MakeWoodLumberMixedHand.description>Переработать вручную любые случайные или лишние брёвна в доски для строительства. Это утомительная работа.</MakeWoodLumberMixedHand.description>
+<MakeWoodLumberMixedHand.jobString>Производство досок из древесины.</MakeWoodLumberMixedHand.jobString>
+
+</LanguageData>

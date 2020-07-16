@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Arid Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_SaguaroCactus"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeDrago"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Swamp Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeWillow"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeCypress"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeMaple"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Temperate Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeOak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreePoplar"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreePine"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeBirch"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Tropical Trees -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeTeak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeCecropia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreePalm"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Tropical Trees Continued -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Vegetable Garden</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeBamboo"]/plant</xpath>
+				<value>
+					<harvestedThingDef>Bamboo</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Cultivated Tree -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Plant_TreeCocoa"]</xpath>
+				<value>
+					<thingClass>ExpandedWoodworking.Cocoa</thingClass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Recipe -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Apparel -->
+
+	<!-- Traders -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodTypes</categoryDef>
+						<thingDefCountRange>
+							<min>3</min>
+							<max>5</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>300</min>
+							<max>800</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodLumber</categoryDef>
+						<thingDefCountRange>
+							<min>0</min>
+							<max>0</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>0</min>
+							<max>0</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodTypes</categoryDef>
+						<thingDefCountRange>
+							<min>3</min>
+							<max>6</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>400</min>
+							<max>800</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodLumber</categoryDef>
+						<thingDefCountRange>
+							<min>2</min>
+							<max>5</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>300</min>
+							<max>700</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodTypes</categoryDef>
+						<thingDefCountRange>
+							<min>2</min>
+							<max>3</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>150</min>
+							<max>450</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodLumber</categoryDef>
+						<thingDefCountRange>
+							<min>0</min>
+							<max>0</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>0</min>
+							<max>0</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_SingleDef"][thingDef = "WoodLog"]</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodTypes</categoryDef>
+						<thingDefCountRange>
+							<min>2</min>
+							<max>4</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>300</min>
+							<max>700</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Category">
+						<categoryDef>WoodLumber</categoryDef>
+						<thingDefCountRange>
+							<min>2</min>
+							<max>4</max>
+						</thingDefCountRange>
+						<totalPriceRange>
+							<min>300</min>
+							<max>700</max>
+						</totalPriceRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- RecipeDef - Peg Leg and Foot -->
+	<!--Let MSE change recipe if mod is loaded-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medical System Expansion</li>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodTypes</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/thingDefs</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "InstallPegLeg"]/fixedIngredientFilter/categories</xpath>
+					<value>
+						<li>WoodTypes</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodLumber</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "InstallWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+					<value>
+						<li>WoodLumber</li>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+
+	<!-- Art -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "SculptureSmall"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "SculptureLarge"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "SculptureGrand"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Joy/Recreation -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "HorseshoesPin"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "HoopstoneRing"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "BilliardsTable"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "PokerTable"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "BilliardsTable"]/costStuffCount	|
+						Defs/ThingDef[defName = "PokerTable"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>110</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Lighting -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TorchLamp"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Power -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "WatermillGenerator"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "WatermillGenerator"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WatermillGenerator"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>280</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+
+
+	<!-- Production -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Vegetable Garden</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "Brewery"]/costList/WoodLog	|
+						Defs/ThingDef[defName = "FermentingBarrel"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>95</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Stuffed Workbenches</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Brewery"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>120</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Stuffed Workbenches</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Brewery"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>120</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/shaderType</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Garden Drinks</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/TableBrewery/TableBrewery</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/FermentingBarrel/FermentingBarrel</texPath>
+		</value>
+	</Operation>
+
+	<!-- Security -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TrapSpike"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Temperature -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Campfire"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>DeCore B19</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>DeCore B19</modName>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Base Weapons -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter/disallowedThingDefs/li[.="WoodLog"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BaseMeleeWeapon_Sharp"]/recipeMaker/defaultIngredientFilter</xpath>
+				<value>
+					<disallowedCategories>
+						<li>WoodTypes</li>
+						<li>WoodLumber</li>
+					</disallowedCategories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Weapon (Melee Medieval) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MeleeWeapon_Mace"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Weapons (Melee Neolithic) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "MeleeWeapon_Club"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/stuffCategories/li[.="Woody"]	|
+						Defs/ThingDef[defName = "MeleeWeapon_Spear"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Weapon(Ranged Neolithic) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Short"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Pila"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>70</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Recurve"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Great"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

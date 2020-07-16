@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Wood Logs Stat Fixes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/tools</xpath>
+				<value>
+					<tools>
+						<li Class="CombatExtended.ToolCE">
+							<capacities>
+								<li>Blunt</li>
+							</capacities>
+							<power>2</power>
+							<cooldownTime>0.99</cooldownTime>
+							<armorPenetrationBlunt>0.288</armorPenetrationBlunt>
+						</li>
+					</tools>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]</xpath>
+				<value>
+					<equippedStatOffsets>
+						<MeleeCritChance>0.2</MeleeCritChance>
+						<MeleeParryChance>1</MeleeParryChance>
+						<MeleeDodgeChance>0.13</MeleeDodgeChance>
+					</equippedStatOffsets>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases</xpath>
+				<value>
+					<Bulk>0.07</Bulk>
+					<MeleeCounterParryBonus>1.33</MeleeCounterParryBonus>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Sharp</xpath>
+				<value>
+					<StuffPower_Armor_Sharp>0.1</StuffPower_Armor_Sharp>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Blunt</xpath>
+				<value>
+					<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/StuffPower_Armor_Heat</xpath>
+				<value>
+					<StuffPower_Armor_Heat>0.025</StuffPower_Armor_Heat>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/SharpDamageMultiplier</xpath>
+				<value>
+					<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/statBases/BluntDamageMultiplier</xpath>
+				<value>
+					<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="WoodLogBase"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+					<MeleePenetrationFactor>0.3</MeleePenetrationFactor>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Log Wall Repeat Bomb Damage Definiton Fix -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "EW_LogWall"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>BuildingNaturalBase</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "EW_LogWall"]/damageMultipliers</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Tribal Warrior Weapon Money Fix (for being possibly too poor to have a weapon) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Tribal_Warrior"]/weaponMoney/min</xpath>
+				<value>
+					<min>120</min>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Weapon(Ranged Neolithic) Costs Fixes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_Pilum"]/ingredients/li/filter/thingDefs[li = "WoodLog"]</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_Pilum"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_Pilum"]/fixedIngredientFilter</xpath>
+				<value>
+					<categories>
+						<li>WoodTypes</li>
+					</categories>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Short"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Recurve"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Bow_Great"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>20</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	 <!-- Mass statFactor for all logs (MaxHitPoints / 0.4 * 0.3) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Palm"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Cecropia"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.225</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Cocoa"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Cypress"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4125</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Oak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Pine"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Poplar"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.225</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Teak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.525</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Willow"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Bamboo"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.2625</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Mass statFactor for all lumber (MaxHitPoints / 0.4 * 0.3) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Combat Extended</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name = "WoodLumberBase"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+					<Bulk>0.03</Bulk>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberPalm"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberCecropia"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.225</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberCocoa"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberCypress"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberDrago"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4125</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberOak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberPine"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberPoplar"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberTeak"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.525</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberWillow"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.3</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberBamboo"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.2625</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- The Acacia Conundrum -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>VGP Xtra Trees and Flowers</li>
+			</mods>
+			<nomatch Class="PatchOperationFindMod">
+				<mods>
+					<li>[RF] Realistic Planets [1.0]</li>
+					<li>Advanced Biomes</li>
+					<li>Nature's Pretty Sweet</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "WoodLog_Acacia"]/stuffProps/statFactors</xpath>
+					<value>
+						<Mass>0.78375</Mass>
+					</value>
+				</match>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>VGP Xtra Trees and Flowers</li>
+			</mods>
+			<nomatch Class="PatchOperationFindMod">
+				<mods>
+					<li>[RF] Realistic Planets [1.0]</li>
+					<li>Advanced Biomes</li>
+					<li>Nature's Pretty Sweet</li>
+				</mods>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "LumberAcacia"]/stuffProps/statFactors</xpath>
+					<value>
+						<Mass>0.78375</Mass>
+					</value>
+				</match>
+			</nomatch>
+		</match>
+	</Operation>
+	
+	<!-- The Baobab Conflict -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Advanced Biomes</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "WoodLog_Baobab"]/stuffProps/statFactors</xpath>
+					<value>
+						<Mass>0.375</Mass>
+					</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Advanced Biomes</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "LumberBaobab"]/stuffProps/statFactors</xpath>
+					<value>
+						<Mass>0.375</Mass>
+					</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<!-- Advanced Biomes compatibility -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Advanced Biomes</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Cedar"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Snag"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.075</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Mangrove"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.60</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Advanced Biomes</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberCedar"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberMangrove"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5625</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Nature's Pretty Sweet compatibility -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Nature's Pretty Sweet</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5625</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Nature's Pretty Sweet</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Gum"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Hazelnut"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.375</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Nature's Pretty Sweet</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberRedwood"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.5625</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberGum"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LumberHazelnut"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.375</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Zen Garden compatibility -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Zen Garden</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.45</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6375</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Zen Garden</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_WoodLog_CrabApple"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.45</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Zen Garden</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_LumberCherry"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.45</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_LumberEbony"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.6375</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_LumberCrabApple"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.45</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- LotRE compatibility -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Lord of the Rims - Elves</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLogMallorn"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Lord of the Rims - Elves</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_WoodLog_GoldenBirch"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4125</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modList>
+					<li>Combat Extended</li>
+					<li>Lord of the Rims - Elves</li>
+				</modList>	
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_LumberGoldenBirch"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4125</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LotRE_LumberMallorn"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>0.4875</Mass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

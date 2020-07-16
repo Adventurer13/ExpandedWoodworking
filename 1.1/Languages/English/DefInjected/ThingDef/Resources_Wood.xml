@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<WoodLog_Birch.label>birch logs</WoodLog_Birch.label>
+	<WoodLog_Birch.description>Raw wood from a birch tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Birch is a perishable hardwood.</WoodLog_Birch.description>
+	<WoodLog_Birch.stuffProps.stuffAdjective>birch</WoodLog_Birch.stuffProps.stuffAdjective>
+	
+	<WoodLog_Palm.label>black palm logs</WoodLog_Palm.label>
+	<WoodLog_Palm.description>Raw wood from a black palm tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Black palm is a durable wood.</WoodLog_Palm.description>
+	<WoodLog_Palm.stuffProps.stuffAdjective>black palm</WoodLog_Palm.stuffProps.stuffAdjective>
+	
+	<WoodLog_Cecropia.label>cecropia logs</WoodLog_Cecropia.label>
+	<WoodLog_Cecropia.description>Raw wood from a cecropia tree. When processed it becomes useful in weapons, tools, handicrafts, small structures, and even simple prosthetics. Cecropia is a nondurable to perishable hardwood.</WoodLog_Cecropia.description>
+	<WoodLog_Cecropia.stuffProps.stuffAdjective>cecropia</WoodLog_Cecropia.stuffProps.stuffAdjective>
+	
+	<WoodLog_Cocoa.label>cocoawood logs</WoodLog_Cocoa.label>
+	<WoodLog_Cocoa.description>Raw wood from a cocoa tree. When processed it becomes useful for building structures, weapons, and simple prosthetics. Cocoawood is a nondurable hardwood.</WoodLog_Cocoa.description>
+	<WoodLog_Cocoa.stuffProps.stuffAdjective>cocoawood</WoodLog_Cocoa.stuffProps.stuffAdjective>
+	
+	<WoodLog_Cypress.label>cypress logs</WoodLog_Cypress.label>
+	<WoodLog_Cypress.description>Raw wood from a cypress tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Cypress is a durable softwood.</WoodLog_Cypress.description>
+	<WoodLog_Cypress.stuffProps.stuffAdjective>cypress</WoodLog_Cypress.stuffProps.stuffAdjective>
+	
+	<WoodLog_Drago.label>drago logs</WoodLog_Drago.label>
+	<WoodLog_Drago.description>Raw wood from a drago tree. When processed it becomes useful for making tools, handicrafts, and other makeshift structures. Drago is a low durability hardwood valued more for its resin.</WoodLog_Drago.description>
+	<WoodLog_Drago.stuffProps.stuffAdjective>drago</WoodLog_Drago.stuffProps.stuffAdjective>
+	
+	<WoodLog_Maple.label>maple logs</WoodLog_Maple.label>
+	<WoodLog_Maple.description>Raw wood from a maple tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Maple is a nondurable to perishable hardwood.</WoodLog_Maple.description>
+	<WoodLog_Maple.stuffProps.stuffAdjective>maple</WoodLog_Maple.stuffProps.stuffAdjective>
+
+	<WoodLog_Oak.label>oak logs</WoodLog_Oak.label>
+	<WoodLog_Oak.description>Raw wood from an oak tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Oak is a very durable hardwood.</WoodLog_Oak.description>
+	<WoodLog_Oak.stuffProps.stuffAdjective>oak</WoodLog_Oak.stuffProps.stuffAdjective>
+	
+	<WoodLog_Pine.label>pine logs</WoodLog_Pine.label>
+	<WoodLog_Pine.description>Raw wood from a pine tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Pine is a moderate to low durability softwood.</WoodLog_Pine.description>
+	<WoodLog_Pine.stuffProps.stuffAdjective>pine</WoodLog_Pine.stuffProps.stuffAdjective>
+	
+	<WoodLog_Poplar.label>poplar logs</WoodLog_Poplar.label>
+	<WoodLog_Poplar.description>Raw wood from a poplar tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Poplar is a nondurable hardwood.</WoodLog_Poplar.description>
+	<WoodLog_Poplar.stuffProps.stuffAdjective>poplar</WoodLog_Poplar.stuffProps.stuffAdjective>
+
+	<WoodLog_Succulent.label>succulent ribs</WoodLog_Succulent.label>
+	<WoodLog_Succulent.description>Ribs from a woody succulent like Saguaro cacti or semi-succulent like ocotillo. Succulent ribs are soft and excellent for making tools, handicrafts, fences, and other small structures.</WoodLog_Succulent.description>
+	<WoodLog_Succulent.stuffProps.stuffAdjective>succulent rib</WoodLog_Succulent.stuffProps.stuffAdjective>
+
+	<WoodLog_Teak.label>teak logs</WoodLog_Teak.label>
+	<WoodLog_Teak.description>Raw wood from a teak tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Teak is the most durable hardwood.</WoodLog_Teak.description>
+	<WoodLog_Teak.stuffProps.stuffAdjective>teak</WoodLog_Teak.stuffProps.stuffAdjective>
+	
+	<WoodLog_Willow.label>willow logs</WoodLog_Willow.label>
+	<WoodLog_Willow.description>Raw wood from a willow tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Willow is a nondurable hardwood.</WoodLog_Willow.description>
+	<WoodLog_Willow.stuffProps.stuffAdjective>willow</WoodLog_Willow.stuffProps.stuffAdjective>
+	
+	<Bamboo.label>bamboo</Bamboo.label>
+	<Bamboo.description>Raw bamboo. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Bamboo is a perishable, fast growing grass.</Bamboo.description>
+	<Bamboo.stuffProps.stuffAdjective>bamboo</Bamboo.stuffProps.stuffAdjective>
+
+</LanguageData>

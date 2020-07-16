@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Boats -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Boats</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint" or defName = "SPBoats_FishingBoatBlueprint" or defName = "SPBoats_CaravelBlueprint" or defName = "SPBoats_GalleonBlueprint"]/costList/WoodLog</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>225</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_FishingBoatBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_CaravelBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>1250</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_GalleonBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>2500</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--  [RF] Fertile Fields -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Fertile Fields [1.0]</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "CompostBarrel"]/costList/WoodLog	|
+							Defs/ThingDef[defName = "CompostBarrel"]/constructEffect</xpath>
+				</li>
+				<!-- <li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "CompostBin"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>2</costStuffCount>
+					</value>
+				</li> -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "CompostBarrel"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+  <!-- UN-Colony -->
+  <!-- Recipes -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="ExpandedWoodworking.PatchOperationModCompat">
+        <modName>1- UN-Colony [1.0]</modName>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "SadjuukChemfuelRecipeA"]/ingredients/li/filter/thingDefs</xpath>
+        <value>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "SadjuukChemfuelRecipeA"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "SadjuukFuelOilRecipeB"]/ingredients/li/filter/thingDefs</xpath>
+        <value>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "SadjuukFuelOilRecipeB"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  
+  <!-- Terrain -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="ExpandedWoodworking.PatchOperationModCompat">
+        <modName>1- UN-Colony [1.0]</modName>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="SadjuukWoodFloorBaseA"]/description</xpath>
+        <value>
+          <description>Simple wooden flooring, made of rough lumber.</description>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="SadjuukWoodFloorBaseB"]/description</xpath>
+        <value>
+          <description>Simple wooden flooring, made of smooth lumber.</description>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  
+  <!-- Buildings -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="ExpandedWoodworking.PatchOperationModCompat">
+        <modName>1- UN-Colony [1.0]</modName>
+      </li>
+      <!-- Doors
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="SadjuukDoorBaseA"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="SadjuukDoorBaseA"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="SadjuukDoorBaseD"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="SadjuukDoorBaseD"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="SadjuukDoorBaseE"]/costList/WoodLog</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="SadjuukDoorBaseE"]</xpath>				
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>4</costStuffCount>
+				</value>
+			</li> -->
+      <!-- Walls 
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="SadjuukWallBaseA"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="SadjuukWallBaseA"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>6</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="SadjuukEmbrasureBaseA"]/constructEffect</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="SadjuukEmbrasureBaseA"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>7</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SadjuukWallAB"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SadjuukEmbrasureAB"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+				</value>
+			</li> -->
+			
+      <!-- Fence -->
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName = "SadjuukWoodFence"]/constructEffect</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "SadjuukWoodFence"]/costList</xpath>
+        <value>
+          <stuffCategories>
+            <li>RawWoody</li>
+          </stuffCategories>
+          <costStuffCount>2</costStuffCount>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  
+  <!-- Industry -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="ExpandedWoodworking.PatchOperationModCompat">
+        <modName>1- UN-Colony [1.0]</modName>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName = "SadjuukWoodenPallet"]/constructEffect</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName = "SadjuukWoodenPallet"]/costList</xpath>
+        <value>
+          <stuffCategories>
+            <li>Woody</li>
+          </stuffCategories>
+          <costStuffCount>4</costStuffCount>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  
+  <!-- Below | Author: Dr_Zhivago Editor: Adventurer13 -->
+  <!-- Smoked meat -->
+  <!-- Buildings -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="ExpandedWoodworking.PatchOperationModCompat">
+        <modName>Smoked meat</modName>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Smokepit"]/constructEffect</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Smokepit"]/costList</xpath>
+        <value>
+          <stuffCategories>
+            <li>RawWoody</li>
+          </stuffCategories>
+          <costStuffCount>20</costStuffCount>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  
+</Patch>

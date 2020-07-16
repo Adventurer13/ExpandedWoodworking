@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<!-- Plants Arid Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "TKKN_TreeOcotillo"]/plant/harvestedThingDef</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Saguaro</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Savanna/Grasslands Biomes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_PlantTreeBaobab"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Baobab</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_PlantTreeAcacia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_PlantTreeGum"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Gum</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Redwood Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TKKN_OldGrowth_PlantTreeHazelnut"]/plant	|
+						Defs/ThingDef[defName = "TKKN_PlantTreeHazelnut"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Hazelnut</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Temp Trader Fix for deprecated items -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodTypes"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_WoodLog_Baobab</li>
+						<li>TKKN_WoodLog_Gum</li>
+						<li>TKKN_WoodLog_Hazelnut</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators/li[@Class="StockGenerator_Category"][categoryDef = "WoodLumber"]</xpath>
+				<value>
+					<excludedThingDefs>
+						<li>TKKN_LumberBaobab</li>
+						<li>TKKN_LumberGum</li>
+						<li>TKKN_LumberHazelnut</li>
+						<li>TKKN_LumberRedwood</li>
+					</excludedThingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<!-- Redwood -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/label</xpath>
+				<value>
+					<label>redwood logs</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/statBases/Flammability</xpath>
+				<value>
+					<Flammability>0.75</Flammability>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/stuffAdjective</xpath>
+				<value>
+					<stuffAdjective>redwood</stuffAdjective>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/categories/li</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<value>			
+					<MaxHitPoints>0.75</MaxHitPoints>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Beauty</xpath>
+				<value>			
+					<Beauty>1.6</Beauty>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Flammability</xpath>
+				<value>			
+					<Flammability>0.75</Flammability>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/WorkToBuild</xpath>
+				<value>			
+					<WorkToBuild>0.25</WorkToBuild>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/WorkToMake</xpath>
+				<value>			
+					<WorkToMake>0.25</WorkToMake>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
+				<value>			
+					<DoorOpenSpeed>1.4</DoorOpenSpeed>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]/thingCategories/li</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "RedWoodLog"]</xpath>
+				<value>
+					<butcherProducts>
+						<LumberRedwood>30</LumberRedwood>
+					</butcherProducts>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Acacia Wood (only if not already present by the above mods) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Acacia</defName> <!-- SG: 1.19  W: 1185  H: 3680 -->
+						<label>acacia logs</label>
+						<description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood. (NPS)</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>1.2</Mass>
+							<MarketValue>2.3</MarketValue>
+							<DeteriorationRate>0.5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>acacia</stuffAdjective>
+							<commonality>0.25</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>0.95</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberAcacia>30</LumberAcacia>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Baobab Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Baobab</defName> 
+						<label>baobab logs</label>
+						<description>Raw wood from a baobab tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Baobab is a durable wood. (NPS)</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.7</Mass> 
+							<MarketValue>1.6</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>baobab</stuffAdjective>
+							<commonality>0.45</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberBaobab>30</LumberBaobab>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Baobab Wood (Deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>TKKN_WoodLog_Baobab</defName> 
+						<label>baobab logs (deprecated)</label>
+						<description>Raw wood from a (nps) baobab tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Baobab is a durable wood.</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.7</Mass> 
+							<MarketValue>1.6</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps baobab</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberBaobab>30</LumberBaobab>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<!-- Ghost Gum Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]</xpath>
+				<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Gum</defName> 
+						<label>ghost gum logs</label>
+						<description>Raw wood from a gum tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Ghost gum is a moderate to durable hardwood.</description>
+						<graphicData>
+							<color>(108,103,97)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.8</Mass> 
+							<MarketValue>1.7</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>ghost gum</stuffAdjective>
+							<commonality>0.5</commonality>
+							<color>(108,103,97)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberGum>30</LumberGum>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Ghost Gum Wood (deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]</xpath>
+				<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>TKKN_WoodLog_Gum</defName> 
+						<label>ghost gum logs (deprecated)</label>
+						<description>Raw wood from a (nps) gum tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Ghost gum is a moderate to durable hardwood.</description>
+						<graphicData>
+							<color>(108,103,97)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.8</Mass> 
+							<MarketValue>1.7</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps gum</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(108,103,97)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberGum>30</LumberGum>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Hazelnut Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Hazelnut</defName> 
+						<label>hazelnut logs</label>
+						<description>Raw wood from a hazelnut tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Hazelnut is a moderate to low durability hardwood.</description>
+						<graphicData>
+							<color>(222,192,140)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.7</Mass> 
+							<MarketValue>1.1</MarketValue>
+							<DeteriorationRate>3</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>hazelnut</stuffAdjective>
+							<commonality>0.75</commonality>
+							<color>(222,192,140)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.8</Beauty>
+								<WorkToMake>0.5</WorkToMake>
+								<WorkToBuild>0.5</WorkToBuild>
+								<DoorOpenSpeed>1.1</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberHazelnut>30</LumberHazelnut>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Hazelnut Wood (deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>TKKN_WoodLog_Hazelnut</defName> 
+						<label>hazelnut logs (deprecated)</label>
+						<description>Raw wood from a (nps) hazelnut tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Hazelnut is a moderate to low durability hardwood.</description>
+						<graphicData>
+							<color>(222,192,140)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.7</Mass> 
+							<MarketValue>1.1</MarketValue>
+							<DeteriorationRate>3</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps hazelnut</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(222,192,140)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.8</Beauty>
+								<WorkToMake>0.5</WorkToMake>
+								<WorkToBuild>0.5</WorkToBuild>
+								<DoorOpenSpeed>1.1</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberHazelnut>30</LumberHazelnut>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- <li Class="PatchOperationReplace"> May decide to change name of Saguaro to Succulent in the future for better compatibility with other mods. Currently this won't work because of the langauge folder overwriting any changes.
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/label</xpath>
+				<value>
+					<label>succulent ribs</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/description</xpath>
+				<value>
+					<description>Ribs from a saguaro cactus or an (nps) ocotillo. Succulent rib is soft and excellent for making tools, handicrafts, fences, and other small structures.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Saguaro"]/stuffProps/stuffAdjective</xpath>
+				<value>
+					<stuffAdjective>succulent rib</stuffAdjective>
+				</value>
+			</li> -->
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Acacia Lumber (only if not already present by the above mods) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberAcacia</defName>
+						<label>acacia lumber</label>
+						<description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood. (NPS)</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.6</Mass>
+							<MarketValue>4.8</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>acacia</stuffAdjective>
+							<commonality>0.2</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>0.95</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Baobab Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberBaobab</defName> 
+						<label>baobab lumber</label>
+						<description>Processed baobab lumber. Mostly useful for building long-lasting, simple structures and furniture. Baobab is a durable wood. (NPS)</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.35</Mass> 
+							<MarketValue>3.3</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>baobab</stuffAdjective>
+							<commonality>0.4</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Baobab Lumber (deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>TKKN_LumberBaobab</defName> 
+						<label>baobab lumber (deprecated)</label>
+						<description>Processed (nps) baobab lumber. Mostly useful for building long-lasting, simple structures and furniture. Baobab is a durable wood.</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.35</Mass> 
+							<MarketValue>3.3</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps baobab</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>	
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+			
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>		
+			<!-- Ghost Gum Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberDrago"]</xpath>
+				<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberGum</defName> 
+						<label>ghost gum lumber</label>
+						<description>Processed gum lumber. Mostly useful for building long-lasting, simple structures and furniture. Ghost gum is a moderate to durable hardwood.</description>
+						<graphicData>
+							<color>(108,103,97)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.4</Mass> 
+							<MarketValue>3.6</MarketValue>
+							<DeteriorationRate>3</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>ghost gum</stuffAdjective>
+							<commonality>0.45</commonality>
+							<color>(108,103,97)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Ghost Gum Lumber (deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberDrago"]</xpath>
+				<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>TKKN_LumberGum</defName> 
+						<label>ghost gum lumber (deprecated)</label>
+						<description>Processed (nps) gum lumber. Mostly useful for building long-lasting, simple structures and furniture. Ghost gum is a moderate to durable hardwood.</description>
+						<graphicData>
+							<color>(108,103,97)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.4</Mass> 
+							<MarketValue>3.6</MarketValue>
+							<DeteriorationRate>3</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps gum</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(108,103,97)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Hazelnut Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberHazelnut</defName>
+						<label>hazelnut lumber</label>
+						<description>Processed hazelnut lumber. Mostly useful for building long-lasting, simple structures and furniture. Hazelnut is a moderate to low durability hardwood.</description>
+						<graphicData>
+							<color>(222,192,140)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.35</Mass>
+							<MarketValue>2.9</MarketValue>
+							<DeteriorationRate>4</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>hazelnut</stuffAdjective>
+							<commonality>0.7</commonality>
+							<color>(222,192,140)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.8</Beauty>
+								<WorkToMake>0.5</WorkToMake>
+								<WorkToBuild>0.5</WorkToBuild>
+								<DoorOpenSpeed>1.1</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Hazelnut Lumber (deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>TKKN_LumberHazelnut</defName>
+						<label>hazelnut lumber (deprecated)</label>
+						<description>Processed (nps) hazelnut lumber. Mostly useful for building long-lasting, simple structures and furniture. Hazelnut is a moderate to low durability hardwood.</description>
+						<graphicData>
+							<color>(222,192,140)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.35</Mass>
+							<MarketValue>2.9</MarketValue>
+							<DeteriorationRate>4</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps hazelnut</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(222,192,140)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.8</Beauty>
+								<WorkToMake>0.5</WorkToMake>
+								<WorkToBuild>0.5</WorkToBuild>
+								<DoorOpenSpeed>1.1</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Redwood Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberTeak"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberRedwood</defName>
+						<label>redwood lumber</label>
+						<description>Processed redwood lumber. Mostly useful for building long-lasting sculptures and furniture. Redwood is a moderate to very durable softwood.</description>
+						<graphicData>
+							<color>(102,41,20)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.2</Mass>
+							<MarketValue>4.6</MarketValue>
+							<Flammability>0.75</Flammability>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>redwood</stuffAdjective>
+							<commonality>0.3</commonality>
+							<color>(102,41,20)</color>
+							<statFactors>
+								<MaxHitPoints>0.75</MaxHitPoints>
+								<Beauty>1.6</Beauty>
+								<Flammability>0.75</Flammability>
+								<WorkToMake>0.25</WorkToMake>
+								<WorkToBuild>0.25</WorkToBuild>
+								<DoorOpenSpeed>1.4</DoorOpenSpeed>
+								<MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Redwood Lumber (deprecated) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberTeak"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>TKKN_LumberRedwood</defName>
+						<label>redwood lumber (deprecated)</label>
+						<description>Processed (nps) redwood lumber. Mostly useful for building long-lasting sculptures and furniture. Redwood is a moderate to very durable softwood.</description>
+						<graphicData>
+							<color>(102,41,20)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.2</Mass>
+							<MarketValue>4.6</MarketValue>
+							<Flammability>0.75</Flammability>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>nps redwood</stuffAdjective>
+							<commonality>0.0</commonality>
+							<color>(102,41,20)</color>
+							<statFactors>
+								<MaxHitPoints>0.75</MaxHitPoints>
+								<Beauty>1.6</Beauty>
+								<Flammability>0.75</Flammability>
+								<WorkToMake>0.25</WorkToMake>
+								<WorkToBuild>0.25</WorkToBuild>
+								<DoorOpenSpeed>1.4</DoorOpenSpeed>
+								<MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Nature's Pretty Sweet Lumber Recipes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberAcacia</defName>
+						<label>make acacia lumber</label>
+						<description>Process raw acacia logs into lumber for construction. (NPS)</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Acacia</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Acacia</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberAcacia>30</LumberAcacia>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberBaobab</defName>
+						<label>make baobab lumber</label>
+						<description>Process raw baobab logs into lumber for construction. (NPS)</description>
+						<allowMixingIngredients>true</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Baobab</li>
+										<li>WoodLog_Baobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Baobab</li>
+								<li>WoodLog_Baobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberBaobab>30</LumberBaobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBaobab"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_ConvertDeprecatedBaobabLogs</defName>
+						<label>convert deprecated baobab logs into new logs (temporary)</label>
+						<description>NOTE: Will be removed in a future update! This one converts older logs into the new logs. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Baobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Baobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<WoodLog_Baobab>15</WoodLog_Baobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBaobab"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberBaobab</defName>
+						<label>convert deprecated baobab lumber into new lumber (temporary)</label>
+						<description>Please use the other baobab lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberBaobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberBaobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberBaobab>15</LumberBaobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>		
+			
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>		
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberDrago"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberGum</defName>
+						<label>make ghost gum lumber</label>
+						<description>Process raw ghost gum logs into lumber for construction.</description>
+						<allowMixingIngredients>true</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Gum</li>
+										<li>WoodLog_Gum</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Gum</li>
+								<li>WoodLog_Gum</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberGum>30</LumberGum>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberGum"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_ConvertDeprecatedGumLogs</defName>
+						<label>convert deprecated ghost gum logs into new logs (temporary)</label>
+						<description>NOTE: Will be removed in a future update! This one converts older logs into the new logs. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Gum</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Gum</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<WoodLog_Gum>15</WoodLog_Gum>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberGum"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberGum</defName>
+						<label>convert deprecated ghost gum lumber into new lumber (temporary)</label>
+						<description>Please use the other ghost gum lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberGum</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberGum</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberGum>15</LumberGum>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberHazelnut</defName>
+						<label>make hazelnut lumber</label>
+						<description>Process raw hazelnut logs into lumber for construction.</description>
+						<allowMixingIngredients>true</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Hazelnut</li>
+										<li>WoodLog_Hazelnut</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Hazelnut</li>
+								<li>WoodLog_Hazelnut</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberHazelnut>30</LumberHazelnut>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberHazelnut"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_ConvertDeprecatedHazelnutLogs</defName>
+						<label>convert deprecated hazelnut logs into new logs (temporary)</label>
+						<description>NOTE: Will be removed in a future update! This one converts older logs into the new logs. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_WoodLog_Hazelnut</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_WoodLog_Hazelnut</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<WoodLog_Hazelnut>15</WoodLog_Hazelnut>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberHazelnut"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberHazelnut</defName>
+						<label>convert deprecated hazelnut lumber into new lumber (temporary)</label>
+						<description>Please use the other hazelnut lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberHazelnut</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberHazelnut</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberHazelnut>15</LumberHazelnut>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberTeak"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberRedwood</defName>
+						<label>make redwood lumber</label>
+						<description>Process raw redwood logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>RedWoodLog</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>RedWoodLog</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberRedwood>30</LumberRedwood>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberRedwood"]</xpath>
+				<order>Append</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>TKKN_MakeWoodLumberRedwood</defName>
+						<label>convert deprecated redwood lumber into new lumber (temporary)</label>
+						<description>Please use the other redwood lumber recipe! This one converts older lumber into the new lumber and will be removed in a future update. Exists to prevent errors for current users. Remove before/after conversion is complete or you risk your woodworking table no longer functioning after this is removed from the mod.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>TKKN_LumberRedwood</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>TKKN_LumberRedwood</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberRedwood>15</LumberRedwood>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Other Stuff -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Nature's Pretty Sweet</modName>
+			</li>				
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName = "TKKN_FloorRedWood"]/costList/RedWoodLog</xpath>
+				<value>
+					<LumberRedwood>4</LumberRedwood>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<!-- Plants Poison Forest Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PoisonPlantTreeTeak"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PoisonPlantTreeCecropia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PoisonTreeCypress"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PoisonTreePalm"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PoisonTreeWillow"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Savanna Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SavannaTreeAcacia"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SavannaTreeBaobab"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Baobab</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Temperate Rainforest Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TreeCedar"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Cedar</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Wasteland Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "TreeDead"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Snag</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Plants Wetland Biome -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "WetlandTreeMangrove"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_Mangrove</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Acacia Wood (only if not already present by RP or VGP) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Acacia</defName> <!-- SG: 1.19  W: 1185  H: 3680 -->
+						<label>acacia logs</label>
+						<description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood.  (AdvBiomes)</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>1.2</Mass>
+							<MarketValue>2.3</MarketValue>
+							<DeteriorationRate>0.5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>acacia</stuffAdjective>
+							<commonality>0.25</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>0.95</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberAcacia>30</LumberAcacia>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<!-- Baobab Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Baobab</defName> 
+						<label>baobab logs</label>
+						<description>Raw wood from a baobab tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Baobab is a durable wood. (AdvBiomes)</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.7</Mass> 
+							<MarketValue>1.6</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>baobab</stuffAdjective>
+							<commonality>0.45</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberBaobab>30</LumberBaobab>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Red Cedar Woood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Cedar</defName>  <!-- SG: 0.53   W: 530  H: 910 -->
+						<label>red cedar logs</label>
+						<description>Raw wood from a red cedar tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Red cedar is a durable softwood.</description>
+						<graphicData>
+							<color>(153,89,77)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.5</Mass> 
+							<MarketValue>1.6</MarketValue>
+							<DeteriorationRate>0.5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>red cedar</stuffAdjective>
+							<commonality>0.4</commonality>
+							<color>(153,89,77)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.3</Beauty>
+								<WorkToMake>0.45</WorkToMake>
+								<WorkToBuild>0.45</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberCedar>30</LumberCedar>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Dead Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Snag</defName> 
+						<label>dead wood</label>
+						<description>Wood from a snag or dead tree. Dead wood is diseased and practically useless, but works in a pinch for making tools, fences, and other small structures.</description>
+						<graphicData>
+							<color>(155,152,147)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.15</Mass> 
+							<MarketValue>0.65</MarketValue>
+							<DeteriorationRate>8</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>dead wood</stuffAdjective>
+							<commonality>0.2</commonality>
+							<color>(155,152,147)</color>
+							<statFactors>
+								<MaxHitPoints>0.1</MaxHitPoints>
+								<Beauty>0.50</Beauty>
+								<WorkToMake>0.2</WorkToMake>
+								<WorkToBuild>0.1</WorkToBuild>
+								<DoorOpenSpeed>1.7</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Mangrove Woood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Mangrove</defName>  <!-- SG: 0.8-1.2   W: 800-1200  H: high -->
+						<label>mangrove logs</label>
+						<description>Raw wood from a mangrove tree. When processed it becomes useful for building structures, tools, and weapons. Mangrove is a durable hardwood.</description>
+						<graphicData>
+							<color>(183,122,70)</color>
+						</graphicData>
+						<statBases>
+							<Mass>1.0</Mass> 
+							<MarketValue>2.1</MarketValue>
+							<DeteriorationRate>0.5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>mangrove</stuffAdjective>
+							<commonality>0.3</commonality>
+							<color>(183,122,70)</color>
+							<statFactors>
+								<MaxHitPoints>0.8</MaxHitPoints>
+								<Beauty>1.0</Beauty>
+								<WorkToMake>1.3</WorkToMake>
+								<WorkToBuild>1.1</WorkToBuild>
+								<DoorOpenSpeed>0.7</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberMangrove>30</LumberMangrove>
+						</butcherProducts>	
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<!-- Acacia Lumber (only if not already present by RP or VGP) -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberAcacia</defName>
+						<label>acacia lumber</label>
+						<description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood.  (AdvBiomes)</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.6</Mass>
+							<MarketValue>4.8</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>acacia</stuffAdjective>
+							<commonality>0.2</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>0.95</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<!-- Baobab Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberBaobab</defName> 
+						<label>baobab lumber</label>
+						<description>Processed baobab lumber. Mostly useful for building long-lasting, simple structures and furniture. Baobab is a durable wood.  (AdvBiomes)</description>
+						<graphicData>
+							<color>(183,132,101)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.35</Mass> 
+							<MarketValue>3.3</MarketValue>
+							<DeteriorationRate>2</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>baobab</stuffAdjective>
+							<commonality>0.4</commonality>
+							<color>(183,132,101)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>0.7</Beauty>
+								<WorkToMake>0.65</WorkToMake>
+								<WorkToBuild>0.65</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>	
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Red Cedar Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberDrago"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberCedar</defName> 
+						<label>red cedar lumber</label>
+						<description>Processed red cedar lumber. Mostly useful for building long-lasting, simple structures and furniture. Red cedar is a durable softwood.</description>
+						<graphicData>
+							<color>(153,89,77)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.25</Mass> 
+							<MarketValue>3.4</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>red cedar</stuffAdjective>
+							<commonality>0.35</commonality>
+							<color>(153,89,77)</color>
+							<statFactors>
+								<MaxHitPoints>0.65</MaxHitPoints>
+								<Beauty>1.3</Beauty>
+								<WorkToMake>0.45</WorkToMake>
+								<WorkToBuild>0.45</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Mangrove Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberMangrove</defName>
+						<label>mangrove lumber</label>
+						<description>Processed mangrove lumber. Mostly useful for building simple structures and furniture. Mangrove is a durable hardwood.</description>
+						<graphicData>
+							<color>(183,122,70)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.55</Mass>
+							<MarketValue>3.8</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>mangrove</stuffAdjective>
+							<commonality>0.2</commonality>
+							<color>(183,122,70)</color>
+							<statFactors>
+								<MaxHitPoints>0.75</MaxHitPoints>
+								<Beauty>1.0</Beauty>
+								<WorkToMake>1.4</WorkToMake>
+								<WorkToBuild>1.2</WorkToBuild>
+								<DoorOpenSpeed>0.7</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Advanced Biomes Lumber Recipes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>[RF] Realistic Planets [1.0]</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>VGP Xtra Trees and Flowers</modName>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberAcacia</defName>
+						<label>make acacia lumber</label>
+						<description>Process raw acacia logs into lumber for construction. (AdvBiomes)</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Acacia</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Acacia</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberAcacia>30</LumberAcacia>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Advanced Biomes</modName>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberBaobab</defName>
+						<label>make baobab lumber</label>
+						<description>Process raw baobab logs into lumber for construction. (AdvBiomes)</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Baobab</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Baobab</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberBaobab>30</LumberBaobab>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberDrago"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberCedar</defName>
+						<label>make red cedar lumber</label>
+						<description>Process raw red cedar logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Cedar</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Cedar</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberCedar>30</LumberCedar>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberMangrove</defName>
+						<label>make mangrove lumber</label>
+						<description>Process raw mangrove logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Mangrove</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Mangrove</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberMangrove>30</LumberMangrove>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

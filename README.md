@@ -1,6 +1,7 @@
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 [![RimWorld 1.0](https://img.shields.io/badge/RimWorld-1.0-brightgreen.svg)](http://rimworldgame.com/)
+[![RimWorld 1.1](https://img.shields.io/badge/RimWorld-1.1-brightgreen.svg)](http://rimworldgame.com/)
 
 # Expanded Woodworking
 An upgrade to Qwynn's Expanded Woodworking which is an alpha version fork of ItchyFlea's Extended Woodworking.
@@ -27,8 +28,8 @@ Expanded Woodworking overwrites the following vanilla definitions:
 Patches edit the following vanilla definitions:
 
 - Trees
-- Fuelled stove & smithy
-- Brewery & barrels
+- Fuelled stove and smithy
+- Brewery and barrels
 - Butcher table
 - Torch lamp
 - Campfire
@@ -41,9 +42,10 @@ Patches edit the following vanilla definitions:
 
 Mods given extended functionality with included patches:
 
-- Combat Extended
-- Dead Goat's Weapon Pack (by DrZhivago)
-- Lord of the Rims 
+- Advanced Biomes (1.0 only)
+- Combat Extended (1.0 only)
+- Dead Goat's Weapon Pack (by DrZhivago) (1.0 only)
+- Lord of the Rims (1.0 only)
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)
 - RT's Weapon Pack Reloaded (by DrZhivago)
@@ -53,5 +55,5 @@ Mods given extended functionality with included patches:
 When making a bug report, please make sure you have developer mode enabled in your Rimworld settings. You may then create your report [here](https://github.com/Adventurer13/ExpandedWoodworking/issues). A link to your exported HugsLib log would be greatly appreciated as well.
 
 ## Older Versions
-All current and past 1.0/B19/B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
+All current and past 1.1/1.0/B19/B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
 All past A16 versions of this mod can be downloaded from [Qwynn's GitHub](https://github.com/Qwynn/ExpandedWoodworking/releases).
