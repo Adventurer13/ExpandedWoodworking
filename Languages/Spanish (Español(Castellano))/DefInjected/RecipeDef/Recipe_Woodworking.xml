@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<MakeWoodLumberAny.label>hacer cualquier madera</MakeWoodLumberAny.label>
+	<MakeWoodLumberAny.description>Procesar troncos en bruto en madera para construcción.</MakeWoodLumberAny.description>
+	<MakeWoodLumberAny.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberAny.jobString>
+	
+	<MakeWoodLumberMixedBundle.label>juntar madera</MakeWoodLumberMixedBundle.label>
+	<MakeWoodLumberMixedBundle.description>Agrupe piezas de madera al azar o sobrantes.</MakeWoodLumberMixedBundle.description>
+	<MakeWoodLumberMixedBundle.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberMixedBundle.jobString>
+	
+	<MakeWoodLumberMixed.label>hacer madera mezclada</MakeWoodLumberMixed.label>
+	<MakeWoodLumberMixed.description>Procese cualquier registro sin procesar o aleatorio en madera para construcción.</MakeWoodLumberMixed.description>
+	<MakeWoodLumberMixed.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberMixed.jobString>
+	
+	<MakeWoodLumberBirch.label>hacer madera de abedul</MakeWoodLumberBirch.label>
+	<MakeWoodLumberBirch.description>Procese troncos de abedul en bruto en madera para construcción.</MakeWoodLumberBirch.description>
+	<MakeWoodLumberBirch.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberBirch.jobString>
+	
+	<MakeWoodLumberPalm.label>hacer madera de palma negra</MakeWoodLumberPalm.label>
+	<MakeWoodLumberPalm.description>Procese troncos crudos de palma negra en madera para construcción.</MakeWoodLumberPalm.description>
+	<MakeWoodLumberPalm.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberPalm.jobString>
+	
+	<MakeWoodLumberCecropia.label>hacer madera de cecropia</MakeWoodLumberCecropia.label>
+	<MakeWoodLumberCecropia.description>Procese troncos de cecropia en bruto en madera para construcción.</MakeWoodLumberCecropia.description>
+	<MakeWoodLumberCecropia.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberCecropia.jobString>
+	
+	<MakeWoodLumberCocoa.label>hacer madera de cacao</MakeWoodLumberCocoa.label>
+	<MakeWoodLumberCocoa.description>Procese troncos de madera de cacao en bruto en madera para construcción.</MakeWoodLumberCocoa.description>
+	<MakeWoodLumberCocoa.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberCocoa.jobString>
+	
+	<MakeWoodLumberCypress.label>hacer madera de ciprés</MakeWoodLumberCypress.label>
+	<MakeWoodLumberCypress.description>Procese troncos de ciprés sin procesar en madera para construcción.</MakeWoodLumberCypress.description>
+	<MakeWoodLumberCypress.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberCypress.jobString>
+	
+	<MakeWoodLumberDrago.label>hacer drago de madera</MakeWoodLumberDrago.label>
+	<MakeWoodLumberDrago.description>Procese los registros de drago sin procesar en madera para la construcción.</MakeWoodLumberDrago.description>
+	<MakeWoodLumberDrago.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberDrago.jobString>
+	
+	<MakeWoodLumberMaple.label>hacer madera de arce</MakeWoodLumberMaple.label>
+	<MakeWoodLumberMaple.description>Procese troncos de arce en bruto en madera para construcción.</MakeWoodLumberMaple.description>
+	<MakeWoodLumberMaple.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberMaple.jobString>
+	
+	<MakeWoodLumberOak.label>hacer madera de roble</MakeWoodLumberOak.label>
+	<MakeWoodLumberOak.description>Procese troncos de roble en bruto en madera para construcción.</MakeWoodLumberOak.description>
+	<MakeWoodLumberOak.jobString>Procesamiento de madera a partir de madera.</MakeWoodLumberOak.jobString>
+	
+	<MakeWoodLumberPine.label>hacer madera de pino</MakeWoodLumberPine.label>
+	<MakeWoodLumberPine.description>Procese troncos de pino en bruto en madera para construcción.</MakeWoodLumberPine.description>
+	<MakeWoodLumberPine.jobString>Procesamiento de madera a partir de madera</MakeWoodLumberPine.jobString>
+	
+	<MakeWoodLumberPoplar.label>hacer madera de álamo</MakeWoodLumberPoplar.label>
+	<MakeWoodLumberPoplar.description>Procese troncos de álamo en bruto en madera para construcción.</MakeWoodLumberPoplar.description>
+	<MakeWoodLumberPoplar.jobString>Procesamiento de madera a partir de madera</MakeWoodLumberPoplar.jobString>
+	
+	<MakeWoodLumberTeak.label>hacer madera de teca</MakeWoodLumberTeak.label>
+	<MakeWoodLumberTeak.description>Procese troncos de teca cruda en madera para construcción.</MakeWoodLumberTeak.description>
+	<MakeWoodLumberTeak.jobString>Procesamiento de madera a partir de madera</MakeWoodLumberTeak.jobString>
+	
+	<MakeWoodLumberWillow.label>hacer madera de sauce</MakeWoodLumberWillow.label>
+	<MakeWoodLumberWillow.description>Procese troncos de sauce crudo en madera para construcción.</MakeWoodLumberWillow.description>
+	<MakeWoodLumberWillow.jobString>Procesamiento de madera a partir de madera</MakeWoodLumberWillow.jobString>
+	
+	<MakeWoodLumberBamboo.label>hacer madera de bambú</MakeWoodLumberBamboo.label>
+	<MakeWoodLumberBamboo.description>Procese bambú crudo en madera para construcción.</MakeWoodLumberBamboo.description>
+	<MakeWoodLumberBamboo.jobString>Procesamiento de madera a partir de madera</MakeWoodLumberBamboo.jobString>
+	
+	<MakeWoodLumberMixedHand.label>hacer madera a mano</MakeWoodLumberMixedHand.label>
+	<MakeWoodLumberMixedHand.description>Procese los troncos sin procesar al azar o de repuesto en madera para la construcción a mano. Es un trabajo tedioso.</MakeWoodLumberMixedHand.description>
+	<MakeWoodLumberMixedHand.jobString>Procesamiento de madera a partir de madera</MakeWoodLumberMixedHand.jobString>
+	
+</LanguageData>

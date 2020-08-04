@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<TableWoodworking.label>mesa de carpintería</TableWoodworking.label>
+	<TableWoodworking.description>Una mesa de carpintería de pie. Funciona al 60% de la velocidad de una mesa de carpintería eléctrica.</TableWoodworking.description>
+	<Blueprint_TableWoodworking.label>mesa de carpintería (plano)</Blueprint_TableWoodworking.label>
+	<Frame_TableWoodworking.label>mesa de carpintería (edificio)</Frame_TableWoodworking.label>
+	<Frame_TableWoodworking.description>Una mesa de carpintería de pie. Funciona al 60% de la velocidad de una mesa de carpintería eléctrica.</Frame_TableWoodworking.description>
+	
+	<ElectricTableWoodworking.label>mesa de carpintería eléctrica</ElectricTableWoodworking.label>
+	<ElectricTableWoodworking.description>Una mesa de carpintería eléctrica. Puede trabajar sin electricidad al 60% de la velocidad normal.</ElectricTableWoodworking.description>
+	<Blueprint_ElectricTableWoodworking.label>mesa de carpintería eléctrica (plano)</Blueprint_ElectricTableWoodworking.label>
+	<Frame_ElectricTableWoodworking.label>mesa de carpintería eléctrica (edificio)</Frame_ElectricTableWoodworking.label>
+	<Frame_ElectricTableWoodworking.description>Una mesa de carpintería eléctrica. Puede trabajar sin electricidad al 60% de la velocidad normal.</Frame_ElectricTableWoodworking.description>
+
+</LanguageData>
