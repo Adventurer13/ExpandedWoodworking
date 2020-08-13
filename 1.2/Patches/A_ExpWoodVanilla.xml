@@ -424,7 +424,7 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
+					<xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "Brewery"]</xpath>
@@ -455,7 +455,7 @@
 			</nomatch>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -519,40 +519,71 @@
 	</Operation>
 
 	<!-- Temperature -->
-	<Operation Class="PatchOperationSequence">
+
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Campfire"]/costList</xpath>
-				<value>
-					<stuffCategories>
-						<li>RawWoody</li>
-					</stuffCategories>
-					<costStuffCount>20</costStuffCount>
-				</value>
-			</li>
-		</operations>
+		<xpath>Defs/ThingDef[defName="Campfire"]/stuffCategories</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Campfire"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Campfire"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
-				<value>
-					<stuffCategories>
-						<li>RawWoody</li>
-					</stuffCategories>
-					<costStuffCount>50</costStuffCount>
-				</value>
-			</li>
-		</operations>
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/stuffCategories</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>50</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
 
 	<!-- Base Weapons -->
