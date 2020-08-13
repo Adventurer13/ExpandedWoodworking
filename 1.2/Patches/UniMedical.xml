@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Expanded Prosthetics and Organ Engineering Patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+			<li>EPOE Fix + EPOE Replacement Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Peg Leg -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "CreatePegLeg"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodTypes</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "CreatePegLeg"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodTypes</li>
+						</categories>
+					</value>
+				</li>
+				<!-- Denture -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "CreateDenture"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodLumber</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "CreateDenture"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodLumber</li>
+						</categories>
+					</value>
+				</li>
+				<!-- Wooden Foot -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "CreateWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodLumber</li>
+						</categories>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "CreateWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<categories>
+							<li>WoodLumber</li>
+						</categories>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Medical System Expansion Patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medical System Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Peg Leg -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "PegLeg"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Foot -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenFoot"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Toe -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenToe"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>5</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Arm -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenArm"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Finger -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenFinger"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>5</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Ear -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenEar"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>5</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Nose -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenNose"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>5</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

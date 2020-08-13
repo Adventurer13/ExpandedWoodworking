@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_PlantTreeCrabapple"]/plant</xpath>
+				<value>
+					<harvestedThingDef>WoodLog_CrabApple</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+		
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<!-- Cherry Wood -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/label</xpath>
+				<value>
+					<label>cherrywood logs</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/description</xpath>
+				<value>
+					<description>Wood from cherry trees. Useful for building structures, weapons, and even simple prosthetics. A raw stick of cherrywood can be used as a weapon in a pinch. (zen garden)</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/statBases/Mass</xpath>
+				<value>
+					<Mass>0.6</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/categories/li</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/statFactors/WorkToBuild</xpath>
+				<value>			
+					<WorkToBuild>0.75</WorkToBuild>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/thingCategories/li</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]</xpath>
+				<value>
+					<butcherProducts>
+						<ZEN_LumberCherry>30</ZEN_LumberCherry>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Ebony Wood -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/label</xpath>
+				<value>
+					<label>ebony logs</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/description</xpath>
+				<value>
+					<description>Wood from persimmon trees. Ebony wood is easy to polish, and is often used in sculptures. A raw stick of ebony wood can be used as a weapon in a pinch. (zen garden)</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/statBases/Mass</xpath>
+				<value>
+					<Mass>1.1</Mass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/categories/li</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/commonality</xpath>
+				<value>
+					<commonality>0.10</commonality>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<value>			
+					<MaxHitPoints>0.85</MaxHitPoints>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors</xpath>
+				<value>			
+					<WorkToBuild>1.6</WorkToBuild>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/WorkToMake</xpath>
+				<value>			
+					<WorkToMake>1.6</WorkToMake>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/Beauty</xpath>
+				<value>			
+					<Beauty>1.6</Beauty>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
+				<value>			
+					<DoorOpenSpeed>0.7</DoorOpenSpeed>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/thingCategories/li</xpath>
+				<value>
+					<li>WoodTypes</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]</xpath>
+				<value>
+					<butcherProducts>
+						<ZEN_LumberEbony>30</ZEN_LumberEbony>
+					</butcherProducts>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<!-- Crab Apple Wood -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Cypress"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_CrabApple</defName> 
+						<label>crab applewood logs</label>
+						<description>Raw wood from a crabapple tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Crab applewood is a nondurable hardwood.</description>
+						<graphicData>
+							<color>(171,133,94)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.8</Mass>
+							<MarketValue>1.6</MarketValue>
+							<DeteriorationRate>5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>crab applewood</stuffAdjective>
+							<commonality>0.5</commonality>
+							<color>(171,133,94)</color>
+							<statFactors>
+								<MaxHitPoints>0.6</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.8</WorkToMake>
+								<WorkToBuild>0.8</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberCrabApple>30</LumberCrabApple>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>
+			<!-- Cherry Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberCypress"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>ZEN_LumberCherry</defName>
+						<label>cherrywood lumber</label>
+						<description>Processed (zen garden) cherrywood lumber. Mostly useful for building long-lasting, simple structures and furniture. Cherrywood is a moderate to nondurable hardwood.</description>
+						<graphicData>
+							<color>(211,110,84)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.3</Mass>
+							<MarketValue>3.2</MarketValue>
+							<DeteriorationRate>3.9</DeteriorationRate>
+							<Flammability>0.95</Flammability>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>cherrywood</stuffAdjective>
+							<commonality>0.35</commonality>
+							<color>(211,110,84)</color>
+							<statFactors>
+								<MaxHitPoints>0.6</MaxHitPoints>
+								<Beauty>1.4</Beauty>
+								<Flammability>0.95</Flammability>
+								<WorkToMake>0.75</WorkToMake>
+								<WorkToBuild>0.75</WorkToBuild>
+								<DoorOpenSpeed>1.2</DoorOpenSpeed>
+								<MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Ebony Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>ZEN_LumberEbony</defName>
+						<label>ebony lumber</label>
+						<description>Processed (zen garden) ebony lumber. Mostly useful for building long-lasting sculptures and furniture. Ebony is a dense and prized hardwood.</description>
+						<graphicData>
+							<color>(45,42,40)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.55</Mass>
+							<MarketValue>4.4</MarketValue>
+							<MaxHitPoints>175</MaxHitPoints>
+							<Flammability>0.85</Flammability>
+							<DeteriorationRate>4</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>ebony</stuffAdjective>
+							<commonality>0.10</commonality>
+							<color>(45,42,40)</color>
+							<statFactors>
+								<MaxHitPoints>0.85</MaxHitPoints>
+								<Beauty>1.6</Beauty>
+								<Flammability>0.85</Flammability>
+								<WorkToMake>1.6</WorkToMake>
+								<WorkToBuild>1.6</WorkToBuild>
+								<DoorOpenSpeed>0.7</DoorOpenSpeed>
+								<MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+			<!-- Crab Apple Lumber -->
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberCypress"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberCrabApple</defName>
+						<label>crab applewood lumber</label>
+						<description>Processed crab applewood lumber. Mostly useful for building long-lasting, simple structures and furniture. Crab applewood is a nondurable hardwood.</description>
+						<graphicData>
+							<color>(171,133,94)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.4</Mass>
+							<MarketValue>2.4</MarketValue>
+							<DeteriorationRate>6</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>crab applewood</stuffAdjective>
+							<commonality>0.5</commonality>
+							<color>(171,133,94)</color>
+							<statFactors>
+								<MaxHitPoints>0.6</MaxHitPoints>
+								<Beauty>1.1</Beauty>
+								<WorkToMake>0.8</WorkToMake>
+								<WorkToBuild>0.8</WorkToBuild>
+								<DoorOpenSpeed>1.0</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Zen Garden Lumber Recipes -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+					<modName>Zen Garden</modName>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberCypress"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>ZEN_MakeWoodLumberCherry</defName>
+						<label>make (zen garden) cherrywood lumber</label>
+						<description>Process raw (zen garden) cherrywood logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ZEN_CherryWood</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>ZEN_CherryWood</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<ZEN_LumberCherry>30</ZEN_LumberCherry>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberEbony</defName>
+						<label>make (zen garden) ebony lumber</label>
+						<description>Process raw (zen garden) ebony logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ZEN_EbonyWood</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>ZEN_EbonyWood</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<ZEN_LumberEbony>30</ZEN_LumberEbony>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberCypress"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberCrabApple</defName>
+						<label>make crab applewood lumber</label>
+						<description>Process raw crab applewood logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_CrabApple</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_CrabApple</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberCrabApple>30</LumberCrabApple>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Other Stuff -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ExpandedWoodworking.PatchOperationModCompat">
+				<modName>Zen Garden</modName>
+			</li>				
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_Hedge"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RawWoody</li>
+					</stuffCategories>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

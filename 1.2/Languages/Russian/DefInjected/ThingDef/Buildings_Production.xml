@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<TableWoodworking.label>Стол деревообработки</TableWoodworking.label>
+<TableWoodworking.description>Стол для обработки дерева с ножным приводом. Работает на 60% скорости электрического стола для деревообработки.</TableWoodworking.description>
+<Blueprint_TableWoodworking.label>Стол деревообработки (проект)</Blueprint_TableWoodworking.label>
+<Frame_TableWoodworking.label>Стол деревообработки (постройка)</Frame_TableWoodworking.label>
+<Frame_TableWoodworking.description>Стол для обработки дерева с ножным приводом. Работает на 60% скорости электрического стола для деревообработки.</Frame_TableWoodworking.description>
+
+<ElectricTableWoodworking.label>Электрический стол деревообработки</ElectricTableWoodworking.label>
+<ElectricTableWoodworking.description>Электрический стол деревообработки. Может работать без электричества при 60% от нормальной скорости.</ElectricTableWoodworking.description>
+<Blueprint_ElectricTableWoodworking.label>Электрический стол деревообработки (проект)</Blueprint_ElectricTableWoodworking.label>
+<Frame_ElectricTableWoodworking.label>Электрический стол деревообработки (постройка)</Frame_ElectricTableWoodworking.label>
+<Frame_ElectricTableWoodworking.description>Электрический стол деревообработки. Может работать без электричества при 60% от нормальной скорости.</Frame_ElectricTableWoodworking.description>
+
+</LanguageData>

@@ -2,6 +2,14 @@
 
 **Current:** [v1.1.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.1.1.0 )
 
+## [1.2.2.1] - Unreleased
+### New
+- Woodworking table graphics (Thanks to Chowder and Dr_Zhivago)
+-  
+
+### Fixed
+- 
+
 ## [1.1.1.0] - 2020-03-08
 ### New
 - Assembly file using .NET Framework 4.7.2 and added UnityEngine.CoreModule as a reference.
