@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- Deals with the following mods from the ReGrowth series: Wasteland, Boreal Expanion, Tundra Expansion, Cold Bog Expansion -->
+	
+	<!-- Boreal -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth - Boreal Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-B_Plant_BlueTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-B_Plant_LargeTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Cold Bog -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth - Cold Bog Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "RG-CB_Plant_BogTreePine"]/plant</xpath>
+			<value>
+				<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Tundra -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth - Tundra Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "RG-T_Plant_YellowTreePine"]/plant</xpath>
+			<value>
+				<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Wasteland -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth - Wasteland</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-W_Plant_DryTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-W_Plant_TreeMutatedDryPine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
