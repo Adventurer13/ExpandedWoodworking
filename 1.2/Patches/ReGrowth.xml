@@ -5,7 +5,7 @@
 	<!-- Boreal -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Boreal Expansion</li>
+			<li>ReGrowth - Boreal Forest Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
