@@ -11,13 +11,13 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="RG-B_Plant_BlueTreePine"]/plant</xpath>
+					<xpath>Defs/ThingDef[defName="RG-BF_Plant_BlueTreePine"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="RG-B_Plant_LargeTreePine"]/plant</xpath>
+					<xpath>Defs/ThingDef[defName="RG-BF_Plant_LargeTreePine"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 					</value>
