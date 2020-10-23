@@ -71,7 +71,19 @@
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
- 
+	
+ 	<ThingDef ParentName="WoodLogBase">
+		<defName>WoodLog_Generic</defName>
+		<label>wood logs</label>
+		<description>Raw wood from an unknown tree. It can be processed into mixed lumber or used for fuel.</description>
+		<graphicData>
+			<color>(133,97,67)</color>
+		</graphicData>
+		<stuffProps>
+			<commonality>0</commonality>
+		</stuffProps>
+	</ThingDef>
+	
 <!-- Wood Trees --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
  
  	<ThingDef ParentName="WoodLogBase">
