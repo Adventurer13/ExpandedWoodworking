@@ -76,6 +76,7 @@
 			<color>(133,97,67)</color>
 		</graphicData>
 		<stuffProps>
+			<stuffAdjective>wooden</stuffAdjective>
 			<commonality>0</commonality>
 		</stuffProps>
 	</ThingDef>
