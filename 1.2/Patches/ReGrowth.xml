@@ -5,7 +5,7 @@
 	<!-- Boreal -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Boreal Forest Expansion</li>
+			<li>[HLX] ReGrowth - Boreal Forest Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -29,7 +29,7 @@
 	<!-- Cold Bog -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Cold Bog Expansion</li>
+			<li>[HLX] ReGrowth - Cold Bog Expansion</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName = "RG-CB_Plant_BogTreePine"]/plant</xpath>
@@ -42,7 +42,7 @@
 	<!-- Temperate Forest -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Temperate Forest Expansion</li>
+			<li>[HLX] ReGrowth - Temperate Forest Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -152,7 +152,7 @@
 	<!-- Tundra -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Tundra Expansion</li>
+			<li>[HLX] ReGrowth - Tundra Expansion</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName = "RG-T_Plant_YellowTreePine"]/plant</xpath>
@@ -165,7 +165,7 @@
 	<!-- Wasteland -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Wasteland</li>
+			<li>[HLX] ReGrowth - Wasteland</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
