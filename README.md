@@ -18,7 +18,7 @@ Remove the previous and drop the latest release into your `RimWorld/Mods` folder
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync RW and Fluffy's Mod Manager support!
-- Language localisation: English, Spanish (Español(Castellano)) (by Azarashi), Russian (by lex1975 and DiamondGrace)
+- Language localisation: English, Castellano Spanish (by Azarashi), Russian (by lex1975 and DiamondGrace)
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
