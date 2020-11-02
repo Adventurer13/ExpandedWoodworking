@@ -18,7 +18,7 @@ Remove the previous and drop the latest release into your `RimWorld/Mods` folder
 - Raw logs are used as fuel!
 - Realistic wood colours!
 - ModSync RW and Fluffy's Mod Manager support!
-- Language localisation: English, Russian (by lex1975 and DiamondGrace)
+- Language localisation: English, Spanish (Español(Castellano)) (by Azarashi), Russian (by lex1975 and DiamondGrace)
 
 ## Compatibility
 Expanded Woodworking overwrites the following vanilla definitions:
@@ -48,6 +48,7 @@ Mods given extended functionality with included patches:
 - Lord of the Rims (1.0 only)
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)
+- ReGrowth: Biomes of The Rim (by KennethSamael)
 - RT's Weapon Pack Reloaded (by DrZhivago)
 - Zen Garden
 

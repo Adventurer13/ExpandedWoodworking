@@ -5,10 +5,11 @@
 ## [1.2.2.1] - Unreleased
 ### New
 - Woodworking table graphics (Thanks to Chowder and Dr_Zhivago)
--  
+- ReGrowth compatibility (Thanks to KennethSamael)
+- Spanish (Español(Castellano)) localisation (by Azarashi)
 
 ### Fixed
-- 
+- Conditional "stuffing" and extra checks by Dr_Zhivago
 
 ## [1.1.1.0] - 2020-03-08
 ### New
