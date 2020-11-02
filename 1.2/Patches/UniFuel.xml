@@ -176,7 +176,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
 			<value>
-				<li>RG-TF_WoodLog_CornishTree</li>
+				<li>WoodLog_Cornish</li>
 			</value>
 		</match>
 	</Operation>
