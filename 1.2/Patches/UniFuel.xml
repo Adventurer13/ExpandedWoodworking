@@ -169,4 +169,16 @@
 		</match>
 	</Operation>
 	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth - Temperate Forest Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>RG-TF_WoodLog_CornishTree</li>
+			</value>
+		</match>
+	</Operation>
+	
 </Patch>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- Deals with the following mods from the ReGrowth series: Boreal Forest Expanion, Cold Bog Expansion, Temperate Forest Expansion, Tundra Expansion, Wasteland -->
+	
+	<!-- Boreal -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Boreal Forest Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-BF_Plant_BlueTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-BF_Plant_LargeTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Cold Bog -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Cold Bog Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "RG-CB_Plant_BogTreePine"]/plant</xpath>
+			<value>
+				<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Temperate Forest -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Temperate Forest Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>RG-TF_LumberCornishTree</defName>
+						<label>Cornish tree lumber</label>
+						<description>Processed wood from a Cornish tree. Mostly useful for building long-lasting, simple structures and furniture. Cornish wood is a low durability softwood.</description>
+						<graphicData>
+							<color>(229,163,105)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.25</Mass>
+							<MarketValue>3</MarketValue>
+							<DeteriorationRate>4</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>Cornish wood</stuffAdjective>
+							<commonality>0.3</commonality>
+							<color>(229,163,105)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>1.3</Beauty>
+								<WorkToMake>0.55</WorkToMake>
+								<WorkToBuild>0.55</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>	
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>RG-TF_WoodLog_CornishTree</defName> <!-- SG: ?  W: ?  H: ?  --> <!-- similar to pine, but softer? -->
+						<label>Cornish tree logs</label>
+						<description>Raw wood from a Cornish tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Cornish wood is a low durability softwood.</description>
+						<graphicData>
+							<color>(229,163,105)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.5</Mass>
+							<MarketValue>1.4</MarketValue>
+							<DeteriorationRate>4</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>Cornish wood</stuffAdjective>
+							<commonality>0.3</commonality>
+							<color>(229,163,105)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>1.3</Beauty>
+								<WorkToMake>0.55</WorkToMake>
+								<WorkToBuild>0.55</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<RG-TF_LumberCornishTree>30</RG-TF_LumberCornishTree>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>RG-TF_MakeWoodLumberCornishTree</defName>
+						<label>make Cornish tree lumber</label>
+						<description>Process raw Cornish tree logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>RG-TF_WoodLog_CornishTree</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>RG-TF_WoodLog_CornishTree</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<RG-TF_LumberCornishTree>30</RG-TF_LumberCornishTree>
+						</products>
+					</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "RG-TF_Plant_TreeCornish"]/plant</xpath>
+				<value>
+					<harvestedThingDef>RG-TF_WoodLog_CornishTree</harvestedThingDef>
+				</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+
+	<!-- Tundra -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Tundra Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "RG-T_Plant_YellowTreePine"]/plant</xpath>
+			<value>
+				<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Wasteland -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Wasteland</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-W_Plant_DryTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-W_Plant_TreeMutatedDryPine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
