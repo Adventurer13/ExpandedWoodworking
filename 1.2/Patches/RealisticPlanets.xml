@@ -13,7 +13,7 @@
 			<match Class="PatchOperationSequence">
 				<success>Always</success>
 				<operations>
-					<!-- Change yield and growDays to be identical to VGP's acacia trees (60 -> 12; 32.5 -> 15) - though this is debatable -->
+					<!-- DEPRECATED  Change yield and growDays to be identical to VGP's acacia trees (60 -> 12; 32.5 -> 15) - though this is debatable 
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/harvestYield</xpath>
 						<value>
@@ -25,7 +25,7 @@
 						<value>
 							<growDays>15</growDays>
 						</value>
-					</li>
+					</li> -->
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant</xpath>
 						<value>
