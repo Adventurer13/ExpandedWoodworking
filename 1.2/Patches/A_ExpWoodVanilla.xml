@@ -674,4 +674,16 @@
 		</operations>
 	</Operation>
 
+	<!-- Scenario Fixes -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ScenarioDef[defName = "LostTribe"]/scenario/parts/li[thingDef = "Bow_Short"]/stuff</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ScenarioDef[defName = "LostTribe"]/scenario/parts/li[thingDef = "Bow_Short" or thingDef = "Pila"]</xpath>
+			<value>
+				<stuff>WoodLog_Generic</stuff>
+			</value>
+		</nomatch>
+	</Operation>
+
 </Patch>
