@@ -41,7 +41,6 @@
 			</categories>
 			<disallowedThingDefs>
 				<li>WoodLog_Saguaro</li>
-				<li>WoodLog_Generic</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>
