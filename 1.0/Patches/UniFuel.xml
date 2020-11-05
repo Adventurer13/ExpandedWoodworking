@@ -7,7 +7,6 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 				<value>
-					<li>WoodLog_Generic</li>
 					<li>WoodLog_Birch</li>
 					<li>WoodLog_Cecropia</li>
 					<li>WoodLog_Cocoa</li>
