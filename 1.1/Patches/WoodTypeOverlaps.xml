@@ -10,7 +10,7 @@
 		<nomatch Class="PatchOperationFindMod">
 			<mods>
 				<li>Realistic Planets - Fan Update</li>
-				<li>Advanced Biomes</li>
+				<li>Advanced Biomes (Continued)</li>
 				<li>Nature's Pretty Sweet</li>
 			</mods>
 			<match Class="PatchOperationInsert">
@@ -58,7 +58,7 @@
 		<nomatch Class="PatchOperationFindMod">
 			<mods>
 				<li>Realistic Planets - Fan Update</li>
-				<li>Advanced Biomes</li>
+				<li>Advanced Biomes (Continued)</li>
 				<li>Nature's Pretty Sweet</li>
 			</mods>
 			<match Class="PatchOperationInsert">
@@ -102,7 +102,7 @@
 		<nomatch Class="PatchOperationFindMod">
 			<mods>
 				<li>Realistic Planets - Fan Update</li>
-				<li>Advanced Biomes</li>
+				<li>Advanced Biomes (Continued)</li>
 				<li>Nature's Pretty Sweet</li>
 			</mods>
 			<match Class="PatchOperationInsert">
@@ -142,7 +142,7 @@
 	<!-- Baobab Wood -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Advanced Biomes</li>
+			<li>Advanced Biomes (Continued)</li>
 			<li>Nature's Pretty Sweet</li>
 		</mods>
 		<match Class="PatchOperationInsert">
@@ -184,7 +184,7 @@
 	<!-- Baobab Lumber -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Advanced Biomes</li>
+			<li>Advanced Biomes (Continued)</li>
 			<li>Nature's Pretty Sweet</li>
 		</mods>
 		<match Class="PatchOperationInsert">
@@ -222,7 +222,7 @@
 	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Advanced Biomes</li>
+			<li>Advanced Biomes (Continued)</li>
 			<li>Nature's Pretty Sweet</li>
 		</mods>
 		<match Class="PatchOperationInsert">
