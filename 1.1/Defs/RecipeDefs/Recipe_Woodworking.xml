@@ -41,6 +41,7 @@
 			</categories>
 			<disallowedThingDefs>
 				<li>WoodLog_Succulent</li>
+				<li>WoodLog_Generic</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>
