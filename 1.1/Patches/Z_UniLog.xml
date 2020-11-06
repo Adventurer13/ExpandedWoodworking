@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationReplace">
 	<success>Always</success>
-		<xpath>Defs/ThingDef/plant/harvestedThingDef[text()="WoodLog"]</xpath>
+		<xpath>Defs/ThingDef/plant/harvestedThingDef[.="WoodLog"]</xpath>
 			<value>
 				<harvestedThingDef>WoodLog_Generic</harvestedThingDef>
 			</value>
