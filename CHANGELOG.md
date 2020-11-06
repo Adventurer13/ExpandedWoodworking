@@ -1,15 +1,19 @@
 # Change Log
 
-**Current:** [v1.1.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.1.1.0 )
+**Current:** [v1.2.2.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.2.2.1 )
 
 ## [1.2.2.1] - Unreleased
 ### New
-- Woodworking table graphics (Thanks to Chowder and Dr_Zhivago)
-- ReGrowth compatibility (Thanks to KennethSamael)
-- Spanish (Español(Castellano)) localisation (by Azarashi)
+- Woodworking table graphics (Thanks to Chowder and Dr_Zhivago).
+- ReGrowth compatibility (Thanks to KennethSamael).
+- Spanish (Español(Castellano)) localisation (by Azarashi).
+- Advanced Biomes Patch readded in 1.1/1.2 with support for the mod: Advanced Biomes (continued).
+- Dead Goat's Weapon Pack(continued) support in 1.1/1.2.
+- Generic wood log for compatibility and reporting of unpatched trees in mods (Thanks to KennethSamael).
 
 ### Fixed
-- Conditional "stuffing" and extra checks by Dr_Zhivago
+- Conditional "stuffing" and extra checks by Dr_Zhivago.
+- Errors when attempting to edit the Lost Tribe scenario.
 
 ## [1.1.1.0] - 2020-03-08
 ### New

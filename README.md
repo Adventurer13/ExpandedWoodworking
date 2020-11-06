@@ -42,13 +42,13 @@ Patches edit the following vanilla definitions:
 
 Mods given extended functionality with included patches:
 
-- Advanced Biomes (1.0 only)
+- Advanced Biomes
 - Combat Extended (1.0 only)
-- Dead Goat's Weapon Pack (by DrZhivago) (1.0 only)
+- Dead Goat's Weapon Pack (by DrZhivago) 
 - Lord of the Rims (1.0 only)
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)
-- ReGrowth: Biomes of The Rim (by KennethSamael)
+- ReGrowth: Biomes of The Rim (by KennethSamael) (1.2 only)
 - RT's Weapon Pack Reloaded (by DrZhivago)
 - Zen Garden
 
@@ -56,5 +56,5 @@ Mods given extended functionality with included patches:
 When making a bug report, please make sure you have developer mode enabled in your Rimworld settings. You may then create your report [here](https://github.com/Adventurer13/ExpandedWoodworking/issues). A link to your exported HugsLib log would be greatly appreciated as well.
 
 ## Older Versions
-All current and past 1.1/1.0/B19/B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
+All current and past 1.2/1.1/1.0/B19/B18/A17 versions of this mod can be downloaded from [GitHub](https://github.com/Adventurer13/ExpandedWoodworking/releases).
 All past A16 versions of this mod can be downloaded from [Qwynn's GitHub](https://github.com/Qwynn/ExpandedWoodworking/releases).
