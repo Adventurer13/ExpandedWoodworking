@@ -44,7 +44,7 @@
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statOffsets>
-				<Beauty>0.5</Beauty>
+				<Beauty>0</Beauty>
 			</statOffsets>
 			<statFactors>
 				<MaxHitPoints>0.65</MaxHitPoints>
@@ -72,20 +72,28 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
 	
+<!-- Generic Log (for compatibility and reporting of unpatched trees) -->
  	<ThingDef ParentName="WoodLogBase">
 		<defName>WoodLog_Generic</defName>
 		<label>wood logs</label>
-		<description>Raw wood from an unknown tree. It can be processed into mixed lumber or used for fuel.</description>
+		<description>Raw wood from an unknown tree. It can be processed into mixed lumber or used for fuel. Please report the name of the tree and the mod it belongs to that this log came from to the Expanded Woodworking mod creator!</description>
 		<graphicData>
 			<color>(133,97,67)</color>
 		</graphicData>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
 		<stuffProps>
 			<stuffAdjective>wooden</stuffAdjective>
 			<commonality>0</commonality>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+			</statFactors>
 		</stuffProps>
 	</ThingDef>
 	
-<!-- Wood Trees --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
+<!-- Wood Logs --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
  
  	<ThingDef ParentName="WoodLogBase">
 		<defName>WoodLog_Birch</defName> <!-- SG: 0.61   W: 610  H: 910 -->
