@@ -54,6 +54,12 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/stuffProps/statFactors/Beauty</xpath>
+				<value>			
+					<Beauty>3.4</Beauty>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "ZEN_CherryWood"]/thingCategories/li</xpath>
 				<value>
 					<li>WoodTypes</li>
@@ -119,7 +125,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "ZEN_EbonyWood"]/stuffProps/statFactors/Beauty</xpath>
 				<value>			
-					<Beauty>1.6</Beauty>
+					<Beauty>3.8</Beauty>
 				</value>
 			</li>	
 			<li Class="PatchOperationReplace">
@@ -174,7 +180,7 @@
 							<color>(171,133,94)</color>
 							<statFactors>
 								<MaxHitPoints>0.6</MaxHitPoints>
-								<Beauty>1.1</Beauty>
+								<Beauty>2.3</Beauty>
 								<WorkToMake>0.8</WorkToMake>
 								<WorkToBuild>0.8</WorkToBuild>
 								<DoorOpenSpeed>1.0</DoorOpenSpeed>
@@ -219,7 +225,7 @@
 							<color>(211,110,84)</color>
 							<statFactors>
 								<MaxHitPoints>0.6</MaxHitPoints>
-								<Beauty>1.4</Beauty>
+								<Beauty>3.4</Beauty>
 								<Flammability>0.95</Flammability>
 								<WorkToMake>0.75</WorkToMake>
 								<WorkToBuild>0.75</WorkToBuild>
@@ -255,7 +261,7 @@
 							<color>(45,42,40)</color>
 							<statFactors>
 								<MaxHitPoints>0.85</MaxHitPoints>
-								<Beauty>1.6</Beauty>
+								<Beauty>3.8</Beauty>
 								<Flammability>0.85</Flammability>
 								<WorkToMake>1.6</WorkToMake>
 								<WorkToBuild>1.6</WorkToBuild>
@@ -289,7 +295,7 @@
 							<color>(171,133,94)</color>
 							<statFactors>
 								<MaxHitPoints>0.6</MaxHitPoints>
-								<Beauty>1.1</Beauty>
+								<Beauty>2.3</Beauty>
 								<WorkToMake>0.8</WorkToMake>
 								<WorkToBuild>0.8</WorkToBuild>
 								<DoorOpenSpeed>1.0</DoorOpenSpeed>

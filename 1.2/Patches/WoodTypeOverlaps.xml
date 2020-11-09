@@ -35,7 +35,7 @@
 							<color>(81,56,49)</color>
 							<statFactors>
 								<MaxHitPoints>0.95</MaxHitPoints>
-								<Beauty>0.95</Beauty>
+								<Beauty>1.9</Beauty>
 								<WorkToMake>1.7</WorkToMake>
 								<WorkToBuild>1.7</WorkToBuild>
 								<DoorOpenSpeed>0.6</DoorOpenSpeed>
@@ -83,7 +83,7 @@
 							<color>(81,56,49)</color>
 							<statFactors>
 								<MaxHitPoints>0.95</MaxHitPoints>
-								<Beauty>0.95</Beauty>
+								<Beauty>1.9</Beauty>
 								<WorkToMake>1.7</WorkToMake>
 								<WorkToBuild>1.7</WorkToBuild>
 								<DoorOpenSpeed>0.6</DoorOpenSpeed>
@@ -167,7 +167,7 @@
 						<color>(183,132,101)</color>
 						<statFactors>
 							<MaxHitPoints>0.5</MaxHitPoints>
-							<Beauty>0.7</Beauty>
+							<Beauty>1.25</Beauty>
 							<WorkToMake>0.65</WorkToMake>
 							<WorkToBuild>0.65</WorkToBuild>
 							<DoorOpenSpeed>1.2</DoorOpenSpeed>
@@ -209,7 +209,7 @@
 						<color>(183,132,101)</color>
 						<statFactors>
 							<MaxHitPoints>0.5</MaxHitPoints>
-							<Beauty>0.7</Beauty>
+							<Beauty>1.25</Beauty>
 							<WorkToMake>0.65</WorkToMake>
 							<WorkToBuild>0.65</WorkToBuild>
 							<DoorOpenSpeed>1.2</DoorOpenSpeed>

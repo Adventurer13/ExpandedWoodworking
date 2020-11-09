@@ -109,7 +109,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "RedWoodLog"]/stuffProps/statFactors/Beauty</xpath>
 					<value>			
-						<Beauty>1.6</Beauty>
+						<Beauty>3.6</Beauty>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
@@ -184,7 +184,7 @@
 								<color>(108,103,97)</color>
 								<statFactors>
 									<MaxHitPoints>0.65</MaxHitPoints>
-									<Beauty>1.1</Beauty>
+									<Beauty>2.4</Beauty>
 									<WorkToMake>0.75</WorkToMake>
 									<WorkToBuild>0.75</WorkToBuild>
 									<DoorOpenSpeed>1.0</DoorOpenSpeed>
@@ -219,7 +219,7 @@
 								<color>(222,192,140)</color>
 								<statFactors>
 									<MaxHitPoints>0.5</MaxHitPoints>
-									<Beauty>0.8</Beauty>
+									<Beauty>1.4</Beauty>
 									<WorkToMake>0.5</WorkToMake>
 									<WorkToBuild>0.5</WorkToBuild>
 									<DoorOpenSpeed>1.1</DoorOpenSpeed>
@@ -265,7 +265,7 @@
 								<color>(108,103,97)</color>
 								<statFactors>
 									<MaxHitPoints>0.65</MaxHitPoints>
-									<Beauty>1.1</Beauty>
+									<Beauty>2.4</Beauty>
 									<WorkToMake>0.75</WorkToMake>
 									<WorkToBuild>0.75</WorkToBuild>
 									<DoorOpenSpeed>1.0</DoorOpenSpeed>
@@ -297,7 +297,7 @@
 								<color>(222,192,140)</color>
 								<statFactors>
 									<MaxHitPoints>0.5</MaxHitPoints>
-									<Beauty>0.8</Beauty>
+									<Beauty>1.4</Beauty>
 									<WorkToMake>0.5</WorkToMake>
 									<WorkToBuild>0.5</WorkToBuild>
 									<DoorOpenSpeed>1.1</DoorOpenSpeed>
@@ -330,7 +330,7 @@
 								<color>(102,41,20)</color>
 								<statFactors>
 									<MaxHitPoints>0.75</MaxHitPoints>
-									<Beauty>1.6</Beauty>
+									<Beauty>3.6</Beauty>
 									<Flammability>0.75</Flammability>
 									<WorkToMake>0.25</WorkToMake>
 									<WorkToBuild>0.25</WorkToBuild>
