@@ -423,7 +423,7 @@
 			<color>(248,218,158)</color>
 			<statFactors>
 				<MaxHitPoints>0.35</MaxHitPoints>
-				<Beauty>1.25</Beauty>
+				<Beauty>2.7</Beauty>
 				<WorkToMake>0.7</WorkToMake>
 				<WorkToBuild>0.7</WorkToBuild>
 				<DoorOpenSpeed>1.3</DoorOpenSpeed>
