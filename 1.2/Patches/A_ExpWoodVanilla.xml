@@ -150,6 +150,29 @@
 		</operations>
 	</Operation>
 
+	<!-- Marble Blocks Beauty Balance -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "BlocksMarble"]/stuffProps/statOffsets/Beauty[.="1"]</xpath>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "BlocksMarble"]/stuffProps/statOffsets/Beauty</xpath>
+					<value>
+						<Beauty>2</Beauty>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "BlocksMarble"]/stuffProps/statFactors/Beauty</xpath>
+					<value>
+						<Beauty>1.75</Beauty>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
 	<!-- Apparel -->
 
 	<!-- Traders -->
