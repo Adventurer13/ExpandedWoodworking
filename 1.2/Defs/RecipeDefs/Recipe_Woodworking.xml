@@ -9,7 +9,7 @@
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
-		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<soundWorking>Recipe_MakeWoodPlanks_Electric</soundWorking>
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
 		<targetCountAdjustment>15</targetCountAdjustment>
 		<recipeUsers>
@@ -437,7 +437,7 @@
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
-		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<soundWorking>Recipe_MakeWoodPlanks_Hand</soundWorking>
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
 		<targetCountAdjustment>15</targetCountAdjustment>
 		<allowMixingIngredients>true</allowMixingIngredients>
