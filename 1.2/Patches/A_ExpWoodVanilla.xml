@@ -657,11 +657,17 @@
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs/ScenarioDef[defName = "LostTribe"]/scenario/parts/li[thingDef = "Bow_Short"]/stuff</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ScenarioDef[defName = "LostTribe"]/scenario/parts/li[thingDef = "Bow_Short" or thingDef = "Pila"]</xpath>
-			<value>
-				<stuff>WoodLog_Generic</stuff>
-			</value>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>VGP Vegetable Garden</li>
+				<li>Rim of Madness - Bones</li>
+			</mods>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ScenarioDef[defName = "LostTribe"]/scenario/parts/li[thingDef = "Bow_Short" or thingDef = "Pila"]</xpath>
+				<value>
+					<stuff>WoodLog_Generic</stuff>
+				</value>
+			</nomatch>
 		</nomatch>
 	</Operation>
 
