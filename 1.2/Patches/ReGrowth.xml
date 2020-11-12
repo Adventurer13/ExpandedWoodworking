@@ -32,11 +32,117 @@
 		<mods>
 			<li>[HLX] ReGrowth - Cold Bog Expansion</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName = "RG-CB_Plant_BogTreePine"]/plant</xpath>
-			<value>
-				<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
-			</value>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RG-CBE_Plant_SpruceTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RG-CBE_Plant_KarimTree"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Karim</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLogBase">
+							<defName>WoodLog_Karim</defName> <!-- SG: 0.65  W: 645  H: 1010  based on: norway maple -->
+							<label>karim logs</label>
+							<description>Raw wood from a karim tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Karim wood is a nondurable hardwood.</description>
+							<graphicData>
+								<color>(185,136,72)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.6</Mass>
+								<MarketValue>1.7</MarketValue>
+								<DeteriorationRate>4</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>karim</stuffAdjective>
+								<commonality>0.35</commonality>
+								<color>(185,136,72)</color>
+								<statFactors>
+									<MaxHitPoints>0.6</MaxHitPoints>
+									<Beauty>2.2</Beauty>
+									<WorkToMake>0.5</WorkToMake>
+									<WorkToBuild>0.5</WorkToBuild>
+									<DoorOpenSpeed>1.2</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+							<butcherProducts>
+								<LumberKarim>30</LumberKarim>
+							</butcherProducts>		
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLumberBase">
+							<defName>LumberKarim</defName>
+							<label>karim lumber</label>
+							<description>Processed karim lumber. Mostly useful for building long-lasting, simple structures and furniture. Karim wood is a nondurable hardwood.</description>
+							<graphicData>
+								<color>(185,136,72)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.3</Mass>
+								<MarketValue>3.4</MarketValue>
+								<DeteriorationRate>5</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>karim</stuffAdjective>
+								<commonality>0.35</commonality>
+								<color>(185,136,72)</color>
+								<statFactors>
+									<MaxHitPoints>0.6</MaxHitPoints>
+									<Beauty>2.2</Beauty>
+									<WorkToMake>0.5</WorkToMake>
+									<WorkToBuild>0.5</WorkToBuild>
+									<DoorOpenSpeed>1.2</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+						</ThingDef>	
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<RecipeDef ParentName="MakeWoodLumberBase">
+							<defName>MakeWoodLumberKarim</defName>
+							<label>make karim lumber</label>
+							<description>Process raw karim logs into lumber for construction.</description>
+							<allowMixingIngredients>false</allowMixingIngredients>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WoodLog_Karim</li>
+										</thingDefs>
+									</filter>
+									<count>15</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WoodLog_Karim</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<LumberKarim>30</LumberKarim>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 
@@ -49,37 +155,14 @@
 			<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
+				<xpath>Defs/ThingDef[defName = "RG-TF_Plant_TreeCornish"]/plant</xpath>
 				<value>
-					<ThingDef ParentName="WoodLumberBase">
-						<defName>LumberCornish</defName>
-						<label>cornish lumber</label>
-						<description>Processed cornish lumber. Mostly useful for building long-lasting, simple structures and furniture. Cornish wood is a low durability softwood.</description>
-						<graphicData>
-							<color>(229,163,105)</color>
-						</graphicData>
-						<statBases>
-							<Mass>0.25</Mass>
-							<MarketValue>3</MarketValue>
-							<DeteriorationRate>5</DeteriorationRate>
-						</statBases>
-						<stuffProps>
-							<stuffAdjective>cornish wood</stuffAdjective>
-							<commonality>0.3</commonality>
-							<color>(229,163,105)</color>
-							<statFactors>
-								<MaxHitPoints>0.5</MaxHitPoints>
-								<Beauty>3.25</Beauty>
-								<WorkToMake>0.35</WorkToMake>
-								<WorkToBuild>0.35</WorkToBuild>
-								<DoorOpenSpeed>1.3</DoorOpenSpeed>
-							</statFactors>
-						</stuffProps>
-					</ThingDef>	
+					<harvestedThingDef>WoodLog_Cornish</harvestedThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
+			<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "WoodLog_Cocoa"]</xpath>
+					<order>Append</order>
 				<value>
 					<ThingDef ParentName="WoodLogBase">
 						<defName>WoodLog_Cornish</defName> <!-- SG: ?  W: ?  H: ?  --> <!-- similar to pine, but softer? -->
@@ -111,8 +194,40 @@
 					</ThingDef>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
+			<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "LumberCocoa"]</xpath>
+					<order>Append</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberCornish</defName>
+						<label>cornish lumber</label>
+						<description>Processed cornish lumber. Mostly useful for building long-lasting, simple structures and furniture. Cornish wood is a low durability softwood.</description>
+						<graphicData>
+							<color>(229,163,105)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.25</Mass>
+							<MarketValue>3</MarketValue>
+							<DeteriorationRate>5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>cornish wood</stuffAdjective>
+							<commonality>0.3</commonality>
+							<color>(229,163,105)</color>
+							<statFactors>
+								<MaxHitPoints>0.5</MaxHitPoints>
+								<Beauty>3.25</Beauty>
+								<WorkToMake>0.35</WorkToMake>
+								<WorkToBuild>0.35</WorkToBuild>
+								<DoorOpenSpeed>1.3</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>	
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[defName = "MakeWoodLumberCocoa"]</xpath>
+					<order>Append</order>
 				<value>
 					<RecipeDef ParentName="MakeWoodLumberBase">
 						<defName>MakeWoodLumberCornish</defName>
@@ -138,12 +253,6 @@
 							<LumberCornish>30</LumberCornish>
 						</products>
 					</RecipeDef>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "RG-TF_Plant_TreeCornish"]/plant</xpath>
-				<value>
-					<harvestedThingDef>WoodLog_Cornish</harvestedThingDef>
 				</value>
 			</li>
 		</operations>
