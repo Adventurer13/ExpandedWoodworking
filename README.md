@@ -43,13 +43,13 @@ Patches edit the following vanilla definitions:
 Mods given extended functionality with included patches:
 
 - Advanced Biomes
-- Biome Expansion: Redwood Forest
+- Biome Expansion: Redwood Forest (1.2+)
 - Combat Extended (1.0 only)
 - Dead Goat's Weapon Pack (by DrZhivago) 
 - Lord of the Rims (1.0 only)
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)
-- ReGrowth: Biomes of The Rim (by KennethSamael) (1.2 only)
+- ReGrowth: Biomes of The Rim (by KennethSamael) (1.2+)
 - RT's Weapon Pack Reloaded (by DrZhivago)
 - Zen Garden
 
