@@ -233,7 +233,7 @@
 					<defName>MakeWoodLumberBaobab</defName>
 					<label>make baobab lumber</label>
 					<description>Process raw baobab logs into lumber for construction.</description>
-					<allowMixingIngredients>true</allowMixingIngredients>
+					<allowMixingIngredients>false</allowMixingIngredients>
 					<ingredients>
 						<li>
 							<filter>

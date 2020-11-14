@@ -361,7 +361,7 @@
 							<defName>MakeWoodLumberGum</defName>
 							<label>make ghost gum lumber</label>
 							<description>Process raw ghost gum logs into lumber for construction.</description>
-							<allowMixingIngredients>true</allowMixingIngredients>
+							<allowMixingIngredients>false</allowMixingIngredients>
 							<ingredients>
 								<li>
 									<filter>
@@ -391,7 +391,7 @@
 							<defName>MakeWoodLumberHazelnut</defName>
 							<label>make hazelnut lumber</label>
 							<description>Process raw hazelnut logs into lumber for construction.</description>
-							<allowMixingIngredients>true</allowMixingIngredients>
+							<allowMixingIngredients>false</allowMixingIngredients>
 							<ingredients>
 								<li>
 									<filter>
