@@ -92,7 +92,7 @@
 		<nomatch Class="PatchOperationFindMod">
 			<mods>
 				<li>Realistic Planets - Fan Update</li>
-				<li>Advanced Biomes</li>
+				<li>Advanced Biomes (Continued)</li>
 				<li>Nature's Pretty Sweet</li>
 			</mods>
 			<match Class="PatchOperationAdd">
@@ -118,7 +118,7 @@
 	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Advanced Biomes</li>
+			<li>Advanced Biomes (Continued)</li>
 			<li>Nature's Pretty Sweet</li>
 		</mods>
 		<match Class="PatchOperationAdd">
@@ -131,7 +131,7 @@
 	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Advanced Biomes</li>
+			<li>Advanced Biomes (Continued)</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
@@ -190,6 +190,19 @@
 			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
 			<value>
 				<li>WoodLog_Karim</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_DouglasFir</li>
+				<li>SequoiaWoodLog</li>
 			</value>
 		</match>
 	</Operation>
