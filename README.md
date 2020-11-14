@@ -43,6 +43,7 @@ Patches edit the following vanilla definitions:
 Mods given extended functionality with included patches:
 
 - Advanced Biomes
+- Biome Expansion: Redwood Forest
 - Combat Extended (1.0 only)
 - Dead Goat's Weapon Pack (by DrZhivago) 
 - Lord of the Rims (1.0 only)
