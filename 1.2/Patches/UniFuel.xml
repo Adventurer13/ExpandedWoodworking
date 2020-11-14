@@ -172,12 +172,24 @@
 	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth - Temperate Forest Expansion</li>
+			<li>[HLX] ReGrowth - Temperate Forest Expansion</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
 			<value>
 				<li>WoodLog_Cornish</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Cold Bog Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Karim</li>
 			</value>
 		</match>
 	</Operation>
