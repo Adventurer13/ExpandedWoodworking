@@ -10,10 +10,12 @@
 - Advanced Biomes Patch readded in 1.1/1.2 with support for the mod: Advanced Biomes (continued).
 - Dead Goat's Weapon Pack(continued) support in 1.1/1.2.
 - Generic wood log for compatibility and reporting of unpatched trees in mods (Thanks to KennethSamael).
+- Royalty expansion patch of musical instruments.
 
 ### Fixed
-- Conditional "stuffing" and extra checks by Dr_Zhivago.
+- Conditional "stuffing" and extra checks (by Dr_Zhivago).
 - Errors when attempting to edit the Lost Tribe scenario.
+- Woodworking tables and crafting spot use updated recipe sounds when crafting lumber. 
 
 ## [1.1.1.0] - 2020-03-08
 ### New
