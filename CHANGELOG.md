@@ -11,6 +11,7 @@
 - Dead Goat's Weapon Pack(continued) support in 1.1/1.2.
 - Generic wood log for compatibility and reporting of unpatched trees in mods (Thanks to KennethSamael).
 - Royalty expansion patch of musical instruments.
+- Biome Expansion: Redwood Forest compatibility.
 
 ### Fixed
 - Conditional "stuffing" and extra checks (by Dr_Zhivago).
