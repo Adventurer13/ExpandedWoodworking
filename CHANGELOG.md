@@ -4,12 +4,13 @@
 
 ## [1.2.2.1] - Unreleased
 ### New
+- Spanish (Español(Castellano)) localisation (by Azarashi).
 - Woodworking table graphics (Thanks to Chowder and Dr_Zhivago).
 - ReGrowth compatibility (Thanks to KennethSamael).
-- Spanish (Español(Castellano)) localisation (by Azarashi).
 - Advanced Biomes Patch readded in 1.1/1.2 with support for the mod: Advanced Biomes (continued).
 - Dead Goat's Weapon Pack(continued) support in 1.1/1.2.
 - Generic wood log for compatibility and reporting of unpatched trees in mods (Thanks to KennethSamael).
+- Beauty values for each wood and lumber and consequently a balance patch for marble blocks.
 - Royalty expansion patch of musical instruments.
 - Biome Expansion: Redwood Forest compatibility.
 
