@@ -73,7 +73,7 @@
 	</ThingDef>
 	
 <!-- Generic Log (for compatibility and reporting of unpatched trees) -->
- 	<ThingDef ParentName="WoodLogBase">
+ 	<ThingDef Name="WoodLog_Generic" ParentName="WoodLogBase">
 		<defName>WoodLog_Generic</defName>
 		<label>wood logs</label>
 		<description>Raw wood from an unknown tree. It can be processed into mixed lumber or used for fuel. Please report the name of the tree and the mod it belongs to that this log came from to the Expanded Woodworking mod creator!</description>
