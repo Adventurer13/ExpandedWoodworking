@@ -73,7 +73,7 @@
 	</ThingDef>
 	
 <!-- Generic Log (for compatibility and reporting of unpatched trees) -->
- 	<ThingDef ParentName="WoodLogBase">
+ 	<ThingDef Name="WoodLog_Generic" ParentName="WoodLogBase">
 		<defName>WoodLog_Generic</defName>
 		<label>wood logs</label>
 		<description>Raw wood from an unknown tree. It can be processed into mixed lumber or used for fuel. Please report the name of the tree and the mod it belongs to that this log came from to the Expanded Woodworking mod creator!</description>
@@ -92,6 +92,11 @@
 				<Beauty>0.6</Beauty>
 			</statFactors>
 		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="WoodLog_Generic">
+		<defName>WoodLog_GenericTrue</defName> <!-- For intentional cases and preventing reports when so. -->
+		<description>Raw wood from assorted trees. It can be processed into mixed lumber or used for fuel.</description>
 	</ThingDef>
 	
 <!-- Wood Logs --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
