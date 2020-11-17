@@ -22,10 +22,11 @@ Previous versions can be found on GitHub.
 		<li>fluffy.stuffedfloors</li>
 		<li>dismarzero.VGP.VGPVegetableGarden</li>
 		<li>dismarzero.VGP.VGPGardenDrinks</li>
-		<li>dismarzero.VGP.VGPGardenDrinksUF<li>
+		<li>dismarzero.VGP.VGPGardenDrinksUF</li>
 		<li>dismarzero.VGP.VGPGardenFabrics</li>
 		<li>dismarzero.VGP.VGPGardenFabricsSimplified</li>
 		<li>dismarzero.VGP.VGPGardenTools</li>
+		<li>dismarzero.VGP.VGPMoreVeggies</li>
 		<li>dismarzero.VGP.XtraTreesandFlowers</li>
 		<li>Adventurer.ExpandWoodworkVGP</li>
 	</loadBefore>
