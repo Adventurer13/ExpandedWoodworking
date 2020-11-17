@@ -184,7 +184,10 @@
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
-						<excludedThingDefs><li>WoodLog_Generic</li></excludedThingDefs>
+						<excludedThingDefs>
+							<li>WoodLog_Generic</li>
+							<li>WoodLog_GenericTrue</li>
+						</excludedThingDefs>
 						<thingDefCountRange>3~5</thingDefCountRange>
 						<totalPriceRange>300~800</totalPriceRange>
 					</li>
@@ -211,7 +214,10 @@
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
-						<excludedThingDefs><li>WoodLog_Generic</li></excludedThingDefs>
+						<excludedThingDefs>
+							<li>WoodLog_Generic</li>
+							<li>WoodLog_GenericTrue</li>
+						</excludedThingDefs>
 						<thingDefCountRange>3~6</thingDefCountRange>
 						<totalPriceRange>400~800</totalPriceRange>
 					</li>
@@ -238,7 +244,10 @@
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
-						<excludedThingDefs><li>WoodLog_Generic</li></excludedThingDefs>
+						<excludedThingDefs>
+							<li>WoodLog_Generic</li>
+							<li>WoodLog_GenericTrue</li>
+						</excludedThingDefs>
 						<thingDefCountRange>1~3</thingDefCountRange>
 						<totalPriceRange>150~450</totalPriceRange>
 					</li>
@@ -265,7 +274,10 @@
 				<value>
 					<li Class="StockGenerator_Category">
 						<categoryDef>WoodTypes</categoryDef>
-						<excludedThingDefs><li>WoodLog_Generic</li></excludedThingDefs>
+						<excludedThingDefs>
+							<li>WoodLog_Generic</li>
+							<li>WoodLog_GenericTrue</li>
+						</excludedThingDefs>
 						<thingDefCountRange>2~4</thingDefCountRange>
 						<totalPriceRange>400~700</totalPriceRange>
 					</li>
