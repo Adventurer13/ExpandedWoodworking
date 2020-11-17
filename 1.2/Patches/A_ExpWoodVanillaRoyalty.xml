@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!-- Author: KennethSamael -->
-	
+
+	<!-- Anima Tree -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -9,7 +9,25 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Joy/Recreation -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Plant_TreeAnima"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_GenericTrue</harvestedThingDef> <!-- needs a new specific wood -->
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Author: KennethSamael -->
+	<!-- Joy/Recreation -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "Harp"]/costList</xpath>
 					<value>
