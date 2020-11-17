@@ -23,11 +23,12 @@
 			<StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+			<SharpDamageMultiplier>0.40</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<burnableByRecipe>true</burnableByRecipe>
 		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>10</minRewardCount>
 		<thingCategories>
 			<li>WoodTypes</li>
 		</thingCategories>
@@ -44,7 +45,7 @@
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statOffsets>
-				<Beauty>0</Beauty>
+				<Beauty>1</Beauty>
 			</statOffsets>
 			<statFactors>
 				<MaxHitPoints>0.65</MaxHitPoints>
