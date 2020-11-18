@@ -28,16 +28,15 @@
 		</operations>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modList>
-					<li>VGP Vegetable Garden</li>
-					<li>Expanded Woodworking for Vegetable Garden Project</li>
-				</modList>
-			</li>
-			<li Class="PatchOperationAdd">
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>WoodLog_Apple</li>
@@ -48,31 +47,45 @@
 					<li>WoodLog_Orange</li>
 					<li>WoodLog_Peach</li>
 				</value>
-			</li>
-		</operations>
+			</match>
+		</match>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modList>
-					<li>VGP Vegetable Garden</li>
-					<li>VGP Xtra Trees and Flowers</li>
-					<li>Expanded Woodworking for Vegetable Garden Project</li>
-				</modList>	
-			</li>
-			<li Class="PatchOperationAdd">
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP More Veggies</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
 				<value>
-					<!-- <li>WoodLog_Acacia</li> -->
+					<li>WoodLog_Mango</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+				<value>
 					<li>WoodLog_Camellia</li>
 					<li>WoodLog_CherryBlossom</li>
 					<li>WoodLog_JapaneseMaple</li>
 					<li>WoodLog_RedMaple</li>
 				</value>
-			</li>
-		</operations>
+			</match>
+		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationFindMod">
