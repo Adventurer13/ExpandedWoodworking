@@ -5,70 +5,195 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Expanded Prosthetics and Organ Engineering</li>
-			<li>EPOE Fix + EPOE Replacement Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- Peg Leg -->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "CreatePegLeg"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<categories>
-							<li>WoodTypes</li>
-						</categories>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "CreatePegLeg"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<categories>
-							<li>WoodTypes</li>
-						</categories>
-					</value>
-				</li>
 				<!-- Denture -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "CreateDenture"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>Defs/ThingDef[defName = "denture"]/costList</xpath>
 					<value>
-						<categories>
-							<li>WoodLumber</li>
-						</categories>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>25</costStuffCount>
 					</value>
 				</li>
+				<!-- Peg Leg -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "CreateDenture"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>Defs/ThingDef[defName = "PegLeg"]/costList</xpath>
 					<value>
-						<categories>
-							<li>WoodLumber</li>
-						</categories>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>50</costStuffCount>
 					</value>
 				</li>
 				<!-- Wooden Foot -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "CreateWoodenFoot"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>Defs/ThingDef[defName = "WoodenFoot"]/costList</xpath>
 					<value>
-						<categories>
-							<li>WoodLumber</li>
-						</categories>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName = "CreateWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<categories>
-							<li>WoodLumber</li>
-						</categories>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>25</costStuffCount>
 					</value>
 				</li>
 			</operations>
 		</match>
 	</Operation>
 
+	<!-- Medieval Prosthetics Patch -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Prosthetics</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			<!-- Basic -->
+				<!-- Wooden Foot -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenFoot"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>25</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Toe -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenToe"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>5</costStuffCount>
+					</value>
+				</li>
+				<!-- Wooden Finger, Nose -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "WoodenFinger" or defName = "WoodenNose"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>5</costStuffCount>
+					</value>
+				</li>
+			<!-- Artificial -->
+				<!-- Hand, Foot -->
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="ArtificialMedHand"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedHand" or defName = "ArtificialMedFoot"]/costList/WoodLog</xpath>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedHand" or defName = "ArtificialMedFoot"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>Woody</li>
+									</stuffCategories>
+									<costStuffCount>10</costStuffCount>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+				<!-- Arm, Leg -->
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="ArtificialMedArm"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedArm" or defName="ArtificialMedLeg"]/costList/WoodLog</xpath>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedArm" or defName="ArtificialMedLeg"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>RawWoody</li>
+									</stuffCategories>
+									<costStuffCount>25</costStuffCount>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+				<!-- Toe -->
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="ArtificialMedToe"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedToe"]/costList/WoodLog</xpath>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedToe"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>Woody</li>
+									</stuffCategories>
+									<costStuffCount>5</costStuffCount>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+				<!-- Finger -->
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="ArtificialMedFinger"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedFinger"]/costList/WoodLog</xpath>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName = "ArtificialMedFinger"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>RawWoody</li>
+									</stuffCategories>
+									<costStuffCount>5</costStuffCount>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+				<!-- Nose, Eye -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "ArtificialMedNose" or defName = "ArtificialMedEye"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>15</costStuffCount>
+					</value>
+				</li>
+				<!-- Ear -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "ArtificialMedEar"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>15</costStuffCount>
+					</value>
+				</li>
+		</match>
+	</Operation>
+
 	<!-- Medical System Expansion Patch -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Medical System Expansion</li>
+			<li>Medical System Expansion - Revived</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
