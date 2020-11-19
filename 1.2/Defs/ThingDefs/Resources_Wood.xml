@@ -100,7 +100,7 @@
 		<description>Raw wood from assorted trees. It can be processed into mixed lumber or used for fuel.</description>
 	</ThingDef>
 	
-<!-- Wood Logs --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
+<!-- WoodLog_Tree --> 					<!-- Specific Gravity:   Average Weight: kg/m^3  Janka Hardness: lbf -->
  
  	<ThingDef ParentName="WoodLogBase">
 		<defName>WoodLog_Birch</defName> <!-- SG: 0.61   W: 610  H: 910 -->
