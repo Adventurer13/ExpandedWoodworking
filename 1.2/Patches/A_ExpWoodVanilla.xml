@@ -174,6 +174,17 @@
 	</Operation>
 
 	<!-- Apparel -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Apparel_WarMask"]/stuffCategories/li[.="Woody"]</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 
 	<!-- Traders -->
 	<Operation Class="PatchOperationSequence">
