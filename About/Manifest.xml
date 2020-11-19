@@ -2,14 +2,18 @@
 
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
-    <version>1.1.1.0</version>
+    <version>1.2.2.1</version>
     <incompatibleWith>
 		<li>ExtendedWoodworking</li>
     </incompatibleWith>
     <loadBefore>
 		<li>VGPVegetableGarden</li>
 		<li>VGPGardenDrinks</li>
+		<li>VGPGardenDrinksUF</li>
+		<li>VGPGardenFabrics</li>
+		<li>VGPGardenFabricsSimplified</li>
 		<li>VGPGardenTools</li>
+		<li>VGPMoreVeggies</li>
 		<li>VGPXtraTreesandFlowers</li>
     </loadBefore>
 	<loadAfter>
