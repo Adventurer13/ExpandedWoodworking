@@ -28,24 +28,24 @@ Expanded Woodworking overwrites the following vanilla definitions:
 Patches edit the following vanilla definitions:
 
 - Trees
-- Fuelled stove and smithy
 - Brewery and barrels
 - Butcher table
 - Torch lamp
 - Campfire
 - Any other wood-fuelled items (incl. from other mods)
 - Passive cooler
-- Deadfall trap
+- Spike trap
 - Joy and art objects
+- War mask
 - Any weapon made of wood
 - Peg leg and wood foot
+- Marble blocks
 
 Mods given extended functionality with included patches:
 
 - Advanced Biomes
 - Biome Expansion: Redwood Forest (1.2+)
 - Combat Extended (1.0 only)
-- Dead Goat's Weapon Pack (by DrZhivago) 
 - Lord of the Rims (1.0 only)
 - Nature's Pretty Sweet
 - Realistic Planets (by XeoNovaDan)

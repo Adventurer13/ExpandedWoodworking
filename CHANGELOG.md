@@ -13,11 +13,19 @@
 - Beauty values for each wood and lumber and consequently a balance patch for marble blocks.
 - Royalty expansion patch of musical instruments.
 - Biome Expansion: Redwood Forest compatibility.
+- Switched support to UN-Colony (Continued) in 1.1/1.2.
+- Switched support to Medical System Expansion - Revived in 1.1/1.2.
+- Medieval Prosthetics compatibility in 1.1/1.2.
+- Optional RT's Weapon Pack [1.0-1.2] compatibility in 1.1/1.2.
+- Unfinished Lumber when crafting lumber.
 
 ### Fixed
 - Conditional "stuffing" and extra checks (by Dr_Zhivago).
 - Errors when attempting to edit the Lost Tribe scenario.
 - Woodworking tables and crafting spot use updated recipe sounds when crafting lumber. 
+- Updated patches for Expanded Prosthetics and Organ Engineering in 1.1/1.2.
+- War Mask requires logs instead of lumber.
+- Barricade can be made out of logs as well.
 
 ## [1.1.1.0] - 2020-03-08
 ### New
