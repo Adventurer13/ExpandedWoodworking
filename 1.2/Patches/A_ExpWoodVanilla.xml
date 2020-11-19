@@ -511,6 +511,12 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Barricade"]/stuffCategories</xpath>
+				<value>
+					<li>RawWoody</li>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "TrapSpike"]/stuffCategories/li[.="Woody"]</xpath>
 				<value>
