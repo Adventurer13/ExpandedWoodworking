@@ -5,6 +5,7 @@
 	<RecipeDef Name="MakeWoodLumberBase" Abstract="True">
 		<jobString>Processing lumber from wood.</jobString>
 		<workAmount>500</workAmount>
+		<unfinishedThingDef>UnfinishedLumber</unfinishedThingDef>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
@@ -434,6 +435,7 @@
 		<description>Process any random or spare raw logs into lumber for construction by hand. It's a tedious job.</description>
 		<jobString>Processing lumber from wood.</jobString>
 		<workAmount>1000</workAmount>
+		<unfinishedThingDef>UnfinishedLumber</unfinishedThingDef>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>

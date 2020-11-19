@@ -63,7 +63,30 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
 
-<!-- Wood Trees -->
+<!-- Unfinished Lumber -->
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>UnfinishedLumber</defName>
+		<label>unfinished lumber</label>
+		<description>Unfinished pieces of lumber.</description>
+		<graphicData>
+			<texPath>Things/Resources/WoodLumberOld/WoodLumberOld</texPath> <!-- need a better representative texture -->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3</DeteriorationRate>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+  </ThingDef>
+
+<!-- LumberTree -->
 	
 	<ThingDef ParentName="WoodLumberBase">
 		<defName>LumberBirch</defName>
