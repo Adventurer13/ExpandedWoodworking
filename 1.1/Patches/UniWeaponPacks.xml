@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- RT's Weapon Pack [1.0-1.2]-->
+	<!-- RT's Weapon Pack [1.0-1.2] (optional) --
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>RT's Weapon Pack [1.0-1.2]</li>
@@ -10,7 +10,7 @@
 			<success>Always</success>
 			<operations>
 			<!-- RT_Weapons_HeavyWeapons -->
-				<!-- PKM -->
+				<!-- PKM --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Gun_PKM_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -24,7 +24,7 @@
 					</value>
 				</li>
 			<!-- RT_Weapons_Ranged -->
-				<!-- Slingshot -->
+				<!-- Slingshot --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Weapon_Slingshot_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -37,7 +37,7 @@
 						<costStuffCount>20</costStuffCount>
 					</value>
 				</li>
-				<!-- Tomahawk Throwing Axe -->
+				<!-- Tomahawk Throwing Axe --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Weapon_TomahawkThrowingAxe_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -50,7 +50,7 @@
 						<costStuffCount>2</costStuffCount>
 					</value>
 				</li>
-				<!-- Tactical Crossbow -->
+				<!-- Tactical Crossbow --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Bow_TCrossbow_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -64,7 +64,7 @@
 					</value>
 				</li>
 			<!-- RT_Weapons_Rifles -->
-				<!-- AK-47 -->
+				<!-- AK-47 --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Gun_AK47_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -77,7 +77,7 @@
 						<costStuffCount>55</costStuffCount>
 					</value>
 				</li>
-				<!-- M1 Garand, M14 -->
+				<!-- M1 Garand, M14 --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Gun_M1Garand_rt" or defName = "Gun_M14_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -91,7 +91,7 @@
 					</value>
 				</li>
 			<!-- RT_Weapons_Smgs -->
-				<!-- MP 18 -->
+				<!-- MP 18 --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Gun_MP18_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -104,7 +104,7 @@
 						<costStuffCount>20</costStuffCount>
 					</value>
 				</li>
-				<!-- Thompson Submachine Gun, PPSH-41 -->
+				<!-- Thompson Submachine Gun, PPSH-41 --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Gun_Thompson_Submachine_Gun_rt" or defName = "Gun_PPSH_41_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -118,7 +118,7 @@
 					</value>
 				</li>
 			<!-- RT_Weapons_SniperRifles -->
-				<!-- VSS Vintorez -->
+				<!-- VSS Vintorez --
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Gun_VSSVintorez_rt"]/costList/WoodLog</xpath>
 				</li>
@@ -133,7 +133,7 @@
 				</li>
 			</operations>
 		</match>
-	</Operation>
+	</Operation> -->
 
 <!-- Author: Dr_Zhivago Editor: Adventurer13 -->
 
