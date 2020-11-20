@@ -29,6 +29,10 @@ Previous versions can be found on GitHub.
 		<li>dismarzero.VGP.VGPMoreVeggies</li>
 		<li>dismarzero.VGP.XtraTreesandFlowers</li>
 		<li>Adventurer.ExpandWoodworkVGP</li>
+		<li>Solaris.FurnitureBase</li>
+		<li>Semo583.GloomyHExtraHUHKitchen</li>
+		<li>Dalrae.GloomyDeco</li>
+		<li>zymex.GloomyVanillaOverhaul</li>
 	</loadBefore>
 	<loadAfter>
 		<li>brrainz.harmony</li>

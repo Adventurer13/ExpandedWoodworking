@@ -39,5 +39,36 @@
 			</operations>
 		</match>
 	</Operation>
+	
+	<!-- Gloomy Deco -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Gloomy Deco</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Stump, Clothesline, Tree -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GloomyDeco_Lumberjack" or defName = "GloomyDeco_Rope" or defName = "GloomyDeco_Tree"]/stuffCategories/li[.="Woody"]</xpath>
+					<value>
+						<li>RawWoody</li>
+					</value>
+				</li>
+				<!-- Tool (only if have access to a tree producing generic wood logs, which the Blossom and Glossom trees within Gloomy Furniture provide) -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "GloomyDeco_Tool"]/costList/WoodLog</xpath>
+						<value>
+							<WoodLog_Generic>20</WoodLog_Generic> <!-- reducing cost because the generic logs aren't easy to produce -->
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
   
 </Patch>
