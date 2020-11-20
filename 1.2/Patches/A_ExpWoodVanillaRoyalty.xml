@@ -12,7 +12,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "Plant_TreeAnima"]/plant</xpath>
 					<value>
-						<harvestedThingDef>WoodLog_GenericTrue</harvestedThingDef> <!-- needs a new specific wood -->
+						<harvestedThingDef>WoodLog_Generic</harvestedThingDef> <!-- needs a new specific wood -->
 					</value>
 				</li>
 			</operations>

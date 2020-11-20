@@ -72,7 +72,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	</ThingDef>
 	
-<!-- Generic Log (for compatibility and reporting of unpatched trees) -->
+<!-- Generic Log (for compatibility and reporting of unpatched trees) Please report the name of the tree and the mod it belongs to that this log came from to the Expanded Woodworking mod creator! -->
  	<ThingDef Name="WoodLog_Generic" ParentName="WoodLogBase">
 		<defName>WoodLog_Generic</defName>
 		<label>wood logs</label>

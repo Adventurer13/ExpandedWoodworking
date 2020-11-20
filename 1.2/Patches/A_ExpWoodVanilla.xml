@@ -375,8 +375,6 @@
 		</operations>
 	</Operation>
 
-
-
 	<!-- Production -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -515,7 +513,6 @@
 	</Operation>
 
 	<!-- Temperature -->
-
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Campfire"]/stuffCategories</xpath>
