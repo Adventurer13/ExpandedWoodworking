@@ -43,7 +43,6 @@
 			<disallowedThingDefs>
 				<li>WoodLog_Succulent</li>
 				<li>WoodLog_Generic</li>
-				<li>WoodLog_GenericTrue</li>
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>
