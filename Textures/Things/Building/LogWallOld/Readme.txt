@@ -1,0 +1,1 @@
+Change the folder names appropiately if you want the outlined graphics for the log wall.
