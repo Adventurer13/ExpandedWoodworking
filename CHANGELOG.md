@@ -15,9 +15,11 @@
 - Biome Expansion: Redwood Forest compatibility.
 - Switched support to UN-Colony (Continued) in 1.1/1.2.
 - Switched support to Medical System Expansion - Revived in 1.1/1.2.
-- Medieval Prosthetics compatibility in 1.1/1.2.
-- Optional RT's Weapon Pack [1.0-1.2] compatibility in 1.1/1.2.
+- Medieval Prosthetics support in 1.1/1.2.
+- Optional RT's Weapon Pack [1.0-1.2] support in 1.1/1.2.
 - Unfinished Lumber when crafting lumber.
+- Gloomy mods support.
+- Optional older outlined graphics for the log wall.
 
 ### Fixed
 - Conditional "stuffing" and extra checks (by Dr_Zhivago).
@@ -26,6 +28,8 @@
 - Updated patches for Expanded Prosthetics and Organ Engineering in 1.1/1.2.
 - War Mask requires logs instead of lumber.
 - Barricade can be made out of logs as well.
+- Fermenting barrel texture updated.
+- PatchOperation clean-up.
 
 ## [1.1.1.0] - 2020-03-08
 ### New
