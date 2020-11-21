@@ -356,33 +356,47 @@
 	</Operation>
 
 	<!-- Power -->
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName = "WatermillGenerator"]/costList/WoodLog	|
-						Defs/ThingDef[defName = "WatermillGenerator"]/constructEffect</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "WatermillGenerator"]</xpath>
-				<value>
-					<stuffCategories>
-						<li>Woody</li>
-					</stuffCategories>
-					<costStuffCount>280</costStuffCount>
-				</value>
-			</li>
-		</operations>
+		<xpath>Defs/ThingDef[defName="WatermillGenerator"]/stuffCategories</xpath>
+		<nomatch Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "WatermillGenerator"]/costList/WoodLog	|
+								Defs/ThingDef[defName = "WatermillGenerator"]/constructEffect</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "WatermillGenerator"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>280</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
 	</Operation>
 
 	<!-- Production -->
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>VGP Vegetable Garden</li>
-		</mods>
-		<nomatch Class="PatchOperationRemove">
-			<xpath>Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
-		</nomatch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>95</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationSequence">
@@ -394,36 +408,34 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName = "Brewery" or defName = "FermentingBarrel"]/costList/WoodLog</xpath>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
-				<value>
-					<costStuffCount>95</costStuffCount>
-				</value>
-			</li>
 		</operations>
 	</Operation>
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Stuffed Workbenches</li>
-			<li>DeCore 1.1</li>
+			<li>DeCore 1.2</li>
 		</mods>
-		<nomatch Class="PatchOperationSequence">
+		<nomatch Class="PatchOperationConditional">
 			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "Brewery"]</xpath>
-					<value>
-						<stuffCategories>
-							<li>Woody</li>
-						</stuffCategories>
-						<costStuffCount>120</costStuffCount>
-					</value>
-				</li>
-			</operations>
+			<xpath>Defs/ThingDef[defName = "Brewery"]/stuffCategories</xpath>
+			<nomatch Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Brewery"]</xpath>
+						<value>
+							<stuffCategories>
+								<li>Woody</li>
+							</stuffCategories>
+							<costStuffCount>120</costStuffCount>
+						</value>
+					</li>
+				</operations>
+			</nomatch>
 		</nomatch>
 		<match Class="PatchOperationFindMod">
 			<mods>
@@ -444,39 +456,29 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
-				<value>
-					<shaderType>CutoutComplex</shaderType>
-				</value>
-			</li>
-		</operations>
+		<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/shaderType</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
+			<value>
+				<shaderType>CutoutComplex</shaderType>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
-		<operations>
-			<li Class="ExpandedWoodworking.PatchOperationModCompat">
-				<modName>VGP Garden Drinks</modName>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
-				<value>
-					<stuffCategories>
-						<li>Woody</li>
-					</stuffCategories>
-					<costStuffCount>30</costStuffCount>
-				</value>
-			</li>
-		</operations>
+		<xpath>Defs/ThingDef[defName = "FermentingBarrel"]/stuffCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
+			<value>
+				<stuffCategories>
+					<li>Woody</li>
+				</stuffCategories>
+				<costStuffCount>30</costStuffCount>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
@@ -516,19 +518,16 @@
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Campfire"]/stuffCategories</xpath>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "Campfire"]/stuffCategories</xpath>
-					<value>
-						<stuffCategories>
-							<li>RawWoody</li>
-						</stuffCategories>
-					</value>
-				</li>
-			</operations>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName = "Campfire"]/stuffCategories</xpath>
+			<value>
+				<stuffCategories>
+					<li>RawWoody</li>
+				</stuffCategories>
+			</value>
 		</match>
 		<nomatch Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
@@ -549,19 +548,16 @@
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PassiveCooler"]/stuffCategories</xpath>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories</xpath>
-					<value>
-						<stuffCategories>
-							<li>RawWoody</li>
-						</stuffCategories>
-					</value>
-				</li>
-			</operations>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName = "PassiveCooler"]/stuffCategories</xpath>
+			<value>
+				<stuffCategories>
+					<li>RawWoody</li>
+				</stuffCategories>
+			</value>
 		</match>
 		<nomatch Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
