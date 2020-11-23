@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<!-- Plants Redwood Biome -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName = "Plant_TreeDouglasFir"]/plant/harvestedThingDef</xpath>
+			<value>
+				<harvestedThingDef>WoodLog_DouglasFir</harvestedThingDef>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Sequoia Log -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/label</xpath>
+					<value>
+						<label>sequoia logs</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/statBases/MarketValue</xpath>
+					<value>
+						<MarketValue>2.1</MarketValue>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/stuffProps/commonality</xpath>
+					<value>
+						<commonality>0.30</commonality>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/stuffProps/categories/li</xpath>
+					<value>
+						<li>RawWoody</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/stuffProps/statFactors/Beauty</xpath>
+					<value>			
+						<Beauty>3.5</Beauty>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/stuffProps/statFactors/Flammability</xpath>
+					<value>			
+						<Flammability>0.75</Flammability>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/stuffProps/statFactors/DoorOpenSpeed</xpath>
+					<value>			
+						<DoorOpenSpeed>1.3</DoorOpenSpeed>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]/thingCategories/li</xpath>
+					<value>
+						<li>WoodTypes</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SequoiaWoodLog"]</xpath>
+					<value>
+						<butcherProducts>
+							<LumberSequoia>30</LumberSequoia>
+						</butcherProducts>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<!-- Douglas Fir Wood -->
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/ThingDef[defName = "WoodLog_Drago"]</xpath>
+			<order>Prepend</order>
+			<value>
+				<ThingDef ParentName="WoodLogBase">
+					<defName>WoodLog_DouglasFir</defName> <!-- SG: 0.51  W: 510  H: 620 -->
+					<label>douglas fir logs</label>
+					<description>Raw wood from a douglas fir tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Douglas fir is a moderately durable softwood.</description>
+					<graphicData>
+						<color>(232,171,114)</color>
+					</graphicData>
+					<statBases>
+						<Mass>0.5</Mass> 
+						<MarketValue>1.4</MarketValue>
+						<DeteriorationRate>2</DeteriorationRate>
+					</statBases>
+					<stuffProps>
+						<stuffAdjective>douglas fir</stuffAdjective>
+						<commonality>0.5</commonality>
+						<color>(232,171,114)</color>
+						<statFactors>
+							<MaxHitPoints>0.6</MaxHitPoints>
+							<Beauty>2.3</Beauty>
+							<WorkToMake>0.3</WorkToMake>
+							<WorkToBuild>0.3</WorkToBuild>
+							<DoorOpenSpeed>1.3</DoorOpenSpeed>
+						</statFactors>
+					</stuffProps>
+					<butcherProducts>
+						<LumberDouglasFir>30</LumberDouglasFir>
+					</butcherProducts>	
+				</ThingDef>
+			</value>
+		</match>
+	</Operation>	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Douglas Fir Lumber -->
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "LumberDrago"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLumberBase">
+							<defName>LumberDouglasFir</defName> 
+							<label>douglas fir lumber</label>
+							<description>Processed douglas fir lumber. Mostly useful for building long-lasting, simple structures and furniture. Douglas fir is a moderately durable softwood.</description>
+							<graphicData>
+								<color>(232,171,114)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.25</Mass> 
+								<MarketValue>2.7</MarketValue>
+								<DeteriorationRate>3</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>douglas fir</stuffAdjective>
+								<commonality>0.5</commonality>
+								<color>(232,171,114)</color>
+								<statFactors>
+									<MaxHitPoints>0.6</MaxHitPoints>
+									<Beauty>2.3</Beauty>
+									<WorkToMake>0.3</WorkToMake>
+									<WorkToBuild>0.3</WorkToBuild>
+									<DoorOpenSpeed>1.3</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+						</ThingDef>
+					</value>
+				</li>
+				<!-- Sequoia Lumber -->
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "LumberTeak"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLumberBase">
+							<defName>LumberSequoia</defName>
+							<label>sequoia lumber</label>
+							<description>Processed sequoia lumber. Mostly useful for building long-lasting structures, sculptures, and furniture. Sequoia is a durable softwood.</description>
+							<graphicData>
+								<color>(126,43,16)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.25</Mass>
+								<MarketValue>4.2</MarketValue>
+								<Flammability>0.75</Flammability>
+								<DeteriorationRate>0.5</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>sequoia wooden</stuffAdjective>
+								<commonality>0.3</commonality>
+								<color>(126,43,16)</color>
+								<statFactors>
+									<MaxHitPoints>0.65</MaxHitPoints>
+									<Beauty>3.5</Beauty>
+									<Flammability>0.75</Flammability>
+									<WorkToMake>0.7</WorkToMake>
+									<WorkToBuild>0.7</WorkToBuild>
+									<DoorOpenSpeed>1.3</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Lumber Recipes -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[defName = "MakeWoodLumberDrago"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<RecipeDef ParentName="MakeWoodLumberBase">
+							<defName>MakeWoodLumberDouglasFir</defName>
+							<label>make douglas fir lumber</label>
+							<description>Process raw douglas fir logs into lumber for construction.</description>
+							<allowMixingIngredients>false</allowMixingIngredients>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WoodLog_DouglasFir</li>
+										</thingDefs>
+									</filter>
+									<count>15</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WoodLog_DouglasFir</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<LumberDouglasFir>30</LumberDouglasFir>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[defName = "MakeWoodLumberTeak"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<RecipeDef ParentName="MakeWoodLumberBase">
+							<defName>MakeWoodLumberSequoia</defName>
+							<label>make sequoia lumber</label>
+							<description>Process raw sequoia logs into lumber for construction.</description>
+							<allowMixingIngredients>false</allowMixingIngredients>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>SequoiaWoodLog</li>
+										</thingDefs>
+									</filter>
+									<count>15</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>SequoiaWoodLog</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<LumberSequoia>30</LumberSequoia>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

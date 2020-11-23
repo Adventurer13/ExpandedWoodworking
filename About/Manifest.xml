@@ -2,20 +2,20 @@
 
 <Manifest>
     <identifier>ExpandedWoodworking</identifier>
-    <version>1.1.1.0</version>
+    <version>1.2.2.1</version>
     <incompatibleWith>
 		<li>ExtendedWoodworking</li>
     </incompatibleWith>
     <loadBefore>
 		<li>VGPVegetableGarden</li>
-		<li>VGPGardenDrinks</li>
-		<li>VGPGardenTools</li>
-		<li>VGPXtraTreesandFlowers</li>
     </loadBefore>
 	<loadAfter>
 		<li>CombatExtended</li>
 		<li>StuffedWorkbenches</li>
 	</loadAfter>
+	<suggests>
+		<li>853043503</li> <!-- Stuffed Floors -->
+	</suggests>
 	<showCrossPromotions>true</showCrossPromotions>
     <manifestUri>https://raw.githubusercontent.com/Adventurer13/ExpandedWoodworking/master/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/Adventurer13/ExpandedWoodworking/releases/latest</downloadUri>

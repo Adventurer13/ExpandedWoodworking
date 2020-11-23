@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<EW_LogWall.label>бревенчатая стена</EW_LogWall.label>
+<EW_LogWall.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</EW_LogWall.description>
+<Blueprint_EW_LogWall.label>бревенчатая стена (проект)</Blueprint_EW_LogWall.label>
+<Frame_EW_LogWall.label>бревенчатая стена (постройка)</Frame_EW_LogWall.label>
+<Frame_EW_LogWall.description>Стена из брёвен сложенных вместе. Прочная и очень быстрая постройка, но огнеопасная и не передающая мощность.</Frame_EW_LogWall.description>
+
+</LanguageData>
