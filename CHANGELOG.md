@@ -2,7 +2,7 @@
 
 **Current:** [v1.2.2.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.2.2.1 )
 
-## [1.2.2.1] - Unreleased
+## [1.2.2.1] - 2020-11-23
 ### New
 - Spanish (Español(Castellano)) localisation (by Azarashi).
 - Woodworking table graphics (Thanks to Chowder and Dr_Zhivago).
