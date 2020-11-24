@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog"]]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+				<value>
+					<li>WoodLog_Generic</li>
+					<li>WoodLog_Birch</li>
+					<li>WoodLog_Cecropia</li>
+					<li>WoodLog_Cocoa</li>
+					<li>WoodLog_Cypress</li>
+					<li>WoodLog_Drago</li>
+					<li>WoodLog_Maple</li>
+					<li>WoodLog_Oak</li>
+					<li>WoodLog_Pine</li>
+					<li>WoodLog_Palm</li>
+					<li>WoodLog_Poplar</li>
+					<li>WoodLog_Succulent</li>
+					<li>WoodLog_Teak</li>
+					<li>WoodLog_Willow</li>
+					<li>Bamboo</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Apple</li>
+					<li>WoodLog_Cherry</li>
+					<li>WoodLog_Coconut</li>
+					<li>WoodLog_DatePalm</li>
+					<li>WoodLog_Fig</li>
+					<li>WoodLog_Orange</li>
+					<li>WoodLog_Peach</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP More Veggies</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Mango</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Camellia</li>
+					<li>WoodLog_CherryBlossom</li>
+					<li>WoodLog_JapaneseMaple</li>
+					<li>WoodLog_RedMaple</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Expanded Woodworking for Vegetable Garden Project</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+				</value>
+			</match>
+		</match>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Realistic Planets - Fan Update</li>
+				<li>Advanced Biomes (Continued)</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+				<value>
+					<li>WoodLog_Acacia</li>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Zen Garden</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_CrabApple</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Baobab</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Cedar</li>
+				<li>WoodLog_Snag</li>
+				<li>WoodLog_Mangrove</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Gum</li>
+				<li>WoodLog_Hazelnut</li>
+				<li>RedWoodLog</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - Elves</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>LotRE_WoodLog_GoldenBirch</li>
+				<li>LotRE_WoodLogMallorn</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Temperate Forest Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Cornish</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[HLX] ReGrowth - Cold Bog Expansion</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_Karim</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biome Expansion: Redwood forest</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[.="WoodLog_Succulent"]]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>WoodLog_DouglasFir</li>
+				<li>SequoiaWoodLog</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

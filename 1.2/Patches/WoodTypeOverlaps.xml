@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Acacia (RP, AB, NPS) -->
+	<!-- Acacia Wood -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Realistic Planets - Fan Update</li>
+				<li>Advanced Biomes (Continued)</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLogBase">
+						<defName>WoodLog_Acacia</defName> <!-- SG: 1.19  W: 1185  H: 3680 -->
+						<label>acacia logs</label>
+						<description>Raw wood from an acacia tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Acacia is a very durable hardwood.</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>1.2</Mass>
+							<MarketValue>2.3</MarketValue>
+							<DeteriorationRate>0.5</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>acacia</stuffAdjective>
+							<commonality>0.25</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>1.9</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+						<butcherProducts>
+							<LumberAcacia>30</LumberAcacia>
+						</butcherProducts>		
+					</ThingDef>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	<!-- Acacia Lumber -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Realistic Planets - Fan Update</li>
+				<li>Advanced Biomes (Continued)</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationInsert">
+				<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<ThingDef ParentName="WoodLumberBase">
+						<defName>LumberAcacia</defName>
+						<label>acacia lumber</label>
+						<description>Processed acacia lumber. Mostly useful for building long-lasting, simple structures and furniture. Acacia is a very durable hardwood.</description>
+						<graphicData>
+							<color>(81,56,49)</color>
+						</graphicData>
+						<statBases>
+							<Mass>0.6</Mass>
+							<MarketValue>4.8</MarketValue>
+							<DeteriorationRate>1</DeteriorationRate>
+						</statBases>
+						<stuffProps>
+							<stuffAdjective>acacia</stuffAdjective>
+							<commonality>0.2</commonality>
+							<color>(81,56,49)</color>
+							<statFactors>
+								<MaxHitPoints>0.95</MaxHitPoints>
+								<Beauty>1.9</Beauty>
+								<WorkToMake>1.7</WorkToMake>
+								<WorkToBuild>1.7</WorkToBuild>
+								<DoorOpenSpeed>0.6</DoorOpenSpeed>
+							</statFactors>
+						</stuffProps>
+					</ThingDef>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Xtra Trees and Flowers</li>
+		</mods>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Realistic Planets - Fan Update</li>
+				<li>Advanced Biomes (Continued)</li>
+				<li>Nature's Pretty Sweet</li>
+			</mods>
+			<match Class="PatchOperationInsert">
+				<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<RecipeDef ParentName="MakeWoodLumberBase">
+						<defName>MakeWoodLumberAcacia</defName>
+						<label>make acacia lumber</label>
+						<description>Process raw acacia logs into lumber for construction.</description>
+						<allowMixingIngredients>false</allowMixingIngredients>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>WoodLog_Acacia</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>WoodLog_Acacia</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+						<products>
+							<LumberAcacia>30</LumberAcacia>
+						</products>
+					</RecipeDef>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+<!-- Baobab (AB, NPS) -->
+	<!-- Baobab Wood -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/ThingDef[defName = "WoodLog_Birch"]</xpath>
+			<order>Prepend</order>
+			<value>
+				<ThingDef ParentName="WoodLogBase">
+					<defName>WoodLog_Baobab</defName> 
+					<label>baobab logs</label>
+					<description>Raw wood from a baobab tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Baobab is a durable wood.</description>
+					<graphicData>
+						<color>(183,132,101)</color>
+					</graphicData>
+					<statBases>
+						<Mass>0.7</Mass> 
+						<MarketValue>1.6</MarketValue>
+						<DeteriorationRate>1</DeteriorationRate>
+					</statBases>
+					<stuffProps>
+						<stuffAdjective>baobab</stuffAdjective>
+						<commonality>0.45</commonality>
+						<color>(183,132,101)</color>
+						<statFactors>
+							<MaxHitPoints>0.5</MaxHitPoints>
+							<Beauty>1.25</Beauty>
+							<WorkToMake>0.65</WorkToMake>
+							<WorkToBuild>0.65</WorkToBuild>
+							<DoorOpenSpeed>1.2</DoorOpenSpeed>
+						</statFactors>
+					</stuffProps>
+					<butcherProducts>
+						<LumberBaobab>30</LumberBaobab>
+					</butcherProducts>		
+				</ThingDef>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Baobab Lumber -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/ThingDef[defName = "LumberBirch"]</xpath>
+			<order>Prepend</order>
+			<value>
+				<ThingDef ParentName="WoodLumberBase">
+					<defName>LumberBaobab</defName> 
+					<label>baobab lumber</label>
+					<description>Processed baobab lumber. Mostly useful for building long-lasting, simple structures and furniture. Baobab is a durable wood.</description>
+					<graphicData>
+						<color>(183,132,101)</color>
+					</graphicData>
+					<statBases>
+						<Mass>0.35</Mass> 
+						<MarketValue>3.3</MarketValue>
+						<DeteriorationRate>2</DeteriorationRate>
+					</statBases>
+					<stuffProps>
+						<stuffAdjective>baobab</stuffAdjective>
+						<commonality>0.4</commonality>
+						<color>(183,132,101)</color>
+						<statFactors>
+							<MaxHitPoints>0.5</MaxHitPoints>
+							<Beauty>1.25</Beauty>
+							<WorkToMake>0.65</WorkToMake>
+							<WorkToBuild>0.65</WorkToBuild>
+							<DoorOpenSpeed>1.2</DoorOpenSpeed>
+						</statFactors>
+					</stuffProps>	
+				</ThingDef>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Advanced Biomes (Continued)</li>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationInsert">
+			<xpath>Defs/RecipeDef[defName = "MakeWoodLumberBirch"]</xpath>
+			<order>Prepend</order>
+			<value>
+				<RecipeDef ParentName="MakeWoodLumberBase">
+					<defName>MakeWoodLumberBaobab</defName>
+					<label>make baobab lumber</label>
+					<description>Process raw baobab logs into lumber for construction.</description>
+					<allowMixingIngredients>false</allowMixingIngredients>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>WoodLog_Baobab</li>
+								</thingDefs>
+							</filter>
+							<count>15</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>WoodLog_Baobab</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<LumberBaobab>30</LumberBaobab>
+					</products>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Boats -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Boats</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint" or defName = "SPBoats_FishingBoatBlueprint" or defName = "SPBoats_CaravelBlueprint" or defName = "SPBoats_GalleonBlueprint" or defName = "SPBoats_PaddleSteamerBlueprint"]/costList/WoodLog</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_RowboatBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>225</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_FishingBoatBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>400</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_CaravelBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>1250</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_GalleonBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>2500</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "SPBoats_PaddleSteamerBlueprint"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>150</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--  [RF] Fertile Fields -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fertile Fields [1.1]</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "CompostBarrel"]/costList/WoodLog	|
+							Defs/ThingDef[defName = "CompostBarrel"]/constructEffect</xpath>
+				</li>
+				<!-- <li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "CompostBin"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>2</costStuffCount>
+					</value>
+				</li> -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "CompostBarrel"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+  
+  <!-- Below | Author: Dr_Zhivago Editor: Adventurer13 -->
+  <!-- Smoked meat -->
+  <!-- Buildings -->
+  <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Smoked meat</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="Smokepit"]/constructEffect</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Smokepit"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>RawWoody</li>
+						</stuffCategories>
+						<costStuffCount>10</costStuffCount>
+					</value>
+				</li>
+			</operations>
+		</match>
+  </Operation>
+  
+</Patch>

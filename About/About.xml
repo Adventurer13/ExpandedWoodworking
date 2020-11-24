@@ -7,25 +7,24 @@
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<description>An upgrade of Qwynn's Expanded Woodworking which was an update of ItchyFlea's Extended Woodworking. Each tree type now produces a unique wood specific to that tree. These new wood types can be converted into lumber and, like the base game metals, can be used to construct various furnitures, buildings, and other objects which are designated as 'Woody' in their stuff category. Supports any starting scenario through using the crafting spot to make lumber.
 
 	
-Current Version: 1.1.1.0 (2020-03-08)
+Current Version: 1.2.2.1 (2020-11-23)
 Previous versions can be found on GitHub.
 	</description>
 	<incompatibleWith>
 		<li>TeflonJim.ExtendedWoodworking</li>
 	</incompatibleWith>
 	<loadBefore>
-		<li>fluffy.stuffedfloors</li>
 		<li>dismarzero.VGP.VGPVegetableGarden</li>
-		<li>dismarzero.VGP.VGPGardenDrinks</li>
-		<li>dismarzero.VGP.VGPGardenFabrics</li>
-		<li>dismarzero.VGP.VGPGardenFabricsSimplified</li>
-		<li>dismarzero.VGP.VGPGardenTools</li>
-		<li>dismarzero.VGP.XtraTreesandFlowers</li>
 		<li>Adventurer.ExpandWoodworkVGP</li>
+		<li>Solaris.FurnitureBase</li>
+		<li>Semo583.GloomyHExtraHUHKitchen</li>
+		<li>Dalrae.GloomyDeco</li>
+		<li>zymex.GloomyVanillaOverhaul</li>
 	</loadBefore>
 	<loadAfter>
 		<li>brrainz.harmony</li>

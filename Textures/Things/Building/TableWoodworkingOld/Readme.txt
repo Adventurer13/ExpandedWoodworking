@@ -1,0 +1,1 @@
+Change the folder names appropiately if you want the old graphics for the woodworking table.

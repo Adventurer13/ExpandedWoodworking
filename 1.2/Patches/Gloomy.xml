@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Gloomy Furniture -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Lamp, Street Lamp -->
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "RGK_lamp" or defName = "RGK_LampM" or defName = "RGK_lampE" or defName = "GL_lamp_White" or defName = "GL_LampM_White" or defName = "GL_lampE_White" or defName = "RGK_Street_Lamp_L" or defName = "RGK_Street_Lamp" or defName = "GL_Street_Lamp_L_White" or defName = "GL_Street_Lamp_White"]/costList/WoodLog</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "RGK_lamp" or defName = "RGK_LampM" or defName = "GL_lamp_White" or defName = "GL_LampM_White" or defName = "RGK_Street_Lamp_L" or defName = "GL_Street_Lamp_L_White"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
+					<value>
+						<initialFuelPercent>0.5</initialFuelPercent>
+					</value>
+				</li>
+				<!-- Street Lamp Seven -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "RGK_Street_Lamp_Seven" or defName = "RGK_Street_Lamp_SevenE" or defName = "GL_Street_Lamp_Seven_White" or defName = "GL_Street_Lamp_SevenE_White"]/costList/WoodLog</xpath>
+					<value>
+						<WoodLog_Generic>15</WoodLog_Generic>
+					</value>
+				</li>
+				<!-- Wall Lamp -->
+				<li Class= "PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="WallLightBase"]/costList/WoodLog</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GL_Wall_Lamp" or defName = "GL_Wall_Lamp_White"]/comps/li[@Class="CompProperties_Refuelable"]/initialFuelPercent</xpath>
+					<value>
+						<initialFuelPercent>0.5</initialFuelPercent>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<!-- Gloomy Deco -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Gloomy Deco</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- Stump, Clothesline, Tree -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "GloomyDeco_Lumberjack" or defName = "GloomyDeco_Rope" or defName = "GloomyDeco_Tree"]/stuffCategories/li[.="Woody"]</xpath>
+					<value>
+						<li>RawWoody</li>
+					</value>
+				</li>
+				<!-- Tool (only if have access to a tree producing generic wood logs, which the Blossom and Glossom trees within Gloomy Furniture provide) -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>GloomyFurniture</li>
+					</mods>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "GloomyDeco_Tool"]/costList/WoodLog</xpath>
+						<value>
+							<WoodLog_Generic>20</WoodLog_Generic> <!-- reducing cost because the generic logs aren't easy to produce -->
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+  
+</Patch>

@@ -1,6 +1,35 @@
 # Change Log
 
-**Current:** [v1.1.1.0](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.1.1.0 )
+**Current:** [v1.2.2.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.2.2.1 )
+
+## [1.2.2.1] - 2020-11-23
+### New
+- Spanish (Español(Castellano)) localisation (by Azarashi).
+- Woodworking table graphics (Thanks to Chowder and Dr_Zhivago).
+- ReGrowth compatibility (Thanks to KennethSamael).
+- Advanced Biomes Patch readded in 1.1/1.2 with support for the mod: Advanced Biomes (continued).
+- Dead Goat's Weapon Pack(continued) support in 1.1/1.2.
+- Generic wood log for compatibility and reporting of unpatched trees in mods (Thanks to KennethSamael).
+- Beauty values for each wood and lumber and consequently a balance patch for marble blocks.
+- Royalty expansion patch of musical instruments.
+- Biome Expansion: Redwood Forest compatibility.
+- Switched support to UN-Colony (Continued) in 1.1/1.2.
+- Switched support to Medical System Expansion - Revived in 1.1/1.2.
+- Medieval Prosthetics support in 1.1/1.2.
+- Optional RT's Weapon Pack [1.0-1.2] support in 1.1/1.2.
+- Unfinished Lumber when crafting lumber.
+- Gloomy mods support.
+- Optional older outlined graphics for the log wall.
+
+### Fixed
+- Conditional "stuffing" and extra checks (by Dr_Zhivago).
+- Errors when attempting to edit the Lost Tribe scenario.
+- Woodworking tables and crafting spot use updated recipe sounds when crafting lumber. 
+- Updated patches for Expanded Prosthetics and Organ Engineering in 1.1/1.2.
+- War Mask requires logs instead of lumber.
+- Barricade can be made out of logs as well.
+- Fermenting barrel texture updated.
+- PatchOperation clean-up.
 
 ## [1.1.1.0] - 2020-03-08
 ### New

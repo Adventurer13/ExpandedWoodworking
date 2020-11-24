@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+	<success>Always</success>
+		<xpath>Defs/ThingDef/plant/harvestedThingDef[.="WoodLog"]</xpath>
+			<value>
+				<harvestedThingDef>WoodLog_Generic</harvestedThingDef>
+			</value>
+	</Operation>
+</Patch>
