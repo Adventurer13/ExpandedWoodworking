@@ -21,11 +21,24 @@
 	
 <!-- Lumber -->		
 	
-	<RecipeDef ParentName="MakeWoodLumberBase">
+	<RecipeDef>
 		<defName>MakeWoodLumberAny</defName>
 		<label>make any lumber</label>
 		<description>Process raw logs into lumber for construction.</description>
 		<workerCounterClass>ExpandedWoodworking.RecipeWorkerCounter_MakeWoodLumber</workerCounterClass>
+		<jobString>Processing lumber from wood.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeWoodPlanks_Electric</soundWorking>
+		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<recipeUsers>
+			<li>TableWoodworking</li>
+			<li>ElectricTableWoodworking</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

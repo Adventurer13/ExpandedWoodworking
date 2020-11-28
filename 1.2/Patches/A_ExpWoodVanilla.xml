@@ -680,5 +680,30 @@
 			</nomatch>
 		</nomatch>
 	</Operation>
+	
+	<!-- Sound: Interact Sustainers Work -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/SoundDef[defName = "Recipe_MakeWoodPlanks_Electric"]/subSounds/li[grains/li[@Class="AudioGrain_Folder"]/clipFolderPath[.="Interact/Work/Construct/Wood/Wood_Saw_Circular"]]/volumeRange</xpath>
+				<value>
+					<volumeRange>8.2504~9.1252</volumeRange> <!-- Default: 10.2504~11.1252 -->
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/SoundDef[defName = "Recipe_MakeWoodPlanks_Electric"]/subSounds/li[grains/li[@Class="AudioGrain_Folder"]/clipFolderPath[.="Interact/Work/Construct/Circular_Saw/Saw_Circular_Cuts"]]/volumeRange</xpath>
+				<value>
+					<volumeRange>10~10</volumeRange> <!-- Default: 12~12 -->
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/SoundDef[defName = "Recipe_CircularSaw_Off"]/subSounds/li[grains/li[@Class="AudioGrain_Clip"]/clipPath[.="Interact/Work/Construct/Circular_Saw/Saw_Circular_Off/Wood_Saw_Circular_Off"]]/volumeRange</xpath>
+				<value>
+					<volumeRange>9~9</volumeRange> <!-- Default: 11~11 -->
+				</value>
+			</li>
+		</operations>
+	</Operation>
 
 </Patch>

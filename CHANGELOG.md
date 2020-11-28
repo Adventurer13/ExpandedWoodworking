@@ -1,6 +1,11 @@
 # Change Log
 
-**Current:** [v1.2.2.1](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.2.2.1 )
+**Current:** [v1.2.2.2](https://github.com/Adventurer13/ExpandedWoodworking/releases/tag/v1.2.2.2 )
+
+## [1.2.2.2] - 2020-11-28
+### Fixed
+- Errors with "make any lumber" recipe by removing the unfinished item functionality for it.
+- Decreased the sound volume of the recipes on the woodworking tables by a value of two.
 
 ## [1.2.2.1] - 2020-11-23
 ### New
