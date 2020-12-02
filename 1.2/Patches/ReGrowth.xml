@@ -36,13 +36,13 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "RG-CBE_Plant_SpruceTreePine"]/plant</xpath>
+					<xpath>Defs/ThingDef[defName = "RG-CB_Plant_SpruceTreePine"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "RG-CBE_Plant_KarimTree"]/plant</xpath>
+					<xpath>Defs/ThingDef[defName = "RG-CB_Plant_KarimTree"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Karim</harvestedThingDef>
 					</value>
