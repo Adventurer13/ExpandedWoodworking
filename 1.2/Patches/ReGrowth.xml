@@ -3,7 +3,20 @@
 	<!-- Author: KennethSamael  Edited by: Adventurer -->
 	<!-- Deals with the following mods from the ReGrowth series: Boreal Forest Expanion, Cold Bog Expansion, Temperate Forest Expansion, Tundra Expansion, Wasteland, Volcanic Ice Sheet - Beta -->
 	
-	<!-- Boreal -->
+  <!-- Aspen Forests -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>ReGrowth: Aspen Forests</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RG-AF_Plant_TreeAspenRed" or defName="RG-AF_Plant_TreeAspenYellow"]/plant</xpath>
+      <value>
+        <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Boreal -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>[HLX] ReGrowth - Boreal Forest Expansion</li>
