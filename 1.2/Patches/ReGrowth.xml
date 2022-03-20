@@ -6,13 +6,19 @@
 	<!-- Boreal -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[HLX] ReGrowth - Boreal Forest Expansion</li>
+			<li>ReGrowth Remastered: Boreal Forests</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="RG-BF_Plant_BlueTreePine"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RG-BF_Plant_OrangeTreePine"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 					</value>
@@ -30,19 +36,19 @@
 	<!-- Cold Bog -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[HLX] ReGrowth - Cold Bog Expansion</li>
+			<li>ReGrowth: Cold Bog Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "RG-CB_Plant_SpruceTreePine"]/plant</xpath>
+					<xpath>Defs/ThingDef[defName = "RG-CBE_Plant_SpruceTreePine"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "RG-CB_Plant_KarimTree"]/plant</xpath>
+					<xpath>Defs/ThingDef[defName = "RG-CBE_Plant_KarimTree"]/plant</xpath>
 					<value>
 						<harvestedThingDef>WoodLog_Karim</harvestedThingDef>
 					</value>
@@ -149,7 +155,7 @@
 	<!-- Temperate Forest -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[HLX] ReGrowth - Temperate Forest Expansion</li>
+			<li>ReGrowth: Temperate Forest Expansion</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -262,7 +268,7 @@
 	<!-- Tundra -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[HLX] ReGrowth - Tundra Expansion</li>
+			<li>ReGrowth Remastered: Tundras</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName = "RG-T_Plant_YellowTreePine"]/plant</xpath>
@@ -275,7 +281,7 @@
 	<!-- Wasteland -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[HLX] ReGrowth - Wasteland</li>
+			<li>ReGrowth: Wastelands</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -306,6 +312,238 @@
 			<value>
 				<harvestedThingDef>WoodLog_Pine</harvestedThingDef>
 			</value>
+		</match>
+	</Operation>
+
+	<!-- Aspen -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Aspen Forests</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RG-AF_Plant_TreeAspenRed"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Aspen</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RG-AF_Plant_TreeAspenYellow"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_Aspen</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLogBase">
+							<defName>WoodLog_Aspen</defName> <!-- SG: 0.55  W: 545  H: 850  based on: black ash -->
+							<label>aspen logs</label>
+							<description>Raw wood from an aspen tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Aspen wood is a softer, even-grained hardwood.</description>
+							<graphicData>
+								<color>(230,213,197)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.5</Mass>
+								<MarketValue>1.6</MarketValue>
+								<DeteriorationRate>6</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>aspen</stuffAdjective>
+								<commonality>0.4</commonality>
+								<color>(230,213,197)</color>
+								<statFactors>
+									<MaxHitPoints>0.45</MaxHitPoints>
+									<Beauty>2.2</Beauty>
+									<WorkToMake>0.4</WorkToMake>
+									<WorkToBuild>0.4</WorkToBuild>
+									<DoorOpenSpeed>1.3</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+							<butcherProducts>
+								<LumberAspen>30</LumberAspen>
+							</butcherProducts>		
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLumberBase">
+							<defName>LumberAspen</defName>
+							<label>aspen lumber</label>
+							<description>Processed aspen lumber. Mostly useful for building long-lasting, simple structures and furniture. Aspen wood is a softer, even-grained hardwood.</description>
+							<graphicData>
+								<color>(230,213,197)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.25</Mass>
+								<MarketValue>3.5</MarketValue>
+								<DeteriorationRate>7</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>aspen</stuffAdjective>
+								<commonality>0.4</commonality>
+								<color>(230,213,197)</color>
+								<statFactors>
+									<MaxHitPoints>0.40</MaxHitPoints>
+									<Beauty>3.0</Beauty>
+									<WorkToMake>0.4</WorkToMake>
+									<WorkToBuild>0.4</WorkToBuild>
+									<DoorOpenSpeed>1.3</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+						</ThingDef>	
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<RecipeDef ParentName="MakeWoodLumberBase">
+							<defName>MakeWoodLumberAspen</defName>
+							<label>make aspen lumber</label>
+							<description>Process raw aspen logs into lumber for construction.</description>
+							<allowMixingIngredients>false</allowMixingIngredients>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WoodLog_Aspen</li>
+										</thingDefs>
+									</filter>
+									<count>15</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WoodLog_Aspen</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<LumberAspen>30</LumberAspen>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Desert -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Desert Expansion</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RG-D_Plant_DesertPalmTree"]/plant</xpath>
+					<value>
+						<harvestedThingDef>WoodLog_DesertPalm</harvestedThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "WoodLog_Maple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLogBase">
+							<defName>WoodLog_DesertPalm</defName> <!-- SG: 0.55  W: 545  H: 850  based on: black ash -->
+							<label>desert palm logs</label>
+							<description>Raw wood from a desert palm tree. When processed it becomes useful for building structures, weapons, and even simple prosthetics. Desert palm wood is a sof, durable wood.</description>
+							<graphicData>
+								<color>(156,151,119)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.5</Mass>
+								<MarketValue>1.6</MarketValue>
+								<DeteriorationRate>6</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>desert palm</stuffAdjective>
+								<commonality>0.4</commonality>
+								<color>(156,151,119)</color>
+								<statFactors>
+									<MaxHitPoints>0.45</MaxHitPoints>
+									<Beauty>2.2</Beauty>
+									<WorkToMake>0.4</WorkToMake>
+									<WorkToBuild>0.4</WorkToBuild>
+									<DoorOpenSpeed>1.3</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+							<butcherProducts>
+								<LumberDesertPalm>30</LumberDesertPalm>
+							</butcherProducts>		
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ThingDef[defName = "LumberMaple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<ThingDef ParentName="WoodLumberBase">
+							<defName>LumberDesertPalm</defName>
+							<label>desert palm lumber</label>
+							<description>Processed desert palm lumber. Mostly useful for building long-lasting, simple structures and furniture. Desert palm wood is a soft, durable wood.</description>
+							<graphicData>
+								<color>(156,151,119)</color>
+							</graphicData>
+							<statBases>
+								<Mass>0.25</Mass>
+								<MarketValue>2.3</MarketValue>
+								<DeteriorationRate>5</DeteriorationRate>
+							</statBases>
+							<stuffProps>
+								<stuffAdjective>desert palm</stuffAdjective>
+								<commonality>0.4</commonality>
+								<color>(156,151,119)</color>
+								<statFactors>
+									<MaxHitPoints>0.90</MaxHitPoints>
+									<Beauty>1.0</Beauty>
+									<WorkToMake>0.4</WorkToMake>
+									<WorkToBuild>0.4</WorkToBuild>
+									<DoorOpenSpeed>1.5</DoorOpenSpeed>
+								</statFactors>
+							</stuffProps>
+						</ThingDef>	
+					</value>
+				</li>
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/RecipeDef[defName = "MakeWoodLumberMaple"]</xpath>
+					<order>Prepend</order>
+					<value>
+						<RecipeDef ParentName="MakeWoodLumberBase">
+							<defName>MakeWoodLumberDesertPalm</defName>
+							<label>make desert palm lumber</label>
+							<description>Process raw desert palm logs into lumber for construction.</description>
+							<allowMixingIngredients>false</allowMixingIngredients>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WoodLog_DesertPalm</li>
+										</thingDefs>
+									</filter>
+									<count>15</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WoodLog_DesertPalm</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<LumberDesertPalm>30</LumberDesertPalm>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 	
